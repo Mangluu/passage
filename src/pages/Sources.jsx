@@ -1,106 +1,114 @@
-import { ExternalLink, ShieldAlert, Info } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 import { SOURCES } from '../data/sources.js'
-import { GROUPS } from '../data/groups.js'
-import { ASPECT_BY_KEY } from '../data/aspects.js'
+import { AUDIENCES } from '../data/audiences.js'
+import { TOPICS } from '../data/topics.js'
+import { EVIDENCE_LABEL, CERTAINTY } from '../lib/format.js'
+import Tag from '../components/Tag.jsx'
 
 export default function Sources() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-10">
-      <h1 className="text-3xl font-extrabold tracking-tight text-ink">Sources & methodology</h1>
-      <p className="mt-2 text-ink2">
-        Passage is only as trustworthy as its data, so here is exactly where every number comes from and how we handle
-        it.
+    <div className="mx-auto max-w-prose px-5 py-12">
+      <p className="text-[12px] uppercase tracking-[0.2em] text-ink3">Passage</p>
+      <h1 className="mt-3 font-serif text-4xl leading-tight text-ink">Method &amp; sources</h1>
+      <p className="mt-4 text-[17px] leading-relaxed text-ink2">
+        A briefing is only as trustworthy as its weakest fact. So Passage never shows a country “score”. It shows{' '}
+        <span className="text-ink">claims</span> — each a plain statement carrying its evidence type, the date it
+        reflects, its source, and how sure we are.
       </p>
 
-      <div className="mt-6 flex items-start gap-3 rounded-2xl border border-amber-500/30 bg-amber-500/10 p-4 text-sm text-amber-800 dark:text-amber-200">
-        <ShieldAlert className="mt-0.5 h-5 w-5 shrink-0" />
-        <div>
-          <p className="font-semibold">Read this first</p>
-          <p className="mt-1 leading-relaxed">
-            This is an informational prototype for B_Hack 2026. Laws and indices are simplified and may be out of date;
-            numeric scores marked “≈” are approximate and should be verified against the linked source.{' '}
-            <strong>Laws differ from lived experience, and this is not legal advice.</strong> Always confirm with
-            official government channels and your host institution before you travel.
-          </p>
+      <Section title="How to read a claim">
+        <p className="text-[15px] leading-relaxed text-ink2">Every fact is tagged two ways.</p>
+        <p className="mt-4 text-[13px] font-medium text-ink2">Evidence type — what kind of thing it is:</p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {Object.entries(EVIDENCE_LABEL).map(([k, v]) => (
+            <Tag key={k} tone="ink2">{v}</Tag>
+          ))}
         </div>
-      </div>
+        <p className="mt-5 text-[13px] font-medium text-ink2">Certainty — how sure we are:</p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {Object.values(CERTAINTY).map((c) => (
+            <Tag key={c.label} tone={c.tone === 'ink3' ? 'ink3' : c.tone}>{c.label}</Tag>
+          ))}
+        </div>
+        <p className="mt-4 text-[14px] leading-relaxed text-ink3">
+          A statement about the letter of the law is not a promise about lived experience. Where we only have limited
+          or anecdotal evidence, we say so rather than dress it up as precision.
+        </p>
+      </Section>
 
-      <h2 className="mt-10 text-xl font-bold text-ink">Data sources</h2>
-      <div className="mt-3 overflow-hidden rounded-2xl border border-line bg-surface shadow-sm">
-        <table className="w-full text-left text-sm">
-          <thead className="bg-surface2 text-xs uppercase tracking-wide text-ink2">
-            <tr>
-              <th className="px-4 py-3">Source</th>
-              <th className="hidden px-4 py-3 sm:table-cell">Organisation</th>
-              <th className="hidden px-4 py-3 md:table-cell">Checked</th>
-              <th className="px-4 py-3">Link</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-line">
-            {Object.entries(SOURCES).map(([key, s]) => (
-              <tr key={key} className="align-top">
-                <td className="px-4 py-3">
-                  <div className="font-medium text-ink">{s.name}</div>
-                  <div className="text-xs text-ink3 sm:hidden">{s.org}</div>
-                  <div className="mt-0.5 text-xs text-ink3">{s.license}</div>
-                </td>
-                <td className="hidden px-4 py-3 text-ink2 sm:table-cell">{s.org}</td>
-                <td className="hidden px-4 py-3 text-ink2 md:table-cell">{s.retrieved}</td>
-                <td className="px-4 py-3">
-                  <a
-                    href={s.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1 font-medium text-brand-600 dark:text-brand-300 hover:underline"
-                  >
-                    Visit <ExternalLink className="h-3.5 w-3.5" />
-                  </a>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <Section title="How severity is decided">
+        <ul className="space-y-2.5 text-[15px] leading-relaxed text-ink2">
+          <li>
+            <Tag tone="danger" className="uppercase tracking-wide">Critical</Tag> — a big change, or anything the
+            destination criminalises, enforces or prohibits that is relevant to you.
+          </li>
+          <li>
+            <Tag tone="warn" className="uppercase tracking-wide">Notable</Tag> — a meaningful shift, or a new legal
+            duty with a short deadline (address registration, insurance).
+          </li>
+          <li>
+            <Tag tone="ink2" className="uppercase tracking-wide">Minor</Tag> — a smaller difference worth knowing.
+          </li>
+        </ul>
+        <p className="mt-4 text-[14px] leading-relaxed text-ink3">
+          Selecting who a briefing is for raises the weight of the topics that matter most to that person, so the same
+          facts re-order around you. It never hides anything.
+        </p>
+      </Section>
 
-      <h2 className="mt-10 text-xl font-bold text-ink">How groups map to aspects</h2>
-      <p className="mt-1 text-sm text-ink2">
-        Ticking a group never hides anything — it lifts and highlights that group’s most-relevant aspects.
+      <Section title="Who a briefing is for → what it surfaces">
+        <div className="grid gap-3 sm:grid-cols-2">
+          {AUDIENCES.map((a) => (
+            <div key={a.id} className="rounded-[12px] border border-line bg-surface p-4">
+              <h3 className="text-[14px] font-medium text-ink">{a.label}</h3>
+              <ul className="mt-2 space-y-1 text-[13px] text-ink2">
+                {TOPICS.filter((t) => t.audiences.includes(a.id)).map((t) => (
+                  <li key={t.key}>· {t.label}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      <Section title="Sources we rely on">
+        <p className="text-[14px] leading-relaxed text-ink3">
+          Global datasets are listed below; country-specific legal and official-portal sources are linked inline on
+          each claim. Legal facts were cross-checked in an adversarial verification pass against primary and official
+          sources.
+        </p>
+        <ul className="mt-4 divide-y divide-line border-y border-line">
+          {Object.values(SOURCES).map((s) => (
+            <li key={s.org} className="flex items-baseline justify-between gap-3 py-2.5">
+              <span className="text-[14px] text-ink">
+                {s.org} <span className="text-ink3">— {s.name}</span>
+              </span>
+              {s.url && (
+                <a href={s.url} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center gap-1 text-[13px] text-accent hover:underline">
+                  Visit <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <p className="mt-10 border-t border-line pt-5 text-[13px] leading-relaxed text-ink3">
+        Passage is an informational prototype for B_Hack 2026. Laws and indices are simplified and can be out of date.
+        Laws differ from lived experience — this is not legal advice. Always confirm with official government channels
+        and your host institution before you travel.
       </p>
-      <div className="mt-4 grid gap-3 sm:grid-cols-2">
-        {GROUPS.map((g) => (
-          <div key={g.id} className="rounded-2xl border border-line bg-surface p-4 shadow-sm">
-            <h3 className={`font-semibold ${g.accent.text}`}>{g.label}</h3>
-            <ul className="mt-2 space-y-1 text-sm text-ink2">
-              {g.priorityAspects.map((k) => (
-                <li key={k} className="flex items-center gap-2">
-                  <span className={`h-1.5 w-1.5 rounded-full ${g.accent.solid}`} />
-                  {ASPECT_BY_KEY[k]?.label || k}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-
-      <h2 className="mt-10 text-xl font-bold text-ink">How the comparison works</h2>
-      <div className="mt-3 flex items-start gap-3 rounded-2xl border border-line bg-surface p-4 text-sm leading-relaxed text-ink2 shadow-sm">
-        <Info className="mt-0.5 h-5 w-5 shrink-0 text-brand-500 dark:text-brand-400" />
-        <div className="space-y-2">
-          <p>
-            Every comparable aspect is normalised to a 0–100 “freedom / safety” score, so indices on different scales
-            (a 1–4 travel advisory, a 0–10 restriction index, a 0–100 rights index) can be compared on one axis.
-          </p>
-          <p>
-            The “What changes vs. home” panel then diffs your origin against your destination and ranks the biggest
-            differences, surfacing the aspects your selected groups care about first. Red means more restrictive at
-            your destination; green means freer.
-          </p>
-          <p className="text-ink3">
-            Categorical facts (marriage equality, criminalisation, treaty ratifications) reflect the letter of the law.
-            Qualitative summaries are compiled from public government and NGO reporting.
-          </p>
-        </div>
-      </div>
     </div>
+  )
+}
+
+function Section({ title, children }) {
+  return (
+    <section className="mt-12">
+      <h2 className="mb-4 border-b border-line pb-1.5 text-[12px] font-medium uppercase tracking-[0.15em] text-ink3">
+        {title}
+      </h2>
+      {children}
+    </section>
   )
 }

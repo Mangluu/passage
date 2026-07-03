@@ -1,83 +1,74 @@
-# Passage — Liberty & Security for Exchange Students
+# Passage — pre-departure briefings for exchange students
 
 **B_Hack Baltic Sea Region Hackathon 2026 · Track: Liberty & Security · Group 6**
 
-Passage is a **privacy-first** dashboard that shows exchange students how *liberty and
-security change when they cross a border* — tailored to the marginalised group(s) they
-belong to. Pick where you're from, where you're going, and who you are; Passage surfaces
-**what's different for you**, from public, sourced data.
+Passage turns "how do liberty and security differ between home and my destination?" into a
+**sourced, dated briefing document** — specific to who you are. Not a country score card. Every
+fact is a claim that carries its evidence type, the date it reflects, its source, and how sure
+we are.
 
-No accounts. No profiles. No tracking. Your choices live only in the page URL — nothing is
-sent to a server or stored. Privacy by design.
+Pick your home country, your destination, and (optionally) the group(s) you belong to. Passage
+assembles a briefing that:
 
-## Highlights
+- **Ranks what changes for you** by severity — anything the destination criminalises, enforces or
+  prohibits that's relevant to you is Critical; new legal duties with short deadlines are Notable.
+- **Surfaces cross-cutting risks** a search wouldn't volunteer — e.g. *the return trip*: cannabis
+  legal at your destination is still a felony under your home law when you go back.
+- **Flags new duties on arrival** — address registration (Germany's 14-day Anmeldung, China's
+  24-hour police registration), work-hour caps, insurance mandates — and turns them into a checklist.
+- **Shows every claim's provenance** — Law / Published index / Reported practice / Advisory, dated,
+  linked, with an Established / Limited-data / Anecdotal certainty label. No invented scores.
 
-- **Comparison lens** — the "What changes vs. home" panel diffs your origin against your
-  destination and ranks the biggest differences (red = more restrictive there, green = freer).
-- **Group-aware** — ticking Women / LGBTQI+ / Person of colour / Religion / Disabled
-  re-prioritises and highlights the aspects that matter to that group (it never hides data).
-- **28 aspects across 6 themes** — health & bodily autonomy, legal status & policing, identity
-  rights, safety, expression & digital, and everyday life.
-- **10 diverse countries** — USA, Brazil, Germany, Norway, Kenya, Egypt, South Africa, China,
-  Australia, Uzbekistan (any can be origin *or* destination).
-- **Every datapoint is cited** with its source and retrieval date; see the in-app Sources page.
-- **Light & dark theme** — toggle in the header, remembered locally (theme preference only).
+No accounts. No profiles. No tracking. Your choices live only in the page URL; the briefing is
+assembled in your browser. Privacy by design. Light & dark theme, and it prints as a clean document.
 
-## Where the numbers come from
+## Why claims, not scores
 
-Legal facts (marriage equality, criminalisation, cannabis status, CRPD, abortion category) are set
-by hand from primary law. Three numeric indices are refreshed from authoritative open data —
-**LGBTQI+ legal equality** (Equaldex), **Women, Business & the Law** (World Bank) and **Freedom in
-the World** (Freedom House), mirrored as clean CSVs by Our World in Data:
+The first version showed 0–100 "safety scores". They looked authoritative but several were
+invented — fatal for a trust product. v2 deletes every synthetic number. What remains is a spine
+of **claims**: plain statements grounded in law and published indices, each verifiable at its
+source. The legal facts were cross-checked in an **adversarial verification pass** (multi-agent
+web research that tries to prove each claim wrong against primary/official sources).
 
-```bash
-node scripts/refresh-data.mjs   # prints the latest value per country
+## Data model
+
+```
+src/
+  data/
+    topics.js          # the catalog: position topics (comparable states) + obligations (duties)
+    jurisdictions.js   # the claims spine — 10 countries × sourced, dated claims
+    audiences.js       # reader groups → which topics weigh most
+    sources.js         # source registry (+ inline per-claim official sources)
+  lib/
+    severity.js        # pure severity model (critical / notable / minor)
+    brief.js           # assembles the briefing: ranked changes, insights, checklist, facts
+    format.js          # evidence / certainty / tier labels
+  components/           # Tag · ClaimMeta · DeltaRow · FactCard · Checklist · AudienceSelect …
+  pages/                # Home · Briefing · Sources (method & sources)
 ```
 
-This runs at build time only — the app ships those values statically, so there are **no runtime API
-calls, no keys, and nothing that can break during a demo** (and it keeps the privacy-by-design
-promise intact). The remaining scores (press/internet freedom, peace index, religious restriction,
-women's safety, accessibility, travel advisory) are curated estimates, marked "≈" in the UI, and
-should be verified against their linked source.
+- **Add a country**: one record in `jurisdictions.js` using the same topic keys.
+- **Add a topic**: add it to `topics.js` (with its ordered `scale` for a position topic), then add
+  the claim to each jurisdiction.
+- Refresh the published indices that back some claims:
+  ```bash
+  node scripts/refresh-data.mjs   # Equaldex · World Bank · Freedom House, via Our World in Data
+  ```
 
 ## Run it
 
 ```bash
 npm install
-npm run dev      # → http://localhost:5173
+npm run dev        # → http://localhost:5173
+npm run build      # static bundle → any host (deployed to GitHub Pages on every push)
 ```
 
-Build a static bundle (deployable to Netlify / Vercel / GitHub Pages — no backend):
-
-```bash
-npm run build
-npm run preview
-```
-
-## Tech
-
-React + Vite, Tailwind CSS, Recharts (radar), lucide-react (icons), flag-icons (flags),
-react-router-dom (HashRouter, so refreshes work on any static host). No server, no database.
-
-## Project layout
-
-```
-src/
-  pages/        Home · Dashboard · Sources
-  components/   DeltaStrip · AspectCard · ScoreBar · StatusBadge · ClusterRadar · …
-  data/         aspects.js (schema) · groups.js (group→aspect map) · sources.js · countries.js
-  lib/          compare.js (delta engine) · scales.js (ordinal scales) · format.js
-```
-
-To add a country, add one record to `src/data/countries.js` using the same aspect keys.
-To add an aspect, add it to `src/data/aspects.js` (and a scale in `src/lib/scales.js` if
-it's categorical), then fill the value for each country.
+Tech: React + Vite, Tailwind CSS, lucide-react, flag-icons, react-router-dom (HashRouter). Static
+site, no backend, no database.
 
 ## Important disclaimer
 
-Passage is an **informational prototype**. Laws and indices are simplified and may be out of
-date; numeric scores marked "≈" are approximate and should be verified against the linked
-source. **Laws differ from lived experience, and this is not legal advice.** Always confirm
-with official government channels and your host institution before you travel.
-
-Built with only publicly available data and openly-licensed assets (no copyrighted material).
+Passage is an **informational prototype**. Laws and indices are simplified and can be out of date;
+every claim shows its evidence type and certainty. **Laws differ from lived experience, and this is
+not legal advice.** Always confirm with official government channels and your host institution
+before you travel. Built with only publicly available data and openly-licensed assets.

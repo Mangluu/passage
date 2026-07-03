@@ -1,25 +1,33 @@
-import { statusEntry } from './scales.js'
-import { goodness } from './compare.js'
-import { goodnessToTone } from './scales.js'
+// Presentation helpers for claims (labels + tones). Colour tones map to the
+// semantic role classes defined in tailwind.config.js / index.css.
 
-// A short human label for any aspect value (used in the delta strip & tags).
-export function valueLabel(aspect, entry) {
-  if (!entry) return 'No data'
-  if (aspect.type === 'score') {
-    return entry.value == null ? 'No data' : `${entry.value}${aspect.max === 100 ? '' : `/${aspect.max}`}`
-  }
-  if (aspect.type === 'status') {
-    if (entry.ordinal == null) return 'No data'
-    return entry.label || statusEntry(aspect.scale, entry.ordinal)?.label || '—'
-  }
-  return ''
+export const EVIDENCE_LABEL = {
+  law: 'Law',
+  index: 'Published index',
+  practice: 'Reported practice',
+  advisory: 'Official advisory',
+  peer: 'Peer-reported',
 }
 
-// Tone key ('bad'|'warn'|'ok'|'good'|'na') for colouring a value.
-export function toneForEntry(aspect, entry) {
-  if (aspect.type === 'status') {
-    const e = statusEntry(aspect.scale, entry?.ordinal)
-    return e ? e.tone : 'na'
-  }
-  return goodnessToTone(goodness(aspect, entry))
+export const CERTAINTY = {
+  established: { label: 'Established', tone: 'success' },
+  limited: { label: 'Limited data', tone: 'warn' },
+  anecdote: { label: 'Anecdotal', tone: 'ink3' },
+}
+
+export const TIER = {
+  critical: { label: 'Critical', tone: 'danger' },
+  notable: { label: 'Notable', tone: 'warn' },
+  minor: { label: 'Minor', tone: 'ink2' },
+}
+
+// Text-colour class for a direction (restrictive = red, freer = green).
+export function directionTone(direction) {
+  if (direction === 'restrictive') return 'danger'
+  if (direction === 'freer') return 'success'
+  return 'ink2'
+}
+
+export function yearOf(asOf) {
+  return asOf ? String(asOf).slice(0, 4) : ''
 }

@@ -2,27 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Semantic colour tokens (space-separated RGB for Tailwind's <alpha-value>). */
+/* Warm, paper-neutral editorial palette. Space-separated RGB for <alpha-value>. */
 :root {
   color-scheme: light;
-  --c-canvas: 248 250 252; /* slate-50  */
-  --c-surface: 255 255 255; /* white     */
-  --c-surface2: 241 245 249; /* slate-100 */
-  --c-line: 226 232 240; /* slate-200 */
-  --c-ink: 30 41 59; /* slate-800 */
-  --c-ink2: 71 85 105; /* slate-600 */
-  --c-ink3: 148 163 184; /* slate-400 */
+  --c-canvas: 247 246 242; /* warm paper        */
+  --c-surface: 255 255 255; /* card              */
+  --c-surface2: 240 238 231; /* subtle fill       */
+  --c-line: 224 220 209; /* warm hairline     */
+  --c-ink: 31 29 24; /* near-black warm   */
+  --c-ink2: 92 87 76; /* secondary         */
+  --c-ink3: 142 136 122; /* muted             */
+  --c-danger: 166 42 38; /* critical          */
+  --c-danger-bg: 245 231 227;
+  --c-warn: 146 92 12; /* notable           */
+  --c-warn-bg: 247 237 221;
+  --c-success: 26 106 82; /* established/freer */
+  --c-success-bg: 225 240 232;
+  --c-accent: 42 74 138; /* links             */
+  --c-accent-bg: 229 238 249;
 }
 
 .dark {
   color-scheme: dark;
-  --c-canvas: 2 6 23; /* slate-950 */
-  --c-surface: 15 23 42; /* slate-900 */
-  --c-surface2: 30 41 59; /* slate-800 */
-  --c-line: 51 65 85; /* slate-700 */
-  --c-ink: 241 245 249; /* slate-100 */
-  --c-ink2: 203 213 225; /* slate-300 */
-  --c-ink3: 148 163 184; /* slate-400 */
+  --c-canvas: 23 22 18; /* warm near-black   */
+  --c-surface: 31 29 24;
+  --c-surface2: 42 39 33;
+  --c-line: 57 53 45;
+  --c-ink: 237 233 224;
+  --c-ink2: 185 179 166;
+  --c-ink3: 139 133 120;
+  --c-danger: 233 145 140;
+  --c-danger-bg: 58 30 27;
+  --c-warn: 226 178 92;
+  --c-warn-bg: 55 44 24;
+  --c-success: 118 199 164;
+  --c-success-bg: 22 46 38;
+  --c-accent: 141 172 231;
+  --c-accent-bg: 27 35 53;
 }
 
 html {
@@ -31,14 +47,29 @@ html {
 
 body {
   @apply bg-canvas text-ink antialiased;
-  background-image:
-    radial-gradient(60rem 60rem at 110% -10%, rgba(99, 102, 241, 0.08), transparent 60%),
-    radial-gradient(50rem 50rem at -10% 0%, rgba(16, 185, 129, 0.06), transparent 55%);
-  background-attachment: fixed;
 }
 
-/* Rounded, slightly larger flag icons used in selects and headers */
+/* Flag icons: small, squared-off, hairline ring — reads like a passport stamp. */
 .fi {
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.08);
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgb(var(--c-line));
+}
+
+/* Editorial figure numerals line up in tables and from→to rows. */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* The briefing is meant to be printed and carried. Strip the chrome. */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  :root {
+    --c-canvas: 255 255 255;
+    --c-surface: 255 255 255;
+  }
+  article {
+    max-width: none !important;
+  }
 }
