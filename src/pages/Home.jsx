@@ -1,8 +1,15 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ArrowRight } from 'lucide-react'
+import Header from '../components/Header.jsx'
+import Footer from '../components/Footer.jsx'
 import CountrySelect from '../components/CountrySelect.jsx'
 import AudienceSelect from '../components/AudienceSelect.jsx'
+
+const FEATURES = [
+  ['01', 'Built for marginalised students — the differences that most affect you.'],
+  ['02', 'Every figure links to a public, named source. No black boxes.'],
+  ['03', 'Nothing about you is saved. We never ask who you are.'],
+]
 
 export default function Home() {
   const navigate = useNavigate()
@@ -22,46 +29,55 @@ export default function Home() {
   }
 
   return (
-    <div className="mx-auto max-w-prose px-5 py-12 sm:py-16">
-      <p className="text-[12px] uppercase tracking-[0.2em] text-ink3">Passage</p>
-      <h1 className="mt-3 font-serif text-4xl leading-[1.1] text-ink sm:text-[44px]">
-        Before you go, know what changes.
-      </h1>
-      <p className="mt-5 text-[18px] leading-relaxed text-ink2">
-        A pre-departure briefing for exchange students: how liberty and security differ between home and your
-        destination — sourced, dated, and specific to who you are. Not a country score. A document you can read,
-        check, and take with you.
-      </p>
-
-      <div className="mt-10 border-t border-line pt-8">
-        <div className="grid gap-4 sm:grid-cols-2">
-          <CountrySelect id="from" label="Home" value={from} onChange={setFrom} placeholder="Where you're coming from" />
-          <CountrySelect id="to" label="Destination" value={to} onChange={setTo} placeholder="Where you're going" />
-        </div>
-
-        <div className="mt-6">
-          <p className="mb-2.5 text-[13px] font-medium text-ink2">
-            This briefing is for…{' '}
-            <span className="font-normal text-ink3">optional — it re-weights what comes first</span>
+    <div className="flex min-h-screen flex-col">
+      <Header />
+      <main className="mx-auto grid w-full max-w-6xl flex-1 items-center gap-12 px-6 py-14 lg:grid-cols-[1.05fr_.95fr] lg:py-20">
+        <div>
+          <div className="eyebrow mb-5">Liberty &amp; security, before you go</div>
+          <h1 className="font-serif text-[42px] font-medium leading-[1.05] tracking-tight text-ink sm:text-[54px]">
+            Know how your rights change the moment you cross the border.
+          </h1>
+          <p className="mt-5 max-w-[480px] text-[16.5px] leading-relaxed text-ink2">
+            Pick where you’re coming from and where you’re heading. Passage compares how liberty and security differ
+            between the two — across health, law, expression, safety and more — and surfaces what matters for who you are.
           </p>
-          <AudienceSelect selected={aud} onToggle={toggle} />
+          <div className="mt-7 flex max-w-[460px] flex-col gap-3">
+            {FEATURES.map(([n, t]) => (
+              <div key={n} className="flex gap-3">
+                <span className="mt-0.5 min-w-[18px] font-mono text-[11px] text-ink3">{n}</span>
+                <span className="text-[14px] leading-snug text-ink2">{t}</span>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {sameCountry && <p className="mt-4 text-[13px] text-warn">Choose two different countries to compare.</p>}
-
-        <button
-          type="button"
-          onClick={go}
-          disabled={!ready}
-          className="mt-8 inline-flex items-center gap-2 rounded-lg bg-ink px-5 py-3 text-[15px] font-medium text-canvas transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-30"
-        >
-          Prepare briefing
-          <ArrowRight className="h-4 w-4" />
-        </button>
-        <p className="mt-3 text-[12px] text-ink3">
-          Assembled in your browser. Nothing about you is stored or sent to a server.
-        </p>
-      </div>
+        <div className="card p-7">
+          <div className="eyebrow mb-4">Compare two countries</div>
+          <div className="mb-3.5">
+            <CountrySelect id="from" label="I am travelling from" value={from} onChange={setFrom} placeholder="Country of origin" />
+          </div>
+          <div className="mb-4">
+            <CountrySelect id="to" label="I plan to go to" value={to} onChange={setTo} placeholder="Search for a country" />
+          </div>
+          <div className="eyebrow mb-2.5">
+            This applies to me <span className="text-ink3/70">— optional, multiple ok</span>
+          </div>
+          <AudienceSelect selected={aud} onToggle={toggle} />
+          {sameCountry && <p className="mt-3 text-[12px] text-accent">Pick two different countries to compare.</p>}
+          <button
+            type="button"
+            onClick={go}
+            disabled={!ready}
+            className="mt-6 w-full rounded-xl bg-ink px-5 py-3.5 text-[15px] font-semibold text-canvas transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-30"
+          >
+            Compare countries
+          </button>
+          <p className="mt-3.5 text-center text-[11px] leading-relaxed text-ink3">
+            Assembled in your browser — nothing about you is stored or sent to a server.
+          </p>
+        </div>
+      </main>
+      <Footer />
     </div>
   )
 }

@@ -2,43 +2,43 @@ import { Link, NavLink } from 'react-router-dom'
 import { Sun, Moon } from 'lucide-react'
 import { useTheme } from '../lib/useTheme.js'
 
-// Editorial masthead — a document letterhead, not an app chrome bar.
+// Top masthead for Home & Sources (Threshold style: wordmark + privacy chips).
 export default function Header() {
   const { theme, toggle } = useTheme()
   return (
-    <header className="no-print border-b border-line bg-canvas">
-      <div className="mx-auto flex max-w-5xl items-baseline justify-between gap-4 px-5 py-4">
-        <Link to="/" className="flex items-baseline gap-2.5">
-          <span className="font-serif text-[22px] font-semibold tracking-tight text-ink">Passage</span>
-          <span className="hidden text-[12px] text-ink3 sm:inline">pre-departure briefings</span>
+    <header className="no-print border-b border-line">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-5">
+        <Link to="/" className="flex items-center gap-3">
+          <Logo />
+          <span className="font-serif text-[21px] font-semibold tracking-tight text-ink">Passage</span>
         </Link>
-
-        <nav className="flex items-center gap-5 text-[14px]">
-          <NavItem to="/" label="Home" />
-          <NavItem to="/sources" label="Method &amp; sources" />
-          <button
-            type="button"
-            onClick={toggle}
-            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-            title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
-            className="-my-1 rounded p-1 text-ink2 transition hover:text-ink"
+        <div className="flex items-center gap-3">
+          <div className="hidden gap-1.5 sm:flex">
+            {['No account', 'No tracking', 'No data stored'].map((t) => (
+              <span key={t} className="rounded-full border border-line px-2.5 py-1 font-mono text-[10.5px] text-ink3">
+                {t}
+              </span>
+            ))}
+          </div>
+          <NavLink
+            to="/sources"
+            className={({ isActive }) => `text-[13px] ${isActive ? 'text-ink' : 'text-ink2 transition-colors hover:text-ink'}`}
           >
+            Method
+          </NavLink>
+          <button type="button" onClick={toggle} aria-label={theme === 'dark' ? 'Light mode' : 'Dark mode'} className="text-ink2 transition-colors hover:text-ink">
             {theme === 'dark' ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
-        </nav>
+        </div>
       </div>
     </header>
   )
 }
 
-function NavItem({ to, label }) {
+function Logo() {
   return (
-    <NavLink
-      to={to}
-      end={to === '/'}
-      className={({ isActive }) => (isActive ? 'text-ink' : 'text-ink2 transition-colors hover:text-ink')}
-    >
-      {label}
-    </NavLink>
+    <span className="relative block h-7 w-7 overflow-hidden rounded-full border-2 border-ink">
+      <span className="absolute inset-x-0 bottom-2 block h-0.5 bg-ink" />
+    </span>
   )
 }

@@ -1,16 +1,22 @@
 import { useMemo } from 'react'
 import { useSearchParams, Link } from 'react-router-dom'
-import { ArrowLeftRight, Printer, ArrowRight, AlertTriangle, Phone } from 'lucide-react'
+import { ArrowLeftRight } from 'lucide-react'
 import { JURISDICTION_BY_CODE } from '../data/jurisdictions.js'
 import { AUDIENCE_BY_ID } from '../data/audiences.js'
 import { buildBrief } from '../lib/brief.js'
+import { areaScores, overallScore, summaryBullets, advisoryCards, scoreTone } from '../lib/dashboard.js'
+import Sidebar from '../components/Sidebar.jsx'
 import CountrySelect from '../components/CountrySelect.jsx'
 import AudienceSelect from '../components/AudienceSelect.jsx'
+import ScoreRows from '../components/ScoreRows.jsx'
+import OverallScale from '../components/OverallScale.jsx'
 import FactCard from '../components/FactCard.jsx'
 import Checklist from '../components/Checklist.jsx'
-import SeverityMeter from '../components/SeverityMeter.jsx'
-import ScaleStrip from '../components/ScaleStrip.jsx'
-import ArrivalTimeline from '../components/ArrivalTimeline.jsx'
+
+const TONE_TXT = { danger: 'text-danger', warn: 'text-warn', success: 'text-success', ink3: 'text-ink3' }
+const TONE_DOT = { danger: 'bg-danger', warn: 'bg-warn', success: 'bg-success' }
+const TONE_TINT = { danger: 'bg-danger-bg', warn: 'bg-warn-bg', success: 'bg-success-bg' }
+const BULLET_HEX = { danger: '#cf6a48', success: '#5f9e52' }
 
 export default function Briefing() {
   const [params, setParams] = useSearchParams()
@@ -36,191 +42,212 @@ export default function Briefing() {
     s.has(id) ? s.delete(id) : s.add(id)
     update({ aud: [...s].join(',') })
   }
-
-  if (!origin || !dest || !brief) return <EmptyState />
-
-  const { counts } = brief
-  const factCount = brief.facts.reduce((n, c) => n + c.items.length, 0)
-  const issued = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
-  const audienceLabel = aud.length ? aud.map((id) => AUDIENCE_BY_ID[id]?.label).filter(Boolean).join(' · ') : 'a general reader'
-  const positionChanges = brief.changes.filter((c) => c.kind === 'position')
   const jump = (id) => {
     const el = document.getElementById(id)
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
+  if (!origin || !dest || !brief) return <EmptyState />
+
+  const areas = areaScores(origin, dest)
+  const oOverall = overallScore(origin)
+  const dOverall = overallScore(dest)
+  const destTone = scoreTone(dOverall.avg)
+  const bullets = summaryBullets(brief)
+  const advisories = advisoryCards(brief)
+  const audienceLabel = aud.map((id) => AUDIENCE_BY_ID[id]?.label).filter(Boolean).join(' · ')
+  const e = dest.emergency
+
   return (
-    <div>
-      {/* Controls — not part of the document, hidden when printed */}
-      <div className="no-print border-b border-line bg-canvas">
-        <div className="mx-auto flex max-w-5xl flex-col gap-3 px-5 py-3 lg:flex-row lg:items-end lg:justify-between">
-          <div className="flex items-end gap-2">
-            <div className="w-36 sm:w-44">
-              <CountrySelect id="from" label="Home" value={from} onChange={(c) => update({ from: c })} />
+    <div className="flex min-h-screen bg-canvas">
+      <Sidebar audiences={aud} onToggleAudience={toggleAud} onJump={jump} />
+
+      <main className="flex min-w-0 flex-1 flex-col">
+        {/* Sticky header */}
+        <header className="no-print sticky top-0 z-30 flex flex-wrap items-center gap-3 border-b border-line bg-canvas/90 px-5 py-3 backdrop-blur">
+          <div className="min-w-[190px] max-w-[360px] flex-1">
+            <CountrySelect id="to" value={to} onChange={(c) => update({ to: c })} placeholder="Destination" />
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="eyebrow">from</span>
+            <div className="w-36 sm:w-40">
+              <CountrySelect id="from" value={from} onChange={(c) => update({ from: c })} />
             </div>
             <button
               type="button"
               onClick={() => update({ from: to, to: from })}
               title="Swap"
-              className="mb-1 rounded-lg border border-line p-2 text-ink3 transition hover:text-ink"
+              className="rounded-lg border border-line bg-surface p-2 text-ink3 transition hover:text-ink"
             >
               <ArrowLeftRight className="h-4 w-4" />
             </button>
-            <div className="w-36 sm:w-44">
-              <CountrySelect id="to" label="Destination" value={to} onChange={(c) => update({ to: c })} />
-            </div>
           </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <AudienceSelect selected={aud} onToggle={toggleAud} />
-            <Link to="/" className="text-[13px] text-accent hover:underline">
-              New briefing
-            </Link>
-          </div>
-        </div>
-      </div>
+          <div className="flex-1" />
+          <Link to="/" className="rounded-lg bg-ink px-4 py-2 text-[13px] font-semibold text-canvas transition hover:opacity-90">
+            New search
+          </Link>
+        </header>
 
-      <article className="mx-auto max-w-prose px-5 py-8">
-        {/* Letterhead */}
-        <div className="border-t-2 border-ink pt-2.5">
-          <div className="flex flex-wrap items-baseline justify-between gap-2 text-[12px] text-ink3">
-            <span className="font-medium uppercase tracking-[0.15em] text-ink2">Passage · Pre-departure briefing</span>
-            <span>Issued {issued} · valid ~90 days</span>
-          </div>
+        {/* Mobile audience filter (sidebar is hidden below lg) */}
+        <div className="no-print border-b border-line px-5 py-3 lg:hidden">
+          <AudienceSelect selected={aud} onToggle={toggleAud} />
         </div>
 
-        <h1 className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 font-serif text-[30px] leading-tight text-ink">
-          <span className="inline-flex items-center gap-2">
-            <span className={`fi fi-${origin.flag}`} /> {origin.name}
-          </span>
-          <ArrowRight className="h-6 w-6 text-ink3" aria-hidden="true" />
-          <span className="inline-flex items-center gap-2">
-            <span className={`fi fi-${dest.flag}`} /> {dest.name}
-          </span>
-        </h1>
-
-        <p className="mt-2 text-[13px] text-ink2">
-          Prepared for <span className="text-ink">{audienceLabel}</span> · {factCount} facts ·{' '}
-          {brief.updated} updated in the last two years
-        </p>
-
-        {/* Lede */}
-        <blockquote className="mt-7 border-l-2 border-ink pl-4">
-          <p className="font-serif text-[19px] leading-snug text-ink">{brief.lede}</p>
-        </blockquote>
-        <p className="mt-3 text-[13px] tnum">
-          <Count n={counts.critical} tone="text-danger" label="critical" />
-          <Dot />
-          <Count n={counts.notable} tone="text-warn" label="notable" />
-          <Dot />
-          <Count n={counts.minor} tone="text-ink2" label="minor" />
-          <Dot />
-          <Count n={counts.unchanged} tone="text-ink3" label="unchanged" />
-        </p>
-
-        {/* Insights */}
-        {brief.insights.map((ins, i) => (
-          <div key={i} className="mt-6 rounded-[12px] border border-danger/30 bg-danger-bg p-4">
-            <p className="flex items-center gap-2 text-[14px] font-medium text-danger">
-              <AlertTriangle className="h-4 w-4" /> {ins.title}
-            </p>
-            <p className="mt-1.5 text-[14px] leading-relaxed text-ink2">{ins.text}</p>
+        {/* Honesty banner */}
+        <div className="px-5 pt-4">
+          <div className="flex items-start gap-2.5 rounded-lg border border-accent/25 bg-accent-bg px-3.5 py-2.5">
+            <span className="eyebrow mt-0.5 shrink-0 text-accent">Note</span>
+            <span className="text-[12.5px] leading-snug text-ink2">
+              Area scores are honest aggregates of the sourced facts below — every figure links to its source, dated.
+              Laws differ from lived experience; this is not legal advice.
+            </span>
           </div>
-        ))}
+        </div>
 
-        {/* At a glance — the visual overview */}
-        <SectionLabel>{aud.length ? 'What changes for you' : 'What changes'}</SectionLabel>
-        <SeverityMeter counts={counts} />
-        {positionChanges.length ? (
-          <div className="mt-6 divide-y divide-line">
-            {positionChanges.map((c) => (
-              <div key={c.key} className="py-4 first:pt-0">
-                <ScaleStrip
-                  topic={c.topic}
-                  fromClaim={origin.claims[c.key]}
-                  toClaim={dest.claims[c.key]}
-                  direction={c.direction}
-                  tier={c.tier}
-                  isFor={c.isFor}
-                  onJump={() => jump(`t-${c.key}`)}
-                />
-              </div>
-            ))}
-          </div>
-        ) : (
-          <p className="mt-4 text-[14px] text-ink2">
-            On the facts we track, {dest.name} is broadly similar to {origin.name}.
-          </p>
-        )}
-
-        <p className="mb-3 mt-9 text-[12px] font-medium uppercase tracking-[0.15em] text-ink3">Arrival deadlines</p>
-        <ArrivalTimeline dest={dest} onJump={() => jump('checklist')} />
-
-        {/* In detail — every fact, sourced */}
-        <SectionLabel>In detail — every fact, dated &amp; sourced</SectionLabel>
-        {brief.facts.map((cluster) => (
-          <section key={cluster.cluster}>
-            <h4 className="mb-3 mt-8 text-[13px] font-medium text-ink2">{cluster.label}</h4>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {cluster.items.map((it) => (
-                <div key={it.topic.key} id={`t-${it.topic.key}`} className="scroll-mt-4">
-                  <FactCard topic={it.topic} claim={it.claim} isFor={it.isFor} />
+        {/* Dashboard grid */}
+        <div className="grid gap-5 px-5 py-5 xl:grid-cols-[1.5fr_1fr]">
+          {/* Left column */}
+          <div className="flex min-w-0 flex-col gap-5">
+            <section id="sec-overview" className="card scroll-mt-4 overflow-hidden">
+              <div className="relative flex h-36 items-end bg-surface2 p-5">
+                <span className="eyebrow absolute right-3 top-3 rounded bg-surface/70 px-2 py-1 text-[9px]">Public-domain city image</span>
+                <div className="flex items-center gap-3">
+                  <span className="rounded-md border border-line bg-surface px-2.5 py-1.5 font-mono text-[12px] font-medium text-ink2">{dest.code}</span>
+                  <h2 className="font-serif text-[32px] font-semibold leading-none text-ink">{dest.name}</h2>
                 </div>
-              ))}
-            </div>
-          </section>
-        ))}
+              </div>
+              <div className="flex flex-wrap border-t border-line">
+                <Cell label="Overall" value={`${dOverall.avg}/100 · ${dOverall.tier}`} valueClass={TONE_TXT[destTone]} border />
+                <Cell label="Compared with" value={`${origin.name} · ${oOverall.avg}/100`} border />
+                <Cell label="Emergency" value={e.general} />
+              </div>
+            </section>
 
-        {/* Checklist */}
-        <div id="checklist" className="scroll-mt-4">
-          <SectionLabel>Your checklist</SectionLabel>
-          <p className="mb-3 text-[13px] text-ink3">Generated from this briefing. Ticking is local to your screen.</p>
-          <Checklist items={brief.checklist} />
+            <section className="card p-6">
+              <div className="mb-1 flex items-baseline justify-between gap-3">
+                <h3 className="font-serif text-[18px] font-semibold text-ink">Overall position</h3>
+              </div>
+              <p className="eyebrow mb-6">where each country sits on the liberty &amp; security scale</p>
+              <OverallScale origin={origin} dest={dest} originScore={oOverall.avg} destScore={dOverall.avg} />
+            </section>
+
+            <section id="sec-adv" className="card scroll-mt-4 p-6">
+              <h3 className="font-serif text-[18px] font-semibold text-ink">{aud.length ? 'Advisories for you' : 'Key changes'}</h3>
+              <p className="eyebrow mb-4 mt-1">{aud.length ? `flagged for ${audienceLabel}` : `${origin.name} → ${dest.name}`}</p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {advisories.map((a) => (
+                  <div key={a.key} className={`rounded-xl border border-line p-3.5 ${TONE_TINT[a.tone] || 'bg-surface2'}`}>
+                    <div className="mb-1.5 flex items-center gap-2">
+                      <span className={`h-2 w-2 rounded-full ${TONE_DOT[a.tone] || 'bg-ink3'}`} />
+                      <span className="text-[13px] font-semibold text-ink">{a.title}</span>
+                    </div>
+                    <div className="eyebrow mb-1.5 text-[9.5px]">{a.sub}</div>
+                    <p className="text-[12.5px] leading-snug text-ink2">{a.body}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          </div>
+
+          {/* Right column */}
+          <div className="flex min-w-0 flex-col gap-5">
+            <section id="sec-scores" className="card scroll-mt-4 p-5">
+              <div className="mb-4 flex items-baseline justify-between">
+                <h3 className="font-serif text-[18px] font-semibold text-ink">Liberty &amp; security scores</h3>
+                <span className="text-[11px] text-ink3">/ 100</span>
+              </div>
+              <ScoreRows rows={areas} onJump={() => jump('sec-sources')} />
+            </section>
+
+            <section className="rounded-2xl bg-ink p-5 text-canvas">
+              <div className="eyebrow mb-2.5" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                Comparison summary
+              </div>
+              <div className="font-serif text-[20px] font-semibold leading-tight text-canvas">
+                {origin.name} <span style={{ opacity: 0.55 }}>→</span> {dest.name}
+              </div>
+              <p className="mb-3 mt-1.5 text-[13.5px] font-medium text-canvas">{brief.lede}</p>
+              <div className="flex flex-col gap-2.5">
+                {bullets.map((b) => (
+                  <div key={b.key} className="flex items-start gap-2.5">
+                    <span className="mt-[6px] h-2 w-2 shrink-0 rounded-sm" style={{ background: BULLET_HEX[b.tone] || '#cf6a48' }} />
+                    <p className="text-[12.5px] leading-snug text-canvas" style={{ opacity: 0.86 }}>
+                      <span className="font-semibold" style={{ opacity: 1 }}>{b.label}:</span> {b.note}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section id="sec-emergency" className="card scroll-mt-4 p-5">
+              <div className="mb-3.5 flex items-center justify-between">
+                <h3 className="font-serif text-[18px] font-semibold text-ink">Quick info</h3>
+                <span className="eyebrow">{dest.name}</span>
+              </div>
+              <div className="flex items-baseline gap-2.5">
+                <span className="h-2.5 w-2.5 rounded-full bg-accent" />
+                <span className="text-[14px] text-ink2">Emergency</span>
+                <div className="flex-1" />
+                <span className="font-serif text-[24px] font-semibold text-ink">{e.general}</span>
+              </div>
+              <div className="mt-3 flex flex-col gap-2 border-t border-line pt-3 text-[13px]">
+                <EmLine l="Police" v={e.police} />
+                <EmLine l="Ambulance" v={e.ambulance} />
+                <EmLine l="Fire" v={e.fire} />
+              </div>
+            </section>
+          </div>
         </div>
 
-        {/* Emergency */}
-        <div className="mt-8 rounded-[12px] border border-line bg-surface2 p-4">
-          <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] text-ink2">
-            <Phone className="h-4 w-4 text-ink3" />
-            <span className="font-medium text-ink">Emergency in {dest.name}:</span>
-            <span className="tnum text-danger">{dest.emergency.general}</span>
-            <span className="text-ink3">· Police {dest.emergency.police} · Ambulance {dest.emergency.ambulance} · Fire {dest.emergency.fire}</span>
+        {/* Detail — the sourced record */}
+        <div id="sec-sources" className="scroll-mt-4 px-5 pb-4">
+          <div className="eyebrow mb-4 border-b border-line pb-2">In detail — every fact, dated &amp; sourced</div>
+          {brief.facts.map((cluster) => (
+            <section key={cluster.cluster} className="mb-6">
+              <h4 className="mb-3 text-[13px] font-medium text-ink2">{cluster.label}</h4>
+              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+                {cluster.items.map((it) => (
+                  <FactCard key={it.topic.key} topic={it.topic} claim={it.claim} isFor={it.isFor} />
+                ))}
+              </div>
+            </section>
+          ))}
+
+          <div className="mb-6">
+            <h4 className="mb-1 text-[13px] font-medium text-ink2">Your checklist</h4>
+            <p className="mb-3 text-[12px] text-ink3">Generated from this briefing. Ticking is local to your screen.</p>
+            <Checklist items={brief.checklist} />
+          </div>
+
+          <p className="border-t border-line pt-4 text-[12px] leading-relaxed text-ink3">
+            Area scores aggregate the ordinal position of the sourced facts above; each fact shows its evidence type,
+            date and source. Legal facts were cross-checked against primary and official sources.{' '}
+            <Link to="/sources" className="text-accent hover:underline">
+              Full method &amp; sources →
+            </Link>
           </p>
         </div>
-
-        {/* Close */}
-        <div className="mt-8 flex items-center justify-between border-t border-line pt-4">
-          <p className="text-[12px] text-ink3">Every fact above is dated and linked. Verify before you travel.</p>
-          <button
-            type="button"
-            onClick={() => window.print()}
-            className="no-print inline-flex items-center gap-1.5 rounded-lg border border-line px-3 py-1.5 text-[13px] text-ink2 transition hover:text-ink"
-          >
-            <Printer className="h-4 w-4" /> Print
-          </button>
-        </div>
-      </article>
+      </main>
     </div>
   )
 }
 
-function SectionLabel({ children }) {
+function Cell({ label, value, valueClass = 'text-ink', border }) {
   return (
-    <h3 className="mb-3 mt-10 border-b border-line pb-1.5 text-[12px] font-medium uppercase tracking-[0.15em] text-ink3">
-      {children}
-    </h3>
+    <div className={`min-w-[130px] flex-1 p-4 ${border ? 'border-r border-line' : ''}`}>
+      <div className="eyebrow mb-1.5 text-[10px]">{label}</div>
+      <div className={`text-[15px] font-semibold ${valueClass}`}>{value}</div>
+    </div>
   )
 }
 
-function Count({ n, tone, label }) {
+function EmLine({ l, v }) {
   return (
-    <span>
-      <span className={`font-semibold ${tone}`}>{n}</span> <span className="text-ink3">{label}</span>
-    </span>
+    <div className="flex justify-between gap-3">
+      <span className="text-ink3">{l}</span>
+      <span className="font-medium tnum text-ink">{v}</span>
+    </div>
   )
-}
-
-function Dot() {
-  return <span className="px-1.5 text-ink3">·</span>
 }
 
 function EmptyState() {
@@ -228,11 +255,8 @@ function EmptyState() {
     <div className="mx-auto max-w-prose px-5 py-20 text-center">
       <h2 className="font-serif text-2xl text-ink">No briefing to show</h2>
       <p className="mt-2 text-ink2">We couldn’t read a valid home and destination from this link.</p>
-      <Link
-        to="/"
-        className="mt-6 inline-flex items-center gap-2 rounded-lg bg-ink px-5 py-2.5 text-[15px] font-medium text-canvas hover:opacity-90"
-      >
-        Start a briefing <ArrowRight className="h-4 w-4" />
+      <Link to="/" className="mt-6 inline-flex rounded-lg bg-ink px-5 py-2.5 text-[15px] font-medium text-canvas hover:opacity-90">
+        Start a briefing
       </Link>
     </div>
   )

@@ -4,16 +4,21 @@ import { AUDIENCES } from '../data/audiences.js'
 import { TOPICS } from '../data/topics.js'
 import { EVIDENCE_LABEL, CERTAINTY } from '../lib/format.js'
 import Tag from '../components/Tag.jsx'
+import Header from '../components/Header.jsx'
+import Footer from '../components/Footer.jsx'
 
 export default function Sources() {
   return (
-    <div className="mx-auto max-w-prose px-5 py-12">
-      <p className="text-[12px] uppercase tracking-[0.2em] text-ink3">Passage</p>
+    <div className="flex min-h-screen flex-col">
+      <Header />
+      <div className="mx-auto w-full max-w-prose flex-1 px-6 py-12">
+      <p className="eyebrow">Passage</p>
       <h1 className="mt-3 font-serif text-4xl leading-tight text-ink">Method &amp; sources</h1>
       <p className="mt-4 text-[17px] leading-relaxed text-ink2">
-        A briefing is only as trustworthy as its weakest fact. So Passage never shows a country “score”. It shows{' '}
+        A briefing is only as trustworthy as its weakest fact. Passage is built on{' '}
         <span className="text-ink">claims</span> — each a plain statement carrying its evidence type, the date it
-        reflects, its source, and how sure we are.
+        reflects, its source, and how sure we are. The dashboard’s area scores are honest aggregates of these claims,
+        and every one links back to the sourced fact beneath it.
       </p>
 
       <Section title="How to read a claim">
@@ -98,6 +103,8 @@ export default function Sources() {
         Laws differ from lived experience — this is not legal advice. Always confirm with official government channels
         and your host institution before you travel.
       </p>
+      </div>
+      <Footer />
     </div>
   )
 }

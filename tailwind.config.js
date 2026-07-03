@@ -5,9 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Semantic tokens backed by CSS variables (see src/index.css). Warm,
-        // paper-neutral in light; warm near-black in dark. Components use
-        // bg-surface / text-ink / border-line etc. — never raw slate/indigo.
+        // Semantic tokens backed by CSS variables (see src/index.css).
         canvas: 'rgb(var(--c-canvas) / <alpha-value>)',
         surface: 'rgb(var(--c-surface) / <alpha-value>)',
         surface2: 'rgb(var(--c-surface2) / <alpha-value>)',
@@ -15,7 +13,6 @@ export default {
         ink: 'rgb(var(--c-ink) / <alpha-value>)',
         ink2: 'rgb(var(--c-ink2) / <alpha-value>)',
         ink3: 'rgb(var(--c-ink3) / <alpha-value>)',
-        // Severity / semantic roles.
         danger: 'rgb(var(--c-danger) / <alpha-value>)',
         'danger-bg': 'rgb(var(--c-danger-bg) / <alpha-value>)',
         warn: 'rgb(var(--c-warn) / <alpha-value>)',
@@ -26,8 +23,13 @@ export default {
         'accent-bg': 'rgb(var(--c-accent-bg) / <alpha-value>)',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'Segoe UI', 'Roboto', 'sans-serif'],
-        serif: ['"Source Serif 4"', 'Georgia', 'Cambria', 'serif'],
+        sans: ['"IBM Plex Sans"', 'system-ui', 'Segoe UI', 'sans-serif'],
+        serif: ['Newsreader', 'Georgia', 'Cambria', 'serif'],
+        mono: ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
+      },
+      boxShadow: {
+        card: '0 3px 26px rgba(33, 31, 27, 0.05)',
+        pop: '0 12px 34px rgba(33, 31, 27, 0.16)',
       },
       maxWidth: {
         prose: '46rem',

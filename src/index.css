@@ -2,43 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Warm, paper-neutral editorial palette. Space-separated RGB for <alpha-value>. */
+/* Threshold's warm paper palette. Space-separated RGB for <alpha-value>. */
 :root {
   color-scheme: light;
-  --c-canvas: 247 246 242; /* warm paper        */
-  --c-surface: 255 255 255; /* card              */
-  --c-surface2: 240 238 231; /* subtle fill       */
-  --c-line: 224 220 209; /* warm hairline     */
-  --c-ink: 31 29 24; /* near-black warm   */
-  --c-ink2: 92 87 76; /* secondary         */
-  --c-ink3: 142 136 122; /* muted             */
-  --c-danger: 166 42 38; /* critical          */
-  --c-danger-bg: 245 231 227;
-  --c-warn: 146 92 12; /* notable           */
-  --c-warn-bg: 247 237 221;
-  --c-success: 26 106 82; /* established/freer */
-  --c-success-bg: 225 240 232;
-  --c-accent: 42 74 138; /* links             */
-  --c-accent-bg: 229 238 249;
+  --c-canvas: 242 239 232; /* #f2efe8 */
+  --c-surface: 251 250 246; /* #fbfaf6 */
+  --c-surface2: 233 228 219; /* inner fills / hover */
+  --c-line: 221 217 207; /* hairline */
+  --c-ink: 33 31 27; /* #211f1b */
+  --c-ink2: 74 70 63; /* #4a463f */
+  --c-ink3: 138 133 120; /* #8a8578 */
+  --c-danger: 178 74 46;
+  --c-danger-bg: 246 231 226;
+  --c-warn: 176 110 40;
+  --c-warn-bg: 246 236 222;
+  --c-success: 74 122 66;
+  --c-success-bg: 228 238 226;
+  --c-accent: 176 85 58; /* #b0553a terracotta */
+  --c-accent-bg: 245 232 226;
 }
 
 .dark {
   color-scheme: dark;
-  --c-canvas: 23 22 18; /* warm near-black   */
-  --c-surface: 31 29 24;
-  --c-surface2: 42 39 33;
-  --c-line: 57 53 45;
-  --c-ink: 237 233 224;
-  --c-ink2: 185 179 166;
-  --c-ink3: 139 133 120;
-  --c-danger: 233 145 140;
-  --c-danger-bg: 58 30 27;
-  --c-warn: 226 178 92;
-  --c-warn-bg: 55 44 24;
-  --c-success: 118 199 164;
-  --c-success-bg: 22 46 38;
-  --c-accent: 141 172 231;
-  --c-accent-bg: 27 35 53;
+  --c-canvas: 26 24 21;
+  --c-surface: 36 33 27;
+  --c-surface2: 47 43 35;
+  --c-line: 62 57 48;
+  --c-ink: 240 236 227;
+  --c-ink2: 190 184 172;
+  --c-ink3: 143 137 123;
+  --c-danger: 224 138 112;
+  --c-danger-bg: 58 33 26;
+  --c-warn: 224 170 96;
+  --c-warn-bg: 55 44 26;
+  --c-success: 132 190 120;
+  --c-success-bg: 26 46 30;
+  --c-accent: 216 138 106;
+  --c-accent-bg: 52 34 27;
 }
 
 html {
@@ -46,21 +46,38 @@ html {
 }
 
 body {
-  @apply bg-canvas text-ink antialiased;
+  @apply bg-canvas font-sans text-ink antialiased;
 }
 
-/* Flag icons: small, squared-off, hairline ring — reads like a passport stamp. */
+@layer components {
+  .card {
+    @apply rounded-2xl border border-line bg-surface shadow-card;
+  }
+  .eyebrow {
+    @apply font-mono text-[10.5px] uppercase tracking-[0.12em] text-ink3;
+  }
+}
+
+.dark .card {
+  @apply shadow-none;
+}
+
+/* Flag icons: small, squared-off, hairline ring. */
 .fi {
   border-radius: 2px;
   box-shadow: 0 0 0 1px rgb(var(--c-line));
 }
 
-/* Editorial figure numerals line up in tables and from→to rows. */
 .tnum {
   font-variant-numeric: tabular-nums;
 }
 
-/* The briefing is meant to be printed and carried. Strip the chrome. */
+::selection {
+  background: rgb(var(--c-ink));
+  color: rgb(var(--c-canvas));
+}
+
+/* The briefing prints as a document. */
 @media print {
   .no-print {
     display: none !important;
@@ -68,8 +85,5 @@ body {
   :root {
     --c-canvas: 255 255 255;
     --c-surface: 255 255 255;
-  }
-  article {
-    max-width: none !important;
   }
 }
