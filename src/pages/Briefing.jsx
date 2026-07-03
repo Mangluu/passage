@@ -6,9 +6,11 @@ import { AUDIENCE_BY_ID } from '../data/audiences.js'
 import { buildBrief } from '../lib/brief.js'
 import CountrySelect from '../components/CountrySelect.jsx'
 import AudienceSelect from '../components/AudienceSelect.jsx'
-import DeltaRow from '../components/DeltaRow.jsx'
 import FactCard from '../components/FactCard.jsx'
 import Checklist from '../components/Checklist.jsx'
+import SeverityMeter from '../components/SeverityMeter.jsx'
+import ScaleStrip from '../components/ScaleStrip.jsx'
+import ArrivalTimeline from '../components/ArrivalTimeline.jsx'
 
 export default function Briefing() {
   const [params, setParams] = useSearchParams()
@@ -41,6 +43,11 @@ export default function Briefing() {
   const factCount = brief.facts.reduce((n, c) => n + c.items.length, 0)
   const issued = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
   const audienceLabel = aud.length ? aud.map((id) => AUDIENCE_BY_ID[id]?.label).filter(Boolean).join(' · ') : 'a general reader'
+  const positionChanges = brief.changes.filter((c) => c.kind === 'position')
+  const jump = (id) => {
+    const el = document.getElementById(id)
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   return (
     <div>
@@ -120,36 +127,55 @@ export default function Briefing() {
           </div>
         ))}
 
-        {/* What changes */}
+        {/* At a glance — the visual overview */}
         <SectionLabel>{aud.length ? 'What changes for you' : 'What changes'}</SectionLabel>
-        {brief.changes.length ? (
-          <div>
-            {brief.changes.map((c) => (
-              <DeltaRow key={c.key} change={c} />
+        <SeverityMeter counts={counts} />
+        {positionChanges.length ? (
+          <div className="mt-6 divide-y divide-line">
+            {positionChanges.map((c) => (
+              <div key={c.key} className="py-4 first:pt-0">
+                <ScaleStrip
+                  topic={c.topic}
+                  fromClaim={origin.claims[c.key]}
+                  toClaim={dest.claims[c.key]}
+                  direction={c.direction}
+                  tier={c.tier}
+                  isFor={c.isFor}
+                  onJump={() => jump(`t-${c.key}`)}
+                />
+              </div>
             ))}
           </div>
         ) : (
-          <p className="border-t border-line pt-4 text-[14px] text-ink2">
+          <p className="mt-4 text-[14px] text-ink2">
             On the facts we track, {dest.name} is broadly similar to {origin.name}.
           </p>
         )}
 
-        {/* Reference facts by cluster */}
+        <p className="mb-3 mt-9 text-[12px] font-medium uppercase tracking-[0.15em] text-ink3">Arrival deadlines</p>
+        <ArrivalTimeline dest={dest} onJump={() => jump('checklist')} />
+
+        {/* In detail — every fact, sourced */}
+        <SectionLabel>In detail — every fact, dated &amp; sourced</SectionLabel>
         {brief.facts.map((cluster) => (
           <section key={cluster.cluster}>
-            <SectionLabel>{cluster.label}</SectionLabel>
+            <h4 className="mb-3 mt-8 text-[13px] font-medium text-ink2">{cluster.label}</h4>
             <div className="grid gap-3 sm:grid-cols-2">
               {cluster.items.map((it) => (
-                <FactCard key={it.topic.key} topic={it.topic} claim={it.claim} isFor={it.isFor} />
+                <div key={it.topic.key} id={`t-${it.topic.key}`} className="scroll-mt-4">
+                  <FactCard topic={it.topic} claim={it.claim} isFor={it.isFor} />
+                </div>
               ))}
             </div>
           </section>
         ))}
 
         {/* Checklist */}
-        <SectionLabel>Your checklist</SectionLabel>
-        <p className="mb-3 text-[13px] text-ink3">Generated from this briefing. Ticking is local to your screen.</p>
-        <Checklist items={brief.checklist} />
+        <div id="checklist" className="scroll-mt-4">
+          <SectionLabel>Your checklist</SectionLabel>
+          <p className="mb-3 text-[13px] text-ink3">Generated from this briefing. Ticking is local to your screen.</p>
+          <Checklist items={brief.checklist} />
+        </div>
 
         {/* Emergency */}
         <div className="mt-8 rounded-[12px] border border-line bg-surface2 p-4">
