@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Semantic colour tokens (space-separated RGB for Tailwind's <alpha-value>). */
+:root {
+  color-scheme: light;
+  --c-canvas: 248 250 252; /* slate-50  */
+  --c-surface: 255 255 255; /* white     */
+  --c-surface2: 241 245 249; /* slate-100 */
+  --c-line: 226 232 240; /* slate-200 */
+  --c-ink: 30 41 59; /* slate-800 */
+  --c-ink2: 71 85 105; /* slate-600 */
+  --c-ink3: 148 163 184; /* slate-400 */
+}
+
+.dark {
+  color-scheme: dark;
+  --c-canvas: 2 6 23; /* slate-950 */
+  --c-surface: 15 23 42; /* slate-900 */
+  --c-surface2: 30 41 59; /* slate-800 */
+  --c-line: 51 65 85; /* slate-700 */
+  --c-ink: 241 245 249; /* slate-100 */
+  --c-ink2: 203 213 225; /* slate-300 */
+  --c-ink3: 148 163 184; /* slate-400 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-canvas text-ink antialiased;
+  background-image:
+    radial-gradient(60rem 60rem at 110% -10%, rgba(99, 102, 241, 0.08), transparent 60%),
+    radial-gradient(50rem 50rem at -10% 0%, rgba(16, 185, 129, 0.06), transparent 55%);
+  background-attachment: fixed;
+}
+
+/* Rounded, slightly larger flag icons used in selects and headers */
+.fi {
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.08);
+}
