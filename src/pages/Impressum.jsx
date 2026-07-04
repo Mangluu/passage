@@ -2,7 +2,6 @@ import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 
 // Legally-required imprint for an EU/DE-operated site (§ 5 DDG / § 18 MStV).
-// Placeholders marked [ … ] must be completed by the responsible person.
 export default function Impressum() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -14,27 +13,20 @@ export default function Impressum() {
           Information pursuant to § 5 DDG (Digitale-Dienste-Gesetz) and § 18 (2) MStV.
         </p>
 
-        <div className="mt-8 rounded-xl border border-amber-500/30 bg-warn-bg p-4 text-[13px] leading-relaxed text-ink2">
-          Draft — the fields in <span className="font-mono">[ brackets ]</span> must be completed by the responsible
-          person before this site is shared publicly.
-        </div>
-
-        <Block title="Responsible for this website">
+        <Block title="Responsible for this website (§ 5 DDG)">
           <Line l="Project" v="Liberty Compass — a student hackathon prototype (B-Hack Baltic Sea Region 2026, Group 6)" />
-          <Line l="Name" v="[ Full name of the responsible person ]" />
-          <Line l="Address" v="[ Street and number ]" />
-          <Line l="" v="[ Postal code, city ]" />
-          <Line l="Country" v="[ Country ]" />
+          <Line l="Name" v="Shivang Gupta" />
         </Block>
 
         <Block title="Contact">
-          <Line l="Email" v="[ contact email ]" />
-          <Line l="Phone" v="[ optional ]" />
+          <Line
+            l="Email"
+            v={<a href="mailto:shivangzephyr@gmail.com" className="text-accent hover:underline">shivangzephyr@gmail.com</a>}
+          />
         </Block>
 
         <Block title="Responsible for content (§ 18 (2) MStV)">
-          <Line l="Name" v="[ Full name ]" />
-          <Line l="Address" v="[ as above, if different ]" />
+          <Line l="Name" v="Shivang Gupta" />
         </Block>
 
         <Block title="Nature of this site">
