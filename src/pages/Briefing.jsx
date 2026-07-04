@@ -11,6 +11,8 @@ import AudienceSelect from '../components/AudienceSelect.jsx'
 import ScoreRows from '../components/ScoreRows.jsx'
 import OverallScale from '../components/OverallScale.jsx'
 import CityHeader from '../components/CityHeader.jsx'
+import AskPanel from '../components/AskPanel.jsx'
+import SignalsPanel from '../components/SignalsPanel.jsx'
 import FactCard from '../components/FactCard.jsx'
 import Checklist from '../components/Checklist.jsx'
 
@@ -116,6 +118,11 @@ export default function Briefing() {
           </div>
         </div>
 
+        {/* Ask Passage — the grounded assistant */}
+        <div className="px-5 pt-5">
+          <AskPanel origin={origin} dest={dest} audiences={aud} />
+        </div>
+
         {/* Dashboard grid */}
         <div className="grid gap-5 px-5 py-5 xl:grid-cols-[1.5fr_1fr]">
           {/* Left column */}
@@ -163,6 +170,7 @@ export default function Briefing() {
 
           {/* Right column */}
           <div className="flex min-w-0 flex-col gap-5">
+            <SignalsPanel dest={dest} audiences={aud} />
             <section id="sec-scores" className="card scroll-mt-4 p-5">
               <div className="mb-1.5 flex items-baseline justify-between">
                 <h3 className="font-serif text-[18px] font-semibold text-ink">How protected each area is</h3>

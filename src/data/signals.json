@@ -1,0 +1,340 @@
+{
+  "generatedAt": "2026-07-04",
+  "countries": {
+    "US": {
+      "advisory": null,
+      "news": [
+        {
+          "title": "Redding Chico Eureka",
+          "url": "https://krcrtv.com/news/nation-world/supreme-court-strikes-down-trumps-order-seeking-to-end-birthright-citizenship-14th-amendment-immigration",
+          "domain": "krcrtv.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Supreme Court strikes down Trump order seeking to limit birthright citizenship",
+          "url": "https://weartv.com/news/nation-world/supreme-court-strikes-down-trumps-order-seeking-to-end-birthright-citizenship-14th-amendment-immigration",
+          "domain": "weartv.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Springfield , Ohio , Citizens Celebrate Trump Haitian Policy",
+          "url": "https://www.breitbart.com/politics/2026/06/29/springfield-citizens-celebrate-america-is-a-nation-of-laws/",
+          "domain": "breitbart.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "President Trump Could End Most Birthright Citizenship With This 1 Simple Trick",
+          "url": "https://pjmedia.com/athena-thorne/2026/06/30/president-trump-could-end-birth-tourism-and-a-lot-of-birthright-citizenship-with-this-1-simple-trick-n4954532",
+          "domain": "pjmedia.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Supreme Court takeaways : Wins for conservatives , some Trump limits",
+          "url": "https://whtc.com/2026/06/30/supreme-court-takeaways-wins-for-conservatives-some-trump-limits/",
+          "domain": "whtc.com",
+          "date": "2026-06-30",
+          "audiences": []
+        }
+      ]
+    },
+    "BR": {
+      "advisory": {
+        "level": 2,
+        "title": "Brazil - Level 2: Exercise Increased Caution",
+        "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/brazil-travel-advisory.html",
+        "date": "2025-05-28T20:00:00-04:00"
+      },
+      "news": [
+        {
+          "title": "Supreme Court Delivers Major Setback to Trump Birthright Citizenship Effort",
+          "url": "https://www.cubaheadlines.com/articles/333783",
+          "domain": "cubaheadlines.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Steel quota deal for EU trade partners means more pain for China",
+          "url": "https://euobserver.com/224966/steel-quota-deal-for-eu-trade-partners-means-more-pain-for-china/",
+          "domain": "euobserver.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Supreme Court rules on major cases and heat wave hits dozens of states : Morning Rundown",
+          "url": "https://www.nbcnews.com/news/us-news/supreme-court-rulings-heat-wave-morning-rundown-rcna352353",
+          "domain": "nbcnews.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "India needs dynamic social registries - The HinduBusinessLine",
+          "url": "https://www.thehindubusinessline.com/opinion/india-needs-dynamic-social-registries/article71165342.ece",
+          "domain": "thehindubusinessline.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "  White Time : Dutch Professor Argues That Time Itself Is Racist",
+          "url": "https://www.zerohedge.com/political/white-time-dutch-professor-argues-time-itself-racist",
+          "domain": "zerohedge.com",
+          "date": "2026-06-30",
+          "audiences": [
+            "poc"
+          ]
+        }
+      ]
+    },
+    "DE": {
+      "advisory": {
+        "level": 2,
+        "title": "Germany - Level 2: Exercise Increased Caution",
+        "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.deu.html",
+        "date": "2025-05-12T20:00:00-04:00"
+      },
+      "news": [
+        {
+          "title": "Bay Area innovators among the Carnegie Foundation 2026  Great Immigrants , Great American list – East Bay Times",
+          "url": "https://www.eastbaytimes.com/2026/06/30/carnegie-foundation-unveils-2026s-great-immigrants-great-americans-list/",
+          "domain": "eastbaytimes.com",
+          "date": "2026-06-30",
+          "audiences": [
+            "poc"
+          ]
+        },
+        {
+          "title": "NDAA Amendment Mandates Influenza Vaccine After Lackland Air Force Outbreak",
+          "url": "https://www.military.com/ndaa-amendment-mandates-influenza-vaccine-after-lackland-air-force-outbreak",
+          "domain": "military.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Special relationships",
+          "url": "https://morningstaronline.co.uk/article/special-relationships",
+          "domain": "morningstaronline.co.uk",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Carnegie Foundation names 2026  Great Immigrants , Great American list",
+          "url": "https://www.capitalgazette.com/2026/06/30/carnegie-foundation-2026-great-immigrants-great-americans-list/",
+          "domain": "capitalgazette.com",
+          "date": "2026-06-30",
+          "audiences": [
+            "poc"
+          ]
+        },
+        {
+          "title": "AMERICA HANGS A HELP WANTED SIGN :  FOR U . S . CITIZENSHIP – WHITES ONLY ! ",
+          "url": "https://www.sfltimes.com/opinion/america-hangs-a-help-wanted-sign-for-u-s-citizenship-whites-only",
+          "domain": "sfltimes.com",
+          "date": "2026-06-30",
+          "audiences": []
+        }
+      ]
+    },
+    "NO": {
+      "advisory": {
+        "level": 1,
+        "title": "Norway - Level 1: Exercise Normal Precautions",
+        "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/norway-travel-advisory.html",
+        "date": "2025-02-02T19:00:00-05:00"
+      },
+      "news": []
+    },
+    "KE": {
+      "advisory": null,
+      "news": [
+        {
+          "title": "Bay Area innovators among the Carnegie Foundation 2026  Great Immigrants , Great American list – East Bay Times",
+          "url": "https://www.eastbaytimes.com/2026/06/30/carnegie-foundation-unveils-2026s-great-immigrants-great-americans-list/",
+          "domain": "eastbaytimes.com",
+          "date": "2026-06-30",
+          "audiences": [
+            "poc"
+          ]
+        },
+        {
+          "title": "Women rise through Kenya Kwanza BETA boost",
+          "url": "https://www.the-star.co.ke/news/2026-06-30-women-rise-through-kenya-kwanzas-beta-boost",
+          "domain": "the-star.co.ke",
+          "date": "2026-06-30",
+          "audiences": [
+            "women"
+          ]
+        },
+        {
+          "title": "ACK cleric who chose faith over family , opened church doors to grieving Gen Z",
+          "url": "https://www.the-star.co.ke/counties/coast/2026-06-30-ack-cleric-who-chose-faith-over-family-opened-church-doors-to-grieving-gen-z",
+          "domain": "the-star.co.ke",
+          "date": "2026-06-30",
+          "audiences": [
+            "religion"
+          ]
+        },
+        {
+          "title": "Kenya must refuse to receive rejected EU asylum seekers",
+          "url": "https://www.standardmedia.co.ke/opinion/article/2001551575/kenya-must-refuse-to-receive-rejected-eu-asylum-seekers",
+          "domain": "standardmedia.co.ke",
+          "date": "2026-06-29",
+          "audiences": [
+            "poc"
+          ]
+        },
+        {
+          "title": "COMESA seeks harmonised AI policies to drive inclusive digital transformation",
+          "url": "https://www.the-star.co.ke/news/2026-06-29-comesa-seeks-harmonised-ai-policies",
+          "domain": "the-star.co.ke",
+          "date": "2026-06-29",
+          "audiences": []
+        },
+        {
+          "title": "Exiled for Existing : Co - op film shares LGBTQ+ stories from refugees",
+          "url": "https://www.thenews.coop/exiled-for-existing-co-op-film-shares-lgbtq-stories-from-refugees/",
+          "domain": "thenews.coop",
+          "date": "2026-06-29",
+          "audiences": [
+            "lgbtqi",
+            "poc"
+          ]
+        }
+      ]
+    },
+    "EG": {
+      "advisory": {
+        "level": 2,
+        "title": "Egypt - Level 2: Exercise Increased Caution",
+        "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.egy.html",
+        "date": "2025-07-14T20:00:00-04:00"
+      },
+      "news": []
+    },
+    "ZA": {
+      "advisory": {
+        "level": 2,
+        "title": "South Africa - Level 2: Exercise Increased Caution",
+        "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/south-africa-travel-advisory.html",
+        "date": "2025-05-26T20:00:00-04:00"
+      },
+      "news": [
+        {
+          "title": "Roots of xenophobia : Before  Abahambe  there were AmaMpondo and Amankula",
+          "url": "https://www.dailymaverick.co.za/opinionista/2026-06-30-roots-of-xenophobia-before-abahambe-there-were-amampondo-and-amankula/",
+          "domain": "dailymaverick.co.za",
+          "date": "2026-06-30",
+          "audiences": [
+            "poc"
+          ]
+        },
+        {
+          "title": "Steel quota deal for EU trade partners means more pain for China",
+          "url": "https://euobserver.com/224966/steel-quota-deal-for-eu-trade-partners-means-more-pain-for-china/",
+          "domain": "euobserver.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Over a million undocumented migrants apply for legal status in Spain in Europe biggest ever amnesty scheme",
+          "url": "https://www.lbc.co.uk/article/undocumented-migrants-legal-status-spain-5HjdcL9_2/",
+          "domain": "lbc.co.uk",
+          "date": "2026-06-30",
+          "audiences": [
+            "poc"
+          ]
+        },
+        {
+          "title": "South Africa and Immigration Tensions ( Immigrants Flee ) – Modern Tokyo Times",
+          "url": "https://moderntokyotimes.com/south-africa-and-immigration-tensions-immigrants-flee/",
+          "domain": "moderntokyotimes.com",
+          "date": "2026-06-30",
+          "audiences": [
+            "poc"
+          ]
+        },
+        {
+          "title": "Can you say anything you want ? | George Herald",
+          "url": "https://www.georgeherald.com/News/Article/Business/can-you-say-anything-you-want-202606301150",
+          "domain": "georgeherald.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "The History of the US - UK  Special Relationship , According to Transatlantic Luminaries",
+          "url": "https://www.townandcountrymag.com/society/tradition/a71296635/us-uk-special-relationship-history/",
+          "domain": "townandcountrymag.com",
+          "date": "2026-06-30",
+          "audiences": []
+        }
+      ]
+    },
+    "CN": {
+      "advisory": null,
+      "news": []
+    },
+    "AU": {
+      "advisory": {
+        "level": 1,
+        "title": "Australia - Level 1: Exercise Normal Precautions",
+        "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/australia-travel-advisory.html",
+        "date": "2025-05-29T20:00:00-04:00"
+      },
+      "news": [
+        {
+          "title": "Ann Coulter : Debunking Elisabeth Rosenthal  More Guns = More Killing  Malarkey",
+          "url": "https://www.newsbusters.org/blogs/nb/ann-coulter/2013/01/10/ann-coulter-debunking-elisabeth-rosenthals-more-guns-more-killing",
+          "domain": "newsbusters.org",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Beyond monoculture : What really holds a diverse nation together",
+          "url": "http://www.nepalnational.com/news/279156688/beyond-monoculture-what-really-holds-a-diverse-nation-together",
+          "domain": "nepalnational.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Life insurers allowed to limit , not drop , mental health cover",
+          "url": "https://www.insurancebusinessmag.com/au/news/life-insurance/life-insurers-allowed-to-limit-not-drop-mental-health-cover-580770.aspx",
+          "domain": "insurancebusinessmag.com",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "The future of public service delivery - Government News",
+          "url": "https://www.governmentnews.com.au/type_contributors/the-future-of-public-service-delivery/",
+          "domain": "governmentnews.com.au",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Louis CK Netflix special : Has the award - winning comedian been officially uncancelled ? ",
+          "url": "https://www.brisbanetimes.com.au/culture/tv-and-radio/officially-uncancelled-louis-c-k-returns-with-netflix-special-20260629-p60b1y.html",
+          "domain": "brisbanetimes.com.au",
+          "date": "2026-06-30",
+          "audiences": []
+        },
+        {
+          "title": "Family reclaims body of Thai girl found dead in suitcase",
+          "url": "https://www.brisbanetimes.com.au/world/asia/family-reclaims-body-of-thai-girl-found-dead-in-suitcase-20260630-p60bcv.html",
+          "domain": "brisbanetimes.com.au",
+          "date": "2026-06-30",
+          "audiences": []
+        }
+      ]
+    },
+    "UZ": {
+      "advisory": {
+        "level": 1,
+        "title": "Uzbekistan - Level 1: Exercise Normal Precautions",
+        "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/uzbekistan-travel-advisory.html",
+        "date": "2026-01-21T19:00:00-05:00"
+      },
+      "news": []
+    }
+  }
+}

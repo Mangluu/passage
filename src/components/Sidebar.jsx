@@ -4,6 +4,8 @@ import { useTheme } from '../lib/useTheme.js'
 import AudienceSelect from './AudienceSelect.jsx'
 
 const NAV = [
+  { id: 'ask', label: 'Ask Passage' },
+  { id: 'signals', label: 'Live signals' },
   { id: 'overview', label: 'Overview' },
   { id: 'scores', label: 'Scores' },
   { id: 'adv', label: 'Advisories' },
