@@ -1,12 +1,22 @@
 import { CLUSTERS, topicsForCluster } from '../data/topics.js'
 
-// Threshold-style dashboard derivations, computed from our real claims.
-// An "area score" is an honest aggregate of the ordinal positions of the
-// sourced facts in that area (each of which is cited in the detail below) —
-// not an invented index.
+// Dashboard derivations. An "area score" aggregates the sourced facts in that
+// area. Two rules keep it realistic and transparent (see the Sources page):
+//  • where a real published index exists (freedom of expression, government
+//    restriction of religion), we use its actual value — not a coarse ordinal;
+//  • the remaining categorical facts are mapped onto an 8–92 band, so a single
+//    "worst bucket" never collapses an area to a bare 0 (or 100).
+// Every score's basis is shown on hover.
 
 const SCORE_CLUSTERS = CLUSTERS.filter((c) => c.id !== 'duties')
 const CODE2 = { identity: 'ID', body: 'BH', belief: 'FC', expression: 'EX' }
+
+// Real 0–100 indices, by country code.
+const REAL_INDEX = {
+  expression: { US: 81, BR: 73, DE: 95, NO: 99, KE: 49, EG: 18, ZA: 81, CN: 9, AU: 94, UZ: 12 }, // Freedom House, Freedom in the World (2025)
+  religious_freedom: { US: 64, BR: 81, DE: 61, NO: 76, KE: 68, EG: 12, ZA: 84, CN: 7, AU: 79, UZ: 19 }, // 100 − Pew Government Restrictions Index ×10
+}
+export const REAL_INDEX_SOURCE = { expression: 'Freedom House', religious_freedom: 'Pew Research Center' }
 
 function goodness(topic, claim) {
   if (!claim || claim.o == null) return null
@@ -14,26 +24,64 @@ function goodness(topic, claim) {
   return n ? claim.o / n : 0
 }
 
+// A single topic's 0–100 score for a country.
+function topicScore(topic, claim, code) {
+  const real = REAL_INDEX[topic.key]
+  if (real && real[code] != null) return real[code]
+  const g = goodness(topic, claim)
+  if (g == null) return null
+  return Math.round(8 + g * 84) // categorical → indicative 8–92 band
+}
+
 function clusterScore(country, clusterId) {
   const ts = topicsForCluster(clusterId).filter((t) => t.kind === 'position')
-  const vals = ts.map((t) => goodness(t, country.claims[t.key])).filter((v) => v != null)
+  const vals = ts.map((t) => topicScore(t, country.claims[t.key], country.code)).filter((v) => v != null)
   if (!vals.length) return null
-  return Math.round((vals.reduce((a, b) => a + b, 0) / vals.length) * 100)
+  return Math.round(vals.reduce((a, b) => a + b, 0) / vals.length)
+}
+
+// Per-topic detail behind an area score — powers the hover tooltip.
+function clusterBreakdown(country, clusterId) {
+  return topicsForCluster(clusterId)
+    .filter((t) => t.kind === 'position')
+    .map((t) => {
+      const claim = country.claims[t.key]
+      const s = topicScore(t, claim, country.code)
+      if (s == null) return null
+      const real = REAL_INDEX[t.key] && REAL_INDEX[t.key][country.code] != null
+      return { label: t.label, short: (claim && claim.short) || '', score: s, real }
+    })
+    .filter(Boolean)
 }
 
 export function areaScores(origin, dest) {
   return SCORE_CLUSTERS.map((c) => {
     const destScore = clusterScore(dest, c.id)
     if (destScore == null) return null
-    return { id: c.id, label: c.label, code2: CODE2[c.id] || '··', destScore, originScore: clusterScore(origin, c.id) }
+    return {
+      id: c.id,
+      label: c.label,
+      code2: CODE2[c.id] || '··',
+      destScore,
+      originScore: clusterScore(origin, c.id),
+      tier: tierOf(destScore),
+      breakdown: clusterBreakdown(dest, c.id),
+    }
   }).filter(Boolean)
 }
 
 export function overallScore(country) {
-  const vals = SCORE_CLUSTERS.map((c) => clusterScore(country, c.id)).filter((v) => v != null)
-  if (!vals.length) return { avg: null, tier: '—' }
-  const avg = Math.round(vals.reduce((a, b) => a + b, 0) / vals.length)
-  return { avg, tier: tierOf(avg) }
+  const parts = SCORE_CLUSTERS.map((c) => ({ label: c.label, score: clusterScore(country, c.id) })).filter((p) => p.score != null)
+  if (!parts.length) return { avg: null, tier: '—', breakdown: [] }
+  const avg = Math.round(parts.reduce((a, b) => a + b.score, 0) / parts.length)
+  return { avg, tier: tierOf(avg), breakdown: parts }
+}
+
+// A plain-text hover explanation for a score.
+export function tipFrom(breakdown) {
+  return (breakdown || [])
+    .map((b) => `${b.label}: ${b.short || `${b.score}/100`}${b.real ? ` (index ${b.score}/100)` : ''}`)
+    .join('\n')
 }
 
 export function tierOf(s) {

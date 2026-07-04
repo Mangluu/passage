@@ -38,9 +38,9 @@ export default function Sidebar({ audiences, onToggleAudience, onJump }) {
       </nav>
 
       <div className="rounded-xl border border-line bg-canvas p-4">
-        <div className="eyebrow mb-3">This applies to you</div>
+        <div className="eyebrow mb-3">Prioritise information about</div>
         <AudienceSelect selected={audiences} onToggle={onToggleAudience} />
-        <p className="mt-3 text-[11px] leading-snug text-ink3">Filters change what surfaces below. Nothing is stored.</p>
+        <p className="mt-3 text-[11px] leading-snug text-ink3">Moves what matters to you to the top. Nothing is stored.</p>
       </div>
 
       <div className="flex-1" />

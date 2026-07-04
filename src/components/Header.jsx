@@ -13,13 +13,13 @@ export default function Header() {
           <span className="font-serif text-[21px] font-semibold tracking-tight text-ink">Passage</span>
         </Link>
         <div className="flex items-center gap-3">
-          <div className="hidden gap-1.5 sm:flex">
+          <Link to="/privacy" title="How we handle your data" className="hidden gap-1.5 sm:flex">
             {['No account', 'No tracking', 'No data stored'].map((t) => (
-              <span key={t} className="rounded-full border border-line px-2.5 py-1 font-mono text-[10.5px] text-ink3">
+              <span key={t} className="rounded-full border border-line px-2.5 py-1 font-mono text-[10.5px] text-ink3 transition-colors hover:border-ink3 hover:text-ink">
                 {t}
               </span>
             ))}
-          </div>
+          </Link>
           <NavLink
             to="/sources"
             className={({ isActive }) => `text-[13px] ${isActive ? 'text-ink' : 'text-ink2 transition-colors hover:text-ink'}`}

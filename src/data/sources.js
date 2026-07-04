@@ -1,6 +1,7 @@
 // Source registry. A claim's `src` is either a key into this table (for the
 // global datasets we reuse) or an inline { org, url } object (for a
 // country-specific official source). resolveSource() handles both.
+import { JURISDICTIONS } from './jurisdictions.js'
 
 export const SOURCES = {
   equaldex: { org: 'Equaldex', name: 'LGBT rights by country', url: 'https://www.equaldex.com/' },
@@ -16,4 +17,24 @@ export function resolveSource(src) {
   if (!src) return { org: 'Uncited', url: '' }
   if (typeof src === 'string') return SOURCES[src] || { org: src, url: '' }
   return src
+}
+
+// Every source actually used anywhere — the shared registry PLUS the inline
+// per-claim sources — deduplicated. Powers the complete list on the Sources
+// page so nothing is cited that isn't listed.
+export function allUsedSources() {
+  const seen = new Map()
+  const add = (src) => {
+    const r = resolveSource(src)
+    if (!r || (!r.url && !r.org)) return
+    const key = `${r.url || ''}|${r.org || ''}`
+    if (!seen.has(key)) seen.set(key, r)
+  }
+  Object.values(SOURCES).forEach(add)
+  for (const j of JURISDICTIONS) {
+    for (const claim of Object.values(j.claims || {})) {
+      if (claim && claim.src) add(claim.src)
+    }
+  }
+  return [...seen.values()].sort((a, b) => (a.org || '').localeCompare(b.org || ''))
 }

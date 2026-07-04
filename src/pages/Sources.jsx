@@ -1,5 +1,5 @@
 import { ExternalLink } from 'lucide-react'
-import { SOURCES } from '../data/sources.js'
+import { allUsedSources } from '../data/sources.js'
 import { AUDIENCES } from '../data/audiences.js'
 import { TOPICS } from '../data/topics.js'
 import { EVIDENCE_LABEL, CERTAINTY } from '../lib/format.js'
@@ -17,8 +17,8 @@ export default function Sources() {
       <p className="mt-4 text-[17px] leading-relaxed text-ink2">
         A briefing is only as trustworthy as its weakest fact. Passage is built on{' '}
         <span className="text-ink">claims</span> — each a plain statement carrying its evidence type, the date it
-        reflects, its source, and how sure we are. The dashboard’s area scores are honest aggregates of these claims,
-        and every one links back to the sourced fact beneath it.
+        reflects, its source, and how sure we are. The dashboard’s area scores use a published index where one exists
+        and an indicative band for the categorical facts — hover any score to see what it aggregates.
       </p>
 
       <Section title="How to read a claim">
@@ -61,6 +61,29 @@ export default function Sources() {
         </p>
       </Section>
 
+      <Section title="How area scores are computed">
+        <p className="text-[15px] leading-relaxed text-ink2">
+          Each area (Identity, Body &amp; health, Faith &amp; conscience, Speech &amp; press) rolls the sourced facts
+          beneath it into a 0–100 “how protected” score. Two rules keep it realistic and honest:
+        </p>
+        <ul className="mt-3 space-y-2 text-[14px] leading-relaxed text-ink2">
+          <li>
+            · Where a real published index exists, we use its actual value — freedom of expression uses{' '}
+            <span className="text-ink">Freedom House</span> (Freedom in the World), and government restriction of
+            religion uses the <span className="text-ink">Pew</span> Government Restrictions Index. So a country reads
+            its real figure (e.g. 9/100), not a rounded extreme.
+          </li>
+          <li>
+            · The remaining categorical facts (marriage, criminalisation, ratifications…) are mapped onto an indicative
+            8–92 band, so a single “worst bucket” never collapses an area to a bare 0 — nor a “best bucket” to 100.
+          </li>
+        </ul>
+        <p className="mt-3 text-[14px] leading-relaxed text-ink3">
+          Hover any score on the dashboard to see exactly which facts and published values produced it. Scores are a
+          reading aid; the sourced claims beneath them are the real record.
+        </p>
+      </Section>
+
       <Section title="Who a briefing is for → what it surfaces">
         <div className="grid gap-3 sm:grid-cols-2">
           {AUDIENCES.map((a) => (
@@ -76,22 +99,25 @@ export default function Sources() {
         </div>
       </Section>
 
-      <Section title="Sources we rely on">
+      <Section title="Every source we use">
         <p className="text-[14px] leading-relaxed text-ink3">
-          Global datasets are listed below; country-specific legal and official-portal sources are linked inline on
-          each claim. Legal facts were cross-checked in an adversarial verification pass against primary and official
-          sources.
+          A complete, de-duplicated list of every source cited anywhere in Passage — the shared datasets and the
+          country-specific official sources linked on individual claims. Legal facts were cross-checked in an
+          adversarial verification pass against primary and official sources.
         </p>
         <ul className="mt-4 divide-y divide-line border-y border-line">
-          {Object.values(SOURCES).map((s) => (
-            <li key={s.org} className="flex items-baseline justify-between gap-3 py-2.5">
+          {allUsedSources().map((s, i) => (
+            <li key={i} className="flex items-baseline justify-between gap-3 py-2.5">
               <span className="text-[14px] text-ink">
-                {s.org} <span className="text-ink3">— {s.name}</span>
+                {s.org}
+                {s.name ? <span className="text-ink3"> — {s.name}</span> : null}
               </span>
-              {s.url && (
+              {s.url ? (
                 <a href={s.url} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center gap-1 text-[13px] text-accent hover:underline">
                   Visit <ExternalLink className="h-3.5 w-3.5" />
                 </a>
+              ) : (
+                <span className="shrink-0 font-mono text-[10px] text-ink3">cited on claim</span>
               )}
             </li>
           ))}

@@ -1,10 +1,11 @@
 import { useMemo } from 'react'
 import { useSearchParams, Link } from 'react-router-dom'
-import { ArrowLeftRight } from 'lucide-react'
+import { ArrowLeftRight, Scale, Flag, ShieldCheck, Phone } from 'lucide-react'
 import { JURISDICTION_BY_CODE } from '../data/jurisdictions.js'
 import { AUDIENCE_BY_ID } from '../data/audiences.js'
 import { buildBrief } from '../lib/brief.js'
-import { areaScores, overallScore, summaryBullets, advisoryCards, scoreTone } from '../lib/dashboard.js'
+import { areaScores, overallScore, summaryBullets, advisoryCards, scoreTone, tipFrom } from '../lib/dashboard.js'
+import { CLUSTER_ICON } from '../lib/icons.js'
 import Sidebar from '../components/Sidebar.jsx'
 import CountrySelect from '../components/CountrySelect.jsx'
 import AudienceSelect from '../components/AudienceSelect.jsx'
@@ -75,29 +76,34 @@ export default function Briefing() {
       <Sidebar audiences={aud} onToggleAudience={toggleAud} onJump={jump} />
 
       <main className="flex min-w-0 flex-1 flex-col">
-        {/* Sticky header */}
+        {/* Sticky header — home → destination, logo doubles as "new search" */}
         <header className="no-print sticky top-0 z-30 flex flex-wrap items-center gap-3 border-b border-line bg-canvas/90 px-5 py-3 backdrop-blur">
-          <div className="min-w-[190px] max-w-[360px] flex-1">
-            <CountrySelect id="to" value={to} onChange={(c) => update({ to: c })} placeholder="Destination" />
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="eyebrow">from</span>
-            <div className="w-36 sm:w-40">
-              <CountrySelect id="from" value={from} onChange={(c) => update({ from: c })} />
-            </div>
-            <button
-              type="button"
-              onClick={() => update({ from: to, to: from })}
-              title="Swap"
-              className="rounded-lg border border-line bg-surface p-2 text-ink3 transition hover:text-ink"
-            >
-              <ArrowLeftRight className="h-4 w-4" />
-            </button>
-          </div>
-          <div className="flex-1" />
-          <Link to="/" className="rounded-lg bg-ink px-4 py-2 text-[13px] font-semibold text-canvas transition hover:opacity-90">
-            New search
+          <Link to="/" title="Start a new search" className="flex shrink-0 items-center gap-2 pr-1">
+            <span className="relative block h-6 w-6 overflow-hidden rounded-full border-2 border-ink">
+              <span className="absolute inset-x-0 bottom-[7px] block h-0.5 bg-ink" />
+            </span>
+            <span className="hidden font-serif text-[16px] font-semibold text-ink sm:inline">Passage</span>
           </Link>
+          <div className="flex items-center gap-2">
+            <span className="eyebrow">home</span>
+            <div className="w-32 sm:w-40">
+              <CountrySelect id="from" value={from} onChange={(c) => update({ from: c })} placeholder="Home" />
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => update({ from: to, to: from })}
+            title="Swap home and destination"
+            className="shrink-0 rounded-lg border border-line bg-surface p-2 text-ink3 transition hover:text-ink"
+          >
+            <ArrowLeftRight className="h-4 w-4" />
+          </button>
+          <div className="flex min-w-[160px] max-w-[360px] flex-1 items-center gap-2">
+            <span className="eyebrow">to</span>
+            <div className="min-w-0 flex-1">
+              <CountrySelect id="to" value={to} onChange={(c) => update({ to: c })} placeholder="Destination" />
+            </div>
+          </div>
         </header>
 
         {/* Mobile audience filter (sidebar is hidden below lg) */}
@@ -110,8 +116,8 @@ export default function Briefing() {
           <div className="flex items-start gap-2.5 rounded-lg border border-accent/25 bg-accent-bg px-3.5 py-2.5">
             <span className="eyebrow mt-0.5 shrink-0 text-accent">Note</span>
             <span className="text-[12.5px] leading-snug text-ink2">
-              Area scores are honest aggregates of the sourced facts below — every figure links to its source, dated.
-              Laws differ from lived experience; this is not legal advice.
+              Area scores use published indices where one exists and an indicative band otherwise — hover any score to
+              see the sourced facts behind it. Laws differ from lived experience; this is not legal advice.
             </span>
           </div>
         </div>
@@ -129,7 +135,13 @@ export default function Briefing() {
                 </div>
               </div>
               <div className="flex flex-wrap border-t border-line">
-                <Cell label="Overall protection" value={`${dOverall.avg}/100 · ${dOverall.tier}`} valueClass={TONE_TXT[destTone]} border />
+                <Cell
+                  label="Overall protection"
+                  value={`${dOverall.avg}/100 · ${dOverall.tier}`}
+                  valueClass={TONE_TXT[destTone]}
+                  title={`Overall protection — ${dOverall.avg}/100\n\n${tipFrom(dOverall.breakdown)}`}
+                  border
+                />
                 <Cell label={`vs. ${origin.name} (home)`} value={rel.text} valueClass={rel.cls} border />
                 <Cell label="Emergency" value={e.general} />
               </div>
@@ -137,14 +149,18 @@ export default function Briefing() {
 
             <section className="card p-6">
               <div className="mb-1 flex items-baseline justify-between gap-3">
-                <h3 className="font-serif text-[18px] font-semibold text-ink">Overall position</h3>
+                <h3 className="flex items-center gap-2 font-serif text-[18px] font-semibold text-ink">
+                  <Scale className="h-4 w-4 text-ink3" /> Overall position
+                </h3>
               </div>
               <p className="eyebrow mb-6">where each country sits on the liberty &amp; security scale</p>
               <OverallScale origin={origin} dest={dest} originScore={oOverall.avg} destScore={dOverall.avg} />
             </section>
 
             <section id="sec-adv" className="card scroll-mt-4 p-6">
-              <h3 className="font-serif text-[18px] font-semibold text-ink">{aud.length ? 'Advisories for you' : 'Key changes'}</h3>
+              <h3 className="flex items-center gap-2 font-serif text-[18px] font-semibold text-ink">
+                <Flag className="h-4 w-4 text-ink3" /> {aud.length ? 'Advisories for you' : 'Key changes'}
+              </h3>
               <p className="eyebrow mb-4 mt-1">{aud.length ? `flagged for ${audienceLabel}` : `${origin.name} → ${dest.name}`}</p>
               <div className="grid gap-3 sm:grid-cols-2">
                 {advisories.map((a) => (
@@ -165,7 +181,9 @@ export default function Briefing() {
           <div className="flex min-w-0 flex-col gap-5">
             <section id="sec-scores" className="card scroll-mt-4 p-5">
               <div className="mb-1.5 flex items-baseline justify-between">
-                <h3 className="font-serif text-[18px] font-semibold text-ink">How protected each area is</h3>
+                <h3 className="flex items-center gap-2 font-serif text-[18px] font-semibold text-ink">
+                  <ShieldCheck className="h-4 w-4 text-ink3" /> How protected each area is
+                </h3>
                 <span className="text-[11px] text-ink3">/ 100</span>
               </div>
               <p className="mb-5 text-[11.5px] leading-snug text-ink3">
@@ -196,7 +214,9 @@ export default function Briefing() {
 
             <section id="sec-emergency" className="card scroll-mt-4 p-5">
               <div className="mb-3.5 flex items-center justify-between">
-                <h3 className="font-serif text-[18px] font-semibold text-ink">Quick info</h3>
+                <h3 className="flex items-center gap-2 font-serif text-[18px] font-semibold text-ink">
+                  <Phone className="h-4 w-4 text-ink3" /> Quick info
+                </h3>
                 <span className="eyebrow">{dest.name}</span>
               </div>
               <div className="flex items-baseline gap-2.5">
@@ -217,16 +237,21 @@ export default function Briefing() {
         {/* Detail — the sourced record */}
         <div id="sec-sources" className="scroll-mt-4 px-5 pb-4">
           <div className="eyebrow mb-4 border-b border-line pb-2">In detail — every fact, dated &amp; sourced</div>
-          {brief.facts.map((cluster) => (
+          {brief.facts.map((cluster) => {
+            const ClusterIcon = CLUSTER_ICON[cluster.cluster] || Flag
+            return (
             <section key={cluster.cluster} className="mb-6">
-              <h4 className="mb-3 text-[13px] font-medium text-ink2">{cluster.label}</h4>
+              <h4 className="mb-3 flex items-center gap-2 text-[13px] font-medium text-ink2">
+                <ClusterIcon className="h-4 w-4 text-ink3" /> {cluster.label}
+              </h4>
               <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
                 {cluster.items.map((it) => (
                   <FactCard key={it.topic.key} topic={it.topic} claim={it.claim} isFor={it.isFor} />
                 ))}
               </div>
             </section>
-          ))}
+            )
+          })}
 
           <div className="mb-6">
             <h4 className="mb-1 text-[13px] font-medium text-ink2">Your checklist</h4>
@@ -235,8 +260,9 @@ export default function Briefing() {
           </div>
 
           <p className="border-t border-line pt-4 text-[12px] leading-relaxed text-ink3">
-            Area scores aggregate the ordinal position of the sourced facts above; each fact shows its evidence type,
-            date and source. Legal facts were cross-checked against primary and official sources.{' '}
+            Area scores use published indices where one exists (freedom of expression, government restriction of
+            religion) and an indicative band for categorical facts — hover any score for its basis. Each fact shows its
+            evidence type, date and source; legal facts were cross-checked against primary sources.{' '}
             <Link to="/sources" className="text-accent hover:underline">
               Full method &amp; sources →
             </Link>
@@ -247,9 +273,9 @@ export default function Briefing() {
   )
 }
 
-function Cell({ label, value, valueClass = 'text-ink', border }) {
+function Cell({ label, value, valueClass = 'text-ink', border, title }) {
   return (
-    <div className={`min-w-[130px] flex-1 p-4 ${border ? 'border-r border-line' : ''}`}>
+    <div title={title} className={`min-w-[130px] flex-1 p-4 ${border ? 'border-r border-line' : ''}`}>
       <div className="eyebrow mb-1.5 text-[10px]">{label}</div>
       <div className={`text-[15px] font-semibold ${valueClass}`}>{value}</div>
     </div>

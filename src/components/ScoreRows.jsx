@@ -1,22 +1,31 @@
-import { scoreTone } from '../lib/dashboard.js'
+import { Info } from 'lucide-react'
+import { scoreTone, tipFrom } from '../lib/dashboard.js'
+import { CLUSTER_ICON } from '../lib/icons.js'
 
 const BAR = { danger: 'bg-danger', warn: 'bg-warn', success: 'bg-success', ink3: 'bg-ink3' }
 const TXT = { danger: 'text-danger', warn: 'text-warn', success: 'text-success', ink3: 'text-ink3' }
 
-// Threshold's per-area score bars, with the origin ("home") marked on each bar.
+// Per-area score bars with the origin ("home") marked. Each row leads with the
+// tier word, and hovering reveals the sourced facts behind the number.
 export default function ScoreRows({ rows, onJump }) {
   return (
     <div className="flex flex-col gap-4">
       {rows.map((r) => {
         const tone = scoreTone(r.destScore)
+        const AreaIcon = CLUSTER_ICON[r.id] || Info
+        const tip = `${r.label} — ${r.destScore}/100\n\n${tipFrom(r.breakdown)}`
         return (
-          <button key={r.id} type="button" onClick={() => onJump && onJump(r.id)} className="block w-full text-left" title="Jump to the sourced facts">
+          <button key={r.id} type="button" onClick={() => onJump && onJump(r.id)} className="block w-full text-left" title={tip}>
             <div className="mb-2 flex items-center justify-between gap-2.5">
               <span className="flex min-w-0 items-center gap-2.5">
-                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-surface2 font-mono text-[10px] text-ink2">{r.code2}</span>
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-surface2 text-ink2"><AreaIcon className="h-3.5 w-3.5" /></span>
                 <span className="truncate text-[13px] font-medium text-ink">{r.label}</span>
+                <Info className="h-3 w-3 shrink-0 text-ink3" aria-hidden="true" />
               </span>
-              <span className={`shrink-0 text-[14px] font-semibold tnum ${TXT[tone]}`}>{r.destScore}</span>
+              <span className="flex shrink-0 items-baseline gap-1.5">
+                <span className={`text-[14px] font-semibold tnum ${TXT[tone]}`}>{r.destScore}</span>
+                <span className="text-[11px] text-ink3">{r.tier}</span>
+              </span>
             </div>
             <div className="relative h-2 overflow-hidden rounded bg-surface2">
               <div className={`absolute inset-y-0 left-0 rounded ${BAR[tone]}`} style={{ width: `${r.destScore}%` }} />

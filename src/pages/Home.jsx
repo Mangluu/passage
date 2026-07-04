@@ -60,7 +60,7 @@ export default function Home() {
             <CountrySelect id="to" label="I plan to go to" value={to} onChange={setTo} placeholder="Search for a country" />
           </div>
           <div className="eyebrow mb-2.5">
-            This applies to me <span className="text-ink3/70">— optional, multiple ok</span>
+            Prioritise information about <span className="text-ink3/70">— optional, multiple ok</span>
           </div>
           <AudienceSelect selected={aud} onToggle={toggle} />
           {sameCountry && <p className="mt-3 text-[12px] text-accent">Pick two different countries to compare.</p>}
