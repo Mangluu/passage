@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 // Destination hero. Cycles through the team's own images for the country as an
-// auto-advancing carousel (playful image first, realistic photos after). Each
-// image is shown in full (object-contain) over a blurred copy of itself, so the
-// subject — a panda's face, a skyline — is never cropped, whatever the box
-// shape. All images are bundled locally; no runtime external request. Falls
-// back to a generated skyline if a country has no images.
+// auto-advancing carousel (playful image first, realistic photos after). The
+// hero is a 16:9 box and the images are 16:9, so each one fills it edge-to-edge
+// (object-cover) with no cropping of the subject. All images are bundled
+// locally; no runtime external request. Falls back to a generated skyline if a
+// country has no images.
 
 const files = import.meta.glob('../assets/cities/*/*.jpg', { eager: true, import: 'default' })
 const BY_CODE = {}
@@ -53,27 +53,14 @@ export default function CityHeader({ dest }) {
       onBlurCapture={() => setPaused(false)}
     >
       {imgs.map((src, i) => (
-        <div
+        <img
           key={src}
+          src={src}
+          alt={i === idx ? `${cityName}, ${dest.name}` : ''}
           aria-hidden={i !== idx}
-          className={`absolute inset-0 transition-opacity duration-700 ${i === idx ? 'opacity-100' : 'opacity-0'}`}
-        >
-          {/* Blurred copy fills the box so there are no empty bars. */}
-          <img
-            src={src}
-            alt=""
-            aria-hidden="true"
-            className="absolute inset-0 h-full w-full scale-125 object-cover blur-2xl"
-            style={{ filter: 'blur(26px) brightness(0.9)' }}
-          />
-          {/* The full image, never cropped. */}
-          <img
-            src={src}
-            alt={i === idx ? `${cityName}, ${dest.name}` : ''}
-            draggable="false"
-            className="absolute inset-0 h-full w-full select-none object-contain"
-          />
-        </div>
+          draggable="false"
+          className={`absolute inset-0 h-full w-full select-none object-cover transition-opacity duration-700 ${i === idx ? 'opacity-100' : 'opacity-0'}`}
+        />
       ))}
 
       {/* Bottom scrim so the overlaid country name stays legible. */}

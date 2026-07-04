@@ -120,7 +120,7 @@ export default function Briefing() {
           {/* Left column */}
           <div className="flex min-w-0 flex-col gap-5">
             <section id="sec-overview" className="card scroll-mt-4 overflow-hidden">
-              <div className="relative flex h-60 items-end overflow-hidden p-5">
+              <div className="relative flex aspect-[16/9] max-h-[440px] items-end overflow-hidden p-5">
                 <CityHeader dest={dest} />
                 <div className="relative z-10 flex items-center gap-3">
                   <span

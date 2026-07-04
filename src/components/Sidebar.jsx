@@ -9,7 +9,7 @@ export default function Sidebar({ audiences, onToggleAudience }) {
   return (
     <aside className="no-print sticky top-0 hidden h-screen w-[260px] shrink-0 flex-col gap-7 overflow-auto border-r border-line bg-surface p-5 lg:flex">
       <Link to="/" className="flex items-center gap-2.5 px-1">
-        <Logo className="h-8 w-auto shrink-0 text-accent" />
+        <Logo className="h-12 w-auto shrink-0 text-accent" />
         <span className="leading-tight">
           <span className="block font-serif text-[18px] font-semibold text-ink">Liberty Compass</span>
           <span className="block text-[10.5px] text-ink3">Liberty &amp; security abroad</span>
