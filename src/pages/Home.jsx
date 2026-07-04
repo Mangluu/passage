@@ -54,10 +54,10 @@ export default function Home() {
         <div className="card p-7">
           <div className="eyebrow mb-4">Compare two countries</div>
           <div className="mb-3.5">
-            <CountrySelect id="from" label="I am travelling from" value={from} onChange={setFrom} placeholder="Country of origin" />
+            <CountrySelect id="from" label="I am travelling from" value={from} exclude={to} onChange={setFrom} placeholder="Country of origin" />
           </div>
           <div className="mb-4">
-            <CountrySelect id="to" label="I plan to go to" value={to} onChange={setTo} placeholder="Search for a country" />
+            <CountrySelect id="to" label="I plan to go to" value={to} exclude={from} onChange={setTo} placeholder="Search for a country" />
           </div>
           <div className="eyebrow mb-2.5">
             Prioritise information about <span className="text-ink3/70">— optional, multiple ok</span>

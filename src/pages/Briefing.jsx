@@ -73,7 +73,7 @@ export default function Briefing() {
 
   return (
     <div className="flex min-h-screen bg-canvas">
-      <Sidebar audiences={aud} onToggleAudience={toggleAud} onJump={jump} />
+      <Sidebar audiences={aud} onToggleAudience={toggleAud} />
 
       <main className="flex min-w-0 flex-1 flex-col">
         {/* Sticky header — home → destination. The sidebar carries the wordmark
@@ -86,10 +86,10 @@ export default function Briefing() {
           >
             <Home className="h-4 w-4" />
           </Link>
-          <div className="flex items-center gap-2">
-            <span className="eyebrow">home</span>
-            <div className="w-32 sm:w-40">
-              <CountrySelect id="from" value={from} onChange={(c) => update({ from: c })} placeholder="Home" />
+          <div className="flex min-w-[150px] flex-1 basis-0 items-center gap-2">
+            <span className="eyebrow w-9 shrink-0">home</span>
+            <div className="min-w-0 flex-1">
+              <CountrySelect id="from" value={from} exclude={to} onChange={(c) => update({ from: c })} placeholder="Home" />
             </div>
           </div>
           <button
@@ -100,10 +100,10 @@ export default function Briefing() {
           >
             <ArrowLeftRight className="h-4 w-4" />
           </button>
-          <div className="flex min-w-[160px] max-w-[360px] flex-1 items-center gap-2">
-            <span className="eyebrow">to</span>
+          <div className="flex min-w-[150px] flex-1 basis-0 items-center gap-2">
+            <span className="eyebrow w-9 shrink-0">to</span>
             <div className="min-w-0 flex-1">
-              <CountrySelect id="to" value={to} onChange={(c) => update({ to: c })} placeholder="Destination" />
+              <CountrySelect id="to" value={to} exclude={from} onChange={(c) => update({ to: c })} placeholder="Destination" />
             </div>
           </div>
         </header>
@@ -132,7 +132,12 @@ export default function Briefing() {
               <div className="relative flex h-36 items-end overflow-hidden p-5">
                 <CityHeader dest={dest} />
                 <div className="relative z-10 flex items-center gap-3">
-                  <span className="rounded-md border border-line bg-surface px-2.5 py-1.5 font-mono text-[12px] font-medium text-ink2">{dest.code}</span>
+                  <span
+                    className={`fi fi-${dest.flag} rounded-[3px] shadow-md`}
+                    style={{ width: '2.4rem', height: '1.8rem', backgroundSize: 'cover' }}
+                    role="img"
+                    aria-label={`${dest.name} flag`}
+                  />
                   <h2 className="font-serif text-[32px] font-semibold leading-none text-ink">{dest.name}</h2>
                 </div>
               </div>

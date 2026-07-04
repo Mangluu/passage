@@ -5,7 +5,7 @@ import { JURISDICTION_OPTIONS, JURISDICTION_BY_CODE } from '../data/jurisdiction
 // A themed dropdown (not a native <select>), so it renders correctly in dark
 // mode on every browser/OS — native select popups ignore our color-scheme on
 // Windows. Bonus: it can show flags in the list.
-export default function CountrySelect({ id, label, value, onChange, placeholder = 'Select…' }) {
+export default function CountrySelect({ id, label, value, onChange, placeholder = 'Select…', exclude }) {
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
   const c = value ? JURISDICTION_BY_CODE[value] : null
@@ -54,21 +54,27 @@ export default function CountrySelect({ id, label, value, onChange, placeholder 
           >
             {JURISDICTION_OPTIONS.map((o) => {
               const sel = o.code === value
+              const disabled = o.code === exclude
               return (
-                <li key={o.code} role="option" aria-selected={sel}>
+                <li key={o.code} role="option" aria-selected={sel} aria-disabled={disabled}>
                   <button
                     type="button"
+                    disabled={disabled}
                     onClick={() => {
                       onChange(o.code)
                       setOpen(false)
                     }}
-                    className={`flex w-full items-center gap-2 px-3 py-2 text-left text-[14px] transition hover:bg-surface2 ${
-                      sel ? 'text-ink' : 'text-ink2'
+                    title={disabled ? 'Already selected as the other country' : undefined}
+                    className={`flex w-full items-center gap-2 px-3 py-2 text-left text-[14px] transition ${
+                      disabled
+                        ? 'cursor-not-allowed text-ink3 opacity-45'
+                        : `hover:bg-surface2 ${sel ? 'text-ink' : 'text-ink2'}`
                     }`}
                   >
                     <span className={`fi fi-${o.flag}`} />
                     <span className="flex-1 truncate">{o.name}</span>
-                    {sel && <Check className="h-4 w-4 shrink-0 text-accent" aria-hidden="true" />}
+                    {disabled && <span className="shrink-0 font-mono text-[10px] text-ink3">in use</span>}
+                    {sel && !disabled && <Check className="h-4 w-4 shrink-0 text-accent" aria-hidden="true" />}
                   </button>
                 </li>
               )

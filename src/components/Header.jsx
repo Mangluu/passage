@@ -13,7 +13,7 @@ export default function Header() {
     <header className="no-print border-b border-line">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-5">
         <Link to="/" className="flex items-center gap-2.5">
-          <Logo className="h-7 w-auto text-accent" />
+          <Logo className="h-9 w-auto text-accent" />
           <span className="font-serif text-[21px] font-semibold tracking-tight text-ink">Liberty Compass</span>
         </Link>
         <div className="flex items-center gap-4 sm:gap-5">
