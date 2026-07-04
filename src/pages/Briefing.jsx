@@ -10,6 +10,7 @@ import CountrySelect from '../components/CountrySelect.jsx'
 import AudienceSelect from '../components/AudienceSelect.jsx'
 import ScoreRows from '../components/ScoreRows.jsx'
 import OverallScale from '../components/OverallScale.jsx'
+import CityHeader from '../components/CityHeader.jsx'
 import FactCard from '../components/FactCard.jsx'
 import Checklist from '../components/Checklist.jsx'
 
@@ -57,6 +58,17 @@ export default function Briefing() {
   const advisories = advisoryCards(brief)
   const audienceLabel = aud.map((id) => AUDIENCE_BY_ID[id]?.label).filter(Boolean).join(' · ')
   const e = dest.emergency
+
+  // Plain-language "how does the destination compare with home" (instead of two bare numbers).
+  const delta = dOverall.avg != null && oOverall.avg != null ? dOverall.avg - oOverall.avg : null
+  const rel =
+    delta == null
+      ? { text: `Home: ${origin.name}`, cls: 'text-ink' }
+      : Math.abs(delta) < 6
+        ? { text: 'About the same as home', cls: 'text-ink2' }
+        : delta > 0
+          ? { text: `${delta} pts freer than home`, cls: 'text-success' }
+          : { text: `${-delta} pts more restricted`, cls: 'text-danger' }
 
   return (
     <div className="flex min-h-screen bg-canvas">
@@ -109,16 +121,16 @@ export default function Briefing() {
           {/* Left column */}
           <div className="flex min-w-0 flex-col gap-5">
             <section id="sec-overview" className="card scroll-mt-4 overflow-hidden">
-              <div className="relative flex h-36 items-end bg-surface2 p-5">
-                <span className="eyebrow absolute right-3 top-3 rounded bg-surface/70 px-2 py-1 text-[9px]">Public-domain city image</span>
-                <div className="flex items-center gap-3">
+              <div className="relative flex h-36 items-end overflow-hidden p-5">
+                <CityHeader dest={dest} />
+                <div className="relative z-10 flex items-center gap-3">
                   <span className="rounded-md border border-line bg-surface px-2.5 py-1.5 font-mono text-[12px] font-medium text-ink2">{dest.code}</span>
                   <h2 className="font-serif text-[32px] font-semibold leading-none text-ink">{dest.name}</h2>
                 </div>
               </div>
               <div className="flex flex-wrap border-t border-line">
-                <Cell label="Overall" value={`${dOverall.avg}/100 · ${dOverall.tier}`} valueClass={TONE_TXT[destTone]} border />
-                <Cell label="Compared with" value={`${origin.name} · ${oOverall.avg}/100`} border />
+                <Cell label="Overall protection" value={`${dOverall.avg}/100 · ${dOverall.tier}`} valueClass={TONE_TXT[destTone]} border />
+                <Cell label={`vs. ${origin.name} (home)`} value={rel.text} valueClass={rel.cls} border />
                 <Cell label="Emergency" value={e.general} />
               </div>
             </section>
@@ -152,10 +164,13 @@ export default function Briefing() {
           {/* Right column */}
           <div className="flex min-w-0 flex-col gap-5">
             <section id="sec-scores" className="card scroll-mt-4 p-5">
-              <div className="mb-4 flex items-baseline justify-between">
-                <h3 className="font-serif text-[18px] font-semibold text-ink">Liberty &amp; security scores</h3>
+              <div className="mb-1.5 flex items-baseline justify-between">
+                <h3 className="font-serif text-[18px] font-semibold text-ink">How protected each area is</h3>
                 <span className="text-[11px] text-ink3">/ 100</span>
               </div>
+              <p className="mb-5 text-[11.5px] leading-snug text-ink3">
+                Higher = more protected. The tick marks {origin.name} (home), so you can see the gap at a glance.
+              </p>
               <ScoreRows rows={areas} onJump={() => jump('sec-sources')} />
             </section>
 

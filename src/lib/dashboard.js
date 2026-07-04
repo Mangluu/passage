@@ -1,5 +1,4 @@
 import { CLUSTERS, topicsForCluster } from '../data/topics.js'
-import { TIER } from './format.js'
 
 // Threshold-style dashboard derivations, computed from our real claims.
 // An "area score" is an honest aggregate of the ordinal positions of the
@@ -67,7 +66,12 @@ export function advisoryCards(brief) {
   return src.slice(0, 4).map((c) => ({
     key: c.key,
     title: c.topic.label,
-    sub: c.kind === 'duty' ? 'New duty' : (TIER[c.tier] || TIER.minor).label,
+    sub:
+      c.kind === 'duty'
+        ? 'New duty on arrival'
+        : c.direction === 'freer'
+          ? c.tier === 'critical' ? 'Much freer than home' : 'Freer than home'
+          : c.tier === 'critical' ? 'Much more restrictive' : 'More restrictive',
     body: c.claim.statement,
     tone: c.kind === 'duty' ? 'warn' : c.direction === 'restrictive' ? 'danger' : 'success',
   }))
