@@ -99,15 +99,6 @@ export function scoreTone(s) {
   return 'danger'
 }
 
-// Dark "comparison summary" bullets. Shows every critical difference (so the
-// list matches the "N differences are critical" line in the lede); if there are
-// none, falls back to the biggest position changes of any direction.
-export function summaryBullets(brief) {
-  const critical = brief.changes.filter((c) => c.kind === 'position' && c.tier === 'critical')
-  const src = critical.length ? critical : brief.changes.filter((c) => c.kind === 'position').slice(0, 3)
-  return src.map((c) => ({ key: c.key, label: c.topic.label, note: c.claim.statement, tone: c.direction === 'restrictive' ? 'danger' : 'success' }))
-}
-
 // Advisory cards — every change flagged for the reader's audience(s); when no
 // audience is selected, every change. No cap, so nothing meaningful is hidden.
 export function advisoryCards(brief) {

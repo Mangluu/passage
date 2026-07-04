@@ -1,10 +1,10 @@
 import { useMemo } from 'react'
 import { useSearchParams, Link } from 'react-router-dom'
-import { ArrowLeftRight, Scale, Flag, ShieldCheck, Phone, Home } from 'lucide-react'
+import { ArrowRight, Scale, Flag, ShieldCheck, Phone, Home } from 'lucide-react'
 import { JURISDICTION_BY_CODE } from '../data/jurisdictions.js'
 import { AUDIENCE_BY_ID } from '../data/audiences.js'
 import { buildBrief } from '../lib/brief.js'
-import { areaScores, overallScore, summaryBullets, advisoryCards, scoreTone, tipFrom } from '../lib/dashboard.js'
+import { areaScores, overallScore, advisoryCards, scoreTone, tipFrom } from '../lib/dashboard.js'
 import { CLUSTER_ICON } from '../lib/icons.js'
 import Sidebar from '../components/Sidebar.jsx'
 import CountrySelect from '../components/CountrySelect.jsx'
@@ -18,7 +18,6 @@ import Checklist from '../components/Checklist.jsx'
 const TONE_TXT = { danger: 'text-danger', warn: 'text-warn', success: 'text-success', ink3: 'text-ink3' }
 const TONE_DOT = { danger: 'bg-danger', warn: 'bg-warn', success: 'bg-success' }
 const TONE_TINT = { danger: 'bg-danger-bg', warn: 'bg-warn-bg', success: 'bg-success-bg' }
-const BULLET_HEX = { danger: '#cf6a48', success: '#5f9e52' }
 
 export default function Briefing() {
   const [params, setParams] = useSearchParams()
@@ -55,7 +54,6 @@ export default function Briefing() {
   const oOverall = overallScore(origin)
   const dOverall = overallScore(dest)
   const destTone = scoreTone(dOverall.avg)
-  const bullets = summaryBullets(brief)
   const advisories = advisoryCards(brief)
   const audienceLabel = aud.map((id) => AUDIENCE_BY_ID[id]?.label).filter(Boolean).join(' · ')
   const e = dest.emergency
@@ -92,14 +90,7 @@ export default function Briefing() {
               <CountrySelect id="from" value={from} exclude={to} onChange={(c) => update({ from: c })} placeholder="Home" />
             </div>
           </div>
-          <button
-            type="button"
-            onClick={() => update({ from: to, to: from })}
-            title="Swap home and destination"
-            className="shrink-0 rounded-lg border border-line bg-surface p-2 text-ink3 transition hover:text-ink"
-          >
-            <ArrowLeftRight className="h-4 w-4" />
-          </button>
+          <ArrowRight className="h-4 w-4 shrink-0 text-ink3" aria-hidden="true" />
           <div className="flex min-w-[150px] flex-1 basis-0 items-center gap-2">
             <span className="eyebrow w-9 shrink-0">to</span>
             <div className="min-w-0 flex-1">
@@ -201,22 +192,12 @@ export default function Briefing() {
 
             <section className="rounded-2xl bg-ink p-5 text-canvas">
               <div className="eyebrow mb-2.5" style={{ color: 'rgba(255,255,255,0.55)' }}>
-                Comparison summary
+                In summary
               </div>
               <div className="font-serif text-[20px] font-semibold leading-tight text-canvas">
                 {origin.name} <span style={{ opacity: 0.55 }}>→</span> {dest.name}
               </div>
-              <p className="mb-3 mt-1.5 text-[13.5px] font-medium text-canvas">{brief.lede}</p>
-              <div className="flex flex-col gap-2.5">
-                {bullets.map((b) => (
-                  <div key={b.key} className="flex items-start gap-2.5">
-                    <span className="mt-[6px] h-2 w-2 shrink-0 rounded-sm" style={{ background: BULLET_HEX[b.tone] || '#cf6a48' }} />
-                    <p className="text-[12.5px] leading-snug text-canvas" style={{ opacity: 0.86 }}>
-                      <span className="font-semibold" style={{ opacity: 1 }}>{b.label}:</span> {b.note}
-                    </p>
-                  </div>
-                ))}
-              </div>
+              <p className="mt-1.5 text-[13.5px] font-medium leading-snug text-canvas">{brief.lede}</p>
             </section>
 
             <section id="sec-emergency" className="card scroll-mt-4 p-5">

@@ -8,10 +8,10 @@
    Anchors: #2D0641 deep purple · #9315D6 vivid purple · #BFEDFF / #DBF5FF cyans. */
 :root {
   color-scheme: light;
-  --c-canvas: 219 245 255; /* #DBF5FF pale cyan */
-  --c-surface: 255 255 255; /* white cards pop on the cyan canvas */
-  --c-surface2: 191 237 255; /* #BFEDFF cyan — inner fills / hover */
-  --c-line: 178 210 228; /* cool hairline */
+  --c-canvas: 201 234 251; /* #C9EAFB soft sky blue page */
+  --c-surface: 219 245 255; /* #DBF5FF light blue cards (no stark white) */
+  --c-surface2: 183 222 244; /* #B7DEF4 deeper cyan — inner fills / hover */
+  --c-line: 166 200 220; /* cool hairline */
   --c-ink: 45 6 65; /* #2D0641 deep purple text */
   --c-ink2: 92 62 112; /* muted purple */
   --c-ink3: 143 124 162; /* light purple-grey */
