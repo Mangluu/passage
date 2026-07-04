@@ -41,15 +41,14 @@ export default function Privacy() {
           </div>
         </Block>
 
-        <Block title="Web fonts — Google Fonts">
+        <Block title="Web fonts — self-hosted">
           <p className="text-[15px] leading-relaxed text-ink2">
-            The site currently loads its typefaces from Google Fonts (fonts.googleapis.com / fonts.gstatic.com). When
-            those load, Google may receive your IP address. Under EU/German case law this counts as a data transfer, so
-            we disclose it here — and we intend to self-host the fonts so no request reaches Google at all.
+            All typefaces are <span className="text-ink">served from this site itself</span>, not from Google Fonts or
+            any other third party. Your browser never contacts <span className="font-mono text-[13px]">fonts.googleapis.com</span>{' '}
+            or <span className="font-mono text-[13px]">fonts.gstatic.com</span>, so Google receives no request and no IP
+            address when the page loads. There are no external scripts, stylesheets, images or trackers of any kind — the
+            only network request your browser makes is to the host below to fetch the page.
           </p>
-          <div className="mt-3">
-            <Ext href="https://developers.google.com/fonts/faq/privacy">Google Fonts &amp; privacy</Ext>
-          </div>
         </Block>
 
         <Block title="Your rights">

@@ -113,12 +113,10 @@ export default function Sources() {
                 {s.org}
                 {s.name ? <span className="text-ink3"> — {s.name}</span> : null}
               </span>
-              {s.url ? (
+              {s.url && (
                 <a href={s.url} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center gap-1 text-[13px] text-accent hover:underline">
                   Visit <ExternalLink className="h-3.5 w-3.5" />
                 </a>
-              ) : (
-                <span className="shrink-0 font-mono text-[10px] text-ink3">cited on claim</span>
               )}
             </li>
           ))}

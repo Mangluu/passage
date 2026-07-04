@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { useSearchParams, Link } from 'react-router-dom'
-import { ArrowLeftRight, Scale, Flag, ShieldCheck, Phone } from 'lucide-react'
+import { ArrowLeftRight, Scale, Flag, ShieldCheck, Phone, Home } from 'lucide-react'
 import { JURISDICTION_BY_CODE } from '../data/jurisdictions.js'
 import { AUDIENCE_BY_ID } from '../data/audiences.js'
 import { buildBrief } from '../lib/brief.js'
@@ -76,13 +76,15 @@ export default function Briefing() {
       <Sidebar audiences={aud} onToggleAudience={toggleAud} onJump={jump} />
 
       <main className="flex min-w-0 flex-1 flex-col">
-        {/* Sticky header — home → destination, logo doubles as "new search" */}
+        {/* Sticky header — home → destination. The sidebar carries the wordmark
+            on desktop; on mobile (no sidebar) a compact Home button stands in. */}
         <header className="no-print sticky top-0 z-30 flex flex-wrap items-center gap-3 border-b border-line bg-canvas/90 px-5 py-3 backdrop-blur">
-          <Link to="/" title="Start a new search" className="flex shrink-0 items-center gap-2 pr-1">
-            <span className="relative block h-6 w-6 overflow-hidden rounded-full border-2 border-ink">
-              <span className="absolute inset-x-0 bottom-[7px] block h-0.5 bg-ink" />
-            </span>
-            <span className="hidden font-serif text-[16px] font-semibold text-ink sm:inline">Passage</span>
+          <Link
+            to="/"
+            title="Home / start a new search"
+            className="flex shrink-0 items-center justify-center rounded-lg border border-line bg-surface p-2 text-ink3 transition hover:text-ink lg:hidden"
+          >
+            <Home className="h-4 w-4" />
           </Link>
           <div className="flex items-center gap-2">
             <span className="eyebrow">home</span>
