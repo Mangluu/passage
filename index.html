@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Passage — see how liberty and security change for exchange students crossing borders. Privacy-first: we store nothing."
+      content="Liberty Compass — see how liberty and security change for exchange students crossing borders. Privacy-first: we store nothing."
     />
-    <title>Passage — Liberty & Security for Exchange Students</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="theme-color" content="#2d0641" />
+    <title>Liberty Compass — Liberty & Security for Exchange Students</title>
     <script>
       // Set theme before paint to avoid a flash. Stored locally (theme only —
       // no personal data), falling back to the OS preference.
       (function () {
         try {
-          var t = localStorage.getItem('passage-theme')
+          var t = localStorage.getItem('liberty-compass-theme')
           if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
           if (t === 'dark') document.documentElement.classList.add('dark')
         } catch (e) {}

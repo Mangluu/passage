@@ -1,15 +1,22 @@
-import { CITY_CREDITS } from '../data/cityCredits.js'
+import { useState, useEffect } from 'react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-// Hero image for the destination. Prefers a real, CC-licensed city photo (see
-// scripts/fetch-cities.mjs) bundled locally — no runtime external request — and
-// falls back to an original generated skyline where no permissive photo exists.
-// A bottom scrim keeps the country name readable over any image.
+// Destination hero. Cycles through the team's own images for the country as an
+// auto-advancing carousel (realistic shots first, playful ones after). All
+// images are bundled locally — no runtime external request. Falls back to a
+// generated skyline if a country has no images. A bottom scrim keeps the
+// overlaid country name readable.
 
-const cityPhotos = import.meta.glob('../assets/cities/*.jpg', { eager: true, import: 'default' })
-function photoFor(code) {
-  const key = Object.keys(cityPhotos).find((p) => p.toLowerCase().endsWith(`/${code.toLowerCase()}.jpg`))
-  return key ? cityPhotos[key] : null
+const files = import.meta.glob('../assets/cities/*/*.jpg', { eager: true, import: 'default' })
+const BY_CODE = {}
+for (const [path, url] of Object.entries(files)) {
+  const m = path.match(/cities\/([a-z]{2})\/(\d+)\.jpg$/)
+  if (!m) continue
+  const code = m[1]
+  ;(BY_CODE[code] ||= []).push({ n: Number(m[2]), url })
 }
+for (const code of Object.keys(BY_CODE)) BY_CODE[code].sort((a, b) => a.n - b.n)
+const imagesFor = (code) => (BY_CODE[code.toLowerCase()] || []).map((x) => x.url)
 
 const CITY = {
   US: 'New York', BR: 'Rio de Janeiro', DE: 'Berlin', NO: 'Oslo', KE: 'Nairobi',
@@ -17,37 +24,88 @@ const CITY = {
 }
 
 export default function CityHeader({ dest }) {
-  const photo = photoFor(dest.code)
-  const credit = CITY_CREDITS[dest.code.toLowerCase()]
-  const cityName = (credit && credit.city) || CITY[dest.code] || dest.name
+  const imgs = imagesFor(dest.code)
+  const cityName = CITY[dest.code] || dest.name
+  const [idx, setIdx] = useState(0)
+  const [paused, setPaused] = useState(false)
 
-  if (photo) {
-    return (
-      <div className="absolute inset-0">
-        <img src={photo} alt={`${cityName}, ${dest.name}`} className="h-full w-full object-cover" />
-        <div
-          className="absolute inset-x-0 bottom-0 h-28"
-          style={{ background: 'linear-gradient(to top, rgb(var(--c-surface)) 12%, rgba(var(--c-surface) / 0.55) 45%, transparent)' }}
+  // Reset to the first (realistic) image whenever the destination changes.
+  useEffect(() => setIdx(0), [dest.code])
+
+  // Auto-advance, paused on hover/focus.
+  useEffect(() => {
+    if (paused || imgs.length < 2) return
+    const t = setInterval(() => setIdx((i) => (i + 1) % imgs.length), 5000)
+    return () => clearInterval(t)
+  }, [paused, imgs.length, dest.code])
+
+  if (!imgs.length) return <Skyline dest={dest} cityName={cityName} />
+
+  const go = (d) => setIdx((i) => (i + d + imgs.length) % imgs.length)
+
+  return (
+    <div
+      className="group absolute inset-0"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocusCapture={() => setPaused(true)}
+      onBlurCapture={() => setPaused(false)}
+    >
+      {imgs.map((src, i) => (
+        <img
+          key={src}
+          src={src}
+          alt={i === idx ? `${cityName}, ${dest.name}` : ''}
+          aria-hidden={i !== idx}
+          draggable="false"
+          className={`absolute inset-0 h-full w-full select-none object-cover transition-opacity duration-700 ${i === idx ? 'opacity-100' : 'opacity-0'}`}
         />
-        <span className="absolute right-3 top-3 rounded bg-surface/75 px-2 py-1 font-mono text-[9px] text-ink3 backdrop-blur-sm">
-          {cityName}
-        </span>
-        {credit && (
-          <a
-            href={credit.source}
-            target="_blank"
-            rel="noreferrer"
-            title={`${credit.artist} · ${credit.licence} · via Wikimedia Commons`}
-            className="absolute bottom-1.5 right-2.5 font-mono text-[8px] text-ink3 hover:text-ink2"
-          >
-            © {credit.licence} ↗
-          </a>
-        )}
-      </div>
-    )
-  }
+      ))}
 
-  return <Skyline dest={dest} cityName={cityName} />
+      {/* Bottom scrim so the overlaid country name stays legible. */}
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-28"
+        style={{ background: 'linear-gradient(to top, rgb(var(--c-surface)) 10%, rgba(var(--c-surface) / 0.5) 45%, transparent)' }}
+      />
+
+      <span className="absolute right-3 top-3 z-20 rounded bg-surface/75 px-2 py-1 font-mono text-[9px] text-ink2 backdrop-blur-sm">
+        {cityName}
+      </span>
+
+      {imgs.length > 1 && (
+        <>
+          <button
+            type="button"
+            onClick={() => go(-1)}
+            aria-label="Previous image"
+            className="absolute left-2 top-1/2 z-20 -translate-y-1/2 rounded-full bg-surface/70 p-1.5 text-ink2 opacity-0 backdrop-blur-sm transition group-hover:opacity-100 hover:bg-surface hover:text-ink focus:opacity-100"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            onClick={() => go(1)}
+            aria-label="Next image"
+            className="absolute right-2 top-1/2 z-20 -translate-y-1/2 rounded-full bg-surface/70 p-1.5 text-ink2 opacity-0 backdrop-blur-sm transition group-hover:opacity-100 hover:bg-surface hover:text-ink focus:opacity-100"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+          <div className="absolute bottom-2.5 right-3 z-20 flex gap-1.5">
+            {imgs.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => setIdx(i)}
+                aria-label={`Show image ${i + 1} of ${imgs.length}`}
+                aria-current={i === idx}
+                className={`h-1.5 rounded-full transition-all ${i === idx ? 'w-4 bg-ink' : 'w-1.5 bg-ink/35 hover:bg-ink/60'}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  )
 }
 
 // ── Generated skyline fallback ───────────────────────────────────────────────

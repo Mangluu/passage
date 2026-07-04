@@ -1,6 +1,5 @@
 import { ExternalLink } from 'lucide-react'
 import { allUsedSources } from '../data/sources.js'
-import { CITY_CREDITS } from '../data/cityCredits.js'
 import { AUDIENCES } from '../data/audiences.js'
 import { TOPICS } from '../data/topics.js'
 import { EVIDENCE_LABEL, CERTAINTY } from '../lib/format.js'
@@ -13,10 +12,10 @@ export default function Sources() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <div className="mx-auto w-full max-w-prose flex-1 px-6 py-12">
-      <p className="eyebrow">Passage</p>
+      <p className="eyebrow">Liberty Compass</p>
       <h1 className="mt-3 font-serif text-4xl leading-tight text-ink">Method &amp; sources</h1>
       <p className="mt-4 text-[17px] leading-relaxed text-ink2">
-        A briefing is only as trustworthy as its weakest fact. Passage is built on{' '}
+        A briefing is only as trustworthy as its weakest fact. Liberty Compass is built on{' '}
         <span className="text-ink">claims</span> — each a plain statement carrying its evidence type, the date it
         reflects, its source, and how sure we are. The dashboard’s area scores use a published index where one exists
         and an indicative band for the categorical facts — hover any score to see what it aggregates.
@@ -102,7 +101,7 @@ export default function Sources() {
 
       <Section title="Every source we use">
         <p className="text-[14px] leading-relaxed text-ink3">
-          A complete, de-duplicated list of every source cited anywhere in Passage — the shared datasets and the
+          A complete, de-duplicated list of every source cited anywhere in Liberty Compass — the shared datasets and the
           country-specific official sources linked on individual claims. Legal facts were cross-checked in an
           adversarial verification pass against primary and official sources.
         </p>
@@ -123,27 +122,16 @@ export default function Sources() {
         </ul>
       </Section>
 
-      <Section title="Image credits">
+      <Section title="Images">
         <p className="text-[14px] leading-relaxed text-ink3">
-          Country hero photos are the lead images from the relevant Wikipedia article, used under their Creative
-          Commons licences with attribution. Countries without a permissive photo use an original generated skyline.
+          The destination hero images are the project team’s own — a rotating mix of real scenes and lighthearted
+          originals for each country. They are bundled with the app and served from this site, so no third-party image
+          service is ever contacted. A country with no image falls back to an original generated skyline.
         </p>
-        <ul className="mt-4 divide-y divide-line border-y border-line">
-          {Object.values(CITY_CREDITS).map((c, i) => (
-            <li key={i} className="flex items-baseline justify-between gap-3 py-2.5 text-[13px]">
-              <span className="text-ink">
-                {c.city} <span className="text-ink3">— {c.artist} · {c.licence}</span>
-              </span>
-              <a href={c.source} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center gap-1 text-accent hover:underline">
-                Commons <ExternalLink className="h-3.5 w-3.5" />
-              </a>
-            </li>
-          ))}
-        </ul>
       </Section>
 
       <p className="mt-10 border-t border-line pt-5 text-[13px] leading-relaxed text-ink3">
-        Passage is an informational prototype for B_Hack 2026. Laws and indices are simplified and can be out of date.
+        Liberty Compass is an informational prototype for B_Hack 2026. Laws and indices are simplified and can be out of date.
         Laws differ from lived experience — this is not legal advice. Always confirm with official government channels
         and your host institution before you travel.
       </p>

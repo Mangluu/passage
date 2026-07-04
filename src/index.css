@@ -4,43 +4,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Threshold's warm paper palette. Space-separated RGB for <alpha-value>. */
+/* Liberty Compass palette — purple & cyan. Space-separated RGB for <alpha-value>.
+   Anchors: #2D0641 deep purple · #9315D6 vivid purple · #BFEDFF / #DBF5FF cyans. */
 :root {
   color-scheme: light;
-  --c-canvas: 242 239 232; /* #f2efe8 */
-  --c-surface: 251 250 246; /* #fbfaf6 */
-  --c-surface2: 233 228 219; /* inner fills / hover */
-  --c-line: 221 217 207; /* hairline */
-  --c-ink: 33 31 27; /* #211f1b */
-  --c-ink2: 74 70 63; /* #4a463f */
-  --c-ink3: 138 133 120; /* #8a8578 */
-  --c-danger: 178 74 46;
-  --c-danger-bg: 246 231 226;
-  --c-warn: 176 110 40;
-  --c-warn-bg: 246 236 222;
-  --c-success: 74 122 66;
-  --c-success-bg: 228 238 226;
-  --c-accent: 176 85 58; /* #b0553a terracotta */
-  --c-accent-bg: 245 232 226;
+  --c-canvas: 219 245 255; /* #DBF5FF pale cyan */
+  --c-surface: 255 255 255; /* white cards pop on the cyan canvas */
+  --c-surface2: 191 237 255; /* #BFEDFF cyan — inner fills / hover */
+  --c-line: 178 210 228; /* cool hairline */
+  --c-ink: 45 6 65; /* #2D0641 deep purple text */
+  --c-ink2: 92 62 112; /* muted purple */
+  --c-ink3: 143 124 162; /* light purple-grey */
+  --c-danger: 200 50 74;
+  --c-danger-bg: 250 226 232;
+  --c-warn: 176 105 30;
+  --c-warn-bg: 250 238 222;
+  --c-success: 40 130 96;
+  --c-success-bg: 216 240 230;
+  --c-accent: 147 21 214; /* #9315D6 vivid purple */
+  --c-accent-bg: 240 223 251; /* pale purple tint */
 }
 
 .dark {
   color-scheme: dark;
-  --c-canvas: 26 24 21;
-  --c-surface: 36 33 27;
-  --c-surface2: 47 43 35;
-  --c-line: 62 57 48;
-  --c-ink: 240 236 227;
-  --c-ink2: 190 184 172;
-  --c-ink3: 143 137 123;
-  --c-danger: 224 138 112;
-  --c-danger-bg: 58 33 26;
-  --c-warn: 224 170 96;
-  --c-warn-bg: 55 44 26;
-  --c-success: 132 190 120;
-  --c-success-bg: 26 46 30;
-  --c-accent: 216 138 106;
-  --c-accent-bg: 52 34 27;
+  --c-canvas: 24 8 33; /* near-black purple */
+  --c-surface: 40 12 56; /* #280C38 */
+  --c-surface2: 55 22 76;
+  --c-line: 68 38 92;
+  --c-ink: 224 244 252; /* pale cyan text */
+  --c-ink2: 190 176 210;
+  --c-ink3: 148 132 168;
+  --c-danger: 232 132 152;
+  --c-danger-bg: 60 26 38;
+  --c-warn: 226 168 96;
+  --c-warn-bg: 58 40 24;
+  --c-success: 120 200 156;
+  --c-success-bg: 22 50 38;
+  --c-accent: 193 100 234; /* lightened purple for dark bg */
+  --c-accent-bg: 56 26 78;
 }
 
 html {

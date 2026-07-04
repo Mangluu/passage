@@ -28,8 +28,8 @@ export default {
         mono: ['"IBM Plex Mono"', 'ui-monospace', 'monospace'],
       },
       boxShadow: {
-        card: '0 3px 26px rgba(33, 31, 27, 0.05)',
-        pop: '0 12px 34px rgba(33, 31, 27, 0.16)',
+        card: '0 3px 26px rgba(45, 6, 65, 0.07)',
+        pop: '0 12px 34px rgba(45, 6, 65, 0.18)',
       },
       maxWidth: {
         prose: '46rem',

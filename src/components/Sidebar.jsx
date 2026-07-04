@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Sun, Moon } from 'lucide-react'
 import { useTheme } from '../lib/useTheme.js'
 import AudienceSelect from './AudienceSelect.jsx'
+import Logo from './Logo.jsx'
 
 const NAV = [
   { id: 'overview', label: 'Overview' },
@@ -15,10 +16,10 @@ export default function Sidebar({ audiences, onToggleAudience, onJump }) {
   const { theme, toggle } = useTheme()
   return (
     <aside className="no-print sticky top-0 hidden h-screen w-[260px] shrink-0 flex-col gap-6 overflow-auto border-r border-line bg-surface p-5 lg:flex">
-      <Link to="/" className="flex items-center gap-3 px-1">
-        <Logo />
+      <Link to="/" className="flex items-center gap-2.5 px-1">
+        <Logo className="h-7 w-auto shrink-0 text-accent" />
         <span className="leading-tight">
-          <span className="block font-serif text-[18px] font-semibold text-ink">Passage</span>
+          <span className="block font-serif text-[18px] font-semibold text-ink">Liberty Compass</span>
           <span className="block text-[10.5px] text-ink3">Liberty &amp; security abroad</span>
         </span>
       </Link>
@@ -58,13 +59,5 @@ export default function Sidebar({ audiences, onToggleAudience, onJump }) {
         </button>
       </div>
     </aside>
-  )
-}
-
-function Logo() {
-  return (
-    <span className="relative block h-7 w-7 shrink-0 overflow-hidden rounded-full border-2 border-ink">
-      <span className="absolute inset-x-0 bottom-2 block h-0.5 bg-ink" />
-    </span>
   )
 }

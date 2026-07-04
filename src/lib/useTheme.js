@@ -16,7 +16,7 @@ function currentTheme() {
 function setTheme(next) {
   document.documentElement.classList.toggle('dark', next === 'dark')
   try {
-    localStorage.setItem('passage-theme', next)
+    localStorage.setItem('liberty-compass-theme', next)
   } catch (e) {
     /* ignore */
   }

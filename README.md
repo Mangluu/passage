@@ -1,13 +1,13 @@
-# Passage — pre-departure briefings for exchange students
+# Liberty Compass — pre-departure briefings for exchange students
 
 **B_Hack Baltic Sea Region Hackathon 2026 · Track: Liberty & Security · Group 6**
 
-Passage turns "how do liberty and security differ between home and my destination?" into a
+Liberty Compass turns "how do liberty and security differ between home and my destination?" into a
 **sourced, dated briefing document** — specific to who you are. Not a country score card. Every
 fact is a claim that carries its evidence type, the date it reflects, its source, and how sure
 we are.
 
-Pick your home country, your destination, and (optionally) the group(s) you belong to. Passage
+Pick your home country, your destination, and (optionally) the group(s) you belong to. Liberty Compass
 assembles a briefing that:
 
 - **Ranks what changes for you** by severity — anything the destination criminalises, enforces or
@@ -68,7 +68,7 @@ site, no backend, no database.
 
 ## Important disclaimer
 
-Passage is an **informational prototype**. Laws and indices are simplified and can be out of date;
+Liberty Compass is an **informational prototype**. Laws and indices are simplified and can be out of date;
 every claim shows its evidence type and certainty. **Laws differ from lived experience, and this is
 not legal advice.** Always confirm with official government channels and your host institution
 before you travel. Built with only publicly available data and openly-licensed assets.
