@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react'
 import { allUsedSources } from '../data/sources.js'
+import { CITY_CREDITS } from '../data/cityCredits.js'
 import { AUDIENCES } from '../data/audiences.js'
 import { TOPICS } from '../data/topics.js'
 import { EVIDENCE_LABEL, CERTAINTY } from '../lib/format.js'
@@ -119,6 +120,25 @@ export default function Sources() {
               ) : (
                 <span className="shrink-0 font-mono text-[10px] text-ink3">cited on claim</span>
               )}
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <Section title="Image credits">
+        <p className="text-[14px] leading-relaxed text-ink3">
+          Country hero photos are the lead images from the relevant Wikipedia article, used under their Creative
+          Commons licences with attribution. Countries without a permissive photo use an original generated skyline.
+        </p>
+        <ul className="mt-4 divide-y divide-line border-y border-line">
+          {Object.values(CITY_CREDITS).map((c, i) => (
+            <li key={i} className="flex items-baseline justify-between gap-3 py-2.5 text-[13px]">
+              <span className="text-ink">
+                {c.city} <span className="text-ink3">— {c.artist} · {c.licence}</span>
+              </span>
+              <a href={c.source} target="_blank" rel="noreferrer" className="inline-flex shrink-0 items-center gap-1 text-accent hover:underline">
+                Commons <ExternalLink className="h-3.5 w-3.5" />
+              </a>
             </li>
           ))}
         </ul>
