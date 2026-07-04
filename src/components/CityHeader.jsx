@@ -2,10 +2,11 @@ import { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 // Destination hero. Cycles through the team's own images for the country as an
-// auto-advancing carousel (realistic shots first, playful ones after). All
-// images are bundled locally — no runtime external request. Falls back to a
-// generated skyline if a country has no images. A bottom scrim keeps the
-// overlaid country name readable.
+// auto-advancing carousel (playful image first, realistic photos after). Each
+// image is shown in full (object-contain) over a blurred copy of itself, so the
+// subject — a panda's face, a skyline — is never cropped, whatever the box
+// shape. All images are bundled locally; no runtime external request. Falls
+// back to a generated skyline if a country has no images.
 
 const files = import.meta.glob('../assets/cities/*/*.jpg', { eager: true, import: 'default' })
 const BY_CODE = {}
@@ -29,7 +30,7 @@ export default function CityHeader({ dest }) {
   const [idx, setIdx] = useState(0)
   const [paused, setPaused] = useState(false)
 
-  // Reset to the first (realistic) image whenever the destination changes.
+  // Reset to the first (playful) image whenever the destination changes.
   useEffect(() => setIdx(0), [dest.code])
 
   // Auto-advance, paused on hover/focus.
@@ -45,30 +46,43 @@ export default function CityHeader({ dest }) {
 
   return (
     <div
-      className="group absolute inset-0"
+      className="group absolute inset-0 bg-surface2"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocusCapture={() => setPaused(true)}
       onBlurCapture={() => setPaused(false)}
     >
       {imgs.map((src, i) => (
-        <img
+        <div
           key={src}
-          src={src}
-          alt={i === idx ? `${cityName}, ${dest.name}` : ''}
           aria-hidden={i !== idx}
-          draggable="false"
-          className={`absolute inset-0 h-full w-full select-none object-cover transition-opacity duration-700 ${i === idx ? 'opacity-100' : 'opacity-0'}`}
-        />
+          className={`absolute inset-0 transition-opacity duration-700 ${i === idx ? 'opacity-100' : 'opacity-0'}`}
+        >
+          {/* Blurred copy fills the box so there are no empty bars. */}
+          <img
+            src={src}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full scale-125 object-cover blur-2xl"
+            style={{ filter: 'blur(26px) brightness(0.9)' }}
+          />
+          {/* The full image, never cropped. */}
+          <img
+            src={src}
+            alt={i === idx ? `${cityName}, ${dest.name}` : ''}
+            draggable="false"
+            className="absolute inset-0 h-full w-full select-none object-contain"
+          />
+        </div>
       ))}
 
       {/* Bottom scrim so the overlaid country name stays legible. */}
       <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-28"
-        style={{ background: 'linear-gradient(to top, rgb(var(--c-surface)) 10%, rgba(var(--c-surface) / 0.5) 45%, transparent)' }}
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-24"
+        style={{ background: 'linear-gradient(to top, rgb(var(--c-surface)) 6%, rgba(var(--c-surface) / 0.42) 40%, transparent)' }}
       />
 
-      <span className="absolute right-3 top-3 z-20 rounded bg-surface/75 px-2 py-1 font-mono text-[9px] text-ink2 backdrop-blur-sm">
+      <span className="absolute right-3 top-3 z-20 rounded bg-surface/80 px-2 py-1 font-mono text-[9px] text-ink2 backdrop-blur-sm">
         {cityName}
       </span>
 

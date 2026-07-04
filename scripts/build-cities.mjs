@@ -11,18 +11,25 @@ const OUT = 'src/assets/cities'
 const WIDTH = 1400
 const QUALITY = 82
 
-// Realistic image(s) first so the hero opens on a real scene, playful last.
+// Playful image first (the Liberty Compass vibe), then the realistic photos.
+// US leads with the neutral "eagle diner" rather than the Trump image (kept last).
 const MAP = {
-  us: ['usa_hotdog_statue_of_liberty.jpg', 'usa.jpg', 'eagle_s_feast_at_the_americana_diner.png', 'usa_panda_with_donald_trump.jpg'],
-  br: ['brazil_rio_copacabana.jpg', 'rio_de_janeiro_brazil.jpg', 'capybara_carnival_skater_on_beachfront_promenade.png'],
-  de: ['germany_berlin_currywurst.jpg', 'berlin_germany.jpg', 'techno_dachshund_at_brandenburg_gate.png'],
-  no: ['norway_haaland_fjord.jpg', 'norway.jpg', 'celebratory_moment_with_moose_and_football.png'],
-  ke: ['kenya_safari.jpg', 'kenya.jpg', 'safari_tour_led_by_a_lion.png'],
-  eg: ['egypt_giza_pyramids.jpg', 'giza_egypt.jpg', 'regal_cat_pharaoh_and_selfie_camel.png'],
-  za: ['south_africa_penguins.jpg', 'south_africa.jpg', 'lifeguard_penguin_briefing_at_the_beach.png'],
-  cn: ['china_great_wall_walking.jpg', 'china_great_wall_bamboo_beer.jpg', 'china.jpg', 'red_panda_on_scooter_atop_great_wall.png'],
-  au: ['australia_kangaroo.jpg', 'australia.jpg', 'cool_koala_catches_the_wave.png'],
-  uz: ['uzbekistan_bukhara.jpg', 'bukhara_uzbekistan.jpg', 'camel_playing_chess_in_bukhara.png'],
+  us: ['eagle_s_feast_at_the_americana_diner.png', 'usa_hotdog_statue_of_liberty.jpg', 'usa.jpg', 'usa_panda_with_donald_trump.jpg'],
+  br: ['capybara_carnival_skater_on_beachfront_promenade.png', 'brazil_rio_copacabana.jpg', 'rio_de_janeiro_brazil.jpg'],
+  de: ['techno_dachshund_at_brandenburg_gate.png', 'germany_berlin_currywurst.jpg', 'berlin_germany.jpg'],
+  no: ['celebratory_moment_with_moose_and_football.png', 'norway_haaland_fjord.jpg', 'norway.jpg'],
+  ke: ['safari_tour_led_by_a_lion.png', 'kenya_safari.jpg', 'kenya.jpg'],
+  eg: ['regal_cat_pharaoh_and_selfie_camel.png', 'egypt_giza_pyramids.jpg', 'giza_egypt.jpg'],
+  za: ['lifeguard_penguin_briefing_at_the_beach.png', 'south_africa_penguins.jpg', 'south_africa.jpg'],
+  cn: ['red_panda_on_scooter_atop_great_wall.png', 'china_great_wall_walking.jpg', 'china_great_wall_bamboo_beer.jpg', 'china.jpg'],
+  au: ['cool_koala_catches_the_wave.png', 'australia_kangaroo.jpg', 'australia.jpg'],
+  uz: ['camel_playing_chess_in_bukhara.png', 'uzbekistan_bukhara.jpg', 'bukhara_uzbekistan.jpg'],
+}
+
+// Guard: never wipe the bundled images if the (removable) source drive is gone.
+if (!existsSync(SRC_DIR)) {
+  console.error(`Source ${SRC_DIR} not found — aborting so the bundled images in ${OUT} are not wiped.`)
+  process.exit(1)
 }
 
 if (existsSync(OUT)) rmSync(OUT, { recursive: true, force: true })
