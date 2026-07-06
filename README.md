@@ -85,6 +85,7 @@ src/
     jurisdictions.js   # the claims spine — 10 countries × sourced, dated claims (Tier A, curated)
     world.json         # GENERATED — every country × 9 indices in 4 domains (Tier B, indexed)
     signals.json       # GENERATED — travel-advisory level per country + curated news (nightly)
+    visa.json          # GENERATED — home→destination entry requirement matrix (Passport Index)
     cityPhotos.json    # GENERATED — per-country hero photo credits (author · licence · source)
     topics.js          # catalog: position topics (comparable states) + obligations (duties)
     audiences.js       # reader groups → which topics weigh most
@@ -95,11 +96,12 @@ src/
     dashboard.js       # area scores (published indices + band), advisories, verdict
     world.js           # read layer over world.json (domains, normalisation, tone, sources)
     signals.js         # read layer over signals.json (advisory + news)
+    visa.js            # read layer over visa.json (home passport → destination requirement)
     ask.js             # grounded retrieval over the claim graph (cites; refuses; no generation)
     useTheme.js        # shared light/dark store
   components/           # Header · Sidebar · Footer · Logo · CountrySelect · AudienceSelect
                         # CityHeader · ScoreRows · OverallScale · CuratedBriefing
-                        # IndexedComparison · SignalsPanel · AskPanel · FactCard · ClaimMeta
+                        # IndexedComparison · SignalsPanel · EntryPanel · AskPanel · FactCard
   pages/                # Home · Briefing · Explore · Sources · Privacy · Impressum (About)
   assets/
     fonts/              # self-hosted woff2 (Newsreader · IBM Plex Sans · IBM Plex Mono)
@@ -119,6 +121,7 @@ attribution.
 ```bash
 node scripts/fetch-world.mjs     # rebuild src/data/world.json — every country × 9 indices in 4 domains (via OWID)
 node scripts/fetch-signals.mjs   # rebuild src/data/signals.json — travel-advisory level per country + curated news
+node scripts/fetch-visa.mjs      # rebuild src/data/visa.json — home→destination entry requirement (Passport Index)
 node scripts/refresh-data.mjs    # print a few indices for the 10 curated countries (spot-check helper)
 node scripts/fetch-fonts.mjs     # re-download & self-host the web fonts into src/assets/fonts
 node scripts/fetch-cities.mjs    # fetch + optimise genuine CC-licensed landmark photos into src/assets/cities/<code>/

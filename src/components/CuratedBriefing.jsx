@@ -9,6 +9,7 @@ import ScoreRows from './ScoreRows.jsx'
 import OverallScale from './OverallScale.jsx'
 import CityHeader from './CityHeader.jsx'
 import SignalsPanel from './SignalsPanel.jsx'
+import EntryPanel from './EntryPanel.jsx'
 import AskPanel from './AskPanel.jsx'
 import FactCard from './FactCard.jsx'
 import Checklist from './Checklist.jsx'
@@ -119,6 +120,8 @@ export default function CuratedBriefing({ origin, dest, aud, jump }) {
 
         {/* Right column */}
         <div className="flex min-w-0 flex-col gap-5">
+          <EntryPanel origin={origin} dest={dest} />
+
           <section id="sec-scores" className="card scroll-mt-4 p-5">
             <div className="mb-1.5 flex items-baseline justify-between">
               <h3 className="flex items-center gap-2 font-serif text-[18px] font-semibold text-ink">

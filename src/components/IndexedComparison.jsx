@@ -2,6 +2,7 @@ import { ArrowRight, ExternalLink, Info } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { INDICES, DOMAIN_KEYS, indexView } from '../lib/world.js'
 import SignalsPanel from './SignalsPanel.jsx'
+import EntryPanel from './EntryPanel.jsx'
 
 const BAR = { success: 'bg-success', warn: 'bg-warn', danger: 'bg-danger', ink3: 'bg-ink3' }
 const TXT = { success: 'text-success', warn: 'text-warn', danger: 'text-danger', ink2: 'text-ink2' }
@@ -38,6 +39,10 @@ export default function IndexedComparison({ oInfo, dInfo, aud = [] }) {
         <CountryTag info={oInfo} role="home" />
         <ArrowRight className="h-5 w-5 shrink-0 text-ink3" aria-hidden="true" />
         <CountryTag info={dInfo} role="destination" />
+      </div>
+
+      <div className="mb-6">
+        <EntryPanel origin={oInfo} dest={dInfo} />
       </div>
 
       {/* One section per domain */}
