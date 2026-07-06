@@ -8,7 +8,7 @@ import AudienceSelect from '../components/AudienceSelect.jsx'
 import { COUNTRY_COUNT } from '../lib/world.js'
 
 const FEATURES = [
-  ['01', 'Built for marginalised students — the differences that most affect you.'],
+  ['01', 'For anyone crossing a border — travellers, students and people relocating.'],
   ['02', 'Every figure links to a public, named source. No black boxes.'],
   ['03', 'Nothing about you is saved. We never ask who you are.'],
 ]
@@ -40,8 +40,8 @@ export default function Home() {
             Know how your rights change the moment you cross the border.
           </h1>
           <p className="mt-5 max-w-[480px] text-[16.5px] leading-relaxed text-ink2">
-            Pick where you’re coming from and where you’re heading. Liberty Compass compares how liberty and security differ
-            between the two — across health, law, expression, safety and more — and surfaces what matters for who you are.
+            Pick where you’re coming from and where you’re heading. Liberty Compass compares how rights, safety, health
+            and everyday life differ between the two — and surfaces what matters for who you are.
           </p>
           <div className="mt-7 flex max-w-[460px] flex-col gap-3">
             {FEATURES.map(([n, t]) => (
