@@ -7,9 +7,13 @@ import {
   COUNTRIES, REGIONS, INDICES, INDEX_KEYS, DOMAIN_KEYS, COUNTRY_COUNT, CURATED_CODES,
   WORLD_GENERATED_AT, indexView, availableCount,
 } from '../lib/world.js'
+import { advisoryFor } from '../lib/signals.js'
 
 const BAR = { success: 'bg-success', warn: 'bg-warn', danger: 'bg-danger', ink3: 'bg-ink3' }
 const TXT = { success: 'text-success', warn: 'text-warn', danger: 'text-danger', ink3: 'text-ink3' }
+const ADV_BADGE = {
+  success: 'bg-success-bg text-success', warn: 'bg-warn-bg text-warn', danger: 'bg-danger-bg text-danger',
+}
 
 // Explore — the Tier B surface. Every country, with nine published indices across
 // four domains, each dated and sourced. Honest by construction: a value we don't
@@ -135,11 +139,20 @@ export default function Explore() {
 
 function CountryCard({ c }) {
   const have = availableCount(c)
+  const adv = advisoryFor(c.code)
   return (
     <div className="card flex flex-col p-4">
-      <div className="mb-3 flex items-center gap-2.5">
+      <div className="mb-3 flex items-center gap-2">
         <span className={`fi fi-${c.flag} shrink-0`} style={{ width: '1.5rem', height: '1.125rem' }} role="img" aria-label={`${c.name} flag`} />
         <span className="min-w-0 flex-1 truncate font-serif text-[16px] font-semibold text-ink" title={c.name}>{c.name}</span>
+        {adv && (
+          <span
+            className={`shrink-0 rounded px-1.5 py-0.5 text-[9.5px] font-semibold uppercase tracking-wide ${ADV_BADGE[adv.tone]}`}
+            title={`US State Dept — Level ${adv.level}: ${adv.label}`}
+          >
+            Lvl {adv.level}
+          </span>
+        )}
         {c.curated ? (
           <span className="shrink-0 rounded bg-accent-bg px-1.5 py-0.5 text-[9.5px] font-semibold uppercase tracking-wide text-accent">Curated</span>
         ) : (

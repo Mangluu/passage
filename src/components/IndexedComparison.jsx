@@ -1,6 +1,7 @@
 import { ArrowRight, ExternalLink, Info } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { INDICES, DOMAIN_KEYS, indexView } from '../lib/world.js'
+import SignalsPanel from './SignalsPanel.jsx'
 
 const BAR = { success: 'bg-success', warn: 'bg-warn', danger: 'bg-danger', ink3: 'bg-ink3' }
 const TXT = { success: 'text-success', warn: 'text-warn', danger: 'text-danger', ink2: 'text-ink2' }
@@ -15,7 +16,7 @@ const CHIP = {
 // each dated and linked, and is explicit that this is not the full briefing.
 // "Better/worse" is judged on the normalised goodness, so lower-is-better metrics
 // (homicide) read correctly.
-export default function IndexedComparison({ oInfo, dInfo }) {
+export default function IndexedComparison({ oInfo, dInfo, aud = [] }) {
   const uncurated = [oInfo, dInfo].filter((c) => !c.curated).map((c) => c.name)
   const curatedOne = [oInfo, dInfo].find((c) => c.curated)
 
@@ -53,6 +54,11 @@ export default function IndexedComparison({ oInfo, dInfo }) {
             </section>
           )
         })}
+      </div>
+
+      {/* Freshness layer for the destination */}
+      <div className="mt-6">
+        <SignalsPanel dest={dInfo} audiences={aud} />
       </div>
 
       <div className="mt-8 border-t border-line pt-5 text-[12px] leading-relaxed text-ink3">

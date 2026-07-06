@@ -82,7 +82,7 @@ export default function Briefing() {
         {bothCurated ? (
           <CuratedBriefing origin={origin} dest={dest} aud={aud} jump={jump} />
         ) : (
-          <IndexedComparison oInfo={oInfo} dInfo={dInfo} />
+          <IndexedComparison oInfo={oInfo} dInfo={dInfo} aud={aud} />
         )}
       </main>
     </div>

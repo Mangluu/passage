@@ -8,6 +8,8 @@ import { CLUSTER_ICON } from '../lib/icons.js'
 import ScoreRows from './ScoreRows.jsx'
 import OverallScale from './OverallScale.jsx'
 import CityHeader from './CityHeader.jsx'
+import SignalsPanel from './SignalsPanel.jsx'
+import AskPanel from './AskPanel.jsx'
 import FactCard from './FactCard.jsx'
 import Checklist from './Checklist.jsx'
 
@@ -111,6 +113,8 @@ export default function CuratedBriefing({ origin, dest, aud, jump }) {
               ))}
             </div>
           </section>
+
+          <AskPanel origin={origin} dest={dest} audiences={aud} />
         </div>
 
         {/* Right column */}
@@ -157,6 +161,8 @@ export default function CuratedBriefing({ origin, dest, aud, jump }) {
               <EmLine l="Fire" v={e.fire} />
             </div>
           </section>
+
+          <SignalsPanel dest={dest} audiences={aud} />
         </div>
       </div>
 
