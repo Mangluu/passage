@@ -4,17 +4,16 @@ import { Search, ExternalLink, ShieldCheck, X } from 'lucide-react'
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import {
-  COUNTRIES, REGIONS, INDICES, INDEX_KEYS, INDEX_SHORT, COUNTRY_COUNT, CURATED_CODES,
-  WORLD_GENERATED_AT, indexView,
+  COUNTRIES, REGIONS, INDICES, INDEX_KEYS, DOMAIN_KEYS, COUNTRY_COUNT, CURATED_CODES,
+  WORLD_GENERATED_AT, indexView, availableCount,
 } from '../lib/world.js'
 
-const BAR_BG = { success: 'bg-success', warn: 'bg-warn', danger: 'bg-danger', ink3: 'bg-ink3' }
+const BAR = { success: 'bg-success', warn: 'bg-warn', danger: 'bg-danger', ink3: 'bg-ink3' }
 const TXT = { success: 'text-success', warn: 'text-warn', danger: 'text-danger', ink3: 'text-ink3' }
 
-// Explore — the Tier B surface. Every country, with the three published indices
-// we bundle at build time, each dated and sourced. Honest by construction: a
-// value we don't have is simply absent, and "indexed" is labelled as distinct
-// from the hand-verified curated briefings.
+// Explore — the Tier B surface. Every country, with nine published indices across
+// four domains, each dated and sourced. Honest by construction: a value we don't
+// have is simply absent, and "indexed" is labelled as distinct from curated.
 export default function Explore() {
   const [q, setQ] = useState('')
   const [region, setRegion] = useState('')
@@ -34,16 +33,15 @@ export default function Explore() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
-        {/* Intro */}
         <div className="max-w-3xl">
           <div className="eyebrow mb-3">All countries · indexed</div>
           <h1 className="font-serif text-[36px] font-medium leading-[1.08] tracking-tight text-ink sm:text-[44px]">
             Every country, indexed — and honest about it.
           </h1>
           <p className="mt-4 text-[16px] leading-relaxed text-ink2">
-            The full briefing is hand-verified for {CURATED_CODES.size} countries. For the other {COUNTRY_COUNT - CURATED_CODES.size},
-            here are three published indices — pulled straight from the source, dated, and never invented. If we don’t
-            have a value, we leave it blank rather than guess.
+            The full briefing is hand-verified for {CURATED_CODES.size} countries. For all {COUNTRY_COUNT}, here are
+            {' '}{INDEX_KEYS.length} published indices across {DOMAIN_KEYS.length} domains — pulled straight from the
+            source, dated, and never invented. If we don’t have a value, we leave it blank rather than guess.
           </p>
           <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[11px] text-ink3">
             <ShieldCheck className="h-3.5 w-3.5 text-success" aria-hidden="true" />
@@ -52,29 +50,30 @@ export default function Explore() {
           </p>
         </div>
 
-        {/* What the three indices are — the provenance legend for every value below */}
-        <div className="mt-8 grid gap-3 sm:grid-cols-3">
-          {INDEX_KEYS.map((k) => {
-            const m = INDICES[k]
-            return (
-              <div key={k} className="card p-4">
-                <div className="text-[13px] font-semibold text-ink">{INDEX_SHORT[k]}</div>
-                <p className="mt-1 text-[11.5px] leading-snug text-ink3">{m.note}</p>
-                <a
-                  href={m.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-2 inline-flex items-center gap-1 text-[11.5px] text-accent hover:underline"
-                >
-                  {m.org} <ExternalLink className="h-3 w-3" />
-                </a>
-                <span className="ml-1 font-mono text-[10px] text-ink3">via {m.via}</span>
-              </div>
-            )
-          })}
+        {/* The provenance legend — every index grouped by domain, each linked */}
+        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {DOMAIN_KEYS.map((d) => (
+            <div key={d.id} className="card p-4">
+              <div className="eyebrow mb-2.5 text-accent">{d.label}</div>
+              <ul className="flex flex-col gap-2.5">
+                {d.keys.map((k) => {
+                  const m = INDICES[k]
+                  return (
+                    <li key={k}>
+                      <div className="text-[12.5px] font-medium text-ink">{m.short}</div>
+                      <p className="mt-0.5 text-[10.5px] leading-snug text-ink3">{m.note}</p>
+                      <a href={m.url} target="_blank" rel="noreferrer" className="mt-0.5 inline-flex items-center gap-0.5 text-[10.5px] text-accent hover:underline">
+                        {m.org} <ExternalLink className="h-2.5 w-2.5" />
+                      </a>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        {/* Tier legend — the honesty spine */}
+        {/* Tier legend */}
         <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 rounded-xl border border-line bg-surface2/40 px-4 py-3 text-[12px] text-ink2">
           <span className="inline-flex items-center gap-1.5">
             <span className="rounded bg-accent-bg px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-accent">Curated</span>
@@ -84,12 +83,12 @@ export default function Explore() {
             <span className="rounded bg-surface2 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-ink3">Indexed</span>
             published indices only — not yet verified
           </span>
-          <span className="text-ink3">A blank value = we don’t have it. Laws differ from lived experience; not legal advice.</span>
+          <span className="text-ink3">Bars show each value normalised so longer = better. Blank = no data. Not legal advice.</span>
         </div>
 
         {/* Controls */}
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-          <div className="relative flex-1">
+        <div className="mt-8 flex flex-col gap-3">
+          <div className="relative">
             <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink3" />
             <input
               value={q}
@@ -103,24 +102,20 @@ export default function Explore() {
               </button>
             )}
           </div>
-        </div>
-        <div className="mt-3 flex flex-wrap gap-2">
-          <FilterChip active={!region} onClick={() => setRegion('')}>All regions</FilterChip>
-          {REGIONS.map((r) => (
-            <FilterChip key={r} active={region === r} onClick={() => setRegion(r)}>{r}</FilterChip>
-          ))}
-        </div>
-
-        <div className="mt-5 flex items-baseline justify-between">
-          <p className="text-[12px] text-ink3">
-            {list.length} {list.length === 1 ? 'country' : 'countries'}
-            {curatedShown > 0 && <> · {curatedShown} curated</>}
-          </p>
+          <div className="flex flex-wrap gap-2">
+            <FilterChip active={!region} onClick={() => setRegion('')}>All regions</FilterChip>
+            {REGIONS.map((r) => (
+              <FilterChip key={r} active={region === r} onClick={() => setRegion(r)}>{r}</FilterChip>
+            ))}
+          </div>
         </div>
 
-        {/* Grid */}
+        <p className="mt-5 text-[12px] text-ink3">
+          {list.length} {list.length === 1 ? 'country' : 'countries'}{curatedShown > 0 && <> · {curatedShown} curated</>}
+        </p>
+
         {list.length ? (
-          <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-3 grid items-start gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {list.map((c) => <CountryCard key={c.code} c={c} />)}
           </div>
         ) : (
@@ -128,9 +123,8 @@ export default function Explore() {
         )}
 
         <p className="mt-10 border-t border-line pt-5 text-[12px] leading-relaxed text-ink3">
-          “Indexed” countries show published index values only — machine-ingested, each dated and linked, but without the
-          per-claim legal verification the curated briefings carry. A value’s year is the year the source reflects, not
-          today.{' '}
+          “Indexed” countries show published index values only — machine-ingested, each dated and linked, but without
+          the per-claim legal verification the curated briefings carry. A value’s year is the year the source reflects.{' '}
           <Link to="/sources" className="text-accent hover:underline">Full method &amp; sources →</Link>
         </p>
       </main>
@@ -140,6 +134,7 @@ export default function Explore() {
 }
 
 function CountryCard({ c }) {
+  const have = availableCount(c)
   return (
     <div className="card flex flex-col p-4">
       <div className="mb-3 flex items-center gap-2.5">
@@ -151,31 +146,40 @@ function CountryCard({ c }) {
           <span className="shrink-0 rounded bg-surface2 px-1.5 py-0.5 text-[9.5px] font-semibold uppercase tracking-wide text-ink3">Indexed</span>
         )}
       </div>
-      <div className="flex flex-1 flex-col gap-2.5">
-        {INDEX_KEYS.map((k) => <MetricRow key={k} c={c} k={k} />)}
+
+      <div className="flex flex-1 flex-col gap-3">
+        {DOMAIN_KEYS.map((d) => {
+          const rows = d.keys.filter((k) => c.values[k])
+          if (!rows.length) return null
+          return (
+            <div key={d.id}>
+              <div className="eyebrow mb-1.5 text-[9px]">{d.label}</div>
+              <div className="flex flex-col gap-2">
+                {rows.map((k) => <MetricRow key={k} c={c} k={k} />)}
+              </div>
+            </div>
+          )
+        })}
       </div>
+
+      <div className="mt-3 border-t border-line pt-2 font-mono text-[9.5px] text-ink3">{have} of {INDEX_KEYS.length} indices</div>
     </div>
   )
 }
 
 function MetricRow({ c, k }) {
   const v = indexView(c, k)
-  const m = INDICES[k]
+  if (!v) return null
   return (
     <div>
       <div className="flex items-baseline justify-between gap-2">
-        <span className="text-[11.5px] text-ink2">{INDEX_SHORT[k]}</span>
-        {v ? (
-          <span className="shrink-0 font-mono text-[11px] tnum text-ink3">
-            <span className={`font-semibold ${TXT[v.tone]}`}>{v.value}</span>
-            <span className="text-ink3">/100 · {v.asOf}</span>
-          </span>
-        ) : (
-          <span className="shrink-0 font-mono text-[11px] text-ink3" title={`No ${m.org} value for ${c.name}`}>no data</span>
-        )}
+        <span className="truncate text-[11.5px] text-ink2">{v.meta.short}</span>
+        <span className={`shrink-0 font-mono text-[11px] tnum font-semibold ${TXT[v.tone]}`}>
+          {v.display} <span className="font-normal text-ink3">· {v.asOf}</span>
+        </span>
       </div>
       <div className="mt-1 h-1.5 overflow-hidden rounded-full bg-surface2">
-        {v && <div className={`h-full rounded-full ${BAR_BG[v.tone]}`} style={{ width: `${v.value}%` }} />}
+        <div className={`h-full rounded-full ${BAR[v.tone]}`} style={{ width: `${v.norm}%` }} />
       </div>
     </div>
   )

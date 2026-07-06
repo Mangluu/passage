@@ -1,38 +1,158 @@
 {
   "generatedAt": "2026-07-06",
+  "domains": [
+    {
+      "id": "rights",
+      "label": "Rights & liberty"
+    },
+    {
+      "id": "safety",
+      "label": "Safety & integrity"
+    },
+    {
+      "id": "health",
+      "label": "Health"
+    },
+    {
+      "id": "access",
+      "label": "Development & access"
+    }
+  ],
   "indices": {
     "fh_freedom": {
+      "domain": "rights",
       "org": "Freedom House",
       "name": "Global Freedom score",
-      "note": "Aggregate of political rights & civil liberties (0–100). Higher = freer.",
+      "short": "Overall freedom",
+      "note": "Political rights & civil liberties (0–100). Higher = freer.",
       "url": "https://freedomhouse.org/countries/freedom-world/scores",
       "via": "Our World in Data",
       "viaUrl": "https://ourworldindata.org/grapher/freedom-score-fh",
+      "unit": "/100",
       "min": 0,
       "max": 100,
-      "higherIsBetter": true
+      "higherIsBetter": true,
+      "dp": 0
     },
     "eq_lgbt": {
+      "domain": "rights",
       "org": "Equaldex",
       "name": "LGBT Legal Equality Index",
+      "short": "LGBTQ+ legal equality",
       "note": "Legal rights for LGBTQ+ people (0–100). Higher = more equal.",
       "url": "https://www.equaldex.com/equality-index",
       "via": "Our World in Data",
       "viaUrl": "https://ourworldindata.org/grapher/lgbt-legal-equality-index",
+      "unit": "/100",
       "min": 0,
       "max": 100,
-      "higherIsBetter": true
+      "higherIsBetter": true,
+      "dp": 0
     },
     "wbl_women": {
+      "domain": "rights",
       "org": "World Bank",
-      "name": "Women, Business and the Law Index",
+      "name": "Women, Business and the Law",
+      "short": "Women's legal equality",
       "note": "Laws affecting women's economic opportunity (0–100). Higher = more equal.",
       "url": "https://wbl.worldbank.org/",
       "via": "Our World in Data",
       "viaUrl": "https://ourworldindata.org/grapher/women-business-and-the-law-index",
+      "unit": "/100",
       "min": 0,
       "max": 100,
-      "higherIsBetter": true
+      "higherIsBetter": true,
+      "dp": 0
+    },
+    "homicide": {
+      "domain": "safety",
+      "org": "UNODC",
+      "name": "Homicide rate",
+      "short": "Homicide rate",
+      "note": "Intentional homicides per 100,000 people. Lower = safer.",
+      "url": "https://dataunodc.un.org/dp-intentional-homicide-victims",
+      "via": "Our World in Data",
+      "viaUrl": "https://ourworldindata.org/grapher/homicide-rate-unodc",
+      "unit": "/100k",
+      "min": 0,
+      "max": 30,
+      "higherIsBetter": false,
+      "dp": 1
+    },
+    "corruption": {
+      "domain": "safety",
+      "org": "Transparency International",
+      "name": "Corruption Perceptions Index",
+      "short": "Absence of corruption",
+      "note": "Perceived public-sector integrity (0–100). Higher = cleaner.",
+      "url": "https://www.transparency.org/en/cpi",
+      "via": "Our World in Data",
+      "viaUrl": "https://ourworldindata.org/grapher/corruption-perception-index",
+      "unit": "/100",
+      "min": 0,
+      "max": 100,
+      "higherIsBetter": true,
+      "dp": 0
+    },
+    "uhc": {
+      "domain": "health",
+      "org": "WHO",
+      "name": "UHC Service Coverage Index",
+      "short": "Healthcare coverage",
+      "note": "Coverage of essential health services (0–100). Higher = better.",
+      "url": "https://www.who.int/data/gho/data/themes/universal-health-coverage",
+      "via": "Our World in Data",
+      "viaUrl": "https://ourworldindata.org/grapher/universal-health-coverage-index",
+      "unit": "/100",
+      "min": 0,
+      "max": 100,
+      "higherIsBetter": true,
+      "dp": 0
+    },
+    "life_expectancy": {
+      "domain": "health",
+      "org": "UN World Population Prospects",
+      "name": "Life expectancy at birth",
+      "short": "Life expectancy",
+      "note": "Life expectancy at birth, in years. Higher = better.",
+      "url": "https://ourworldindata.org/life-expectancy",
+      "via": "Our World in Data",
+      "viaUrl": "https://ourworldindata.org/grapher/life-expectancy",
+      "unit": "yrs",
+      "min": 50,
+      "max": 85,
+      "higherIsBetter": true,
+      "dp": 1
+    },
+    "internet": {
+      "domain": "access",
+      "org": "World Bank / ITU",
+      "name": "Individuals using the internet",
+      "short": "Internet access",
+      "note": "Share of people using the internet. Higher = more connected.",
+      "url": "https://data.worldbank.org/indicator/IT.NET.USER.ZS",
+      "via": "Our World in Data",
+      "viaUrl": "https://ourworldindata.org/grapher/share-of-individuals-using-the-internet",
+      "unit": "%",
+      "min": 0,
+      "max": 100,
+      "higherIsBetter": true,
+      "dp": 0
+    },
+    "gdp_pc": {
+      "domain": "access",
+      "org": "World Bank",
+      "name": "GDP per capita (PPP)",
+      "short": "Income level",
+      "note": "GDP per capita, PPP (international $) — a rough prosperity / cost proxy.",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.KD",
+      "via": "Our World in Data",
+      "viaUrl": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank",
+      "unit": "$",
+      "min": 0,
+      "max": 80000,
+      "higherIsBetter": true,
+      "dp": 0
     }
   },
   "countries": {
@@ -49,11 +169,35 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 0.5,
+          "value": 0,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 31.9,
+          "value": 32,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4,
+          "asOf": "2021"
+        },
+        "corruption": {
+          "value": 17,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 42,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 66,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 18,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 1984,
           "asOf": "2023"
         }
       }
@@ -71,12 +215,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 66.7,
+          "value": 67,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 91.3,
+          "value": 91,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.8,
+          "asOf": "2024"
+        },
+        "corruption": {
+          "value": 42,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 71,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 79.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 83,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 21641,
+          "asOf": "2024"
         }
       }
     },
@@ -93,12 +261,58 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 6.8,
+          "value": 7,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 57.5,
+          "value": 58,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.2,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 34,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 70,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 76.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 77,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 15502,
+          "asOf": "2024"
+        }
+      }
+    },
+    "AS": {
+      "name": "American Samoa",
+      "iso3": "ASM",
+      "flag": "as",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 0,
+          "asOf": "2019"
+        },
+        "life_expectancy": {
+          "value": 72.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 0,
+          "asOf": "1990"
         }
       }
     },
@@ -115,8 +329,28 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 85.7,
+          "value": 86,
           "asOf": "2026"
+        },
+        "homicide": {
+          "value": 2.6,
+          "asOf": "2020"
+        },
+        "uhc": {
+          "value": 75,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 95,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 65928,
+          "asOf": "2024"
         }
       }
     },
@@ -137,7 +371,49 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 79.4,
+          "value": 79,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.1,
+          "asOf": "2016"
+        },
+        "corruption": {
+          "value": 32,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 44,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 64.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 45,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 8902,
+          "asOf": "2024"
+        }
+      }
+    },
+    "AI": {
+      "name": "Anguilla",
+      "iso3": "AIA",
+      "flag": "ai",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 29.1,
+          "asOf": "2014"
+        },
+        "life_expectancy": {
+          "value": 79.3,
           "asOf": "2023"
         }
       }
@@ -155,12 +431,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 59.6,
+          "value": 60,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 68.8,
+          "value": 69,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 10.7,
+          "asOf": "2023"
+        },
+        "uhc": {
+          "value": 81,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 78,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 29372,
+          "asOf": "2024"
         }
       }
     },
@@ -177,12 +473,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 86.7,
+          "value": 87,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 79.4,
+          "value": 79,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.5,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 37,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 90,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 26772,
+          "asOf": "2024"
         }
       }
     },
@@ -199,12 +519,62 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 44.6,
+          "value": 45,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 90.6,
+          "value": 91,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.2,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 47,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 69,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 75.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 20079,
+          "asOf": "2024"
+        }
+      }
+    },
+    "AW": {
+      "name": "Aruba",
+      "iso3": "ABW",
+      "flag": "aw",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 1.9,
+          "asOf": "2014"
+        },
+        "life_expectancy": {
+          "value": 76.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 97,
+          "asOf": "2017"
+        },
+        "gdp_pc": {
+          "value": 44559,
+          "asOf": "2024"
         }
       }
     },
@@ -221,12 +591,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 94.5,
+          "value": 95,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 96.9,
+          "value": 97,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.9,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 77,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 89,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 83.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 97,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 60304,
+          "asOf": "2024"
         }
       }
     },
@@ -247,8 +641,32 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 96.9,
+          "value": 97,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.9,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 67,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 95,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 63788,
+          "asOf": "2024"
         }
       }
     },
@@ -265,12 +683,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 39.2,
+          "value": 39,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 85,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2,
+          "asOf": "2024"
+        },
+        "corruption": {
+          "value": 22,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 67,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 74.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 89,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 22072,
+          "asOf": "2024"
         }
       }
     },
@@ -287,12 +729,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 43.8,
+          "value": 44,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 81.3,
+          "value": 81,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 32.2,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 65,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 74.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 95,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 36244,
+          "asOf": "2024"
         }
       }
     },
@@ -309,12 +775,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 32.1,
+          "value": 32,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 68.1,
+          "value": 68,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.2,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 53,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 78,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 81.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 100,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 58892,
+          "asOf": "2024"
         }
       }
     },
@@ -335,8 +825,32 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 49.4,
+          "value": 49,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.3,
+          "asOf": "2018"
+        },
+        "corruption": {
+          "value": 23,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 54,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 74.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 45,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 8487,
+          "asOf": "2024"
         }
       }
     },
@@ -353,12 +867,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 38.3,
+          "value": 38,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 80,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 7.4,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 68,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 76.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 21838,
+          "asOf": "2024"
         }
       }
     },
@@ -375,12 +913,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 37.7,
+          "value": 38,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 75.6,
+          "value": 76,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.4,
+          "asOf": "2019"
+        },
+        "corruption": {
+          "value": 33,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 74.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 94,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 29041,
+          "asOf": "2024"
         }
       }
     },
@@ -397,12 +959,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 94.4,
+          "value": 94,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.1,
+          "asOf": "2021"
+        },
+        "corruption": {
+          "value": 69,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 86,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 96,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 63348,
+          "asOf": "2024"
         }
       }
     },
@@ -419,12 +1005,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 56.3,
+          "value": 56,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 82.5,
+          "value": 83,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 28.1,
+          "asOf": "2022"
+        },
+        "uhc": {
+          "value": 70,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 73.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 72,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 12621,
+          "asOf": "2024"
         }
       }
     },
@@ -441,12 +1047,58 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 38.3,
+          "value": 38,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 83.8,
+          "value": 84,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 45,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 38,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 60.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 32,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3901,
+          "asOf": "2024"
+        }
+      }
+    },
+    "BM": {
+      "name": "Bermuda",
+      "iso3": "BMU",
+      "flag": "bm",
+      "region": "Americas",
+      "subregion": "Northern America",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 6.2,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 98,
+          "asOf": "2017"
+        },
+        "gdp_pc": {
+          "value": 109312,
+          "asOf": "2024"
         }
       }
     },
@@ -463,11 +1115,35 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 56.3,
+          "value": 56,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 75,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.5,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 72,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 69,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 73,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 88,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 14610,
           "asOf": "2023"
         }
       }
@@ -485,11 +1161,49 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 86.5,
+          "value": 87,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 88.8,
+          "value": 89,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.4,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 28,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 67,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 68.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 70,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 11329,
+          "asOf": "2024"
+        }
+      }
+    },
+    "BQ": {
+      "name": "Bonaire Sint Eustatius and Saba",
+      "iso3": "BES",
+      "flag": "bq",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "life_expectancy": {
+          "value": 77.4,
           "asOf": "2023"
         }
       }
@@ -507,12 +1221,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 63.1,
+          "value": 63,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 85,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.2,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 33,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 64,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 86,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 20528,
+          "asOf": "2024"
         }
       }
     },
@@ -529,12 +1267,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 60.4,
+          "value": 60,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 63.8,
+          "value": 64,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 11.4,
+          "asOf": "2021"
+        },
+        "corruption": {
+          "value": 57,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 60,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 69.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 81,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 18069,
+          "asOf": "2024"
         }
       }
     },
@@ -551,12 +1313,58 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 93.2,
+          "value": 93,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 85,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 19.3,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 34,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 75.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 84,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 19652,
+          "asOf": "2024"
+        }
+      }
+    },
+    "VG": {
+      "name": "British Virgin Islands",
+      "iso3": "VGB",
+      "flag": "vg",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 8.2,
+          "asOf": "2006"
+        },
+        "life_expectancy": {
+          "value": 77.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 78,
+          "asOf": "2017"
         }
       }
     },
@@ -573,12 +1381,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 2.6,
+          "value": 3,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 53.1,
+          "value": 53,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.5,
+          "asOf": "2013"
+        },
+        "corruption": {
+          "value": 60,
+          "asOf": "2020"
+        },
+        "uhc": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 75.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 99,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 79072,
+          "asOf": "2024"
         }
       }
     },
@@ -595,12 +1427,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 56.7,
+          "value": 57,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 90.6,
+          "value": 91,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.1,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 43,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 73,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 75.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 82,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 34222,
+          "asOf": "2024"
         }
       }
     },
@@ -617,12 +1473,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 6.7,
+          "value": 7,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 82.5,
+          "value": 83,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 41,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 47,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 61.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 17,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 2548,
+          "asOf": "2024"
         }
       }
     },
@@ -639,12 +1515,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 9.4,
+          "value": 9,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 76.3,
+          "value": 76,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 5.6,
+          "asOf": "2016"
+        },
+        "corruption": {
+          "value": 17,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 48,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 63.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 11,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 1051,
+          "asOf": "2024"
         }
       }
     },
@@ -661,12 +1561,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 40.9,
+          "value": 41,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 81.3,
+          "value": 81,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.8,
+          "asOf": "2011"
+        },
+        "corruption": {
+          "value": 21,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 62,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 70.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 61,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 7009,
+          "asOf": "2024"
         }
       }
     },
@@ -683,12 +1607,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 3.9,
+          "value": 4,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 60,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 6.8,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 26,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 48,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 63.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 42,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 4917,
+          "asOf": "2024"
         }
       }
     },
@@ -705,12 +1653,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 95.7,
+          "value": 96,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 75,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 92,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 94,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 56707,
+          "asOf": "2024"
         }
       }
     },
@@ -727,11 +1699,61 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 54.8,
+          "value": 55,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 86.3,
+          "value": 86,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 7,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 62,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 71,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 76.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 74,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 9849,
+          "asOf": "2024"
+        }
+      }
+    },
+    "KY": {
+      "name": "Cayman Islands",
+      "iso3": "CYM",
+      "flag": "ky",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 4.4,
+          "asOf": "2020"
+        },
+        "life_expectancy": {
+          "value": 80.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 81,
+          "asOf": "2017"
+        },
+        "gdp_pc": {
+          "value": 79676,
           "asOf": "2023"
         }
       }
@@ -749,12 +1771,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 27.8,
+          "value": 28,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 77.5,
+          "value": 78,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 24,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 39,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 57.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 8,
+          "asOf": "2019"
+        },
+        "gdp_pc": {
+          "value": 1111,
+          "asOf": "2024"
         }
       }
     },
@@ -771,12 +1813,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 15.5,
+          "value": 15,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 66.3,
+          "value": 66,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 21,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 26,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 55.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 13,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 2413,
+          "asOf": "2024"
         }
       }
     },
@@ -799,6 +1861,30 @@
         "wbl_women": {
           "value": 80,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 6.3,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 63,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 81.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 94,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 30183,
+          "asOf": "2024"
         }
       }
     },
@@ -815,12 +1901,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 38.7,
+          "value": 39,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 78.1,
+          "value": 78,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.5,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 43,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 85,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 78,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 92,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 23846,
+          "asOf": "2024"
         }
       }
     },
@@ -837,12 +1947,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 91.7,
+          "value": 92,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 84.4,
+          "value": 84,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 24.9,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 39,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 77,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 18477,
+          "asOf": "2024"
         }
       }
     },
@@ -859,12 +1993,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 17.1,
+          "value": 17,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 65,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 21,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 52,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 66.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 36,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3483,
+          "asOf": "2024"
         }
       }
     },
@@ -885,7 +2039,49 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 58.1,
+          "value": 58,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 23,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 45,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 65.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 38,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 6181,
+          "asOf": "2024"
+        }
+      }
+    },
+    "CK": {
+      "name": "Cook Islands",
+      "iso3": "COK",
+      "flag": "ck",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 3.6,
+          "asOf": "2012"
+        },
+        "uhc": {
+          "value": 75,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 75.3,
           "asOf": "2023"
         }
       }
@@ -903,12 +2099,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 84.8,
+          "value": 85,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 91.9,
+          "value": 92,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 17.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 58,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 80.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 85,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 26973,
+          "asOf": "2024"
         }
       }
     },
@@ -925,12 +2145,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 31.4,
+          "value": 31,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 95,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 45,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 46,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 61.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 41,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 6747,
+          "asOf": "2024"
         }
       }
     },
@@ -947,12 +2187,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 80.4,
+          "value": 80,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 93.8,
+          "value": 94,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 47,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 76,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 78.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 84,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 42829,
+          "asOf": "2024"
         }
       }
     },
@@ -969,8 +2233,54 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 86.7,
+          "value": 87,
           "asOf": "2026"
+        },
+        "homicide": {
+          "value": 4.5,
+          "asOf": "2019"
+        },
+        "corruption": {
+          "value": 41,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 86,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 78.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 71,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CW": {
+      "name": "Curacao",
+      "iso3": "CUW",
+      "flag": "cw",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 16.9,
+          "asOf": "2007"
+        },
+        "life_expectancy": {
+          "value": 76.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 68,
+          "asOf": "2017"
+        },
+        "gdp_pc": {
+          "value": 28762,
+          "asOf": "2024"
         }
       }
     },
@@ -987,12 +2297,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 78.7,
+          "value": 79,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 96.9,
+          "value": 97,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1,
+          "asOf": "2024"
+        },
+        "corruption": {
+          "value": 56,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 76,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 81.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 91,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 52636,
+          "asOf": "2024"
         }
       }
     },
@@ -1013,8 +2347,32 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 93.8,
+          "value": 94,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.8,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 56,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 83,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 79.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 88,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 47964,
+          "asOf": "2024"
         }
       }
     },
@@ -1035,8 +2393,28 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 78.8,
+          "value": 79,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 20,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 41,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 61.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 31,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 1602,
+          "asOf": "2024"
         }
       }
     },
@@ -1053,12 +2431,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 93.8,
+          "value": 94,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.8,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 90,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 85,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 81.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 100,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 71431,
+          "asOf": "2024"
         }
       }
     },
@@ -1075,12 +2477,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 33.5,
+          "value": 33,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 71.3,
+          "value": 71,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 31,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 47,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 66,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 65,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 6871,
+          "asOf": "2024"
         }
       }
     },
@@ -1097,12 +2519,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 48.8,
+          "value": 49,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 62.5,
+          "value": 63,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 27.1,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 60,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 75,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 18739,
+          "asOf": "2024"
         }
       }
     },
@@ -1119,12 +2565,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 43.8,
+          "value": 44,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 86.3,
+          "value": 86,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 10.9,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 36,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 73,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 73.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 91,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 24230,
+          "asOf": "2024"
         }
       }
     },
@@ -1141,12 +2611,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 48.9,
+          "value": 49,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 86.3,
+          "value": 86,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.1,
+          "asOf": "2015"
+        },
+        "corruption": {
+          "value": 44,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 48,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 67.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 34,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3891,
+          "asOf": "2024"
         }
       }
     },
@@ -1163,12 +2657,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 89.1,
+          "value": 89,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 89.4,
+          "value": 89,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 45.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 32,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 78,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 77,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 13936,
+          "asOf": "2024"
         }
       }
     },
@@ -1185,12 +2703,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 4.7,
+          "value": 5,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 50.6,
+          "value": 51,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.3,
+          "asOf": "2017"
+        },
+        "corruption": {
+          "value": 30,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 71,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 73,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 16798,
+          "asOf": "2024"
         }
       }
     },
@@ -1207,12 +2749,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 47.7,
+          "value": 48,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 88.8,
+          "value": 89,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 7.9,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 30,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 79,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 68,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 11669,
+          "asOf": "2024"
         }
       }
     },
@@ -1229,12 +2795,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 38.2,
+          "value": 38,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 58.1,
+          "value": 58,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 13,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 49,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 63.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 60,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 15454,
+          "asOf": "2024"
         }
       }
     },
@@ -1251,11 +2837,31 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 6.5,
+          "value": 7,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 69.4,
+          "value": 69,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 15.6,
+          "asOf": "2012"
+        },
+        "corruption": {
+          "value": 13,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 40,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 68.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 20,
           "asOf": "2023"
         }
       }
@@ -1273,12 +2879,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 72.5,
+          "value": 73,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 97.5,
+          "value": 98,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.5,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 76,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 79,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 79.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 92,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 41190,
+          "asOf": "2024"
         }
       }
     },
@@ -1295,12 +2925,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 25.5,
+          "value": 26,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 46.3,
+          "value": 46,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 12.5,
+          "asOf": "2021"
+        },
+        "corruption": {
+          "value": 27,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 72,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 64.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 58,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 10380,
+          "asOf": "2024"
         }
       }
     },
@@ -1317,12 +2971,72 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 10.2,
+          "value": 10,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 80,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 8.5,
+          "asOf": "2012"
+        },
+        "corruption": {
+          "value": 37,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 33,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 67.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 17,
+          "asOf": "2021"
+        },
+        "gdp_pc": {
+          "value": 2892,
+          "asOf": "2024"
+        }
+      }
+    },
+    "FK": {
+      "name": "Falkland Islands",
+      "iso3": "FLK",
+      "flag": "fk",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "life_expectancy": {
+          "value": 79.2,
+          "asOf": "2023"
+        }
+      }
+    },
+    "FO": {
+      "name": "Faroe Islands",
+      "iso3": "FRO",
+      "flag": "fo",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "life_expectancy": {
+          "value": 80.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 98,
+          "asOf": "2017"
+        },
+        "gdp_pc": {
+          "value": 72060,
+          "asOf": "2024"
         }
       }
     },
@@ -1339,12 +3053,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 54.6,
+          "value": 55,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 82.5,
+          "value": 83,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.1,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 55,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 69,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 67.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 79,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 13592,
+          "asOf": "2024"
         }
       }
     },
@@ -1361,12 +3099,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 86.3,
+          "value": 86,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 97.5,
+          "value": 98,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 88,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 86,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 81.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 94,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 56123,
+          "asOf": "2024"
         }
       }
     },
@@ -1383,12 +3145,76 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 89.6,
+          "value": 90,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.3,
+          "asOf": "2024"
+        },
+        "corruption": {
+          "value": 67,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 83.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 89,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 54799,
+          "asOf": "2024"
+        }
+      }
+    },
+    "GF": {
+      "name": "French Guiana",
+      "iso3": "GUF",
+      "flag": "gf",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 13.4,
+          "asOf": "2020"
+        },
+        "life_expectancy": {
+          "value": 77,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PF": {
+      "name": "French Polynesia",
+      "iso3": "PYF",
+      "flag": "pf",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 0.4,
+          "asOf": "2009"
+        },
+        "life_expectancy": {
+          "value": 84.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 73,
+          "asOf": "2017"
         }
       }
     },
@@ -1405,12 +3231,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 37.5,
+          "value": 38,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 95,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 27,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 48,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 68.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 72,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 18924,
+          "asOf": "2024"
         }
       }
     },
@@ -1427,12 +3273,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 1.7,
+          "value": 2,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 69.4,
+          "value": 69,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 38,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 53,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 65.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 46,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3058,
+          "asOf": "2024"
         }
       }
     },
@@ -1449,12 +3315,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 47.2,
+          "value": 47,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 88.1,
+          "value": 88,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2,
+          "asOf": "2019"
+        },
+        "corruption": {
+          "value": 53,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 71,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 74.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 24884,
+          "asOf": "2024"
         }
       }
     },
@@ -1477,6 +3367,30 @@
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.9,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 75,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 87,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 81.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 94,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 62555,
+          "asOf": "2024"
         }
       }
     },
@@ -1493,12 +3407,58 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 12.4,
+          "value": 12,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 75,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.8,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 42,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 56,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 65.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 70,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 7056,
+          "asOf": "2024"
+        }
+      }
+    },
+    "GI": {
+      "name": "Gibraltar",
+      "iso3": "GIB",
+      "flag": "gi",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 0,
+          "asOf": "2024"
+        },
+        "life_expectancy": {
+          "value": 83.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 94,
+          "asOf": "2016"
         }
       }
     },
@@ -1515,12 +3475,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 91.7,
+          "value": 92,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.8,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 49,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 77,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 81.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 86,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 37474,
+          "asOf": "2024"
         }
       }
     },
@@ -1533,8 +3517,24 @@
       "curated": false,
       "values": {
         "eq_lgbt": {
-          "value": 93.2,
+          "value": 93,
           "asOf": "2026"
+        },
+        "homicide": {
+          "value": 5.4,
+          "asOf": "2016"
+        },
+        "life_expectancy": {
+          "value": 70.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 69,
+          "asOf": "2017"
+        },
+        "gdp_pc": {
+          "value": 71038,
+          "asOf": "2023"
         }
       }
     },
@@ -1551,12 +3551,76 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 27.3,
+          "value": 27,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 80.6,
+          "value": 81,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 13.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 56,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 78,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 75.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 74,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 17752,
+          "asOf": "2024"
+        }
+      }
+    },
+    "GP": {
+      "name": "Guadeloupe",
+      "iso3": "GLP",
+      "flag": "gp",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 5.7,
+          "asOf": "2016"
+        },
+        "life_expectancy": {
+          "value": 82.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GU": {
+      "name": "Guam",
+      "iso3": "GUM",
+      "flag": "gu",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 4.3,
+          "asOf": "2019"
+        },
+        "life_expectancy": {
+          "value": 77.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 81,
+          "asOf": "2017"
         }
       }
     },
@@ -1573,11 +3637,49 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 38.3,
+          "value": 38,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 73.8,
+          "value": 74,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 23.4,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 25,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 58,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 56,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 12641,
+          "asOf": "2024"
+        }
+      }
+    },
+    "GG": {
+      "name": "Guernsey",
+      "iso3": "GGY",
+      "flag": "gg",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "life_expectancy": {
+          "value": 83.3,
           "asOf": "2023"
         }
       }
@@ -1595,12 +3697,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 14.7,
+          "value": 15,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 73.8,
+          "value": 74,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 28,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 43,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 60.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 27,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 4016,
+          "asOf": "2024"
         }
       }
     },
@@ -1617,12 +3739,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 41.3,
+          "value": 41,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 51.9,
+          "value": 52,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.1,
+          "asOf": "2017"
+        },
+        "corruption": {
+          "value": 21,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 43,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 64.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 32,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 2744,
+          "asOf": "2024"
         }
       }
     },
@@ -1639,12 +3785,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 21.6,
+          "value": 22,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 86.9,
+          "value": 87,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 19.1,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 39,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 73,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 70.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 70517,
+          "asOf": "2024"
         }
       }
     },
@@ -1665,8 +3835,32 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 61.3,
+          "value": 61,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 41.2,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 16,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 44,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 64.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 39,
+          "asOf": "2019"
+        },
+        "gdp_pc": {
+          "value": 2810,
+          "asOf": "2024"
         }
       }
     },
@@ -1683,12 +3877,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 58.3,
+          "value": 58,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 75,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 31.4,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 22,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 64,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 58,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 6586,
+          "asOf": "2024"
         }
       }
     },
@@ -1705,8 +3923,28 @@
           "asOf": "2025"
         },
         "wbl_women": {
-          "value": 91.9,
+          "value": 92,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.4,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 74,
+          "asOf": "2024"
+        },
+        "life_expectancy": {
+          "value": 85.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 96,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 66154,
+          "asOf": "2024"
         }
       }
     },
@@ -1723,12 +3961,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 57.1,
+          "value": 57,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 93.8,
+          "value": 94,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 41,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 94,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 40687,
+          "asOf": "2024"
         }
       }
     },
@@ -1745,12 +4007,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 95.7,
+          "value": 96,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.3,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 77,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 90,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 100,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 67310,
+          "asOf": "2024"
         }
       }
     },
@@ -1767,12 +4053,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 48.1,
+          "value": 48,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 74.4,
+          "value": 74,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.8,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 38,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 69,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 70,
+          "asOf": "2025"
+        },
+        "gdp_pc": {
+          "value": 9818,
+          "asOf": "2024"
         }
       }
     },
@@ -1789,12 +4099,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 13.5,
+          "value": 13,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 70.6,
+          "value": 71,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.3,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 37,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 67,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 73,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 14470,
+          "asOf": "2024"
         }
       }
     },
@@ -1811,12 +4145,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 6.8,
+          "value": 7,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 31.3,
+          "value": 31,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.4,
+          "asOf": "2014"
+        },
+        "corruption": {
+          "value": 23,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 81,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 17484,
+          "asOf": "2024"
         }
       }
     },
@@ -1833,12 +4191,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 2.7,
+          "value": 3,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 48.1,
+          "value": 48,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 9.5,
+          "asOf": "2013"
+        },
+        "corruption": {
+          "value": 26,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 64,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 12725,
+          "asOf": "2024"
         }
       }
     },
@@ -1861,6 +4243,48 @@
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 77,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 96,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 119038,
+          "asOf": "2024"
+        }
+      }
+    },
+    "IM": {
+      "name": "Isle of Man",
+      "iso3": "IMN",
+      "flag": "im",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 0,
+          "asOf": "2016"
+        },
+        "life_expectancy": {
+          "value": 81,
+          "asOf": "2023"
         }
       }
     },
@@ -1877,12 +4301,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 72.9,
+          "value": 73,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 80.6,
+          "value": 81,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.6,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 64,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 85,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 88,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 47339,
+          "asOf": "2024"
         }
       }
     },
@@ -1899,12 +4347,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 73.4,
+          "value": 73,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 97.5,
+          "value": 98,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.6,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 54,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 83.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 89,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 53265,
+          "asOf": "2024"
         }
       }
     },
@@ -1921,12 +4393,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 23.7,
+          "value": 24,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 74.4,
+          "value": 74,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 49.4,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 44,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 74,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 89,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 11340,
+          "asOf": "2024"
         }
       }
     },
@@ -1943,11 +4439,49 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 56.8,
+          "value": 57,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 78.8,
+          "value": 79,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.2,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 71,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 86,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 84.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 87,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 46107,
+          "asOf": "2024"
+        }
+      }
+    },
+    "JE": {
+      "name": "Jersey",
+      "iso3": "JEY",
+      "flag": "je",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "life_expectancy": {
+          "value": 79.7,
           "asOf": "2023"
         }
       }
@@ -1965,12 +4499,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 27.1,
+          "value": 27,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 59.4,
+          "value": 59,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 49,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 74,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 93,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 9520,
+          "asOf": "2024"
         }
       }
     },
@@ -1987,12 +4545,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 33.2,
+          "value": 33,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 75.6,
+          "value": 76,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.6,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 40,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 83,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 74.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 93,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 35974,
+          "asOf": "2024"
         }
       }
     },
@@ -2009,12 +4591,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 23.6,
+          "value": 24,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 83.8,
+          "value": 84,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.9,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 32,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 57,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 63.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 35,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 5845,
+          "asOf": "2024"
         }
       }
     },
@@ -2031,12 +4637,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 28.3,
+          "value": 28,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 76.3,
+          "value": 76,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 7.1,
+          "asOf": "2012"
+        },
+        "uhc": {
+          "value": 51,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 66.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 88,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3257,
+          "asOf": "2024"
         }
       }
     },
@@ -2053,12 +4679,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 5.1,
+          "value": 5,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 38.1,
+          "value": 38,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.2,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 46,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 80.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 100,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 46137,
+          "asOf": "2024"
         }
       }
     },
@@ -2075,12 +4725,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 34.4,
+          "value": 34,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 76.9,
+          "value": 77,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 25,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 74,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 88,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 7049,
+          "asOf": "2024"
         }
       }
     },
@@ -2101,8 +4771,28 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 85.6,
+          "value": 86,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 33,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 64,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 69,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 64,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 8600,
+          "asOf": "2024"
         }
       }
     },
@@ -2119,12 +4809,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 57.5,
+          "value": 58,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.5,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 59,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 77,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 76.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 93,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 37612,
+          "asOf": "2024"
         }
       }
     },
@@ -2141,11 +4855,35 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 16.8,
+          "value": 17,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 58.8,
+          "value": 59,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.2,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 22,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 67,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 83,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 11330,
           "asOf": "2023"
         }
       }
@@ -2163,12 +4901,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 55.4,
+          "value": 55,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 80.6,
+          "value": 81,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 38.2,
+          "asOf": "2008"
+        },
+        "corruption": {
+          "value": 37,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 55,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 57.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 48,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 2640,
+          "asOf": "2024"
         }
       }
     },
@@ -2185,12 +4947,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 23.6,
+          "value": 24,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 81.3,
+          "value": 81,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 3.1,
+          "asOf": "2012"
+        },
+        "corruption": {
+          "value": 27,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 49,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 62.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 23,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 1646,
+          "asOf": "2024"
         }
       }
     },
@@ -2213,6 +4999,26 @@
         "wbl_women": {
           "value": 50,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 13,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 71,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 69.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 88,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 12584,
+          "asOf": "2024"
         }
       }
     },
@@ -2229,8 +5035,20 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 69.4,
+          "value": 69,
           "asOf": "2026"
+        },
+        "homicide": {
+          "value": 5.1,
+          "asOf": "2021"
+        },
+        "life_expectancy": {
+          "value": 83.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 97,
+          "asOf": "2023"
         }
       }
     },
@@ -2247,12 +5065,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 66.3,
+          "value": 66,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 93.8,
+          "value": 94,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.6,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 63,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 78,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 76,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 89,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 47165,
+          "asOf": "2024"
         }
       }
     },
@@ -2269,12 +5111,62 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 82.4,
+          "value": 82,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.5,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 81,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 83,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 99,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 128475,
+          "asOf": "2024"
+        }
+      }
+    },
+    "MO": {
+      "name": "Macao",
+      "iso3": "MAC",
+      "flag": "mo",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 0.6,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 83.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 89,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 111694,
+          "asOf": "2024"
         }
       }
     },
@@ -2291,12 +5183,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 37.8,
+          "value": 38,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 69.4,
+          "value": 69,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 26,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 33,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 63.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 20,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 1657,
+          "asOf": "2024"
         }
       }
     },
@@ -2313,12 +5225,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 11.7,
+          "value": 12,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 80,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.8,
+          "asOf": "2012"
+        },
+        "corruption": {
+          "value": 34,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 52,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 67.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 18,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 1634,
+          "asOf": "2024"
         }
       }
     },
@@ -2335,12 +5271,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 8.1,
+          "value": 8,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 60.6,
+          "value": 61,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 50,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 76.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 98,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 34116,
+          "asOf": "2024"
         }
       }
     },
@@ -2357,12 +5317,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 4.7,
+          "value": 5,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 73.8,
+          "value": 74,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.6,
+          "asOf": "2019"
+        },
+        "corruption": {
+          "value": 38,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 71,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 81,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 85,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 23034,
+          "asOf": "2024"
         }
       }
     },
@@ -2379,12 +5363,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 6.1,
+          "value": 6,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 63.8,
+          "value": 64,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 27,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 41,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 60.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 35,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 2916,
+          "asOf": "2024"
         }
       }
     },
@@ -2405,8 +5409,32 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 91.3,
+          "value": 91,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.6,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 46,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 83.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 92,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 62700,
+          "asOf": "2024"
         }
       }
     },
@@ -2423,11 +5451,49 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 48.8,
+          "value": 49,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 65.6,
+          "value": 66,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.2,
+          "asOf": "1994"
+        },
+        "uhc": {
+          "value": 66,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 66.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 66,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 7209,
+          "asOf": "2024"
+        }
+      }
+    },
+    "MQ": {
+      "name": "Martinique",
+      "iso3": "MTQ",
+      "flag": "mq",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 2.8,
+          "asOf": "2009"
+        },
+        "life_expectancy": {
+          "value": 82.6,
           "asOf": "2023"
         }
       }
@@ -2445,12 +5511,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 3.8,
+          "value": 4,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 48.1,
+          "value": 48,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 30,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 40,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 68.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 37,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 6483,
+          "asOf": "2024"
         }
       }
     },
@@ -2467,11 +5557,53 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 50.2,
+          "value": 50,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 89.4,
+          "value": 89,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.3,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 51,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 75,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 74.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 28011,
+          "asOf": "2024"
+        }
+      }
+    },
+    "YT": {
+      "name": "Mayotte",
+      "iso3": "MYT",
+      "flag": "yt",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 5.9,
+          "asOf": "2009"
+        },
+        "life_expectancy": {
+          "value": 76.1,
           "asOf": "2023"
         }
       }
@@ -2489,12 +5621,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 84.8,
+          "value": 85,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 88.8,
+          "value": 89,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 24.9,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 26,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 79,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 75.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 81,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 22040,
+          "asOf": "2024"
         }
       }
     },
@@ -2511,12 +5667,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 47.7,
+          "value": 48,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 61.3,
+          "value": 61,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.9,
+          "asOf": "2019"
+        },
+        "uhc": {
+          "value": 65,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 67.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 39,
+          "asOf": "2020"
+        },
+        "gdp_pc": {
+          "value": 3824,
+          "asOf": "2024"
         }
       }
     },
@@ -2533,12 +5709,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 64.1,
+          "value": 64,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 90.6,
+          "value": 91,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.5,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 43,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 71,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 16377,
+          "asOf": "2024"
         }
       }
     },
@@ -2555,8 +5755,24 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 55.6,
+          "value": 56,
           "asOf": "2026"
+        },
+        "homicide": {
+          "value": 0,
+          "asOf": "2008"
+        },
+        "uhc": {
+          "value": 85,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 86.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 99,
+          "asOf": "2023"
         }
       }
     },
@@ -2573,12 +5789,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 61.8,
+          "value": 62,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 90.6,
+          "value": 91,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 5.6,
+          "asOf": "2024"
+        },
+        "corruption": {
+          "value": 33,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 70,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 83,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 16843,
+          "asOf": "2024"
         }
       }
     },
@@ -2595,11 +5835,53 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 74.6,
+          "value": 75,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 85,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.8,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 46,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 70,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 89,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 28106,
+          "asOf": "2024"
+        }
+      }
+    },
+    "MS": {
+      "name": "Montserrat",
+      "iso3": "MSR",
+      "flag": "ms",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 0,
+          "asOf": "2018"
+        },
+        "life_expectancy": {
+          "value": 76.2,
           "asOf": "2023"
         }
       }
@@ -2617,12 +5899,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 10.4,
+          "value": 10,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 75.6,
+          "value": 76,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.7,
+          "asOf": "2024"
+        },
+        "corruption": {
+          "value": 37,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 65,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 75.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 91,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 9163,
+          "asOf": "2024"
         }
       }
     },
@@ -2639,12 +5945,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 54.6,
+          "value": 55,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 82.5,
+          "value": 83,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 3.6,
+          "asOf": "2011"
+        },
+        "corruption": {
+          "value": 25,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 50,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 63.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 20,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 1500,
+          "asOf": "2024"
         }
       }
     },
@@ -2661,12 +5991,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 12.9,
+          "value": 13,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 58.8,
+          "value": 59,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.6,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 16,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 52,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 66.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 59,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 5276,
+          "asOf": "2024"
         }
       }
     },
@@ -2683,12 +6037,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 49.2,
+          "value": 49,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 80,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 11.2,
+          "asOf": "2021"
+        },
+        "corruption": {
+          "value": 49,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 66,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 67.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 64,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 10281,
+          "asOf": "2024"
         }
       }
     },
@@ -2705,8 +6083,24 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 43.3,
+          "value": 43,
           "asOf": "2026"
+        },
+        "uhc": {
+          "value": 62,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 62.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 82,
+          "asOf": "2020"
+        },
+        "gdp_pc": {
+          "value": 12469,
+          "asOf": "2024"
         }
       }
     },
@@ -2723,12 +6117,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 71.1,
+          "value": 71,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 80.6,
+          "value": 81,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.1,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 34,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 58,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 70.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 56,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 5047,
+          "asOf": "2024"
         }
       }
     },
@@ -2745,12 +6163,58 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 87.1,
+          "value": 87,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 78,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 85,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 97,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 70499,
+          "asOf": "2024"
+        }
+      }
+    },
+    "NC": {
+      "name": "New Caledonia",
+      "iso3": "NCL",
+      "flag": "nc",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 3.1,
+          "asOf": "2009"
+        },
+        "life_expectancy": {
+          "value": 78.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 82,
+          "asOf": "2017"
         }
       }
     },
@@ -2767,12 +6231,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 95.8,
+          "value": 96,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 97.5,
+          "value": 98,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.5,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 83,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 89,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 96,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 49316,
+          "asOf": "2024"
         }
       }
     },
@@ -2793,8 +6281,32 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 86.3,
+          "value": 86,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 11.3,
+          "asOf": "2021"
+        },
+        "corruption": {
+          "value": 14,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 70,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 74.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 58,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 7662,
+          "asOf": "2024"
         }
       }
     },
@@ -2815,8 +6327,32 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 53.8,
+          "value": 54,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.4,
+          "asOf": "2012"
+        },
+        "corruption": {
+          "value": 34,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 39,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 61.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 23,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 1803,
+          "asOf": "2024"
         }
       }
     },
@@ -2837,7 +6373,49 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 66.3,
+          "value": 66,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 15.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 26,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 47,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 54.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 39,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 7994,
+          "asOf": "2024"
+        }
+      }
+    },
+    "NU": {
+      "name": "Niue",
+      "iso3": "NIU",
+      "flag": "nu",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "curated": false,
+      "values": {
+        "uhc": {
+          "value": 67,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 70,
           "asOf": "2023"
         }
       }
@@ -2855,8 +6433,24 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 33.7,
+          "value": 34,
           "asOf": "2026"
+        },
+        "corruption": {
+          "value": 15,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 77,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 73.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 0,
+          "asOf": "2012"
         }
       }
     },
@@ -2873,12 +6467,54 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 65.4,
+          "value": 65,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 85,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.5,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 40,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 69,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 87,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 24203,
+          "asOf": "2024"
+        }
+      }
+    },
+    "MP": {
+      "name": "Northern Mariana Islands",
+      "iso3": "MNP",
+      "flag": "mp",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "curated": false,
+      "values": {
+        "life_expectancy": {
+          "value": 78.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 0,
+          "asOf": "1990"
         }
       }
     },
@@ -2895,12 +6531,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 89.6,
+          "value": 90,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 96.9,
+          "value": 97,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 81,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 89,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 83.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 99,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 91105,
+          "asOf": "2024"
         }
       }
     },
@@ -2917,12 +6577,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 2.7,
+          "value": 3,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 46.3,
+          "value": 46,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.1,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 55,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 73,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 95,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 36721,
+          "asOf": "2024"
         }
       }
     },
@@ -2939,12 +6623,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 31.5,
+          "value": 31,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 58.8,
+          "value": 59,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.3,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 27,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 56,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 67.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 27,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 5500,
+          "asOf": "2024"
         }
       }
     },
@@ -2961,11 +6669,31 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 46.9,
+          "value": 47,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 56.3,
+          "value": 56,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 11.2,
+          "asOf": "2018"
+        },
+        "uhc": {
+          "value": 75,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 69.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 27,
+          "asOf": "2004"
+        },
+        "gdp_pc": {
+          "value": 16426,
           "asOf": "2023"
         }
       }
@@ -2979,8 +6707,28 @@
       "curated": false,
       "values": {
         "wbl_women": {
-          "value": 26.3,
+          "value": 26,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.6,
+          "asOf": "2022"
+        },
+        "uhc": {
+          "value": 65,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 65.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 87,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3846,
+          "asOf": "2024"
         }
       }
     },
@@ -2997,12 +6745,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 43.5,
+          "value": 43,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 79.4,
+          "value": 79,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 11.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 33,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 79.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 69,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 36395,
+          "asOf": "2024"
         }
       }
     },
@@ -3019,12 +6791,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 25.7,
+          "value": 26,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 60,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 9.3,
+          "asOf": "2010"
+        },
+        "corruption": {
+          "value": 31,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 32,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 66.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 24,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 4289,
+          "asOf": "2024"
         }
       }
     },
@@ -3041,12 +6837,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 37.9,
+          "value": 38,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 94.4,
+          "value": 94,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 6.8,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 24,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 79,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 73.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 82,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 16296,
+          "asOf": "2024"
         }
       }
     },
@@ -3063,12 +6883,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 64.2,
+          "value": 64,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 95,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 8.6,
+          "asOf": "2021"
+        },
+        "corruption": {
+          "value": 31,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 68,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 82,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 15662,
+          "asOf": "2024"
         }
       }
     },
@@ -3085,12 +6929,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 49.4,
+          "value": 49,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 78.8,
+          "value": 79,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.3,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 33,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 69,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 69.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 10376,
+          "asOf": "2024"
         }
       }
     },
@@ -3107,12 +6975,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 58.3,
+          "value": 58,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 93.8,
+          "value": 94,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.8,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 53,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 78.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 89,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 45153,
+          "asOf": "2024"
         }
       }
     },
@@ -3129,12 +7021,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 93.8,
+          "value": 94,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.7,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 57,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 83,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 88,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 42197,
+          "asOf": "2024"
         }
       }
     },
@@ -3151,8 +7067,28 @@
           "asOf": "2015"
         },
         "wbl_women": {
-          "value": 83.8,
+          "value": 84,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 15.1,
+          "asOf": "2024"
+        },
+        "corruption": {
+          "value": 63,
+          "asOf": "2014"
+        },
+        "life_expectancy": {
+          "value": 81.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 87,
+          "asOf": "2022"
+        },
+        "gdp_pc": {
+          "value": 44206,
+          "asOf": "2024"
         }
       }
     },
@@ -3169,11 +7105,53 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 6.2,
+          "value": 6,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 35.6,
+          "value": 36,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.1,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 59,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 100,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 110890,
+          "asOf": "2024"
+        }
+      }
+    },
+    "RE": {
+      "name": "Reunion",
+      "iso3": "REU",
+      "flag": "re",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 1.8,
+          "asOf": "2009"
+        },
+        "life_expectancy": {
+          "value": 83.5,
           "asOf": "2023"
         }
       }
@@ -3195,8 +7173,32 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 90.6,
+          "value": 91,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.1,
+          "asOf": "2024"
+        },
+        "corruption": {
+          "value": 46,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 77,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 75.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 91,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 40504,
+          "asOf": "2024"
         }
       }
     },
@@ -3213,12 +7215,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 34.7,
+          "value": 35,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 73.1,
+          "value": 73,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 7.8,
+          "asOf": "2024"
+        },
+        "corruption": {
+          "value": 22,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 81,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 73.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 94,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 41705,
+          "asOf": "2024"
         }
       }
     },
@@ -3235,11 +7261,67 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 36.7,
+          "value": 37,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 91.9,
+          "value": 92,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 3.6,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 57,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 59,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 67.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 34,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3265,
+          "asOf": "2024"
+        }
+      }
+    },
+    "BL": {
+      "name": "Saint Barthelemy",
+      "iso3": "BLM",
+      "flag": "bl",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "life_expectancy": {
+          "value": 84.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SH": {
+      "name": "Saint Helena",
+      "iso3": "SHN",
+      "flag": "sh",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 0,
+          "asOf": "2009"
+        },
+        "life_expectancy": {
+          "value": 76.8,
           "asOf": "2023"
         }
       }
@@ -3261,8 +7343,28 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 71.3,
+          "value": 71,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 64.2,
+          "asOf": "2023"
+        },
+        "uhc": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 76,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 30656,
+          "asOf": "2024"
         }
       }
     },
@@ -3279,11 +7381,71 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 51.2,
+          "value": 51,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 83.8,
+          "value": 84,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 39,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 59,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 75,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 70,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 24252,
+          "asOf": "2024"
+        }
+      }
+    },
+    "MF": {
+      "name": "Saint Martin (French part)",
+      "iso3": "MAF",
+      "flag": "mf",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 26.9,
+          "asOf": "2016"
+        },
+        "life_expectancy": {
+          "value": 80.2,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PM": {
+      "name": "Saint Pierre and Miquelon",
+      "iso3": "SPM",
+      "flag": "pm",
+      "region": "Americas",
+      "subregion": "Northern America",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 16.6,
+          "asOf": "2009"
+        },
+        "life_expectancy": {
+          "value": 76.8,
           "asOf": "2023"
         }
       }
@@ -3301,12 +7463,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 23.8,
+          "value": 24,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 68.1,
+          "value": 68,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 51.3,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 63,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 76,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 18714,
+          "asOf": "2024"
         }
       }
     },
@@ -3323,12 +7509,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 29.7,
+          "value": 30,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 75,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 6.3,
+          "asOf": "2018"
+        },
+        "uhc": {
+          "value": 62,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 58,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 7686,
+          "asOf": "2024"
         }
       }
     },
@@ -3345,11 +7551,31 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 62.5,
+          "value": 63,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 85,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0,
+          "asOf": "2011"
+        },
+        "uhc": {
+          "value": 74,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 85.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 87,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 70952,
           "asOf": "2023"
         }
       }
@@ -3367,12 +7593,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 48.9,
+          "value": 49,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 83.1,
+          "value": 83,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 3.2,
+          "asOf": "2011"
+        },
+        "corruption": {
+          "value": 45,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 60,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 69.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 61,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 5491,
+          "asOf": "2024"
         }
       }
     },
@@ -3389,12 +7639,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 4.9,
+          "value": 5,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 71.3,
+          "value": 71,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.9,
+          "asOf": "2019"
+        },
+        "corruption": {
+          "value": 59,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 83,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 78.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 100,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 62793,
+          "asOf": "2024"
         }
       }
     },
@@ -3411,12 +7685,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 5.1,
+          "value": 5,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 72.5,
+          "value": 73,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 45,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 48,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 68.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 61,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 4461,
+          "asOf": "2024"
         }
       }
     },
@@ -3433,12 +7727,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 67.1,
+          "value": 67,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 93.8,
+          "value": 94,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.3,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 35,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 73,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 76.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 88,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 26901,
+          "asOf": "2024"
         }
       }
     },
@@ -3455,12 +7773,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 55.4,
+          "value": 55,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 76.3,
+          "value": 76,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 8,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 72,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 87,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 29242,
+          "asOf": "2024"
         }
       }
     },
@@ -3477,12 +7819,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 20.3,
+          "value": 20,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 92.5,
+          "value": 93,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.2,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 33,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 48,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 61.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 21,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3099,
+          "asOf": "2024"
         }
       }
     },
@@ -3499,12 +7865,54 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 38.8,
+          "value": 39,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 82.5,
+          "value": 83,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.1,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 84,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 88,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 83.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 94,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 132570,
+          "asOf": "2024"
+        }
+      }
+    },
+    "SX": {
+      "name": "Sint Maarten (Dutch part)",
+      "iso3": "SXM",
+      "flag": "sx",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "life_expectancy": {
+          "value": 76.4,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 47303,
+          "asOf": "2024"
         }
       }
     },
@@ -3521,12 +7929,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 64.9,
+          "value": 65,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 87.5,
+          "value": 88,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.1,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 49,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 78,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 78.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 90,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 40319,
+          "asOf": "2024"
         }
       }
     },
@@ -3543,12 +7975,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 80.8,
+          "value": 81,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 96.9,
+          "value": 97,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.6,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 60,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 81.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 91,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 48649,
+          "asOf": "2024"
         }
       }
     },
@@ -3565,12 +8021,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 22.5,
+          "value": 23,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 56.9,
+          "value": 57,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 3.7,
+          "asOf": "2008"
+        },
+        "corruption": {
+          "value": 43,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 47,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 70.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 42,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 2353,
+          "asOf": "2024"
         }
       }
     },
@@ -3587,12 +8067,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 0.5,
+          "value": 0,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 46.9,
+          "value": 47,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 9,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 30,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 58.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 28,
+          "asOf": "2022"
+        },
+        "gdp_pc": {
+          "value": 1409,
+          "asOf": "2024"
         }
       }
     },
@@ -3609,12 +8109,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 76.7,
+          "value": 77,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 88.1,
+          "value": 88,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 43.7,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 41,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 74,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 66.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 76,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 13598,
+          "asOf": "2024"
         }
       }
     },
@@ -3631,12 +8155,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 53.2,
+          "value": 53,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 88.1,
+          "value": 88,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.5,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 64,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 88,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 84.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 98,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 55071,
+          "asOf": "2024"
         }
       }
     },
@@ -3653,12 +8201,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 7.1,
+          "value": 7,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 67.5,
+          "value": 68,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 14,
+          "asOf": "2012"
+        },
+        "corruption": {
+          "value": 8,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 41,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 57.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 9,
+          "asOf": "2020"
         }
       }
     },
@@ -3675,12 +8243,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 99.9,
+          "value": 100,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.7,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 56,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 83.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 96,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 48460,
+          "asOf": "2024"
         }
       }
     },
@@ -3697,12 +8289,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 22.2,
+          "value": 22,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 65.6,
+          "value": 66,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 3.3,
+          "asOf": "2019"
+        },
+        "corruption": {
+          "value": 32,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 72,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 51,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 13753,
+          "asOf": "2024"
         }
       }
     },
@@ -3719,12 +8335,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 8.9,
+          "value": 9,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 32.5,
+          "value": 33,
           "asOf": "2023"
+        },
+        "corruption": {
+          "value": 15,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 48,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 66.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 26,
+          "asOf": "2020"
+        },
+        "gdp_pc": {
+          "value": 1861,
+          "asOf": "2024"
         }
       }
     },
@@ -3741,12 +8377,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 59.2,
+          "value": 59,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 76.9,
+          "value": 77,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 6.5,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 40,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 74,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 73.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 78,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 19179,
+          "asOf": "2024"
         }
       }
     },
@@ -3763,12 +8423,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 84.6,
+          "value": 85,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 100,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.1,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 80,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 85,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 83.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 96,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 62979,
+          "asOf": "2024"
         }
       }
     },
@@ -3785,12 +8469,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 76.2,
+          "value": 76,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 88.1,
+          "value": 88,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.6,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 81,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 87,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 97,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 82286,
+          "asOf": "2024"
         }
       }
     },
@@ -3807,12 +8515,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 9.3,
+          "value": 9,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 40,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 2.1,
+          "asOf": "2010"
+        },
+        "corruption": {
+          "value": 12,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 70,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 35,
+          "asOf": "2019"
+        },
+        "gdp_pc": {
+          "value": 4455,
+          "asOf": "2022"
         }
       }
     },
@@ -3829,8 +8561,16 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 68.1,
+          "value": 68,
           "asOf": "2026"
+        },
+        "corruption": {
+          "value": 67,
+          "asOf": "2024"
+        },
+        "life_expectancy": {
+          "value": 80.6,
+          "asOf": "2023"
         }
       }
     },
@@ -3847,12 +8587,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 38.2,
+          "value": 38,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 78.8,
+          "value": 79,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.9,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 19,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 72,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 57,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 4756,
+          "asOf": "2024"
         }
       }
     },
@@ -3869,12 +8633,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 13.4,
+          "value": 13,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 81.3,
+          "value": 81,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 3.7,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 41,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 49,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 67,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 29,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3713,
+          "asOf": "2024"
         }
       }
     },
@@ -3891,12 +8679,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 62.5,
+          "value": 63,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 78.1,
+          "value": 78,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.8,
+          "asOf": "2011"
+        },
+        "corruption": {
+          "value": 34,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 76.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 91,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 21741,
+          "asOf": "2024"
         }
       }
     },
@@ -3913,11 +8725,45 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 5.2,
+          "value": 5,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 97.5,
+          "value": 98,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 32,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 42,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 62.7,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 37,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 2961,
+          "asOf": "2024"
+        }
+      }
+    },
+    "TK": {
+      "name": "Tokelau",
+      "iso3": "TKL",
+      "flag": "tk",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "curated": false,
+      "values": {
+        "life_expectancy": {
+          "value": 77.1,
           "asOf": "2023"
         }
       }
@@ -3935,11 +8781,31 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 9.1,
+          "value": 9,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 58.8,
+          "value": 59,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.9,
+          "asOf": "2019"
+        },
+        "uhc": {
+          "value": 71,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 59,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 7030,
           "asOf": "2023"
         }
       }
@@ -3957,12 +8823,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 25.1,
+          "value": 25,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 75,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 40.4,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 41,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 75,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 73.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 85,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 31960,
+          "asOf": "2024"
         }
       }
     },
@@ -3979,12 +8869,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 12.9,
+          "value": 13,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 64.4,
+          "value": 64,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 4.7,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 39,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 76,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 76.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 72,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 12775,
+          "asOf": "2024"
         }
       }
     },
@@ -4001,12 +8915,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 31.7,
+          "value": 32,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 82.5,
+          "value": 83,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 3.2,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 34,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 77,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 77.2,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 87,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 36154,
+          "asOf": "2024"
         }
       }
     },
@@ -4025,6 +8963,56 @@
         "eq_lgbt": {
           "value": 18,
           "asOf": "2026"
+        },
+        "homicide": {
+          "value": 1,
+          "asOf": "2015"
+        },
+        "corruption": {
+          "value": 17,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 81,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 70.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 21,
+          "asOf": "2017"
+        },
+        "gdp_pc": {
+          "value": 18662,
+          "asOf": "2024"
+        }
+      }
+    },
+    "TC": {
+      "name": "Turks and Caicos Islands",
+      "iso3": "TCA",
+      "flag": "tc",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 76.3,
+          "asOf": "2022"
+        },
+        "life_expectancy": {
+          "value": 78,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 0,
+          "asOf": "1990"
+        },
+        "gdp_pc": {
+          "value": 33391,
+          "asOf": "2024"
         }
       }
     },
@@ -4041,8 +9029,28 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 23.7,
+          "value": 24,
           "asOf": "2026"
+        },
+        "homicide": {
+          "value": 0,
+          "asOf": "2019"
+        },
+        "uhc": {
+          "value": 65,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 67.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 74,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 5812,
+          "asOf": "2023"
         }
       }
     },
@@ -4059,12 +9067,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 0.6,
+          "value": 1,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 83.8,
+          "value": 84,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 9,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 26,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 54,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 68.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 9,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 2880,
+          "asOf": "2024"
         }
       }
     },
@@ -4081,12 +9113,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 58.2,
+          "value": 58,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 85,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 3.8,
+          "asOf": "2021"
+        },
+        "corruption": {
+          "value": 35,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 80,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 73.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 82,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 16320,
+          "asOf": "2024"
         }
       }
     },
@@ -4103,12 +9159,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 0.4,
+          "value": 0,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 82.5,
+          "value": 83,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.7,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 68,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 84,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 82.9,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 100,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 69702,
+          "asOf": "2024"
         }
       }
     },
@@ -4125,12 +9205,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 82.1,
+          "value": 82,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 97.5,
+          "value": 98,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.1,
+          "asOf": "2021"
+        },
+        "corruption": {
+          "value": 71,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 88,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 81.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 96,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 52621,
+          "asOf": "2024"
         }
       }
     },
@@ -4147,12 +9251,62 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 79.7,
+          "value": 80,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 91.3,
+          "value": 91,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 5.8,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 65,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 88,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 79.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 93,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 75489,
+          "asOf": "2024"
+        }
+      }
+    },
+    "VI": {
+      "name": "United States Virgin Islands",
+      "iso3": "VIR",
+      "flag": "vi",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 49.9,
+          "asOf": "2012"
+        },
+        "life_expectancy": {
+          "value": 75.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 64,
+          "asOf": "2017"
+        },
+        "gdp_pc": {
+          "value": 46479,
+          "asOf": "2022"
         }
       }
     },
@@ -4173,8 +9327,32 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 88.8,
+          "value": 89,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 11.2,
+          "asOf": "2023"
+        },
+        "corruption": {
+          "value": 76,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 85,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 78.1,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 92,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 32039,
+          "asOf": "2024"
         }
       }
     },
@@ -4191,12 +9369,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 21.2,
+          "value": 21,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 82.5,
+          "value": 83,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.4,
+          "asOf": "2021"
+        },
+        "corruption": {
+          "value": 32,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 79,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.4,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 89,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 10450,
+          "asOf": "2024"
         }
       }
     },
@@ -4213,11 +9415,53 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 44.8,
+          "value": 45,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 55.6,
+          "value": 56,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 0.3,
+          "asOf": "2020"
+        },
+        "corruption": {
+          "value": 50,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 52,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 71.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 46,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3172,
+          "asOf": "2024"
+        }
+      }
+    },
+    "VA": {
+      "name": "Vatican",
+      "iso3": "VAT",
+      "flag": "va",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "homicide": {
+          "value": 0,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 83,
           "asOf": "2023"
         }
       }
@@ -4235,12 +9479,32 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 48.3,
+          "value": 48,
           "asOf": "2026"
         },
         "wbl_women": {
           "value": 85,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 12.6,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 10,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 75,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 72.5,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 62,
+          "asOf": "2017"
         }
       }
     },
@@ -4261,7 +9525,45 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 88.1,
+          "value": 88,
+          "asOf": "2023"
+        },
+        "homicide": {
+          "value": 1.5,
+          "asOf": "2011"
+        },
+        "corruption": {
+          "value": 40,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 71,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 74.6,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 84,
+          "asOf": "2024"
+        },
+        "gdp_pc": {
+          "value": 14415,
+          "asOf": "2024"
+        }
+      }
+    },
+    "WF": {
+      "name": "Wallis and Futuna",
+      "iso3": "WLF",
+      "flag": "wf",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "curated": false,
+      "values": {
+        "life_expectancy": {
+          "value": 78.6,
           "asOf": "2023"
         }
       }
@@ -4277,6 +9579,10 @@
         "fh_freedom": {
           "value": 4,
           "asOf": "2025"
+        },
+        "life_expectancy": {
+          "value": 71.4,
+          "asOf": "2023"
         }
       }
     },
@@ -4297,8 +9603,28 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 26.9,
+          "value": 27,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 5.8,
+          "asOf": "2013"
+        },
+        "corruption": {
+          "value": 13,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 43,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 69.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 14,
+          "asOf": "2020"
         }
       }
     },
@@ -4315,12 +9641,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 7.9,
+          "value": 8,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 81.3,
+          "value": 81,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 5.2,
+          "asOf": "2015"
+        },
+        "corruption": {
+          "value": 39,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 62,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 66.3,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 33,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 3708,
+          "asOf": "2024"
         }
       }
     },
@@ -4337,12 +9687,36 @@
           "asOf": "2025"
         },
         "eq_lgbt": {
-          "value": 14.5,
+          "value": 14,
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 86.9,
+          "value": 87,
           "asOf": "2023"
+        },
+        "homicide": {
+          "value": 6.8,
+          "asOf": "2022"
+        },
+        "corruption": {
+          "value": 21,
+          "asOf": "2024"
+        },
+        "uhc": {
+          "value": 59,
+          "asOf": "2023"
+        },
+        "life_expectancy": {
+          "value": 62.8,
+          "asOf": "2023"
+        },
+        "internet": {
+          "value": 38,
+          "asOf": "2023"
+        },
+        "gdp_pc": {
+          "value": 5215,
+          "asOf": "2024"
         }
       }
     }
