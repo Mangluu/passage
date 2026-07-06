@@ -29,6 +29,7 @@ export default function Header() {
           </span>
           <nav className="flex items-center gap-4">
             {!onHome && <HeaderLink to="/">Home</HeaderLink>}
+            <HeaderLink to="/explore">Explore</HeaderLink>
             <HeaderLink to="/sources">Method</HeaderLink>
           </nav>
           <button type="button" onClick={toggle} aria-label={theme === 'dark' ? 'Light mode' : 'Dark mode'} className="text-ink2 transition-colors hover:text-ink">

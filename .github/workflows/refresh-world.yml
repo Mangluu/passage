@@ -1,0 +1,34 @@
+name: Refresh world data
+
+# Rebuilds src/data/world.json from the published indices (Freedom House,
+# Equaldex, World Bank — via Our World in Data). These indices move a few times
+# a year, so weekly is plenty. Keyless, backend-free: the Action fetches, and
+# the result is committed and bundled — nothing is fetched in the user's browser.
+on:
+  schedule:
+    - cron: '23 6 * * 1' # Mondays ~06:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/fetch-world.mjs
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain src/data/world.json)" ]; then
+            git config user.name "passage-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add src/data/world.json
+            git commit -m "chore: refresh world data"
+            git push
+          else
+            echo "no changes"
+          fi

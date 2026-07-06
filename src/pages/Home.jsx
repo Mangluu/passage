@@ -1,9 +1,11 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
+import { ArrowRight } from 'lucide-react'
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import CountrySelect from '../components/CountrySelect.jsx'
 import AudienceSelect from '../components/AudienceSelect.jsx'
+import { COUNTRY_COUNT } from '../lib/world.js'
 
 const FEATURES = [
   ['01', 'Built for marginalised students — the differences that most affect you.'],
@@ -49,6 +51,13 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <Link
+            to="/explore"
+            className="group mt-7 inline-flex items-center gap-1.5 text-[14px] font-medium text-accent transition hover:gap-2.5"
+          >
+            Or browse all {COUNTRY_COUNT} countries, indexed
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
 
         <div className="card p-7">

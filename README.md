@@ -49,12 +49,32 @@ The dashboard's per-area "how protected" scores use a **real published index whe
 8–92 band for the categorical facts, so a single bucket never collapses an area to a bare 0 or 100.
 Hover any score to see exactly which facts and values produced it.
 
+## Coverage — curated vs. indexed (honest by construction)
+
+Hand-verifying ~195 countries × a dozen topics isn't something a small team can keep truthful,
+so coverage is **tiered, and the tier is shown**:
+
+- **Curated (Tier A)** — the 10 countries in `jurisdictions.js`: hand-verified, adversarially
+  cross-checked, with the full plain-language briefing.
+- **Indexed (Tier B)** — *every* country: three published indices (Freedom House Global Freedom,
+  Equaldex LGBT Legal Equality, World Bank Women/Business/Law), each pulled verbatim from its
+  source, dated, and linked. Machine-ingested, labelled "indexed — not yet verified", never
+  editorialised. Seen on the **Explore** page, and in any comparison that includes a non-curated
+  country (Home → Destination accepts all ~199; two curated countries get the full briefing, any
+  other pairing gets an honest indexed comparison).
+- **Not covered (Tier C)** — if a source has no value for a country, the field is left blank
+  ("no data") rather than guessed — the same refuse-don't-invent rule the rest of the app follows.
+
+This is deliberately *more* honest than claiming uniform coverage: a country graduates from
+Indexed to Curated as we verify it, and the UI never pretends an index value is a verified fact.
+
 ## Structure
 
 ```
 src/
   data/
-    jurisdictions.js   # the claims spine — 10 countries × sourced, dated claims
+    jurisdictions.js   # the claims spine — 10 countries × sourced, dated claims (Tier A, curated)
+    world.json         # GENERATED — every country × 3 published indices (Tier B, indexed)
     topics.js          # catalog: position topics (comparable states) + obligations (duties)
     audiences.js       # reader groups → which topics weigh most
     sources.js         # source registry (+ inline per-claim official sources)
@@ -62,11 +82,12 @@ src/
     severity.js        # pure severity model (critical / notable / minor)
     brief.js           # assembles the briefing: ranked changes, insights, checklist, facts
     dashboard.js       # area scores (published indices + band), advisories, verdict
+    world.js           # read layer over world.json (tiers, tone, source metadata)
     useTheme.js        # shared light/dark store
   components/           # Header · Sidebar · Footer · Logo · CountrySelect · AudienceSelect
                         # CityHeader (image carousel) · ScoreRows · OverallScale
                         # FactCard · ClaimMeta · Checklist · Tag
-  pages/                # Home · Briefing · Sources · Privacy · Impressum
+  pages/                # Home · Briefing · Explore · Sources · Privacy · Impressum
   assets/
     fonts/              # self-hosted woff2 (Newsreader · IBM Plex Sans · IBM Plex Mono)
     cities/<code>/*.jpg # per-country hero images for the carousel
@@ -79,10 +100,16 @@ src/
 ## Scripts
 
 ```bash
-node scripts/refresh-data.mjs    # refresh published indices (Equaldex · World Bank · Freedom House)
+node scripts/fetch-world.mjs     # rebuild src/data/world.json — every country × 3 indices (FH · Equaldex · World Bank, via OWID)
+node scripts/refresh-data.mjs    # print the same indices for the 10 curated countries (spot-check helper)
 node scripts/fetch-fonts.mjs     # re-download & self-host the web fonts into src/assets/fonts
 node scripts/build-cities.mjs    # optimise destination images into src/assets/cities/<code>/
 ```
+
+`fetch-world.mjs` is keyless and backend-free — it runs at build time (and weekly via
+`.github/workflows/refresh-world.yml`), so the all-country data is bundled into the static
+page and **nothing is ever fetched in the user's browser**. Its only live dependency is Our
+World in Data; ISO codes come from the committed `scripts/iso3166.json`.
 
 `build-cities.mjs` reads the team's own source images and aborts if that source folder is absent, so
 re-running can never wipe the bundled images.

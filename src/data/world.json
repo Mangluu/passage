@@ -1,0 +1,4350 @@
+{
+  "generatedAt": "2026-07-06",
+  "indices": {
+    "fh_freedom": {
+      "org": "Freedom House",
+      "name": "Global Freedom score",
+      "note": "Aggregate of political rights & civil liberties (0–100). Higher = freer.",
+      "url": "https://freedomhouse.org/countries/freedom-world/scores",
+      "via": "Our World in Data",
+      "viaUrl": "https://ourworldindata.org/grapher/freedom-score-fh",
+      "min": 0,
+      "max": 100,
+      "higherIsBetter": true
+    },
+    "eq_lgbt": {
+      "org": "Equaldex",
+      "name": "LGBT Legal Equality Index",
+      "note": "Legal rights for LGBTQ+ people (0–100). Higher = more equal.",
+      "url": "https://www.equaldex.com/equality-index",
+      "via": "Our World in Data",
+      "viaUrl": "https://ourworldindata.org/grapher/lgbt-legal-equality-index",
+      "min": 0,
+      "max": 100,
+      "higherIsBetter": true
+    },
+    "wbl_women": {
+      "org": "World Bank",
+      "name": "Women, Business and the Law Index",
+      "note": "Laws affecting women's economic opportunity (0–100). Higher = more equal.",
+      "url": "https://wbl.worldbank.org/",
+      "via": "Our World in Data",
+      "viaUrl": "https://ourworldindata.org/grapher/women-business-and-the-law-index",
+      "min": 0,
+      "max": 100,
+      "higherIsBetter": true
+    }
+  },
+  "countries": {
+    "AF": {
+      "name": "Afghanistan",
+      "iso3": "AFG",
+      "flag": "af",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 8,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 0.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 31.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "AL": {
+      "name": "Albania",
+      "iso3": "ALB",
+      "flag": "al",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 69,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 66.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 91.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "DZ": {
+      "name": "Algeria",
+      "iso3": "DZA",
+      "flag": "dz",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 31,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 6.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 57.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "AD": {
+      "name": "Andorra",
+      "iso3": "AND",
+      "flag": "ad",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 93,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 85.7,
+          "asOf": "2026"
+        }
+      }
+    },
+    "AO": {
+      "name": "Angola",
+      "iso3": "AGO",
+      "flag": "ao",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 28,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 50,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 79.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "AG": {
+      "name": "Antigua and Barbuda",
+      "iso3": "ATG",
+      "flag": "ag",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 83,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 59.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 68.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "AR": {
+      "name": "Argentina",
+      "iso3": "ARG",
+      "flag": "ar",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 85,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 86.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 79.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "AM": {
+      "name": "Armenia",
+      "iso3": "ARM",
+      "flag": "am",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 54,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 44.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 90.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "AU": {
+      "name": "Australia",
+      "iso3": "AUS",
+      "flag": "au",
+      "region": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "curated": true,
+      "values": {
+        "fh_freedom": {
+          "value": 94,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 94.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 96.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "AT": {
+      "name": "Austria",
+      "iso3": "AUT",
+      "flag": "at",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 94,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 87,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 96.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "AZ": {
+      "name": "Azerbaijan",
+      "iso3": "AZE",
+      "flag": "az",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 6,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 39.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 85,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BS": {
+      "name": "Bahamas",
+      "iso3": "BHS",
+      "flag": "bs",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 90,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 43.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 81.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BH": {
+      "name": "Bahrain",
+      "iso3": "BHR",
+      "flag": "bh",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 12,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 32.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 68.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BD": {
+      "name": "Bangladesh",
+      "iso3": "BGD",
+      "flag": "bd",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 44,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 16,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 49.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BB": {
+      "name": "Barbados",
+      "iso3": "BRB",
+      "flag": "bb",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 94,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 38.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 80,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BY": {
+      "name": "Belarus",
+      "iso3": "BLR",
+      "flag": "by",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 7,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 37.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 75.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BE": {
+      "name": "Belgium",
+      "iso3": "BEL",
+      "flag": "be",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 95,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 94.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BZ": {
+      "name": "Belize",
+      "iso3": "BLZ",
+      "flag": "bz",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 87,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 56.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 82.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BJ": {
+      "name": "Benin",
+      "iso3": "BEN",
+      "flag": "bj",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 61,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 38.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 83.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BT": {
+      "name": "Bhutan",
+      "iso3": "BTN",
+      "flag": "bt",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 69,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 56.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 75,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BO": {
+      "name": "Bolivia",
+      "iso3": "BOL",
+      "flag": "bo",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 69,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 86.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 88.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BA": {
+      "name": "Bosnia and Herzegovina",
+      "iso3": "BIH",
+      "flag": "ba",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 54,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 63.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 85,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BW": {
+      "name": "Botswana",
+      "iso3": "BWA",
+      "flag": "bw",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 75,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 60.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 63.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BR": {
+      "name": "Brazil",
+      "iso3": "BRA",
+      "flag": "br",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": true,
+      "values": {
+        "fh_freedom": {
+          "value": 73,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 93.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 85,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BN": {
+      "name": "Brunei",
+      "iso3": "BRN",
+      "flag": "bn",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 27,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 2.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 53.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BG": {
+      "name": "Bulgaria",
+      "iso3": "BGR",
+      "flag": "bg",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 74,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 56.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 90.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BF": {
+      "name": "Burkina Faso",
+      "iso3": "BFA",
+      "flag": "bf",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 20,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 6.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 82.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "BI": {
+      "name": "Burundi",
+      "iso3": "BDI",
+      "flag": "bi",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 13,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 9.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 76.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "KH": {
+      "name": "Cambodia",
+      "iso3": "KHM",
+      "flag": "kh",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 22,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 40.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 81.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CM": {
+      "name": "Cameroon",
+      "iso3": "CMR",
+      "flag": "cm",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 15,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 3.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 60,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CA": {
+      "name": "Canada",
+      "iso3": "CAN",
+      "flag": "ca",
+      "region": "Americas",
+      "subregion": "Northern America",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 97,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 95.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CV": {
+      "name": "Cape Verde",
+      "iso3": "CPV",
+      "flag": "cv",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 92,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 54.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 86.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CF": {
+      "name": "Central African Republic",
+      "iso3": "CAF",
+      "flag": "cf",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 5,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 27.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 77.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TD": {
+      "name": "Chad",
+      "iso3": "TCD",
+      "flag": "td",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 15,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 15.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 66.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CL": {
+      "name": "Chile",
+      "iso3": "CHL",
+      "flag": "cl",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 95,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 100,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 80,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CN": {
+      "name": "China",
+      "iso3": "CHN",
+      "flag": "cn",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "curated": true,
+      "values": {
+        "fh_freedom": {
+          "value": 9,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 38.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 78.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CO": {
+      "name": "Colombia",
+      "iso3": "COL",
+      "flag": "co",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 69,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 91.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 84.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "KM": {
+      "name": "Comoros",
+      "iso3": "COM",
+      "flag": "km",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 41,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 17.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 65,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CG": {
+      "name": "Congo",
+      "iso3": "COG",
+      "flag": "cg",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 17,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 40,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 58.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CR": {
+      "name": "Costa Rica",
+      "iso3": "CRI",
+      "flag": "cr",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 91,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 84.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 91.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CI": {
+      "name": "Cote d'Ivoire",
+      "iso3": "CIV",
+      "flag": "ci",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 46,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 31.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 95,
+          "asOf": "2023"
+        }
+      }
+    },
+    "HR": {
+      "name": "Croatia",
+      "iso3": "HRV",
+      "flag": "hr",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 82,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 80.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 93.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CU": {
+      "name": "Cuba",
+      "iso3": "CUB",
+      "flag": "cu",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 9,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 86.7,
+          "asOf": "2026"
+        }
+      }
+    },
+    "CY": {
+      "name": "Cyprus",
+      "iso3": "CYP",
+      "flag": "cy",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 90,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 78.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 96.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CZ": {
+      "name": "Czechia",
+      "iso3": "CZE",
+      "flag": "cz",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 95,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 80,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 93.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CD": {
+      "name": "Democratic Republic of Congo",
+      "iso3": "COD",
+      "flag": "cd",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 18,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 35,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 78.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "DK": {
+      "name": "Denmark",
+      "iso3": "DNK",
+      "flag": "dk",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 97,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 93.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "DJ": {
+      "name": "Djibouti",
+      "iso3": "DJI",
+      "flag": "dj",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 24,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 33.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 71.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "DM": {
+      "name": "Dominica",
+      "iso3": "DMA",
+      "flag": "dm",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 92,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 48.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 62.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "DO": {
+      "name": "Dominican Republic",
+      "iso3": "DOM",
+      "flag": "do",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 67,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 43.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 86.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TL": {
+      "name": "East Timor",
+      "iso3": "TLS",
+      "flag": "tl",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 73,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 48.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 86.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "EC": {
+      "name": "Ecuador",
+      "iso3": "ECU",
+      "flag": "ec",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 64,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 89.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 89.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "EG": {
+      "name": "Egypt",
+      "iso3": "EGY",
+      "flag": "eg",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "curated": true,
+      "values": {
+        "fh_freedom": {
+          "value": 18,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 4.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 50.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SV": {
+      "name": "El Salvador",
+      "iso3": "SLV",
+      "flag": "sv",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 42,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 47.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 88.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GQ": {
+      "name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "flag": "gq",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 5,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 38.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 58.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "ER": {
+      "name": "Eritrea",
+      "iso3": "ERI",
+      "flag": "er",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 3,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 6.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 69.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "EE": {
+      "name": "Estonia",
+      "iso3": "EST",
+      "flag": "ee",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 96,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 72.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 97.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SZ": {
+      "name": "Eswatini",
+      "iso3": "SWZ",
+      "flag": "sz",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 17,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 25.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 46.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "ET": {
+      "name": "Ethiopia",
+      "iso3": "ETH",
+      "flag": "et",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 18,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 10.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 80,
+          "asOf": "2023"
+        }
+      }
+    },
+    "FJ": {
+      "name": "Fiji",
+      "iso3": "FJI",
+      "flag": "fj",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 72,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 54.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 82.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "FI": {
+      "name": "Finland",
+      "iso3": "FIN",
+      "flag": "fi",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 100,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 86.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 97.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "FR": {
+      "name": "France",
+      "iso3": "FRA",
+      "flag": "fr",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 89,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 89.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GA": {
+      "name": "Gabon",
+      "iso3": "GAB",
+      "flag": "ga",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 25,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 37.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 95,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GM": {
+      "name": "Gambia",
+      "iso3": "GMB",
+      "flag": "gm",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 51,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 1.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 69.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GE": {
+      "name": "Georgia",
+      "iso3": "GEO",
+      "flag": "ge",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 51,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 47.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 88.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "DE": {
+      "name": "Germany",
+      "iso3": "DEU",
+      "flag": "de",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "curated": true,
+      "values": {
+        "fh_freedom": {
+          "value": 95,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 100,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GH": {
+      "name": "Ghana",
+      "iso3": "GHA",
+      "flag": "gh",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 80,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 12.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 75,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GR": {
+      "name": "Greece",
+      "iso3": "GRC",
+      "flag": "gr",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 85,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 91.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GL": {
+      "name": "Greenland",
+      "iso3": "GRL",
+      "flag": "gl",
+      "region": "Americas",
+      "subregion": "Northern America",
+      "curated": false,
+      "values": {
+        "eq_lgbt": {
+          "value": 93.2,
+          "asOf": "2026"
+        }
+      }
+    },
+    "GD": {
+      "name": "Grenada",
+      "iso3": "GRD",
+      "flag": "gd",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 89,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 27.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 80.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GT": {
+      "name": "Guatemala",
+      "iso3": "GTM",
+      "flag": "gt",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 48,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 38.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 73.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GN": {
+      "name": "Guinea",
+      "iso3": "GIN",
+      "flag": "gn",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 28,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 14.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 73.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GW": {
+      "name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "flag": "gw",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 33,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 41.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 51.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GY": {
+      "name": "Guyana",
+      "iso3": "GUY",
+      "flag": "gy",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 74,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 21.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 86.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "HT": {
+      "name": "Haiti",
+      "iso3": "HTI",
+      "flag": "ht",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 22,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 45,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 61.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "HN": {
+      "name": "Honduras",
+      "iso3": "HND",
+      "flag": "hn",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 47,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 58.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 75,
+          "asOf": "2023"
+        }
+      }
+    },
+    "HK": {
+      "name": "Hong Kong",
+      "iso3": "HKG",
+      "flag": "hk",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 41,
+          "asOf": "2025"
+        },
+        "wbl_women": {
+          "value": 91.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "HU": {
+      "name": "Hungary",
+      "iso3": "HUN",
+      "flag": "hu",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 65,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 57.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 93.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "IS": {
+      "name": "Iceland",
+      "iso3": "ISL",
+      "flag": "is",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 95,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 95.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "IN": {
+      "name": "India",
+      "iso3": "IND",
+      "flag": "in",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 62,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 48.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 74.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "ID": {
+      "name": "Indonesia",
+      "iso3": "IDN",
+      "flag": "id",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 56,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 13.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 70.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "IR": {
+      "name": "Iran",
+      "iso3": "IRN",
+      "flag": "ir",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 10,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 6.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 31.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "IQ": {
+      "name": "Iraq",
+      "iso3": "IRQ",
+      "flag": "iq",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 31,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 2.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 48.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "IE": {
+      "name": "Ireland",
+      "iso3": "IRL",
+      "flag": "ie",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 98,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 80,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "IL": {
+      "name": "Israel",
+      "iso3": "ISR",
+      "flag": "il",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 73,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 72.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 80.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "IT": {
+      "name": "Italy",
+      "iso3": "ITA",
+      "flag": "it",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 87,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 73.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 97.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "JM": {
+      "name": "Jamaica",
+      "iso3": "JAM",
+      "flag": "jm",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 81,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 23.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 74.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "JP": {
+      "name": "Japan",
+      "iso3": "JPN",
+      "flag": "jp",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 96,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 56.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 78.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "JO": {
+      "name": "Jordan",
+      "iso3": "JOR",
+      "flag": "jo",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 34,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 27.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 59.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "KZ": {
+      "name": "Kazakhstan",
+      "iso3": "KAZ",
+      "flag": "kz",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 23,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 33.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 75.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "KE": {
+      "name": "Kenya",
+      "iso3": "KEN",
+      "flag": "ke",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": true,
+      "values": {
+        "fh_freedom": {
+          "value": 49,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 23.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 83.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "KI": {
+      "name": "Kiribati",
+      "iso3": "KIR",
+      "flag": "ki",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 89,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 28.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 76.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "KW": {
+      "name": "Kuwait",
+      "iso3": "KWT",
+      "flag": "kw",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 30,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 5.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 38.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "KG": {
+      "name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "flag": "kg",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 25,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 34.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 76.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "LA": {
+      "name": "Laos",
+      "iso3": "LAO",
+      "flag": "la",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 13,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 40,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 85.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "LV": {
+      "name": "Latvia",
+      "iso3": "LVA",
+      "flag": "lv",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 89,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 57.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "LB": {
+      "name": "Lebanon",
+      "iso3": "LBN",
+      "flag": "lb",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 41,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 16.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 58.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "LS": {
+      "name": "Lesotho",
+      "iso3": "LSO",
+      "flag": "ls",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 67,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 55.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 80.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "LR": {
+      "name": "Liberia",
+      "iso3": "LBR",
+      "flag": "lr",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 65,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 23.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 81.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "LY": {
+      "name": "Libya",
+      "iso3": "LBY",
+      "flag": "ly",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 10,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 50,
+          "asOf": "2023"
+        }
+      }
+    },
+    "LI": {
+      "name": "Liechtenstein",
+      "iso3": "LIE",
+      "flag": "li",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 90,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 69.4,
+          "asOf": "2026"
+        }
+      }
+    },
+    "LT": {
+      "name": "Lithuania",
+      "iso3": "LTU",
+      "flag": "lt",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 90,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 66.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 93.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "LU": {
+      "name": "Luxembourg",
+      "iso3": "LUX",
+      "flag": "lu",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 97,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 82.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MG": {
+      "name": "Madagascar",
+      "iso3": "MDG",
+      "flag": "mg",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 50,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 37.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 69.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MW": {
+      "name": "Malawi",
+      "iso3": "MWI",
+      "flag": "mw",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 68,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 11.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 80,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MY": {
+      "name": "Malaysia",
+      "iso3": "MYS",
+      "flag": "my",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 53,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 8.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 60.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MV": {
+      "name": "Maldives",
+      "iso3": "MDV",
+      "flag": "mv",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 41,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 4.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 73.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "ML": {
+      "name": "Mali",
+      "iso3": "MLI",
+      "flag": "ml",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 21,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 6.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 63.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MT": {
+      "name": "Malta",
+      "iso3": "MLT",
+      "flag": "mt",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 88,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 100,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 91.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MH": {
+      "name": "Marshall Islands",
+      "iso3": "MHL",
+      "flag": "mh",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 93,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 48.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 65.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MR": {
+      "name": "Mauritania",
+      "iso3": "MRT",
+      "flag": "mr",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 38,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 3.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 48.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MU": {
+      "name": "Mauritius",
+      "iso3": "MUS",
+      "flag": "mu",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 87,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 50.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 89.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MX": {
+      "name": "Mexico",
+      "iso3": "MEX",
+      "flag": "mx",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 58,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 84.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 88.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "FM": {
+      "name": "Micronesia (country)",
+      "iso3": "FSM",
+      "flag": "fm",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 92,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 47.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 61.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MD": {
+      "name": "Moldova",
+      "iso3": "MDA",
+      "flag": "md",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 60,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 64.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 90.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MC": {
+      "name": "Monaco",
+      "iso3": "MCO",
+      "flag": "mc",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 82,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 55.6,
+          "asOf": "2026"
+        }
+      }
+    },
+    "MN": {
+      "name": "Mongolia",
+      "iso3": "MNG",
+      "flag": "mn",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 84,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 61.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 90.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "ME": {
+      "name": "Montenegro",
+      "iso3": "MNE",
+      "flag": "me",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 68,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 74.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 85,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MA": {
+      "name": "Morocco",
+      "iso3": "MAR",
+      "flag": "ma",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 37,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 10.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 75.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MZ": {
+      "name": "Mozambique",
+      "iso3": "MOZ",
+      "flag": "mz",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 42,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 54.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 82.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "MM": {
+      "name": "Myanmar",
+      "iso3": "MMR",
+      "flag": "mm",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 4,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 12.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 58.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "NA": {
+      "name": "Namibia",
+      "iso3": "NAM",
+      "flag": "na",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 73,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 49.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 80,
+          "asOf": "2023"
+        }
+      }
+    },
+    "NR": {
+      "name": "Nauru",
+      "iso3": "NRU",
+      "flag": "nr",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 75,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 43.3,
+          "asOf": "2026"
+        }
+      }
+    },
+    "NP": {
+      "name": "Nepal",
+      "iso3": "NPL",
+      "flag": "np",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 59,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 71.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 80.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "NL": {
+      "name": "Netherlands",
+      "iso3": "NLD",
+      "flag": "nl",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 97,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 87.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "NZ": {
+      "name": "New Zealand",
+      "iso3": "NZL",
+      "flag": "nz",
+      "region": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 99,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 95.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 97.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "NI": {
+      "name": "Nicaragua",
+      "iso3": "NIC",
+      "flag": "ni",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 14,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 50,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 86.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "NE": {
+      "name": "Niger",
+      "iso3": "NER",
+      "flag": "ne",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 27,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 36,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 53.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "NG": {
+      "name": "Nigeria",
+      "iso3": "NGA",
+      "flag": "ng",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 44,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 66.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "KP": {
+      "name": "North Korea",
+      "iso3": "PRK",
+      "flag": "kp",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 3,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 33.7,
+          "asOf": "2026"
+        }
+      }
+    },
+    "MK": {
+      "name": "North Macedonia",
+      "iso3": "MKD",
+      "flag": "mk",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 67,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 65.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 85,
+          "asOf": "2023"
+        }
+      }
+    },
+    "NO": {
+      "name": "Norway",
+      "iso3": "NOR",
+      "flag": "no",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": true,
+      "values": {
+        "fh_freedom": {
+          "value": 99,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 89.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 96.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "OM": {
+      "name": "Oman",
+      "iso3": "OMN",
+      "flag": "om",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 24,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 2.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 46.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PK": {
+      "name": "Pakistan",
+      "iso3": "PAK",
+      "flag": "pk",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 32,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 31.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 58.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PW": {
+      "name": "Palau",
+      "iso3": "PLW",
+      "flag": "pw",
+      "region": "Oceania",
+      "subregion": "Micronesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 92,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 46.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 56.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PS": {
+      "name": "Palestine",
+      "iso3": "PSE",
+      "flag": "ps",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "wbl_women": {
+          "value": 26.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PA": {
+      "name": "Panama",
+      "iso3": "PAN",
+      "flag": "pa",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 82,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 43.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 79.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PG": {
+      "name": "Papua New Guinea",
+      "iso3": "PNG",
+      "flag": "pg",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 61,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 25.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 60,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PY": {
+      "name": "Paraguay",
+      "iso3": "PRY",
+      "flag": "py",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 63,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 37.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 94.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PE": {
+      "name": "Peru",
+      "iso3": "PER",
+      "flag": "pe",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 66,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 64.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 95,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PH": {
+      "name": "Philippines",
+      "iso3": "PHL",
+      "flag": "ph",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 58,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 49.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 78.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PL": {
+      "name": "Poland",
+      "iso3": "POL",
+      "flag": "pl",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 82,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 58.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 93.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PT": {
+      "name": "Portugal",
+      "iso3": "PRT",
+      "flag": "pt",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 96,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 93.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "PR": {
+      "name": "Puerto Rico",
+      "iso3": "PRI",
+      "flag": "pr",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 90,
+          "asOf": "2015"
+        },
+        "wbl_women": {
+          "value": 83.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "QA": {
+      "name": "Qatar",
+      "iso3": "QAT",
+      "flag": "qa",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 25,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 6.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 35.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "RO": {
+      "name": "Romania",
+      "iso3": "ROU",
+      "flag": "ro",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 83,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 60,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 90.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "RU": {
+      "name": "Russia",
+      "iso3": "RUS",
+      "flag": "ru",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 12,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 34.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 73.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "RW": {
+      "name": "Rwanda",
+      "iso3": "RWA",
+      "flag": "rw",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 21,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 36.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 91.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "KN": {
+      "name": "Saint Kitts and Nevis",
+      "iso3": "KNA",
+      "flag": "kn",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 89,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 50,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 71.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "LC": {
+      "name": "Saint Lucia",
+      "iso3": "LCA",
+      "flag": "lc",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 91,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 51.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 83.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "VC": {
+      "name": "Saint Vincent and the Grenadines",
+      "iso3": "VCT",
+      "flag": "vc",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 90,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 23.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 68.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "WS": {
+      "name": "Samoa",
+      "iso3": "WSM",
+      "flag": "ws",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 84,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 29.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 75,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SM": {
+      "name": "San Marino",
+      "iso3": "SMR",
+      "flag": "sm",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 97,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 62.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 85,
+          "asOf": "2023"
+        }
+      }
+    },
+    "ST": {
+      "name": "Sao Tome and Principe",
+      "iso3": "STP",
+      "flag": "st",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 84,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 48.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 83.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SA": {
+      "name": "Saudi Arabia",
+      "iso3": "SAU",
+      "flag": "sa",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 9,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 4.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 71.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SN": {
+      "name": "Senegal",
+      "iso3": "SEN",
+      "flag": "sn",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 70,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 5.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 72.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "RS": {
+      "name": "Serbia",
+      "iso3": "SRB",
+      "flag": "rs",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 53,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 67.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 93.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SC": {
+      "name": "Seychelles",
+      "iso3": "SYC",
+      "flag": "sc",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 81,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 55.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 76.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SL": {
+      "name": "Sierra Leone",
+      "iso3": "SLE",
+      "flag": "sl",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 61,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 20.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 92.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SG": {
+      "name": "Singapore",
+      "iso3": "SGP",
+      "flag": "sg",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 48,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 38.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 82.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SK": {
+      "name": "Slovakia",
+      "iso3": "SVK",
+      "flag": "sk",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 88,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 64.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 87.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SI": {
+      "name": "Slovenia",
+      "iso3": "SVN",
+      "flag": "si",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 97,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 80.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 96.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SB": {
+      "name": "Solomon Islands",
+      "iso3": "SLB",
+      "flag": "sb",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 74,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 22.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 56.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SO": {
+      "name": "Somalia",
+      "iso3": "SOM",
+      "flag": "so",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 8,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 0.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 46.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "ZA": {
+      "name": "South Africa",
+      "iso3": "ZAF",
+      "flag": "za",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": true,
+      "values": {
+        "fh_freedom": {
+          "value": 81,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 76.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 88.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "KR": {
+      "name": "South Korea",
+      "iso3": "KOR",
+      "flag": "kr",
+      "region": "Asia",
+      "subregion": "Eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 83,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 53.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 88.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SS": {
+      "name": "South Sudan",
+      "iso3": "SSD",
+      "flag": "ss",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 0,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 7.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 67.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "ES": {
+      "name": "Spain",
+      "iso3": "ESP",
+      "flag": "es",
+      "region": "Europe",
+      "subregion": "Southern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 91,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 99.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "LK": {
+      "name": "Sri Lanka",
+      "iso3": "LKA",
+      "flag": "lk",
+      "region": "Asia",
+      "subregion": "Southern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 63,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 22.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 65.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SD": {
+      "name": "Sudan",
+      "iso3": "SDN",
+      "flag": "sd",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 1,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 8.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 32.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SR": {
+      "name": "Suriname",
+      "iso3": "SUR",
+      "flag": "sr",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 81,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 59.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 76.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SE": {
+      "name": "Sweden",
+      "iso3": "SWE",
+      "flag": "se",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 99,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 84.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 100,
+          "asOf": "2023"
+        }
+      }
+    },
+    "CH": {
+      "name": "Switzerland",
+      "iso3": "CHE",
+      "flag": "ch",
+      "region": "Europe",
+      "subregion": "Western Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 96,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 76.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 88.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "SY": {
+      "name": "Syria",
+      "iso3": "SYR",
+      "flag": "sy",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 10,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 9.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 40,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TW": {
+      "name": "Taiwan",
+      "iso3": "TWN",
+      "flag": "tw",
+      "region": "",
+      "subregion": "",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 93,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 68.1,
+          "asOf": "2026"
+        }
+      }
+    },
+    "TJ": {
+      "name": "Tajikistan",
+      "iso3": "TJK",
+      "flag": "tj",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 5,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 38.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 78.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TZ": {
+      "name": "Tanzania",
+      "iso3": "TZA",
+      "flag": "tz",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 28,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 13.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 81.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TH": {
+      "name": "Thailand",
+      "iso3": "THA",
+      "flag": "th",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 33,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 62.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 78.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TG": {
+      "name": "Togo",
+      "iso3": "TGO",
+      "flag": "tg",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 37,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 5.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 97.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TO": {
+      "name": "Tonga",
+      "iso3": "TON",
+      "flag": "to",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 79,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 9.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 58.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TT": {
+      "name": "Trinidad and Tobago",
+      "iso3": "TTO",
+      "flag": "tt",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 83,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 25.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 75,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TN": {
+      "name": "Tunisia",
+      "iso3": "TUN",
+      "flag": "tn",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 42,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 12.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 64.4,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TR": {
+      "name": "Turkey",
+      "iso3": "TUR",
+      "flag": "tr",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 32,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 31.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 82.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "TM": {
+      "name": "Turkmenistan",
+      "iso3": "TKM",
+      "flag": "tm",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 1,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 18,
+          "asOf": "2026"
+        }
+      }
+    },
+    "TV": {
+      "name": "Tuvalu",
+      "iso3": "TUV",
+      "flag": "tv",
+      "region": "Oceania",
+      "subregion": "Polynesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 93,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 23.7,
+          "asOf": "2026"
+        }
+      }
+    },
+    "UG": {
+      "name": "Uganda",
+      "iso3": "UGA",
+      "flag": "ug",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 33,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 0.6,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 83.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "UA": {
+      "name": "Ukraine",
+      "iso3": "UKR",
+      "flag": "ua",
+      "region": "Europe",
+      "subregion": "Eastern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 51,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 58.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 85,
+          "asOf": "2023"
+        }
+      }
+    },
+    "AE": {
+      "name": "United Arab Emirates",
+      "iso3": "ARE",
+      "flag": "ae",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 18,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 0.4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 82.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "flag": "gb",
+      "region": "Europe",
+      "subregion": "Northern Europe",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 92,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 82.1,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 97.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "US": {
+      "name": "United States",
+      "iso3": "USA",
+      "flag": "us",
+      "region": "Americas",
+      "subregion": "Northern America",
+      "curated": true,
+      "values": {
+        "fh_freedom": {
+          "value": 81,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 79.7,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 91.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "UY": {
+      "name": "Uruguay",
+      "iso3": "URY",
+      "flag": "uy",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 97,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 100,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 88.8,
+          "asOf": "2023"
+        }
+      }
+    },
+    "UZ": {
+      "name": "Uzbekistan",
+      "iso3": "UZB",
+      "flag": "uz",
+      "region": "Asia",
+      "subregion": "Central Asia",
+      "curated": true,
+      "values": {
+        "fh_freedom": {
+          "value": 12,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 21.2,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 82.5,
+          "asOf": "2023"
+        }
+      }
+    },
+    "VU": {
+      "name": "Vanuatu",
+      "iso3": "VUT",
+      "flag": "vu",
+      "region": "Oceania",
+      "subregion": "Melanesia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 82,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 44.8,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 55.6,
+          "asOf": "2023"
+        }
+      }
+    },
+    "VE": {
+      "name": "Venezuela",
+      "iso3": "VEN",
+      "flag": "ve",
+      "region": "Americas",
+      "subregion": "Latin America and the Caribbean",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 13,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 48.3,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 85,
+          "asOf": "2023"
+        }
+      }
+    },
+    "VN": {
+      "name": "Vietnam",
+      "iso3": "VNM",
+      "flag": "vn",
+      "region": "Asia",
+      "subregion": "South-eastern Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 20,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 50,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 88.1,
+          "asOf": "2023"
+        }
+      }
+    },
+    "EH": {
+      "name": "Western Sahara",
+      "iso3": "ESH",
+      "flag": "eh",
+      "region": "Africa",
+      "subregion": "Northern Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 4,
+          "asOf": "2025"
+        }
+      }
+    },
+    "YE": {
+      "name": "Yemen",
+      "iso3": "YEM",
+      "flag": "ye",
+      "region": "Asia",
+      "subregion": "Western Asia",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 10,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 4,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 26.9,
+          "asOf": "2023"
+        }
+      }
+    },
+    "ZM": {
+      "name": "Zambia",
+      "iso3": "ZMB",
+      "flag": "zm",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 53,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 7.9,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 81.3,
+          "asOf": "2023"
+        }
+      }
+    },
+    "ZW": {
+      "name": "Zimbabwe",
+      "iso3": "ZWE",
+      "flag": "zw",
+      "region": "Africa",
+      "subregion": "Sub-Saharan Africa",
+      "curated": false,
+      "values": {
+        "fh_freedom": {
+          "value": 25,
+          "asOf": "2025"
+        },
+        "eq_lgbt": {
+          "value": 14.5,
+          "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 86.9,
+          "asOf": "2023"
+        }
+      }
+    }
+  }
+}
