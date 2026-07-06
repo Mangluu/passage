@@ -1,0 +1,72 @@
+{
+  "us": {
+    "city": "New York",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Jersey_City_November_2014_panorama_2.jpg"
+  },
+  "br": {
+    "city": "Rio de Janeiro",
+    "author": "Donatas Dabravolskas",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sugarloaf_Sunrise_2.jpg"
+  },
+  "de": {
+    "city": "Berlin",
+    "author": "Thomas Wolf (foto-tw.de)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg"
+  },
+  "no": {
+    "city": "Geirangerfjord",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fiordo_de_Geiranger_desde_Flydalsjuvet%2C_Noruega%2C_2019-09-07%2C_DD_59.jpg"
+  },
+  "ke": {
+    "city": "Nairobi",
+    "author": "Timothy A. Gonsalves",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Nairobi_Skyline_Savannah_Kenya_May19_R1600687.jpg"
+  },
+  "eg": {
+    "city": "Giza",
+    "author": "Ricardo Liberato",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg"
+  },
+  "za": {
+    "city": "Cape Town",
+    "author": "SkyPixels",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cape_Town,_Table_Mountain_%26_Harbour.jpg"
+  },
+  "cn": {
+    "city": "Shanghai",
+    "author": "King of Hearts",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pudong_Shanghai_November_2017_panorama.jpg"
+  },
+  "au": {
+    "city": "Sydney",
+    "author": "Benh Lieu Song",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge_Dusk_(3)_2019-06-21.jpg"
+  },
+  "uz": {
+    "city": "Samarkand",
+    "author": "Bernard Gagnon",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Registan_01.jpg"
+  }
+}

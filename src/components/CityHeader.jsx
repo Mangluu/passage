@@ -1,39 +1,34 @@
 import { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import PHOTOS from '../data/cityPhotos.json'
 
-// Destination hero. Cycles through the team's own images for the country as an
-// auto-advancing carousel (playful image first, realistic photos after). The
-// hero is a 16:9 box and the images are 16:9, so each one fills it edge-to-edge
-// (object-cover) with no cropping of the subject. All images are bundled
-// locally; no runtime external request. Falls back to a generated skyline if a
-// country has no images.
+// Destination hero. Shows a genuine, openly-licensed landmark photo for the
+// country (from Wikimedia Commons — see scripts/fetch-cities.mjs), credited
+// in-corner with a link back to its source, the same "name your source" rule
+// every claim follows. If a country ever has more than one image the hero
+// cycles them; with one it's a still. Falls back to a generated skyline when a
+// country has no photo. All images are bundled — no runtime external request.
 
 const files = import.meta.glob('../assets/cities/*/*.jpg', { eager: true, import: 'default' })
 const BY_CODE = {}
 for (const [path, url] of Object.entries(files)) {
   const m = path.match(/cities\/([a-z]{2})\/(\d+)\.jpg$/)
   if (!m) continue
-  const code = m[1]
-  ;(BY_CODE[code] ||= []).push({ n: Number(m[2]), url })
+  ;(BY_CODE[m[1]] ||= []).push({ n: Number(m[2]), url })
 }
 for (const code of Object.keys(BY_CODE)) BY_CODE[code].sort((a, b) => a.n - b.n)
 const imagesFor = (code) => (BY_CODE[code.toLowerCase()] || []).map((x) => x.url)
 
-const CITY = {
-  US: 'New York', BR: 'Rio de Janeiro', DE: 'Berlin', NO: 'Oslo', KE: 'Nairobi',
-  EG: 'Cairo', ZA: 'Cape Town', CN: 'Beijing', AU: 'Sydney', UZ: 'Tashkent',
-}
-
 export default function CityHeader({ dest }) {
   const imgs = imagesFor(dest.code)
-  const cityName = CITY[dest.code] || dest.name
+  const credit = PHOTOS[dest.code.toLowerCase()]
+  const cityName = credit?.city || dest.name
   const [idx, setIdx] = useState(0)
   const [paused, setPaused] = useState(false)
 
-  // Reset to the first (playful) image whenever the destination changes.
   useEffect(() => setIdx(0), [dest.code])
 
-  // Auto-advance, paused on hover/focus.
+  // Auto-advance only if there's more than one image, paused on hover/focus.
   useEffect(() => {
     if (paused || imgs.length < 2) return
     const t = setInterval(() => setIdx((i) => (i + 1) % imgs.length), 5000)
@@ -73,6 +68,19 @@ export default function CityHeader({ dest }) {
         {cityName}
       </span>
 
+      {/* Photo credit — links to the source; keeps the platform honest about images too. */}
+      {credit && (
+        <a
+          href={credit.source}
+          target="_blank"
+          rel="noreferrer"
+          title={`${cityName} — photo by ${credit.author}, ${credit.license}. Via Wikimedia Commons.`}
+          className="absolute bottom-2 right-3 z-20 rounded bg-surface/70 px-1.5 py-0.5 font-mono text-[9px] text-ink3 backdrop-blur-sm transition hover:text-ink"
+        >
+          © {credit.author} · {credit.license} ↗
+        </a>
+      )}
+
       {imgs.length > 1 && (
         <>
           <button
@@ -91,18 +99,6 @@ export default function CityHeader({ dest }) {
           >
             <ChevronRight className="h-4 w-4" />
           </button>
-          <div className="absolute bottom-2.5 right-3 z-20 flex gap-1.5">
-            {imgs.map((_, i) => (
-              <button
-                key={i}
-                type="button"
-                onClick={() => setIdx(i)}
-                aria-label={`Show image ${i + 1} of ${imgs.length}`}
-                aria-current={i === idx}
-                className={`h-1.5 rounded-full transition-all ${i === idx ? 'w-4 bg-ink' : 'w-1.5 bg-ink/35 hover:bg-ink/60'}`}
-              />
-            ))}
-          </div>
         </>
       )}
     </div>

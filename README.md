@@ -90,8 +90,12 @@ src/
   pages/                # Home · Briefing · Explore · Sources · Privacy · Impressum
   assets/
     fonts/              # self-hosted woff2 (Newsreader · IBM Plex Sans · IBM Plex Mono)
-    cities/<code>/*.jpg # per-country hero images for the carousel
+    cities/<code>/1.jpg # genuine, openly-licensed landmark photo per curated country
 ```
+
+Destination photos are real landmark photography from **Wikimedia Commons** (CC BY-SA / CC0),
+each credited in-app with a link back to its source — `src/data/cityPhotos.json` holds the
+attribution.
 
 - **Add a country**: one record in `jurisdictions.js` using the same topic keys.
 - **Add a topic**: add it to `topics.js` (with its ordered `scale` for a position topic), then add
@@ -103,7 +107,7 @@ src/
 node scripts/fetch-world.mjs     # rebuild src/data/world.json — every country × 3 indices (FH · Equaldex · World Bank, via OWID)
 node scripts/refresh-data.mjs    # print the same indices for the 10 curated countries (spot-check helper)
 node scripts/fetch-fonts.mjs     # re-download & self-host the web fonts into src/assets/fonts
-node scripts/build-cities.mjs    # optimise destination images into src/assets/cities/<code>/
+node scripts/fetch-cities.mjs    # fetch + optimise genuine CC-licensed landmark photos into src/assets/cities/<code>/
 ```
 
 `fetch-world.mjs` is keyless and backend-free — it runs at build time (and weekly via
@@ -111,8 +115,9 @@ node scripts/build-cities.mjs    # optimise destination images into src/assets/c
 page and **nothing is ever fetched in the user's browser**. Its only live dependency is Our
 World in Data; ISO codes come from the committed `scripts/iso3166.json`.
 
-`build-cities.mjs` reads the team's own source images and aborts if that source folder is absent, so
-re-running can never wipe the bundled images.
+`fetch-cities.mjs` is keyless and reproducible — it resolves each hand-picked Commons file to a
+width-capped thumbnail, crops it to the 16:9 hero, and only overwrites a country's image once the
+new one is in hand (a rate-limited run leaves the existing image untouched).
 
 ## Run it
 
