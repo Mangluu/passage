@@ -55,14 +55,14 @@ export default function Privacy() {
           <p className="text-[14px] leading-relaxed text-ink3">
             Because we hold no personal data about you, there is nothing on our side to access, correct, export or
             delete. For host-level server logs, the controller is GitHub — see their statement above. For any question
-            about this site, contact the person named in the{' '}
-            <a href="#/impressum" className="text-accent hover:underline">Impressum</a>.
+            about this site, contact the maintainer on the{' '}
+            <a href="#/impressum" className="text-accent hover:underline">About</a> page.
           </p>
         </Block>
 
         <p className="mt-10 border-t border-line pt-5 text-[12px] leading-relaxed text-ink3">
-          This is a non-commercial student prototype for B-Hack 2026; this notice is provided in good faith and is not
-          legal advice. Last reviewed: [ date ].
+          This is a personal, non-commercial project; this notice is provided in good faith and is not legal advice.
+          Last reviewed: July 2026.
         </p>
       </div>
       <Footer />

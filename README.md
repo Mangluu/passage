@@ -1,6 +1,7 @@
-# Liberty Compass — pre-departure briefings for exchange students
+# Liberty Compass — pre-departure briefings for people crossing borders
 
-**B_Hack Baltic Sea Region Hackathon 2026 · Track: Liberty & Security · Group 6**
+*A personal, privacy-first project: how do liberty, safety and everyday life differ between home and
+where you're heading — sourced, dated, and specific to who you are.*
 
 Live: **https://mangluu.github.io/passage/**
 
@@ -32,7 +33,7 @@ The "we store nothing" property is a feature, and it's on-theme for the track.
 - **Fonts are self-hosted** — the page makes **no third-party requests at all** (no Google Fonts,
   no CDNs). The only request is to the host to fetch the site.
 - Hosting is GitHub Pages, which logs IP at the server level — disclosed honestly on the in-app
-  **Privacy** page, alongside an **Impressum** (§ 5 DDG / § 18 MStV).
+  **Privacy** page, alongside a plain **About &amp; contact** page.
 - Light & dark theme (a purple/cyan palette); the theme preference is the only thing kept locally.
   The briefing also prints as a clean document.
 
@@ -141,4 +142,4 @@ original assets.
 
 ---
 
-Responsible person / Impressum: **Shivang Gupta** · shivangzephyr@gmail.com
+Maintained by **Shivang Gupta** · shivangzephyr@gmail.com

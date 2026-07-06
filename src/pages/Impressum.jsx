@@ -1,39 +1,30 @@
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 
-// Legally-required imprint for an EU/DE-operated site (§ 5 DDG / § 18 MStV).
+// Lightweight about & contact page for a personal, non-commercial project.
 export default function Impressum() {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
       <div className="mx-auto w-full max-w-prose flex-1 px-6 py-12">
         <p className="eyebrow">Liberty Compass</p>
-        <h1 className="mt-3 font-serif text-4xl leading-tight text-ink">Impressum</h1>
+        <h1 className="mt-3 font-serif text-4xl leading-tight text-ink">About &amp; contact</h1>
         <p className="mt-4 text-[15px] leading-relaxed text-ink2">
-          Information pursuant to § 5 DDG (Digitale-Dienste-Gesetz) and § 18 (2) MStV.
+          Liberty Compass is a personal, non-commercial project. Here’s who maintains it and how to get in touch.
         </p>
 
-        <Block title="Responsible for this website (§ 5 DDG)">
-          <Line l="Project" v="Liberty Compass — a student hackathon prototype (B-Hack Baltic Sea Region 2026, Group 6)" />
-          <Line l="Name" v="Shivang Gupta" />
-        </Block>
-
-        <Block title="Contact">
+        <Block title="Who runs this">
+          <Line l="Maintainer" v="Shivang Gupta" />
           <Line
             l="Email"
             v={<a href="mailto:shivangzephyr@gmail.com" className="text-accent hover:underline">shivangzephyr@gmail.com</a>}
           />
         </Block>
 
-        <Block title="Responsible for content (§ 18 (2) MStV)">
-          <Line l="Name" v="Shivang Gupta" />
-        </Block>
-
         <Block title="Nature of this site">
           <p className="text-[14px] leading-relaxed text-ink2">
-            Liberty Compass is a non-commercial, educational prototype built for a hackathon. It provides general, sourced
-            information and is <span className="text-ink">not legal advice</span>. No goods or services are sold and no
-            payment is processed.
+            Liberty Compass is a personal, non-commercial project. It provides general, sourced information and is{' '}
+            <span className="text-ink">not legal advice</span>. No goods or services are sold and no payment is processed.
           </p>
         </Block>
 

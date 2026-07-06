@@ -3,6 +3,7 @@ import { allUsedSources } from '../data/sources.js'
 import { AUDIENCES } from '../data/audiences.js'
 import { TOPICS } from '../data/topics.js'
 import { EVIDENCE_LABEL, CERTAINTY } from '../lib/format.js'
+import CITY_PHOTOS from '../data/cityPhotos.json'
 import Tag from '../components/Tag.jsx'
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
@@ -122,18 +123,28 @@ export default function Sources() {
         </ul>
       </Section>
 
-      <Section title="Images">
+      <Section title="Destination photos">
         <p className="text-[14px] leading-relaxed text-ink3">
-          The destination hero images are the project team’s own — a rotating mix of real scenes and lighthearted
-          originals for each country. They are bundled with the app and served from this site, so no third-party image
-          service is ever contacted. A country with no image falls back to an original generated skyline.
+          Hero photos are genuine, openly-licensed landmark photography from Wikimedia Commons — one per curated country,
+          each credited below and in-app with a link to its source. They’re optimised and bundled with the app, so no
+          third-party image service is ever contacted. A country with no photo falls back to an original generated skyline.
         </p>
+        <ul className="mt-4 grid gap-x-6 gap-y-1.5 sm:grid-cols-2">
+          {Object.values(CITY_PHOTOS).sort((a, b) => a.city.localeCompare(b.city)).map((p) => (
+            <li key={p.source} className="flex items-baseline justify-between gap-2 text-[12.5px]">
+              <span className="text-ink2">{p.city}</span>
+              <a href={p.source} target="_blank" rel="noreferrer" className="shrink-0 text-right text-ink3 hover:text-accent">
+                {p.author} · {p.license} <ExternalLink className="inline h-3 w-3" />
+              </a>
+            </li>
+          ))}
+        </ul>
       </Section>
 
       <p className="mt-10 border-t border-line pt-5 text-[13px] leading-relaxed text-ink3">
-        Liberty Compass is an informational prototype for B_Hack 2026. Laws and indices are simplified and can be out of date.
+        Liberty Compass is a personal, informational project. Laws and indices are simplified and can be out of date.
         Laws differ from lived experience — this is not legal advice. Always confirm with official government channels
-        and your host institution before you travel.
+        before you travel.
       </p>
       </div>
       <Footer />
