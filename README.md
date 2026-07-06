@@ -57,17 +57,25 @@ so coverage is **tiered, and the tier is shown**:
 
 - **Curated (Tier A)** — the 10 countries in `jurisdictions.js`: hand-verified, adversarially
   cross-checked, with the full plain-language briefing.
-- **Indexed (Tier B)** — *every* country: three published indices (Freedom House Global Freedom,
-  Equaldex LGBT Legal Equality, World Bank Women/Business/Law), each pulled verbatim from its
-  source, dated, and linked. Machine-ingested, labelled "indexed — not yet verified", never
-  editorialised. Seen on the **Explore** page, and in any comparison that includes a non-curated
-  country (Home → Destination accepts all ~199; two curated countries get the full briefing, any
-  other pairing gets an honest indexed comparison).
+- **Indexed (Tier B)** — *every* country: **9 published indices across 4 domains** — rights
+  (Freedom House · Equaldex · World Bank WBL), safety (UNODC homicide · Transparency CPI), health
+  (WHO UHC coverage · life expectancy) and development (internet use · GDP per capita) — each pulled
+  verbatim from its source, dated, and linked. Metrics carry unit + range + direction, so each
+  normalises to a 0–100 "goodness" for bars/tone while showing its raw value. Machine-ingested,
+  labelled "indexed — not yet verified", never editorialised. Seen on the **Explore** page, and in
+  any comparison that includes a non-curated country (Home → Destination accepts all ~236; two
+  curated countries get the full briefing, any other pairing gets an honest indexed comparison).
 - **Not covered (Tier C)** — if a source has no value for a country, the field is left blank
   ("no data") rather than guessed — the same refuse-don't-invent rule the rest of the app follows.
 
 This is deliberately *more* honest than claiming uniform coverage: a country graduates from
 Indexed to Curated as we verify it, and the UI never pretends an index value is a verified fact.
+
+**Live signals** add a freshness layer on top: US State Department travel-advisory levels for every
+country (an advisory badge on Explore, a panel on each briefing) plus recent identity-routed news
+for the curated set — refreshed nightly. And **Ask Liberty Compass** answers questions by
+*retrieval only* over the verified claim graph: it cites every claim and refuses when it has nothing
+verified, so it cannot hallucinate.
 
 ## Structure
 
@@ -75,7 +83,9 @@ Indexed to Curated as we verify it, and the UI never pretends an index value is 
 src/
   data/
     jurisdictions.js   # the claims spine — 10 countries × sourced, dated claims (Tier A, curated)
-    world.json         # GENERATED — every country × 3 published indices (Tier B, indexed)
+    world.json         # GENERATED — every country × 9 indices in 4 domains (Tier B, indexed)
+    signals.json       # GENERATED — travel-advisory level per country + curated news (nightly)
+    cityPhotos.json    # GENERATED — per-country hero photo credits (author · licence · source)
     topics.js          # catalog: position topics (comparable states) + obligations (duties)
     audiences.js       # reader groups → which topics weigh most
     sources.js         # source registry (+ inline per-claim official sources)
@@ -83,12 +93,14 @@ src/
     severity.js        # pure severity model (critical / notable / minor)
     brief.js           # assembles the briefing: ranked changes, insights, checklist, facts
     dashboard.js       # area scores (published indices + band), advisories, verdict
-    world.js           # read layer over world.json (tiers, tone, source metadata)
+    world.js           # read layer over world.json (domains, normalisation, tone, sources)
+    signals.js         # read layer over signals.json (advisory + news)
+    ask.js             # grounded retrieval over the claim graph (cites; refuses; no generation)
     useTheme.js        # shared light/dark store
   components/           # Header · Sidebar · Footer · Logo · CountrySelect · AudienceSelect
-                        # CityHeader (image carousel) · ScoreRows · OverallScale
-                        # FactCard · ClaimMeta · Checklist · Tag
-  pages/                # Home · Briefing · Explore · Sources · Privacy · Impressum
+                        # CityHeader · ScoreRows · OverallScale · CuratedBriefing
+                        # IndexedComparison · SignalsPanel · AskPanel · FactCard · ClaimMeta
+  pages/                # Home · Briefing · Explore · Sources · Privacy · Impressum (About)
   assets/
     fonts/              # self-hosted woff2 (Newsreader · IBM Plex Sans · IBM Plex Mono)
     cities/<code>/1.jpg # genuine, openly-licensed landmark photo per curated country
@@ -105,8 +117,9 @@ attribution.
 ## Scripts
 
 ```bash
-node scripts/fetch-world.mjs     # rebuild src/data/world.json — every country × 3 indices (FH · Equaldex · World Bank, via OWID)
-node scripts/refresh-data.mjs    # print the same indices for the 10 curated countries (spot-check helper)
+node scripts/fetch-world.mjs     # rebuild src/data/world.json — every country × 9 indices in 4 domains (via OWID)
+node scripts/fetch-signals.mjs   # rebuild src/data/signals.json — travel-advisory level per country + curated news
+node scripts/refresh-data.mjs    # print a few indices for the 10 curated countries (spot-check helper)
 node scripts/fetch-fonts.mjs     # re-download & self-host the web fonts into src/assets/fonts
 node scripts/fetch-cities.mjs    # fetch + optimise genuine CC-licensed landmark photos into src/assets/cities/<code>/
 ```
