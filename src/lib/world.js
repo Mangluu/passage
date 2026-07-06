@@ -56,3 +56,33 @@ export function indexView(country, key) {
 }
 
 export const availableCount = (country) => INDEX_KEYS.filter((k) => country.values[k]).length
+
+// Average normalised goodness (0–100) across a set of index keys for a country.
+function meanNorm(country, keys) {
+  const vals = keys.map((k) => (country.values[k] ? normalize(INDICES[k], country.values[k].value) : null)).filter((v) => v != null)
+  return vals.length ? Math.round(vals.reduce((a, b) => a + b, 0) / vals.length) : null
+}
+
+// Overall standing = mean normalised goodness across all available indices.
+export const overallIndex = (country) => meanNorm(country, INDEX_KEYS)
+
+// Per-domain normalised score (mean of that domain's available metrics).
+export function domainScores(country) {
+  return DOMAIN_KEYS.map((d) => ({ id: d.id, label: d.label, score: meanNorm(country, d.keys) })).filter((d) => d.score != null)
+}
+
+// The indices that differ most between two countries, by normalised gap.
+export function topChanges(origin, dest, limit = 4) {
+  return INDEX_KEYS
+    .map((k) => {
+      const o = indexView(origin, k), d = indexView(dest, k)
+      if (!o || !d) return null
+      return { key: k, meta: INDICES[k], home: o, dest: d, gap: d.norm - o.norm }
+    })
+    .filter(Boolean)
+    .filter((c) => Math.abs(c.gap) >= 6)
+    .sort((a, b) => Math.abs(b.gap) - Math.abs(a.gap))
+    .slice(0, limit)
+}
+
+export const tierLabel = (score) => (score == null ? '—' : score >= 70 ? 'Strong' : score >= 45 ? 'Moderate' : score >= 25 ? 'Limited' : 'Restricted')
