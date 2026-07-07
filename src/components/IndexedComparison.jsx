@@ -1,12 +1,15 @@
-import { ExternalLink, Info, ShieldCheck } from 'lucide-react'
+import { ExternalLink, Info, ShieldCheck, Phone } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import {
   INDICES, DOMAIN_KEYS, indexView, overallIndex, domainScores, topChanges, tierLabel, tone,
 } from '../lib/world.js'
 import { advisoryFor } from '../lib/signals.js'
+import { emergencyFor, EMERGENCY_SOURCE } from '../lib/emergency.js'
+import { visaFor } from '../lib/visa.js'
 import CityHeader from './CityHeader.jsx'
 import SignalsPanel from './SignalsPanel.jsx'
 import EntryPanel from './EntryPanel.jsx'
+import Checklist from './Checklist.jsx'
 
 const BAR = { success: 'bg-success', warn: 'bg-warn', danger: 'bg-danger', ink3: 'bg-ink3' }
 const TXT = { success: 'text-success', warn: 'text-warn', danger: 'text-danger', ink2: 'text-ink2', ink3: 'text-ink3' }
@@ -23,7 +26,18 @@ export default function IndexedComparison({ oInfo, dInfo, aud = [] }) {
   const delta = dOverall != null && oOverall != null ? dOverall - oOverall : null
   const destTone = tone(dOverall)
   const adv = advisoryFor(dInfo.code)
+  const emergency = emergencyFor(dInfo.code)
+  const visa = visaFor(oInfo.code, dInfo.code)
   const changes = topChanges(oInfo, dInfo)
+
+  // Generic pre-departure checklist — the rule-generated one the curated ten get,
+  // built from what we hold for any destination.
+  const checklist = []
+  if (visa && visa.label !== 'Visa-free') checklist.push({ label: `Sort your entry permit for ${dInfo.name} — ${visa.label}`, timing: 'before booking', urgent: visa.tone === 'danger' })
+  if (adv && adv.level >= 3) checklist.push({ label: `Read the US State Dept advisory before you commit`, timing: `Level ${adv.level}`, urgent: true })
+  checklist.push({ label: `Save your home embassy / consulate in ${dInfo.name}`, timing: 'before departure' })
+  if (emergency) checklist.push({ label: `Save the local emergency number (${emergency.general})`, timing: 'before departure' })
+  checklist.push({ label: `Confirm ${dInfo.name}'s official entry & health rules for your nationality`, timing: 'before departure' })
   const dDomains = domainScores(dInfo)
   const oDomainMap = Object.fromEntries(domainScores(oInfo).map((d) => [d.id, d.score]))
 
@@ -112,6 +126,38 @@ export default function IndexedComparison({ oInfo, dInfo, aud = [] }) {
         {/* Right column */}
         <div className="flex min-w-0 flex-col gap-5">
           <EntryPanel origin={oInfo} dest={dInfo} />
+
+          {emergency && (
+            <section className="card p-5">
+              <div className="mb-3.5 flex items-center justify-between">
+                <h3 className="flex items-center gap-2 font-serif text-[18px] font-semibold text-ink">
+                  <Phone className="h-4 w-4 text-ink3" /> Quick info
+                </h3>
+                <span className="eyebrow">{dInfo.name}</span>
+              </div>
+              <div className="flex items-baseline gap-2.5">
+                <span className="h-2.5 w-2.5 rounded-full bg-accent" />
+                <span className="text-[14px] text-ink2">Emergency</span>
+                <div className="flex-1" />
+                <span className="font-serif text-[24px] font-semibold text-ink">{emergency.general}</span>
+              </div>
+              <div className="mt-3 flex flex-col gap-2 border-t border-line pt-3 text-[13px]">
+                <EmLine l="Police" v={emergency.police} />
+                <EmLine l="Ambulance" v={emergency.ambulance} />
+                <EmLine l="Fire" v={emergency.fire} />
+              </div>
+              <a href={EMERGENCY_SOURCE.url} target="_blank" rel="noreferrer" className="mt-3 inline-flex items-center gap-1 text-[10.5px] text-accent hover:underline">
+                {EMERGENCY_SOURCE.org} <ExternalLink className="h-2.5 w-2.5" />
+              </a>
+            </section>
+          )}
+
+          <section className="card p-5">
+            <h3 className="mb-1 font-serif text-[18px] font-semibold text-ink">Your checklist</h3>
+            <p className="mb-3.5 text-[11.5px] text-ink3">Generated from this briefing. Ticking is local to your screen.</p>
+            <Checklist items={checklist} />
+          </section>
+
           <SignalsPanel dest={dInfo} audiences={aud} />
         </div>
       </div>
@@ -224,6 +270,15 @@ function Cell({ label, value, valueClass = 'text-ink', border }) {
     <div className={`min-w-[130px] flex-1 p-4 ${border ? 'border-r border-line' : ''}`}>
       <div className="eyebrow mb-1.5 text-[10px]">{label}</div>
       <div className={`text-[15px] font-semibold ${valueClass}`}>{value}</div>
+    </div>
+  )
+}
+
+function EmLine({ l, v }) {
+  return (
+    <div className="flex justify-between gap-3">
+      <span className="text-ink3">{l}</span>
+      <span className="font-medium tnum text-ink">{v}</span>
     </div>
   )
 }

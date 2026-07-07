@@ -86,6 +86,7 @@ src/
     world.json         # GENERATED — every country × 9 indices in 4 domains (Tier B, indexed)
     signals.json       # GENERATED — travel-advisory level per country + curated news (nightly)
     visa.json          # GENERATED — home→destination entry requirement matrix (Passport Index)
+    emergency.json     # GENERATED — emergency numbers per country (police/ambulance/fire)
     cityPhotos.json    # GENERATED — per-country hero photo credits (author · licence · source)
     topics.js          # catalog: position topics (comparable states) + obligations (duties)
     audiences.js       # reader groups → which topics weigh most
@@ -97,6 +98,7 @@ src/
     world.js           # read layer over world.json (domains, normalisation, tone, sources)
     signals.js         # read layer over signals.json (advisory + news)
     visa.js            # read layer over visa.json (home passport → destination requirement)
+    emergency.js       # read layer over emergency.json (emergency numbers per country)
     ask.js             # grounded retrieval over the claim graph (cites; refuses; no generation)
     useTheme.js        # shared light/dark store
   components/           # Header · Sidebar · Footer · Logo · CountrySelect · AudienceSelect
@@ -122,6 +124,7 @@ attribution.
 node scripts/fetch-world.mjs     # rebuild src/data/world.json — every country × 9 indices in 4 domains (via OWID)
 node scripts/fetch-signals.mjs   # rebuild src/data/signals.json — travel-advisory level per country + curated news
 node scripts/fetch-visa.mjs      # rebuild src/data/visa.json — home→destination entry requirement (Passport Index)
+node scripts/fetch-emergency.mjs # rebuild src/data/emergency.json — emergency numbers per country (Emergency Number API)
 node scripts/refresh-data.mjs    # print a few indices for the 10 curated countries (spot-check helper)
 node scripts/fetch-fonts.mjs     # re-download & self-host the web fonts into src/assets/fonts
 node scripts/fetch-cities.mjs    # fetch + optimise genuine CC-licensed landmark photos into src/assets/cities/<code>/
