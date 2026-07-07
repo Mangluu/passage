@@ -25,7 +25,7 @@
     "author": "Diego Delso",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Fiordo_de_Geiranger_desde_Flydalsjuvet%2C_Noruega%2C_2019-09-07%2C_DD_59.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Fiordo_de_Geiranger_desde_Flydalsjuvet,_Noruega,_2019-09-07,_DD_59.jpg"
   },
   "ke": {
     "city": "Nairobi",
@@ -46,7 +46,7 @@
     "author": "SkyPixels",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Cape_Town%2C_Table_Mountain_%26_Harbour.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Cape_Town,_Table_Mountain_%26_Harbour.jpg"
   },
   "cn": {
     "city": "Shanghai",
@@ -102,14 +102,14 @@
     "author": "Yann / King of Hearts",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Taj_Mahal%2C_Agra%2C_India_edit2.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit2.jpg"
   },
   "es": {
     "city": "Barcelona",
     "author": "dronepicr",
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_La_Sagrada_Familia%2C_Barcelona%2C_Spain_(51227006134).jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_La_Sagrada_Familia,_Barcelona,_Spain_(51227006134).jpg"
   },
   "it": {
     "city": "Rome",
@@ -124,5 +124,306 @@
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "source": "https://commons.wikimedia.org/wiki/File:London_Skyline_from_Waterloo_Bridge,_London,_UK_-_Diliff.jpg"
+  },
+  "af": {
+    "city": "Kabul",
+    "author": "Afghanistan Matters from Brunssum, Netherlands",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lake_in_Band-e_Amir_National_Park,_March_2008.jpg"
+  },
+  "ao": {
+    "city": "Luanda",
+    "author": "Johnstanbul",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rangel_Skyline.jpg"
+  },
+  "ar": {
+    "city": "Buenos Aires",
+    "author": "Martin St-Amant (S23678)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:193_-_Buenos_Aires_-_Puerto_Madero_-_Janvier_2010.jpg"
+  },
+  "bd": {
+    "city": "Dhaka",
+    "author": "Tarunno",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Skyline_View_of_the_City_of_Dhaka_on_a_Cloudy_Day.jpg"
+  },
+  "bf": {
+    "city": "Bobo-Dioulasso",
+    "author": "qiv",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Moschee_von_Bobo-Dioulasso.jpg"
+  },
+  "cd": {
+    "city": "Kinshasa",
+    "author": "Karin Lakeman",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2010-03-07-Kinshasa_depuis_Brazzaville.jpg"
+  },
+  "ci": {
+    "city": "Abidjan",
+    "author": "abdallahh",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Plateau_Abidjan_de_nuit.jpg"
+  },
+  "cm": {
+    "city": "Yaounde",
+    "author": "Psychilles",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bafoussam02.jpg"
+  },
+  "co": {
+    "city": "Bogota",
+    "author": "Igvir Ramirez",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sunset-cartagena-tower-dewired.jpg"
+  },
+  "dz": {
+    "city": "Alger",
+    "author": "Damouns (Damien Boilley)",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Alger_front_de_mer.png"
+  },
+  "et": {
+    "city": "Addis Abeba",
+    "author": "DaneyWiki",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:AddisView.jpg"
+  },
+  "gh": {
+    "city": "Accra",
+    "author": "Synth85",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Accra_Skyline_-_Ghana.jpg"
+  },
+  "id": {
+    "city": "Jakarta",
+    "author": "Gunawan Kartapranata",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Jakarta_Panorama.jpg"
+  },
+  "iq": {
+    "city": "Baghdad",
+    "author": "Levi Clancy",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:View_of_Erbil_skyline_from_the_Citadel_in_the_Kurdistan_Region_of_Iraq_04.jpg"
+  },
+  "ir": {
+    "city": "Tehran",
+    "author": "en:User:Arad",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Naghshe_Jahan_Square_Isfahan_modified.jpg"
+  },
+  "kp": {
+    "city": "Pyongyang",
+    "author": "Jan Engelhardt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pyongyang_Skyline_-_01.jpg"
+  },
+  "kr": {
+    "city": "Seoul",
+    "author": "Flickr - Laurie Nevay https://www.flickr.com/photos/laurienevay/",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Skyline_view_from_Seoul_City_(South_Korea).jpg"
+  },
+  "ma": {
+    "city": "Rabat",
+    "author": "Baca12",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_de_la_Koutoubia_-_marakesh.jpg"
+  },
+  "mg": {
+    "city": "Antananarivo",
+    "author": "Cactus0625",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:All%C3%A9e_des_baobabs_Morondava_Madagascar.jpg"
+  },
+  "ml": {
+    "city": "Bamako",
+    "author": "BluesyPete",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:MaliDjenn%C3%A9Mosqu%C3%A9e.JPG"
+  },
+  "mm": {
+    "city": "Rangoon (Yangon)",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bagan,_Myanmar,_Htilominlo_Temple_and_other_Buddhist_stupas_in_Bagan_plain.jpg"
+  },
+  "mx": {
+    "city": "Ciudad de M",
+    "author": "Francisco Anzola",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mexico_City_Skyline_(5604867225).jpg"
+  },
+  "my": {
+    "city": "Kuala Lumpur",
+    "author": "James Kerwin from Tbilisi",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Twins_SE_Asia_2019_(49171985716).jpg"
+  },
+  "mz": {
+    "city": "Maputo",
+    "author": "Julien Lagarde",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Maputo_skyline_2006.jpg"
+  },
+  "ne": {
+    "city": "Agadez",
+    "author": "Vincent van Zeijst",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Niger,_Agadez_(35),_auberge_Tellit_and_Grand_Mosque,_old_town.jpg"
+  },
+  "ng": {
+    "city": "Lagos",
+    "author": "Clara Sanchiz",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lagos_skyline.jpg"
+  },
+  "np": {
+    "city": "Kathmandu",
+    "author": "Nabin K. Sapkota",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Boudha_Stupa_2018_04.jpg"
+  },
+  "pe": {
+    "city": "Lima",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Machu_Picchu,_Per%C3%BA,_2015-07-30,_DD_47.JPG"
+  },
+  "ph": {
+    "city": "Manila",
+    "author": "SwarmCheng",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Skyline_in_Manila_34.jpg"
+  },
+  "pk": {
+    "city": "Islamabad",
+    "author": "Fassifarooq",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Badshahi_Mosque,_Lahore_I.jpg"
+  },
+  "pl": {
+    "city": "Warszawa",
+    "author": "Igor123121",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Old_Town,_southern_part_near_Wawel_Castle,_2025,_bird's_eye_view,_Krak%C3%B3w,_Poland.jpg"
+  },
+  "ru": {
+    "city": "Moscow",
+    "author": "Alexxx1979",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Moscow._Saint_Basil's_Cathedral_P4162276_2750.jpg"
+  },
+  "sa": {
+    "city": "Riyadh",
+    "author": "B.alotaby",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Riyadh_Skyline.jpg"
+  },
+  "sd": {
+    "city": "Khartum",
+    "author": "Alex Sergeev (www.asergeev.com)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:View_from_a_boat_of_West_Bay_skyline.jpg"
+  },
+  "sy": {
+    "city": "Damascus",
+    "author": "Bernard Gagnon",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Umayyad_Mosque,_Damascus.jpg"
+  },
+  "th": {
+    "city": "Bangkok",
+    "author": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A8%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%94%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A1_%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7_%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3_-_Wat_Phra_Kaew,_Temple_of_Emerald_Buddha,_Bangkok,_Thailand.jpg"
+  },
+  "tr": {
+    "city": "Ankara",
+    "author": "Arild Vågen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg"
+  },
+  "tz": {
+    "city": "Dodoma",
+    "author": "Christoph Strässler",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Wildebeest_herd,_Northern_Serengeti,_Tanzania.jpg"
+  },
+  "ua": {
+    "city": "Kyiv",
+    "author": "Rbrechko",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:80-391-9014_Kyiv_Sofia_2_RB_24.jpg"
+  },
+  "ug": {
+    "city": "Kampala",
+    "author": "Todd Huffman from Phoenix, AZ",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kampala_skyline.jpg"
+  },
+  "ve": {
+    "city": "Caracas",
+    "author": "Wilfredor",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Caracas_night.jpg"
+  },
+  "vn": {
+    "city": "Hanoi",
+    "author": "Thomas Hirsch / User:Ravn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Halong_Bay_in_Vietnam.jpg"
+  },
+  "ye": {
+    "city": "Sanaa",
+    "author": "Rod Waddington from Kergunyah, Australia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Old_City_Market,_Sanaa_(10035332343).jpg"
   }
 }
