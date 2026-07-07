@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06",
+  "generatedAt": "2026-07-07",
   "domains": [
     {
       "id": "rights",
@@ -1646,7 +1646,7 @@
       "flag": "ca",
       "region": "Americas",
       "subregion": "Northern America",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 97,
@@ -3138,7 +3138,7 @@
       "flag": "fr",
       "region": "Europe",
       "subregion": "Western Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 89,
@@ -4046,7 +4046,7 @@
       "flag": "in",
       "region": "Asia",
       "subregion": "Southern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 62,
@@ -4340,7 +4340,7 @@
       "flag": "it",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 87,
@@ -4432,7 +4432,7 @@
       "flag": "jp",
       "region": "Asia",
       "subregion": "Eastern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 96,
@@ -6156,7 +6156,7 @@
       "flag": "nl",
       "region": "Europe",
       "subregion": "Western Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 97,
@@ -8236,7 +8236,7 @@
       "flag": "es",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 91,
@@ -9198,7 +9198,7 @@
       "flag": "gb",
       "region": "Europe",
       "subregion": "Northern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 92,

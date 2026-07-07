@@ -21,7 +21,10 @@ import { dirname, join } from 'node:path'
 const HERE = dirname(fileURLToPath(import.meta.url))
 const ISO = JSON.parse(readFileSync(join(HERE, 'iso3166.json'), 'utf8')) // ISO3 -> { a2, region, subregion }
 
-const CURATED = new Set(['US', 'BR', 'DE', 'NO', 'KE', 'EG', 'ZA', 'CN', 'AU', 'UZ'])
+// The curated (Tier A) set is the single source of truth in jurisdictions.js —
+// derive it here so adding a country there flips its ★ everywhere on regen.
+const { JURISDICTIONS } = await import('../src/data/jurisdictions.js')
+const CURATED = new Set(JURISDICTIONS.map((j) => j.code))
 
 export const DOMAINS = [
   { id: 'rights', label: 'Rights & liberty' },
