@@ -31,6 +31,14 @@ const PHOTOS = {
   cn: { city: 'Shanghai', file: 'Pudong Shanghai November 2017 panorama.jpg', author: 'King of Hearts', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
   au: { city: 'Sydney', file: 'Sydney Opera House and Harbour Bridge Dusk (3) 2019-06-21.jpg', author: 'Benh Lieu Song', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
   uz: { city: 'Samarkand', file: 'Registan 01.jpg', author: 'Bernard Gagnon', license: 'CC0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+  gb: { city: 'London', file: 'London Skyline from Waterloo Bridge, London, UK - Diliff.jpg', author: 'Diliff', license: 'CC BY-SA 3.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0' },
+  fr: { city: 'Paris', file: 'Eiffel Tower sunset skyline (Unsplash).jpg', author: 'Pedro Kümmel', license: 'CC0', licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/' },
+  jp: { city: 'Tokyo', file: 'A View of Mount Fuji from Ichikawa.jpg', author: 'Fred Cherrygarden', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+  ca: { city: 'Toronto', file: 'Sunset Toronto Skyline Panorama Crop from Snake Island.jpg', author: 'Jchmrt', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+  nl: { city: 'Amsterdam', file: 'Colorful windows and canal houses at blue hour with water reflection in Damrak Amsterdam Netherlands.jpg', author: 'Basile Morin', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+  in: { city: 'Agra', file: 'Taj Mahal, Agra, India edit2.jpg', author: 'Yann / King of Hearts', license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0' },
+  es: { city: 'Barcelona', file: 'Aerial view of La Sagrada Familia, Barcelona, Spain (51227006134).jpg', author: 'dronepicr', license: 'CC BY 2.0', licenseUrl: 'https://creativecommons.org/licenses/by/2.0' },
+  it: { city: 'Rome', file: 'Colosseum in Rome-April 2007-1- copie 2B.jpg', author: 'Diliff', license: 'CC BY-SA 2.5', licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.5' },
 }
 
 const commonsPage = (file) => `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file.replace(/ /g, '_'))}`

@@ -55,8 +55,9 @@ Hover any score to see exactly which facts and values produced it.
 Hand-verifying ~195 countries × a dozen topics isn't something a small team can keep truthful,
 so coverage is **tiered, and the tier is shown**:
 
-- **Curated (Tier A)** — the 10 countries in `jurisdictions.js`: hand-verified, adversarially
-  cross-checked, with the full plain-language briefing.
+- **Curated (Tier A)** — the countries in `jurisdictions.js` (18 and growing): hand-verified,
+  cross-checked, with the full plain-language briefing. Adding a country here auto-promotes it to
+  ★ everywhere.
 - **Indexed (Tier B)** — *every* country: **9 published indices across 4 domains** — rights
   (Freedom House · Equaldex · World Bank WBL), safety (UNODC homicide · Transparency CPI), health
   (WHO UHC coverage · life expectancy) and development (internet use · GDP per capita) — each pulled
@@ -82,7 +83,7 @@ verified, so it cannot hallucinate.
 ```
 src/
   data/
-    jurisdictions.js   # the claims spine — 10 countries × sourced, dated claims (Tier A, curated)
+    jurisdictions.js   # the claims spine — curated countries × sourced, dated claims (Tier A)
     world.json         # GENERATED — every country × 9 indices in 4 domains (Tier B, indexed)
     signals.json       # GENERATED — travel-advisory level per country + curated news (nightly)
     visa.json          # GENERATED — home→destination entry requirement matrix (Passport Index)

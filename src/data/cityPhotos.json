@@ -46,7 +46,7 @@
     "author": "SkyPixels",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "source": "https://commons.wikimedia.org/wiki/File:Cape_Town,_Table_Mountain_%26_Harbour.jpg"
+    "source": "https://commons.wikimedia.org/wiki/File:Cape_Town%2C_Table_Mountain_%26_Harbour.jpg"
   },
   "cn": {
     "city": "Shanghai",
@@ -68,5 +68,61 @@
     "license": "CC0",
     "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
     "source": "https://commons.wikimedia.org/wiki/File:Registan_01.jpg"
+  },
+  "fr": {
+    "city": "Paris",
+    "author": "Pedro Kümmel",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_sunset_skyline_(Unsplash).jpg"
+  },
+  "jp": {
+    "city": "Tokyo",
+    "author": "Fred Cherrygarden",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:A_View_of_Mount_Fuji_from_Ichikawa.jpg"
+  },
+  "ca": {
+    "city": "Toronto",
+    "author": "Jchmrt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sunset_Toronto_Skyline_Panorama_Crop_from_Snake_Island.jpg"
+  },
+  "nl": {
+    "city": "Amsterdam",
+    "author": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Colorful_windows_and_canal_houses_at_blue_hour_with_water_reflection_in_Damrak_Amsterdam_Netherlands.jpg"
+  },
+  "in": {
+    "city": "Agra",
+    "author": "Yann / King of Hearts",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Taj_Mahal%2C_Agra%2C_India_edit2.jpg"
+  },
+  "es": {
+    "city": "Barcelona",
+    "author": "dronepicr",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_La_Sagrada_Familia%2C_Barcelona%2C_Spain_(51227006134).jpg"
+  },
+  "it": {
+    "city": "Rome",
+    "author": "Diliff",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg"
+  },
+  "gb": {
+    "city": "London",
+    "author": "Diliff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:London_Skyline_from_Waterloo_Bridge,_London,_UK_-_Diliff.jpg"
   }
 }
