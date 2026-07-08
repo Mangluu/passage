@@ -161,5 +161,3 @@ institution before you travel. Built with only publicly available data and openl
 original assets.
 
 ---
-
-Maintained by **Shivang Gupta** · shivangzephyr@gmail.com
