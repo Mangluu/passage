@@ -11,6 +11,7 @@ export const SOURCES = {
   freedomhouse: { org: 'Freedom House', name: 'Freedom in the World', url: 'https://freedomhouse.org/countries/freedom-world/scores' },
   uncrpd: { org: 'United Nations', name: 'CRPD ratification status', url: 'https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-15&chapter=4' },
   forb: { org: 'Humanists International', name: 'Freedom of Thought Report', url: 'https://fot.humanists.international/' },
+  wbl: { org: 'World Bank', name: 'Women, Business and the Law', url: 'https://wbl.worldbank.org/' },
 }
 
 export function resolveSource(src) {
