@@ -13,10 +13,10 @@ export default function Sources() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <div className="mx-auto w-full max-w-prose flex-1 px-6 py-12">
-      <p className="eyebrow">Liberty Compass</p>
+      <p className="eyebrow">Passage</p>
       <h1 className="mt-3 font-serif text-4xl leading-tight text-ink">Method &amp; sources</h1>
       <p className="mt-4 text-[17px] leading-relaxed text-ink2">
-        A briefing is only as trustworthy as its weakest fact. Liberty Compass is built on{' '}
+        A briefing is only as trustworthy as its weakest fact. Passage is built on{' '}
         <span className="text-ink">claims</span> — each a plain statement carrying its evidence type, the date it
         reflects, its source, and how sure we are. The dashboard’s area scores use a published index where one exists
         and an indicative band for the categorical facts — hover any score to see what it aggregates.
@@ -102,7 +102,7 @@ export default function Sources() {
 
       <Section title="Every source we use">
         <p className="text-[14px] leading-relaxed text-ink3">
-          A complete, de-duplicated list of every source cited anywhere in Liberty Compass — the shared datasets and the
+          A complete, de-duplicated list of every source cited anywhere in Passage — the shared datasets and the
           country-specific official sources linked on individual claims. Legal facts were cross-checked in an
           adversarial verification pass against primary and official sources.
         </p>
@@ -142,7 +142,7 @@ export default function Sources() {
       </Section>
 
       <p className="mt-10 border-t border-line pt-5 text-[13px] leading-relaxed text-ink3">
-        Liberty Compass is a personal, informational project. Laws and indices are simplified and can be out of date.
+        Passage is a personal, informational project. Laws and indices are simplified and can be out of date.
         Laws differ from lived experience — this is not legal advice. Always confirm with official government channels
         before you travel.
       </p>

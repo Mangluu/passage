@@ -1,6 +1,6 @@
-// The Liberty Compass mark. Inlined so it inherits `currentColor` and needs no
+// The Passage mark. Inlined so it inherits `currentColor` and needs no
 // network request. Size it with a className (e.g. "h-7 w-auto text-accent").
-export default function Logo({ className = 'h-7 w-auto', title = 'Liberty Compass' }) {
+export default function Logo({ className = 'h-7 w-auto', title = 'Passage' }) {
   return (
     <svg viewBox="0 0 2528 1696" className={className} role="img" aria-label={title} xmlns="http://www.w3.org/2000/svg">
       <g transform="translate(0,1696) scale(0.1,-0.1)" fill="currentColor" stroke="none">

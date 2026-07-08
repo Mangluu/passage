@@ -11,8 +11,8 @@ export default function Sidebar({ audiences, onToggleAudience }) {
       <Link to="/" className="flex items-center gap-2.5 px-1">
         <Logo className="h-12 w-auto shrink-0 text-accent" />
         <span className="leading-tight">
-          <span className="block font-serif text-[18px] font-semibold text-ink">Liberty Compass</span>
-          <span className="block text-[10.5px] text-ink3">Liberty &amp; security abroad</span>
+          <span className="block font-serif text-[18px] font-semibold text-ink">Passage</span>
+          <span className="block text-[10.5px] text-ink3">Safety &amp; rights abroad</span>
         </span>
       </Link>
 
