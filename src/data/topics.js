@@ -38,6 +38,11 @@ export const TOPICS = [
     scale: ['Limited', 'CRPD ratified + basic law', 'Strong rights'],
   },
   {
+    key: 'womens_rights', label: "Women's legal rights", cluster: 'identity',
+    kind: 'position', audiences: ['women'], weight: 3,
+    scale: ['Severe legal inequality', 'Major legal gaps', 'Mostly equal in law', 'Broadly equal in law'],
+  },
+  {
     key: 'abortion', label: 'Abortion access', cluster: 'body',
     kind: 'position', audiences: ['women'], weight: 3, crime: 0,
     scale: ['Prohibited', 'To save life only', 'Broad social grounds', 'On request'],
