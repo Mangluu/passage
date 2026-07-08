@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import Briefing from './pages/Briefing.jsx'
 import Explore from './pages/Explore.jsx'
+import SafeFor from './pages/SafeFor.jsx'
 import Sources from './pages/Sources.jsx'
 import Impressum from './pages/Impressum.jsx'
 import Privacy from './pages/Privacy.jsx'
@@ -14,6 +15,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/briefing" element={<Briefing />} />
       <Route path="/explore" element={<Explore />} />
+      <Route path="/safe/:code/:aud" element={<SafeFor />} />
       <Route path="/dashboard" element={<Navigate to="/briefing" replace />} />
       <Route path="/sources" element={<Sources />} />
       <Route path="/impressum" element={<Impressum />} />
