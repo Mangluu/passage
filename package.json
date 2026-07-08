@@ -6,7 +6,7 @@
   "description": "Passage — a privacy-first, sourced safety & rights briefing for travellers, read for who you are.",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
