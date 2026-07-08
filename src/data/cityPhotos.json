@@ -425,5 +425,950 @@
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "source": "https://commons.wikimedia.org/wiki/File:Old_City_Market,_Sanaa_(10035332343).jpg"
+  },
+  "be": {
+    "city": "Bruxelles [Brussel]",
+    "author": "Michel wal",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Brussels_skyline_1001.JPG"
+  },
+  "bi": {
+    "city": "Bujumbura",
+    "author": "Edouard mhg",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:BUJUMBURA-BURUNDI_BINDOVILLE_03.jpg"
+  },
+  "bj": {
+    "city": "Porto-Novo",
+    "author": "Adoscam",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pirogue_%C3%A0_voile_ou_pirogue_%C3%A0_balancier_de_type_b%C3%A9ninois_sur_le_fleuve_de_Ganvi%C3%A9_05.jpg"
+  },
+  "cl": {
+    "city": "Santiago de Chile",
+    "author": "Omnespsx (D•ES)",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Santiago_de_Chile,_Desde_Cerro_San_Crist%C3%B3bal.jpg"
+  },
+  "ec": {
+    "city": "Quito",
+    "author": "Bernard Gagnon",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cotopaxi_01.jpg"
+  },
+  "gn": {
+    "city": "Conakry",
+    "author": "Alpha hmd",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Un_aper%C3%A7u_de_la_ville_de_conakry.jpg"
+  },
+  "gt": {
+    "city": "Ciudad de Guatemala",
+    "author": "Not So Dusty",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Volcano_Street,_Antigua_Guatemala,_2022-01-27.jpg"
+  },
+  "kh": {
+    "city": "Phnom Penh",
+    "author": "Satdeep Gill",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Angkor_Wat_with_its_reflection_(cropped).jpg"
+  },
+  "kz": {
+    "city": "Astana",
+    "author": "Matti Blume",
+    "license": "CC BY-SA",
+    "licenseUrl": "//commons.wikimedia.org/wiki/File:Night_at_Esil_District,_Astana_(P1190721).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Night_at_Esil_District,_Astana_(P1190721).jpg"
+  },
+  "lk": {
+    "city": "Colombo, Sri Jayawardenepura Kotte",
+    "author": "Bernard Gagnon",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sigiriya_02.jpg"
+  },
+  "mw": {
+    "city": "Lilongwe",
+    "author": "Malawiana",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Lilongwe_City_Centre.JPG"
+  },
+  "ro": {
+    "city": "Bucuresti",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ateneo_Rumano,_Bucarest,_Ruman%C3%ADa,_2016-05-29,_DD_73.jpg"
+  },
+  "rw": {
+    "city": "Kigali",
+    "author": "Emmanuelkwizera",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:High_Angle_View_Of_Kigali_City_Street_on_November_29,_2018._Emmanuel_Kwizera.jpg"
+  },
+  "sn": {
+    "city": "Dakar",
+    "author": "Jeff Attaway",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pointe_des_Almadies_-_Senegal.jpg"
+  },
+  "so": {
+    "city": "Mogadishu",
+    "author": "Isma4l",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mogadishu_Skyline_17th_picture.jpg"
+  },
+  "td": {
+    "city": "N'Djamena",
+    "author": "Valerian Guillot from Cambridge, United Kingdom",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Camels_in_the_Labyrinthe_(Maze)_sandstone_area_of_the_Ennedi,_Chad_(42405451704).jpg"
+  },
+  "tn": {
+    "city": "Tunis",
+    "author": "Rene Cortin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sidi_Bou_Said_02.jpg"
+  },
+  "tw": {
+    "city": "Taiwan",
+    "author": "CEphoto, Uwe Aranas",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Taipei_Taiwan_Taipei-101-Tower-01.jpg"
+  },
+  "zm": {
+    "city": "Lusaka",
+    "author": "Icem4k",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:The_City_of_Lusaka_2022_1_7.jpg"
+  },
+  "zw": {
+    "city": "Harare",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN.jpg"
+  },
+  "ad": {
+    "city": "Andorra la Vella",
+    "author": "Krzysztof Golik",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pyrenees_in_Andorra_(10).jpg"
+  },
+  "ae": {
+    "city": "Abu Dhabi",
+    "author": "Tim Reckmann from Hamm, Deutschland",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dubai_Skyline_mit_Burj_Khalifa_(18241030269).jpg"
+  },
+  "ag": {
+    "city": "Saint John's",
+    "author": "Z_dead from London, UK",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Antigua_beach_view.jpg"
+  },
+  "al": {
+    "city": "Tirana",
+    "author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:ISS031-E-11960_-_View_of_Albania.jpg"
+  },
+  "am": {
+    "city": "Yerevan",
+    "author": "Սէրուժ Ուրիշեան (Serouj Ourishian)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mount_Ararat_and_the_Yerevan_skyline.jpg"
+  },
+  "at": {
+    "city": "Wien",
+    "author": "Sohom Datta",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Vienna_skyline_across_the_Danube_river.jpg"
+  },
+  "az": {
+    "city": "Baku",
+    "author": "shankar s. from Dubai, united arab emirates",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Modern_Baku_seen_from_the_Martyrs'_Memorial_(37068871235).jpg"
+  },
+  "ba": {
+    "city": "Sarajevo",
+    "author": "Ramirez",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama_2007.jpg"
+  },
+  "bb": {
+    "city": "Bridgetown",
+    "author": "Berit from Redhill/Surrey, UK",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Barbados_beach_(6800828376).jpg"
+  },
+  "bg": {
+    "city": "Sofia",
+    "author": "Pudelek (Marcin Szala)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Alexander_Nevsky_Cathedral,_Sofia_(by_Pudelek).JPG"
+  },
+  "bh": {
+    "city": "al-Manama",
+    "author": "Zairon",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Manama_Qal'at_al-Bahrain_Courtyard_%26_Skyline_1.jpg"
+  },
+  "bn": {
+    "city": "Bandar Seri Begawan",
+    "author": "sam garza from Los Angeles, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg"
+  },
+  "bo": {
+    "city": "La Paz",
+    "author": "Luca Galuzzi (Lucag), edit by Trialsanderrors",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:Piles_of_Salt_Salar_de_Uyuni_Bolivia_Luca_Galuzzi_2006_a.jpg"
+  },
+  "bs": {
+    "city": "Nassau",
+    "author": "Rüdiger Stehn from Kiel, Deutschland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bahamas_1988_(059)_New_Providence_Cable_Beach_(22762816374).jpg"
+  },
+  "bt": {
+    "city": "Thimphu",
+    "author": "Original: Nina R from Africa Derivative work: UnpetitproleX",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Paro_Taktsang,_Bhutan_(edited).jpg"
+  },
+  "bw": {
+    "city": "Gaborone",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cebras_de_Burchell_(Equus_quagga_burchellii),_vista_a%C3%A9rea_del_delta_del_Okavango,_Botsuana,_2018-08-01,_DD_30.jpg"
+  },
+  "by": {
+    "city": "Minsk",
+    "author": "Homoatrox",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Minsk_skyline_near_Niamiha_(120819).jpg"
+  },
+  "bz": {
+    "city": "Belmopan",
+    "author": "dronepicr",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Caye_Caulker_Belize_aerial_(20688990128).jpg"
+  },
+  "cf": {
+    "city": "Bangui",
+    "author": "U.S. Fish and Wildlife Service Headquarters",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:African_elephant,_Dzanga_Sangha,_Central_African_Republic_(18322370163).jpg"
+  },
+  "cg": {
+    "city": "Brazzaville",
+    "author": "Karin Lakeman",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2010-03-07-Kinshasa_depuis_Brazzaville.jpg"
+  },
+  "ch": {
+    "city": "Bern",
+    "author": "Liridon",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Matterhorn,_March_2019_(01).jpg"
+  },
+  "cr": {
+    "city": "San José",
+    "author": "Rhododendrites",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Arenal_volcano_(70785p).jpg"
+  },
+  "cu": {
+    "city": "La Habana",
+    "author": "Ezarate This is a retouched picture, which means that it has been digitally altered from its original version. Modifications: rebuild from raw fixing light compensation in shadows and lights, White balance, tonemaping balance, fix lens distortion, fix vertical distortions, remove dust spots, noise reduction and chromatic aberration fix, cut element distracting and remove oil spot and finally export in full jpeg quality by The Photographer 13:39, 12 February 2017 (UTC).",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:AvMalecon-LaHabanaCuba-04735.jpg"
+  },
+  "cv": {
+    "city": "Praia",
+    "author": "Cayambe",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cape_Verde_Fogo_Goats.jpg"
+  },
+  "cy": {
+    "city": "Nicosia",
+    "author": "Michal Klajban",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Coast_with_Dome_Hotel,_Kyrenia,_Northern_Cyprus_03.jpg"
+  },
+  "cz": {
+    "city": "Czechia",
+    "author": "Petar Milošević",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Prague_skyline_at_dawn.jpg"
+  },
+  "dj": {
+    "city": "Djibouti",
+    "author": "Fishercd",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Lake_Assal_1-Djibouti.jpg"
+  },
+  "dk": {
+    "city": "Copenhagen",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kopenhagen_(DK),_Nyhavn_--_2017_--_1711.jpg"
+  },
+  "dm": {
+    "city": "Roseau",
+    "author": "Heritage Preservation Department - MNHS",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Roseau_City_Center-Library-Roseau_County_Museum_and_Interpretive_Center.jpg"
+  },
+  "do": {
+    "city": "Santo Domingo de Guzm",
+    "author": "Mariordo (Mario Durán &amp; German Valverde)",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_Ciudad_Colonial_Santo_Domingo_09_2019_0067.jpg"
+  },
+  "ee": {
+    "city": "Tallinn",
+    "author": "Hendrik Mändla",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tallinna_vanalinn_p%C3%A4ikeset%C3%B5usu_ajal.jpg"
+  },
+  "er": {
+    "city": "Asmara",
+    "author": "Carlos Oliveira Reis;",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Tour_of_Asmara_Cycling_race,_Asmara_Eritrea.jpg"
+  },
+  "fi": {
+    "city": "Helsinki [Helsingfors]",
+    "author": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Helsinki_July_2013-27a.jpg"
+  },
+  "fj": {
+    "city": "Fiji",
+    "author": "Rickard Törnblad",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tree_on_beach,_Naviti_island,_Yasawa_Islands,_Fiji_-_August_2016.jpg"
+  },
+  "fm": {
+    "city": "Micronesia (country)",
+    "author": "NASA",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Etal_Atoll_ISS002.jpg"
+  },
+  "ga": {
+    "city": "Libreville",
+    "author": "VIGNA christian",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Baie_du_cap,_l%E2%80%99estuaire_de_Libreville_au_Gabon.jpg"
+  },
+  "gd": {
+    "city": "Saint George's",
+    "author": "Vlad Podvorny",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:A_beach_in_Grenada_(40549387515).jpg"
+  },
+  "ge": {
+    "city": "Tbilisi",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tbilisi,_Old_town,_Georgia.jpg"
+  },
+  "gm": {
+    "city": "Banjul",
+    "author": "IsaacTuray",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Banjul_Gambia_skyline.jpg"
+  },
+  "gq": {
+    "city": "Malabo",
+    "author": "PanoramaCathedralSquareMalabo2013.jpg: Denis Barthel derivative work: Inkey",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Malabo_banner.jpg"
+  },
+  "gr": {
+    "city": "Athenai",
+    "author": "A.Savin",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg"
+  },
+  "gw": {
+    "city": "Bissau",
+    "author": "Camille Pissarro",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_Boulevard_Montmartre_-_Eremitage.jpg"
+  },
+  "gy": {
+    "city": "Georgetown",
+    "author": "Bill Cameron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Kaieteur_Falls_Guyana_(2)_2007.jpg"
+  },
+  "hn": {
+    "city": "Tegucigalpa",
+    "author": "Mónica J. Mora",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ruinas_MAYA_Copan_Honduras_10.jpg"
+  },
+  "hr": {
+    "city": "Zagreb",
+    "author": "Martin Falbisoner",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dubrovnik_as_seen_from_Sr%C4%91_-_September_2017.jpg"
+  },
+  "ht": {
+    "city": "Port-au-Prince",
+    "author": "SPC Gibran Torres, United States Army",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Citadelle_Laferri%C3%A8re_Aerial_View.jpg"
+  },
+  "hu": {
+    "city": "Budapest",
+    "author": "Dirk Beyer",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Budapest_Parliament_4604.JPG"
+  },
+  "ie": {
+    "city": "Dublin",
+    "author": "Berthold Werner",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ireland_Cliffs_of_Moher_BW_2025-09-11_14-27-51.jpg"
+  },
+  "il": {
+    "city": "Jerusalem",
+    "author": "Pudelek",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Old_City_Walls_and_Tower_of_David_in_Jerusalem_(2019)_03.jpg"
+  },
+  "is": {
+    "city": "Reykjavík",
+    "author": "Martin Falbisoner",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sk%C3%B3gafoss_July_2014.JPG"
+  },
+  "jm": {
+    "city": "Kingston",
+    "author": "The original uploader was Gmanacsa at English Wikipedia.",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lime_Cay-Kingston-Jamaica-gm.jpg"
+  },
+  "jo": {
+    "city": "Amman",
+    "author": "Berthold Werner",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Petra_Jordan_BW_0.jpg"
+  },
+  "kg": {
+    "city": "Bishkek",
+    "author": "Nikolai Bulykin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BB%D0%B0-%D0%90%D1%80%D1%87%D0%B0_%D1%81%D0%B2%D0%B5%D1%80%D1%85%D1%83_(2).jpg"
+  },
+  "ki": {
+    "city": "Bairiki",
+    "author": "NASA",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Tabiteuea_Kiribati2.jpg"
+  },
+  "km": {
+    "city": "Moroni",
+    "author": "Daryl Wallace from Abu Dhabi, UAE",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mosque_in_Moroni,_Comoros_(3922246919).jpg"
+  },
+  "kn": {
+    "city": "Basseterre",
+    "author": "Roger W from Sarasota, Florida, U.S.A.",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:General_view_of_Basseterre,_St._Kitts_from_Ship_(8642159070).jpg"
+  },
+  "kw": {
+    "city": "Kuwait",
+    "author": "Zairon",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kuwait_City_Skyline_at_Night_3.jpg"
+  },
+  "la": {
+    "city": "Vientiane",
+    "author": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Xieng_Thong_-_Luang_Prabang_-_Laos.jpg"
+  },
+  "lb": {
+    "city": "Beirut",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Beirut_Corniche,_Beirut,_Lebanon.jpg"
+  },
+  "lc": {
+    "city": "Castries",
+    "author": "Patrick Nouhailler from Genève, Suisse",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Caribbean,_the_Caribbean_Sea,_more_than_7,000_islands,_islets,_reefs,_and_cays_-_the_West_Indies_(5887257140).jpg"
+  },
+  "li": {
+    "city": "Vaduz",
+    "author": "A.Savin",
+    "license": "FAL",
+    "licenseUrl": "http://artlibre.org/licence/lal/en",
+    "source": "https://commons.wikimedia.org/wiki/File:Liechtenstein_asv2022-10_img22_Vaduz_Schloss.jpg"
+  },
+  "lr": {
+    "city": "Monrovia",
+    "author": "David Jordan",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Monrovia_CA_San_Gabriel_Mountains_i210.JPG"
+  },
+  "ls": {
+    "city": "Maseru",
+    "author": "HansenHimself",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Panoramic_view_from_a_mountain_in_Lesotho.jpg"
+  },
+  "lt": {
+    "city": "Vilnius",
+    "author": "BigHead",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Vilnius_old_town_by_Augustas_Didzgalvis.jpg"
+  },
+  "lu": {
+    "city": "Luxembourg [Luxemburg/L",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Luxembourg_Entrance_to_the_town.jpg"
+  },
+  "lv": {
+    "city": "Riga",
+    "author": "PIERRE ANDRE LECLERCQ",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Old_Riga_Vecr%C4%ABga_Town_Hall.jpg"
+  },
+  "ly": {
+    "city": "Tripoli",
+    "author": "Sludge G",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Leptis_Magna_-_Labdah,_Libya_November_2004_(6769449483).jpg"
+  },
+  "mc": {
+    "city": "Monaco-Ville",
+    "author": "Spike",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Monaco_02.jpg"
+  },
+  "md": {
+    "city": "Chisinau",
+    "author": "Photobank MD from Chisinau, Moldova",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Teatrul_Na%C8%9Bional_%22Mihai_Eminescu%22,_Chisinau,_Republica_Moldova_Mihai_Eminescu_National_Theatre,_Chisinau,_Republic_of_Moldova_(50730297817).jpg"
+  },
+  "me": {
+    "city": "Podgorica",
+    "author": "Pudelek (Marcin Szala)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg"
+  },
+  "mh": {
+    "city": "Dalap-Uliga-Darrit",
+    "author": "NASA",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Utirik_Atoll_-_2014-02-09_-_Landsat_8_-_15m.png"
+  },
+  "mk": {
+    "city": "Skopje",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Iglesia_San_Juan_Kaneo,_Ohrid,_Macedonia_del_Norte,_2014-04-17,_DD_22.jpg"
+  },
+  "mn": {
+    "city": "Ulan Bator",
+    "author": "Bernard Gagnon",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Monument_to_Genghis_Khan.jpg"
+  },
+  "mr": {
+    "city": "Nouakchott",
+    "author": "Mohamed Natti",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D8%AC%D8%AF_%D8%B4%D9%86%D9%82%D9%8A%D8%B7_%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A.jpg"
+  },
+  "mt": {
+    "city": "Valletta",
+    "author": "Rhododendrites",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Saint_Christopher_Street_in_Valletta_(32711).jpg"
+  },
+  "mu": {
+    "city": "Port-Louis",
+    "author": "AmyAbroad",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Le_Morne_Brabant_Mauritius_with_Car_Park.jpg"
+  },
+  "mv": {
+    "city": "Male",
+    "author": "Gzzz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Bathala_(Maldives)_2.jpg"
+  },
+  "na": {
+    "city": "Windhoek",
+    "author": "Daniel Kraft",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Sossusvlei_Dune_Rippled_cropped.jpg"
+  },
+  "ni": {
+    "city": "Managua",
+    "author": "Brian Johnson &amp; Dane Kantner",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Granada,_Nicaragua_10.jpg"
+  },
+  "nr": {
+    "city": "Yaren",
+    "author": "Unknown",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Nauru-mod.jpg"
+  },
+  "nz": {
+    "city": "Wellington",
+    "author": "Christian Mehlführer, User:Chmehl",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "source": "https://commons.wikimedia.org/wiki/File:AucklandPano_MC.jpg"
+  },
+  "om": {
+    "city": "Masqat",
+    "author": "Domenico Convertini",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Old_Muscat_City_View,_Muscat,_Oman3.jpg"
+  },
+  "pa": {
+    "city": "Ciudad de Panamá",
+    "author": "123Hollic",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Panama_City_Skyline_2015.jpg"
+  },
+  "pg": {
+    "city": "Port Moresby",
+    "author": "Nomadtales (talk · contribs)",
+    "license": "CC BY-SA 2.1 au",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/au/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Mount_Wilhelm.jpg"
+  },
+  "ps": {
+    "city": "Gaza",
+    "author": "Ralf Roletschek",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "source": "https://commons.wikimedia.org/wiki/File:16-04-04-Felsendom-Tempelberg-Jerusalem-RalfR-WAT_6385.jpg"
+  },
+  "pt": {
+    "city": "Lisboa",
+    "author": "Neil",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lisbon_Skyline_(45684560521).jpg"
+  },
+  "pw": {
+    "city": "Koror",
+    "author": "Luka Peternel",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rock-Islands-Palau-1-2016-sea-view-Luka-Peternel.jpg"
+  },
+  "py": {
+    "city": "Asunción",
+    "author": "Bwood720 at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Asunci%C3%B3n_temple_by_Bwood720.jpeg"
+  },
+  "qa": {
+    "city": "Doha",
+    "author": "Zairon",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Doha_Skyline_10.jpg"
+  },
+  "rs": {
+    "city": "Belgrade",
+    "author": "Petar Milošević",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Church_of_Saint_Sava_(Belgrade,_Serbia).jpg"
+  },
+  "sb": {
+    "city": "Honiara",
+    "author": "Pohopetch",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fenualoa_lagoon_2.jpg"
+  },
+  "sc": {
+    "city": "Victoria",
+    "author": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:198_Granite_rock_in_La_Digue_Island_at_sunset_Photo_by_Giles_Laurent.jpg"
+  },
+  "se": {
+    "city": "Stockholm",
+    "author": "© R.Möhler",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Skyline_of_Gamla_Stan_-_panoramio.jpg"
+  },
+  "sg": {
+    "city": "Singapore",
+    "author": "Benh LIEU SONG (Flickr)",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Singapore_Marina_Bay_Dusk_2018-02-27.jpg"
+  },
+  "si": {
+    "city": "Ljubljana",
+    "author": "Mihael Grmek",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Panorama_Bled_01.jpg"
+  },
+  "sk": {
+    "city": "Bratislava",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Dev%C3%ADn_Castle,_20220428_1011_5715.jpg"
+  },
+  "sl": {
+    "city": "Freetown",
+    "author": "Erik Cleves Kristensen",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Beach_in_Freetown,_Sierra_Leone_(14176784751).jpg"
+  },
+  "sm": {
+    "city": "San Marino",
+    "author": "Terragio67",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Torri,_Cesta_e_Montale_-_San_Marino_-_GT_02_v3_-_2024-03-25.jpg"
+  },
+  "sr": {
+    "city": "Paramaribo",
+    "author": "Medimir",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Fort_Zeelandia,_Paramaribo,_Suriname.jpg"
+  },
+  "ss": {
+    "city": "Juba",
+    "author": "Rigan123",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Juba_City.jpg"
+  },
+  "st": {
+    "city": "São Tomé",
+    "author": "Philippe Bourachot",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Pico_C%C3%A3o_Grande.jpg"
+  },
+  "sv": {
+    "city": "San Salvador",
+    "author": "Angela Rucker, USAID",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Green_Izalco_Volcano.JPG"
+  },
+  "sz": {
+    "city": "Mbabane",
+    "author": "Sara Atkins",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Eswatini_landscape.jpg"
+  },
+  "tg": {
+    "city": "Lomé",
+    "author": "Philip Nalangan",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lome_Togo_Beach_Road.jpg"
+  },
+  "tj": {
+    "city": "Dushanbe",
+    "author": "Шухрат Саъдиев",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Mosque_Grand_Masjid_Imam_Abu%D0%BAh%D0%B0nifa_Dushanbe_04.jpg"
+  },
+  "tl": {
+    "city": "Dili",
+    "author": "Bahnfrend",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cristo_Rei_beach,_Dili,_2018_(04).jpg"
+  },
+  "tm": {
+    "city": "Ashgabat",
+    "author": "P. Hughes",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Ashgabat_-_Statue_of_Lenin.jpg"
+  },
+  "to": {
+    "city": "Nuku'alofa",
+    "author": "'Atata_Island.JPG: Haanofonua derivative work: Massimo Telò",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tonga_banner_Beach_with_palms.jpg"
+  },
+  "tt": {
+    "city": "Port-of-Spain",
+    "author": "Diliff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Port_Vell,_Barcelona,_Spain_-_Jan_2007.jpg"
+  },
+  "tv": {
+    "city": "Funafuti",
+    "author": "Michael Coghlan from Adelaide, Australia",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Tuvalu_Atoll_(28350591903).jpg"
+  },
+  "uy": {
+    "city": "Montevideo",
+    "author": "FLASHPACKER TRAVELGUIDE",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Rambla_-_beach_-_Strand_-_Montevideo_-_Uruguay_(34470771543).jpg"
+  },
+  "va": {
+    "city": "Vatican",
+    "author": "Jebulon",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/wiki/File:Basilica_Sancti_Petri_blue_hour.jpg"
+  },
+  "vc": {
+    "city": "Kingstown",
+    "author": "David Broad",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Admiralty_Bay_in_Port_Elizabeth,_Bequia,_part_of_St._Vincent_and_the_Grenadines_-_panoramio_(1).jpg"
+  },
+  "vu": {
+    "city": "Port-Vila",
+    "author": "HutheMeow",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Efate_Beach_1.jpg"
+  },
+  "ws": {
+    "city": "Apia",
+    "author": "Rickard Törnblad",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:To_Sua_Ocean_Trench,_Upolu,_Samoa_-_August_2016.jpg"
   }
 }
