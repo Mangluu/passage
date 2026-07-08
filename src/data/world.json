@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07",
+  "generatedAt": "2026-07-08",
   "domains": [
     {
       "id": "rights",
@@ -952,7 +952,7 @@
       "flag": "be",
       "region": "Europe",
       "subregion": "Western Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 95,
@@ -1040,7 +1040,7 @@
       "flag": "bj",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 61,
@@ -1508,7 +1508,7 @@
       "flag": "bi",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 13,
@@ -1554,7 +1554,7 @@
       "flag": "kh",
       "region": "Asia",
       "subregion": "South-eastern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 22,
@@ -1806,7 +1806,7 @@
       "flag": "td",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 15,
@@ -1848,7 +1848,7 @@
       "flag": "cl",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 95,
@@ -2650,7 +2650,7 @@
       "flag": "ec",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 64,
@@ -3630,7 +3630,7 @@
       "flag": "gt",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 48,
@@ -3690,7 +3690,7 @@
       "flag": "gn",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 28,
@@ -4538,7 +4538,7 @@
       "flag": "kz",
       "region": "Asia",
       "subregion": "Central Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 23,
@@ -5218,7 +5218,7 @@
       "flag": "mw",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 68,
@@ -7162,7 +7162,7 @@
       "flag": "ro",
       "region": "Europe",
       "subregion": "Eastern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 83,
@@ -7254,7 +7254,7 @@
       "flag": "rw",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 21,
@@ -7678,7 +7678,7 @@
       "flag": "sn",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 70,
@@ -8060,7 +8060,7 @@
       "flag": "so",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 8,
@@ -8282,7 +8282,7 @@
       "flag": "lk",
       "region": "Asia",
       "subregion": "Southern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 63,
@@ -8554,7 +8554,7 @@
       "flag": "tw",
       "region": "",
       "subregion": "",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 93,
@@ -8862,7 +8862,7 @@
       "flag": "tn",
       "region": "Africa",
       "subregion": "Northern Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 42,
@@ -9634,7 +9634,7 @@
       "flag": "zm",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 53,
@@ -9680,7 +9680,7 @@
       "flag": "zw",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 25,
