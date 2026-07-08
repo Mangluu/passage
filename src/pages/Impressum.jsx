@@ -7,10 +7,10 @@ export default function Impressum() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <div className="mx-auto w-full max-w-prose flex-1 px-6 py-12">
-        <p className="eyebrow">Liberty Compass</p>
+        <p className="eyebrow">Passage</p>
         <h1 className="mt-3 font-serif text-4xl leading-tight text-ink">About &amp; contact</h1>
         <p className="mt-4 text-[15px] leading-relaxed text-ink2">
-          Liberty Compass is a personal, non-commercial project. Here’s who maintains it and how to get in touch.
+          Passage is a personal, non-commercial project. Here’s who maintains it and how to get in touch.
         </p>
 
         <Block title="Who runs this">
@@ -23,7 +23,7 @@ export default function Impressum() {
 
         <Block title="Nature of this site">
           <p className="text-[14px] leading-relaxed text-ink2">
-            Liberty Compass is a personal, non-commercial project. It provides general, sourced information and is{' '}
+            Passage is a personal, non-commercial project. It provides general, sourced information and is{' '}
             <span className="text-ink">not legal advice</span>. No goods or services are sold and no payment is processed.
           </p>
         </Block>

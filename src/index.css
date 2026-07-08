@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Liberty Compass palette — purple & cyan. Space-separated RGB for <alpha-value>.
+/* Passage palette — purple & cyan. Space-separated RGB for <alpha-value>.
    Anchors: #2D0641 deep purple · #9315D6 vivid purple · #BFEDFF / #DBF5FF cyans. */
 :root {
   color-scheme: light;

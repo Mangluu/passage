@@ -14,13 +14,13 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-5">
         <Link to="/" className="flex items-center gap-2.5">
           <Logo className="h-[54px] w-auto text-accent" />
-          <span className="font-serif text-[21px] font-semibold tracking-tight text-ink">Liberty Compass</span>
+          <span className="font-serif text-[21px] font-semibold tracking-tight text-ink">Passage</span>
         </Link>
         <div className="flex items-center gap-4 sm:gap-5">
           {/* A statement of what we don't do — informational, not a control. */}
           <span
             className="hidden select-none items-center gap-1.5 sm:inline-flex"
-            title="Liberty Compass keeps no account, runs no trackers, and stores nothing about you."
+            title="Passage keeps no account, runs no trackers, and stores nothing about you."
           >
             <ShieldCheck className="h-3.5 w-3.5 text-success" aria-hidden="true" />
             <span className="font-mono text-[10.5px] uppercase tracking-[0.11em] text-ink3">

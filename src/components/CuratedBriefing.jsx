@@ -86,16 +86,7 @@ export default function CuratedBriefing({ origin, dest, aud, jump }) {
             </div>
           </section>
 
-          <section className="card p-6">
-            <div className="mb-1 flex items-baseline justify-between gap-3">
-              <h3 className="flex items-center gap-2 font-serif text-[18px] font-semibold text-ink">
-                <Scale className="h-4 w-4 text-ink3" /> Overall position
-              </h3>
-            </div>
-            <p className="eyebrow mb-6">where each country sits on the liberty &amp; security scale</p>
-            <OverallScale origin={origin} dest={dest} originScore={oOverall.avg} destScore={dOverall.avg} />
-          </section>
-
+          {/* Identity-first: what matters for this reader leads, above the scale. */}
           <section id="sec-adv" className="card scroll-mt-4 p-6">
             <h3 className="flex items-center gap-2 font-serif text-[18px] font-semibold text-ink">
               <Flag className="h-4 w-4 text-ink3" /> {aud.length ? 'Advisories for you' : 'Key changes'}
@@ -113,6 +104,16 @@ export default function CuratedBriefing({ origin, dest, aud, jump }) {
                 </div>
               ))}
             </div>
+          </section>
+
+          <section className="card p-6">
+            <div className="mb-1 flex items-baseline justify-between gap-3">
+              <h3 className="flex items-center gap-2 font-serif text-[18px] font-semibold text-ink">
+                <Scale className="h-4 w-4 text-ink3" /> Overall position
+              </h3>
+            </div>
+            <p className="eyebrow mb-6">where each country sits on the liberty &amp; security scale</p>
+            <OverallScale origin={origin} dest={dest} originScore={oOverall.avg} destScore={dOverall.avg} />
           </section>
 
           <AskPanel origin={origin} dest={dest} audiences={aud} />

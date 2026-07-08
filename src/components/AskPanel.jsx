@@ -30,7 +30,7 @@ export default function AskPanel({ origin, dest, audiences }) {
     <section id="sec-ask" className="card scroll-mt-4 p-5">
       <div className="mb-1 flex items-center gap-2">
         <MessageSquareText className="h-4 w-4 text-accent" />
-        <h3 className="font-serif text-[18px] font-semibold text-ink">Ask Liberty Compass</h3>
+        <h3 className="font-serif text-[18px] font-semibold text-ink">Ask Passage</h3>
       </div>
       <p className="mb-3 text-[11.5px] leading-snug text-ink3">
         Answers only from verified, dated claims — it cites every one and says when it doesn’t know. It never makes
@@ -110,7 +110,7 @@ export default function AskPanel({ origin, dest, audiences }) {
               )}
 
               <p className="mt-3 text-[11.5px] leading-relaxed text-ink3">
-                Liberty Compass only answers from its verified graph. For anything not shown, confirm with {dest.name}’s
+                Passage only answers from its verified graph. For anything not shown, confirm with {dest.name}’s
                 consulate or a local organisation — this is not legal advice.
               </p>
             </>

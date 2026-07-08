@@ -7,14 +7,14 @@ export default function Privacy() {
     <div className="flex min-h-screen flex-col">
       <Header />
       <div className="mx-auto w-full max-w-prose flex-1 px-6 py-12">
-        <p className="eyebrow">Liberty Compass</p>
+        <p className="eyebrow">Passage</p>
         <h1 className="mt-3 font-serif text-4xl leading-tight text-ink">Privacy notice</h1>
         <p className="mt-4 text-[17px] leading-relaxed text-ink2">
-          Liberty Compass is built to know as little about you as possible — but honesty matters more than a slogan, so here is
+          Passage is built to know as little about you as possible — but honesty matters more than a slogan, so here is
           exactly what happens, including the parts that are out of our hands.
         </p>
 
-        <Block title="What Liberty Compass collects about you — nothing">
+        <Block title="What Passage collects about you — nothing">
           <ul className="space-y-2 text-[15px] leading-relaxed text-ink2">
             <li>· No account, no sign-in, no profile.</li>
             <li>· No cookies, no analytics, no advertising, no tracking pixels.</li>

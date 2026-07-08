@@ -35,12 +35,12 @@ export default function Home() {
       <Header />
       <main className="mx-auto grid w-full max-w-6xl flex-1 items-center gap-12 px-6 py-14 lg:grid-cols-[1.05fr_.95fr] lg:py-20">
         <div>
-          <div className="eyebrow mb-5">Liberty &amp; security, before you go</div>
+          <div className="eyebrow mb-5">Safety &amp; rights, before you go</div>
           <h1 className="font-serif text-[42px] font-medium leading-[1.05] tracking-tight text-ink sm:text-[54px]">
             Know how your rights change the moment you cross the border.
           </h1>
           <p className="mt-5 max-w-[480px] text-[16.5px] leading-relaxed text-ink2">
-            Pick where you’re coming from and where you’re heading. Liberty Compass compares how rights, safety, health
+            Pick where you’re coming from and where you’re heading. Passage compares how rights, safety, health
             and everyday life differ between the two — and surfaces what matters for who you are.
           </p>
           <div className="mt-7 flex max-w-[460px] flex-col gap-3">
@@ -69,7 +69,7 @@ export default function Home() {
             <CountrySelect id="to" label="I plan to go to" value={to} exclude={from} onChange={setTo} placeholder="Search for a country" />
           </div>
           <div className="eyebrow mb-2.5">
-            Prioritise information about <span className="text-ink3/70">— optional, multiple ok</span>
+            Read it for who you are <span className="text-ink3/70">— pick any that apply</span>
           </div>
           <AudienceSelect selected={aud} onToggle={toggle} />
           {sameCountry && <p className="mt-3 text-[12px] text-accent">Pick two different countries to compare.</p>}

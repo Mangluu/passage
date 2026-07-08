@@ -56,6 +56,6 @@ export function ask({ question, origin, dest, audiences = [] }) {
     signals,
     refusal: items.length
       ? null
-      : `I only answer from Liberty Compass's verified graph, and I don't have a verified claim matching that. Try a topic like same-sex relationships, abortion, cannabis, religious freedom, or address registration — or check your embassy for anything we don't cover.`,
+      : `I only answer from Passage's verified graph, and I don't have a verified claim matching that. Try a topic like same-sex relationships, abortion, cannabis, religious freedom, or address registration — or check your embassy for anything we don't cover.`,
   }
 }
