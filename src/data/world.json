@@ -208,7 +208,7 @@
       "flag": "al",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 69,
@@ -322,7 +322,7 @@
       "flag": "ad",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 93,
@@ -424,7 +424,7 @@
       "flag": "ag",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 83,
@@ -512,7 +512,7 @@
       "flag": "am",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 54,
@@ -630,7 +630,7 @@
       "flag": "at",
       "region": "Europe",
       "subregion": "Western Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 94,
@@ -676,7 +676,7 @@
       "flag": "az",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 6,
@@ -722,7 +722,7 @@
       "flag": "bs",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 90,
@@ -768,7 +768,7 @@
       "flag": "bh",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 12,
@@ -860,7 +860,7 @@
       "flag": "bb",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 94,
@@ -906,7 +906,7 @@
       "flag": "by",
       "region": "Europe",
       "subregion": "Eastern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 7,
@@ -998,7 +998,7 @@
       "flag": "bz",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 87,
@@ -1108,7 +1108,7 @@
       "flag": "bt",
       "region": "Asia",
       "subregion": "Southern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 69,
@@ -1154,7 +1154,7 @@
       "flag": "bo",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 69,
@@ -1214,7 +1214,7 @@
       "flag": "ba",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 54,
@@ -1260,7 +1260,7 @@
       "flag": "bw",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 75,
@@ -1374,7 +1374,7 @@
       "flag": "bn",
       "region": "Asia",
       "subregion": "South-eastern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 27,
@@ -1420,7 +1420,7 @@
       "flag": "bg",
       "region": "Europe",
       "subregion": "Eastern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 74,
@@ -1692,7 +1692,7 @@
       "flag": "cv",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 92,
@@ -1764,7 +1764,7 @@
       "flag": "cf",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 5,
@@ -1986,7 +1986,7 @@
       "flag": "km",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 41,
@@ -2028,7 +2028,7 @@
       "flag": "cg",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 17,
@@ -2092,7 +2092,7 @@
       "flag": "cr",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 91,
@@ -2180,7 +2180,7 @@
       "flag": "hr",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 82,
@@ -2226,7 +2226,7 @@
       "flag": "cu",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 9,
@@ -2290,7 +2290,7 @@
       "flag": "cy",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 90,
@@ -2336,7 +2336,7 @@
       "flag": "cz",
       "region": "Europe",
       "subregion": "Eastern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 95,
@@ -2424,7 +2424,7 @@
       "flag": "dk",
       "region": "Europe",
       "subregion": "Northern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 97,
@@ -2470,7 +2470,7 @@
       "flag": "dj",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 24,
@@ -2512,7 +2512,7 @@
       "flag": "dm",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 92,
@@ -2558,7 +2558,7 @@
       "flag": "do",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 67,
@@ -2604,7 +2604,7 @@
       "flag": "tl",
       "region": "Asia",
       "subregion": "South-eastern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 73,
@@ -2742,7 +2742,7 @@
       "flag": "sv",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 42,
@@ -2788,7 +2788,7 @@
       "flag": "gq",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 5,
@@ -2830,7 +2830,7 @@
       "flag": "er",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 3,
@@ -2872,7 +2872,7 @@
       "flag": "ee",
       "region": "Europe",
       "subregion": "Northern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 96,
@@ -2918,7 +2918,7 @@
       "flag": "sz",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 17,
@@ -3046,7 +3046,7 @@
       "flag": "fj",
       "region": "Oceania",
       "subregion": "Melanesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 72,
@@ -3092,7 +3092,7 @@
       "flag": "fi",
       "region": "Europe",
       "subregion": "Northern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 100,
@@ -3224,7 +3224,7 @@
       "flag": "ga",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 25,
@@ -3266,7 +3266,7 @@
       "flag": "gm",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 51,
@@ -3308,7 +3308,7 @@
       "flag": "ge",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 51,
@@ -3468,7 +3468,7 @@
       "flag": "gr",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 85,
@@ -3544,7 +3544,7 @@
       "flag": "gd",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 89,
@@ -3732,7 +3732,7 @@
       "flag": "gw",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 33,
@@ -3778,7 +3778,7 @@
       "flag": "gy",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 74,
@@ -3824,7 +3824,7 @@
       "flag": "ht",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 22,
@@ -3870,7 +3870,7 @@
       "flag": "hn",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 47,
@@ -3954,7 +3954,7 @@
       "flag": "hu",
       "region": "Europe",
       "subregion": "Eastern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 65,
@@ -4000,7 +4000,7 @@
       "flag": "is",
       "region": "Europe",
       "subregion": "Northern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 95,
@@ -4230,7 +4230,7 @@
       "flag": "ie",
       "region": "Europe",
       "subregion": "Northern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 98,
@@ -4294,7 +4294,7 @@
       "flag": "il",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 73,
@@ -4386,7 +4386,7 @@
       "flag": "jm",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 81,
@@ -4492,7 +4492,7 @@
       "flag": "jo",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 34,
@@ -4630,7 +4630,7 @@
       "flag": "ki",
       "region": "Oceania",
       "subregion": "Micronesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 89,
@@ -4672,7 +4672,7 @@
       "flag": "kw",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 30,
@@ -4718,7 +4718,7 @@
       "flag": "kg",
       "region": "Asia",
       "subregion": "Central Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 25,
@@ -4760,7 +4760,7 @@
       "flag": "la",
       "region": "Asia",
       "subregion": "South-eastern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 13,
@@ -4802,7 +4802,7 @@
       "flag": "lv",
       "region": "Europe",
       "subregion": "Northern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 89,
@@ -4848,7 +4848,7 @@
       "flag": "lb",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 41,
@@ -4894,7 +4894,7 @@
       "flag": "ls",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 67,
@@ -4940,7 +4940,7 @@
       "flag": "lr",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 65,
@@ -4986,7 +4986,7 @@
       "flag": "ly",
       "region": "Africa",
       "subregion": "Northern Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 10,
@@ -5028,7 +5028,7 @@
       "flag": "li",
       "region": "Europe",
       "subregion": "Western Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 90,
@@ -5058,7 +5058,7 @@
       "flag": "lt",
       "region": "Europe",
       "subregion": "Northern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 90,
@@ -5104,7 +5104,7 @@
       "flag": "lu",
       "region": "Europe",
       "subregion": "Western Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 97,
@@ -5310,7 +5310,7 @@
       "flag": "mv",
       "region": "Asia",
       "subregion": "Southern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 41,
@@ -5398,7 +5398,7 @@
       "flag": "mt",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 88,
@@ -5444,7 +5444,7 @@
       "flag": "mh",
       "region": "Oceania",
       "subregion": "Micronesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 93,
@@ -5504,7 +5504,7 @@
       "flag": "mr",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 38,
@@ -5550,7 +5550,7 @@
       "flag": "mu",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 87,
@@ -5660,7 +5660,7 @@
       "flag": "fm",
       "region": "Oceania",
       "subregion": "Micronesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 92,
@@ -5702,7 +5702,7 @@
       "flag": "md",
       "region": "Europe",
       "subregion": "Eastern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 60,
@@ -5748,7 +5748,7 @@
       "flag": "mc",
       "region": "Europe",
       "subregion": "Western Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 82,
@@ -5782,7 +5782,7 @@
       "flag": "mn",
       "region": "Asia",
       "subregion": "Eastern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 84,
@@ -5828,7 +5828,7 @@
       "flag": "me",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 68,
@@ -6030,7 +6030,7 @@
       "flag": "na",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 73,
@@ -6076,7 +6076,7 @@
       "flag": "nr",
       "region": "Oceania",
       "subregion": "Micronesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 75,
@@ -6224,7 +6224,7 @@
       "flag": "nz",
       "region": "Oceania",
       "subregion": "Australia and New Zealand",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 99,
@@ -6270,7 +6270,7 @@
       "flag": "ni",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 14,
@@ -6460,7 +6460,7 @@
       "flag": "mk",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 67,
@@ -6570,7 +6570,7 @@
       "flag": "om",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 24,
@@ -6662,7 +6662,7 @@
       "flag": "pw",
       "region": "Oceania",
       "subregion": "Micronesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 92,
@@ -6704,7 +6704,7 @@
       "flag": "ps",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "wbl_women": {
           "value": 26,
@@ -6738,7 +6738,7 @@
       "flag": "pa",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 82,
@@ -6784,7 +6784,7 @@
       "flag": "pg",
       "region": "Oceania",
       "subregion": "Melanesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 61,
@@ -6830,7 +6830,7 @@
       "flag": "py",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 63,
@@ -7014,7 +7014,7 @@
       "flag": "pt",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 96,
@@ -7098,7 +7098,7 @@
       "flag": "qa",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 25,
@@ -7332,7 +7332,7 @@
       "flag": "kn",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 89,
@@ -7374,7 +7374,7 @@
       "flag": "lc",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 91,
@@ -7456,7 +7456,7 @@
       "flag": "vc",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 90,
@@ -7502,7 +7502,7 @@
       "flag": "ws",
       "region": "Oceania",
       "subregion": "Polynesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 84,
@@ -7544,7 +7544,7 @@
       "flag": "sm",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 97,
@@ -7586,7 +7586,7 @@
       "flag": "st",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 84,
@@ -7720,7 +7720,7 @@
       "flag": "rs",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 53,
@@ -7766,7 +7766,7 @@
       "flag": "sc",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 81,
@@ -7812,7 +7812,7 @@
       "flag": "sl",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 61,
@@ -7858,7 +7858,7 @@
       "flag": "sg",
       "region": "Asia",
       "subregion": "South-eastern Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 48,
@@ -7922,7 +7922,7 @@
       "flag": "sk",
       "region": "Europe",
       "subregion": "Eastern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 88,
@@ -7968,7 +7968,7 @@
       "flag": "si",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 97,
@@ -8014,7 +8014,7 @@
       "flag": "sb",
       "region": "Oceania",
       "subregion": "Melanesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 74,
@@ -8194,7 +8194,7 @@
       "flag": "ss",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 0,
@@ -8370,7 +8370,7 @@
       "flag": "sr",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 81,
@@ -8416,7 +8416,7 @@
       "flag": "se",
       "region": "Europe",
       "subregion": "Northern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 99,
@@ -8462,7 +8462,7 @@
       "flag": "ch",
       "region": "Europe",
       "subregion": "Western Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 96,
@@ -8580,7 +8580,7 @@
       "flag": "tj",
       "region": "Asia",
       "subregion": "Central Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 5,
@@ -8718,7 +8718,7 @@
       "flag": "tg",
       "region": "Africa",
       "subregion": "Sub-Saharan Africa",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 37,
@@ -8774,7 +8774,7 @@
       "flag": "to",
       "region": "Oceania",
       "subregion": "Polynesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 79,
@@ -8816,7 +8816,7 @@
       "flag": "tt",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 83,
@@ -8954,7 +8954,7 @@
       "flag": "tm",
       "region": "Asia",
       "subregion": "Central Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 1,
@@ -9022,7 +9022,7 @@
       "flag": "tv",
       "region": "Oceania",
       "subregion": "Polynesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 93,
@@ -9152,7 +9152,7 @@
       "flag": "ae",
       "region": "Asia",
       "subregion": "Western Asia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 18,
@@ -9316,7 +9316,7 @@
       "flag": "uy",
       "region": "Americas",
       "subregion": "Latin America and the Caribbean",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 97,
@@ -9408,7 +9408,7 @@
       "flag": "vu",
       "region": "Oceania",
       "subregion": "Melanesia",
-      "curated": false,
+      "curated": true,
       "values": {
         "fh_freedom": {
           "value": 82,
@@ -9454,7 +9454,7 @@
       "flag": "va",
       "region": "Europe",
       "subregion": "Southern Europe",
-      "curated": false,
+      "curated": true,
       "values": {
         "homicide": {
           "value": 0,
