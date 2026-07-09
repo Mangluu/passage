@@ -21,6 +21,35 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 const clip = (s, n = 155) => (s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : s)
 const canonical = (appPath) => `${ORIGIN}${BASE}${appPath === '' ? '/' : appPath + '/'}`
 
+const BUILD_DATE = new Date().toISOString().slice(0, 10)
+const ORG = { '@type': 'Organization', name: 'Passage', url: `${ORIGIN}${BASE}/` }
+
+// schema.org JSON-LD so search engines understand each page as a dated,
+// sourced article (and the site as a whole). No new data — derived from the
+// page's own title/description/url.
+function jsonLd(appPath, title, description, url) {
+  const headline = title.replace(' — Passage', '')
+  if (appPath.startsWith('/safe/')) {
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline,
+      description,
+      url,
+      inLanguage: 'en',
+      datePublished: '2026-07-08',
+      dateModified: BUILD_DATE,
+      author: ORG,
+      publisher: ORG,
+      isAccessibleForFree: true,
+    }
+  }
+  if (appPath === '') {
+    return { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Passage', url, description, publisher: ORG }
+  }
+  return { '@context': 'https://schema.org', '@type': 'WebPage', name: headline, description, url, publisher: ORG }
+}
+
 function buildHtml(appPath, { title, description, content = '' }) {
   const url = canonical(appPath)
   const head =
@@ -29,7 +58,8 @@ function buildHtml(appPath, { title, description, content = '' }) {
     `    <meta property="og:title" content="${esc(title)}" />\n` +
     `    <meta property="og:description" content="${esc(description)}" />\n` +
     `    <meta property="og:url" content="${esc(url)}" />\n` +
-    `    <meta name="twitter:card" content="summary" />`
+    `    <meta name="twitter:card" content="summary" />\n` +
+    `    <script type="application/ld+json">${JSON.stringify(jsonLd(appPath, title, description, url))}</script>`
 
   let out = template.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(title)}</title>`)
   out = /<meta\s+name="description"[\s\S]*?>/.test(out)
