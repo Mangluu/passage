@@ -114,6 +114,7 @@ emit('/impressum', {
 const VERTICALS = [
   { aud: 'women', phrase: 'women travellers', tail: 'abortion access, legal standing, mobility and emergencies' },
   { aud: 'lgbtqi', phrase: 'LGBTQ+ travellers', tail: 'legal status, recognition, anti-discrimination and emergencies' },
+  { aud: 'disabled', phrase: 'disabled travellers', tail: 'disability rights, anti-discrimination, bringing medication and emergencies' },
 ]
 const vcount = {}
 for (const v of VERTICALS) {

@@ -24,6 +24,15 @@ const AUD_PHRASE = {
   poc: 'travellers of colour',
 }
 
+// Grammatical "…as a woman" form for the section heading.
+const AUD_AS = {
+  women: 'a woman',
+  lgbtqi: 'an LGBTQ+ traveller',
+  disabled: 'a disabled traveller',
+  religion: 'a religious-minority traveller',
+  poc: 'a traveller of colour',
+}
+
 // A few popular destinations for the SEO cross-link rail.
 const CROSS_CODES = ['JP', 'TH', 'FR', 'AE', 'US', 'IN', 'BR', 'ZA', 'DE', 'MX']
 
@@ -100,10 +109,10 @@ export default function SafeFor() {
           <div className="flex min-w-0 flex-col gap-6">
             <section>
               <h2 className="flex items-center gap-2 font-serif text-[19px] font-semibold text-ink">
-                What to know as {audience.label === 'Woman' ? 'a woman' : audience.label}
+                What to know as {AUD_AS[aud] || audience.label}
               </h2>
               <p className="eyebrow mb-4 mt-1">the sourced facts that weigh most for you · concerns first</p>
-              {prof.items.length ? (
+              {prof.items.length || prof.obligations.length ? (
                 <div className="grid gap-3 sm:grid-cols-2">
                   {prof.items.map((it) => (
                     <div key={it.key} className={`rounded-xl border border-line p-4 ${TONE_TINT[it.tone] || 'bg-surface2'}`}>
@@ -112,6 +121,16 @@ export default function SafeFor() {
                         <span className="text-[13.5px] font-semibold text-ink">{it.topic.label}</span>
                       </div>
                       <div className="eyebrow mb-1.5 text-[9.5px]">{it.band}</div>
+                      <p className="text-[13px] leading-snug text-ink2">{it.claim.statement}</p>
+                    </div>
+                  ))}
+                  {prof.obligations.map((it) => (
+                    <div key={it.key} className="rounded-xl border border-line bg-surface2 p-4">
+                      <div className="mb-1.5 flex items-center gap-2">
+                        <span className="h-2 w-2 rounded-full bg-ink3" />
+                        <span className="text-[13.5px] font-semibold text-ink">{it.topic.label}</span>
+                      </div>
+                      <div className="eyebrow mb-1.5 text-[9.5px]">{it.label}</div>
                       <p className="text-[13px] leading-snug text-ink2">{it.claim.statement}</p>
                     </div>
                   ))}

@@ -1,4 +1,4 @@
-import { POSITION_TOPICS } from '../data/topics.js'
+import { POSITION_TOPICS, OBLIGATION_TOPICS } from '../data/topics.js'
 
 // A single-country read for ONE identity — the basis of the "Is {country} safe
 // for {identity}?" page. Unlike the briefing (which compares home→destination),
@@ -25,6 +25,15 @@ export function profileFor(country, aud) {
     .filter(Boolean)
     .sort((a, b) => a.g - b.g) // concerns first
 
+  // Duties that weigh for this identity (e.g. bringing medication for disabled
+  // travellers) — informational, not good/bad, so they don't move the verdict.
+  const obligations = (aud ? OBLIGATION_TOPICS.filter((t) => t.audiences.includes(aud)) : [])
+    .map((t) => {
+      const claim = country.claims?.[t.key]
+      return claim ? { key: t.key, topic: t, claim, label: claim.required ? 'Required on arrival' : 'Usually not required' } : null
+    })
+    .filter(Boolean)
+
   const avg = items.length ? items.reduce((s, i) => s + i.g, 0) / items.length : null
   const tier =
     avg == null
@@ -36,7 +45,7 @@ export function profileFor(country, aud) {
           : 'Significant restrictions'
   // Same indicative 8–92 band the dashboard uses for categorical facts.
   const score = avg == null ? null : Math.round(8 + avg * 84)
-  return { items, avg, tier, tone: toneOf(avg), score }
+  return { items, obligations, avg, tier, tone: toneOf(avg), score }
 }
 
 // A grounded one-line verdict, built from the actual claims (no fabrication).
