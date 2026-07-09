@@ -18,7 +18,7 @@ import { profileFor, verdictLine } from '../lib/profile.js'
 // a sentence — "Woman travellers" / "Person of colour travellers" are off).
 const AUD_PHRASE = {
   women: 'women travellers',
-  lgbtqi: 'LGBTQI+ travellers',
+  lgbtqi: 'LGBTQ+ travellers',
   disabled: 'disabled travellers',
   religion: 'religious-minority travellers',
   poc: 'travellers of colour',

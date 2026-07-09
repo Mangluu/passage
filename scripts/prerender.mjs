@@ -80,16 +80,23 @@ emit('/impressum', {
   description: 'Passage is a privacy-first, sourced safety & rights briefing for travellers.',
 })
 
-// ── Women vertical: one page per country ─────────────────────────────────────
-let women = 0
-for (const j of JURISDICTIONS) {
-  const prof = profileFor(j, 'women')
-  const verdict = verdictLine(j, 'women travellers', prof)
-  emit(`/safe/${j.code}/women`, {
-    title: `Is ${j.name} safe for women travellers? — Passage`,
-    description: clip(`${verdict} Sourced, dated facts on abortion access, legal standing, mobility and emergencies.`),
-  })
-  women++
+// ── Identity verticals: one page per country per deepened lens ────────────────
+const VERTICALS = [
+  { aud: 'women', phrase: 'women travellers', tail: 'abortion access, legal standing, mobility and emergencies' },
+  { aud: 'lgbtqi', phrase: 'LGBTQ+ travellers', tail: 'legal status, recognition, anti-discrimination and emergencies' },
+]
+const vcount = {}
+for (const v of VERTICALS) {
+  vcount[v.aud] = 0
+  for (const j of JURISDICTIONS) {
+    const prof = profileFor(j, v.aud)
+    const verdict = verdictLine(j, v.phrase, prof)
+    emit(`/safe/${j.code}/${v.aud}`, {
+      title: `Is ${j.name} safe for ${v.phrase}? — Passage`,
+      description: clip(`${verdict} Sourced, dated facts on ${v.tail}.`),
+    })
+    vcount[v.aud]++
+  }
 }
 
 // ── Tool shell (client-only; not a search target) ───────────────────────────
@@ -113,4 +120,4 @@ const sitemap =
 fs.writeFileSync(path.join(DIST, 'sitemap.xml'), sitemap)
 fs.writeFileSync(path.join(DIST, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${ORIGIN}${BASE}/sitemap.xml\n`)
 
-console.log(`✓ prerendered ${written.length} pages (${women} women country pages) + 404 + sitemap + robots`)
+console.log(`✓ prerendered ${written.length} pages (${Object.entries(vcount).map(([a, n]) => `${n} ${a}`).join(', ')}) + 404 + sitemap + robots`)

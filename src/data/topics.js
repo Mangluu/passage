@@ -43,6 +43,11 @@ export const TOPICS = [
     scale: ['Severe legal inequality', 'Major legal gaps', 'Mostly equal in law', 'Broadly equal in law'],
   },
   {
+    key: 'lgbtqi_rights', label: 'LGBTQ+ legal equality', cluster: 'identity',
+    kind: 'position', audiences: ['lgbtqi'], weight: 3,
+    scale: ['Hostile — few or no protections', 'Restrictive', 'Partial protections', 'Broadly equal'],
+  },
+  {
     key: 'abortion', label: 'Abortion access', cluster: 'body',
     kind: 'position', audiences: ['women'], weight: 3, crime: 0,
     scale: ['Prohibited', 'To save life only', 'Broad social grounds', 'On request'],
