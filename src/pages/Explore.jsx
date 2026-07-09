@@ -8,6 +8,10 @@ import {
   WORLD_GENERATED_AT, indexView, availableCount,
 } from '../lib/world.js'
 import { advisoryFor } from '../lib/signals.js'
+import { JURISDICTION_BY_CODE } from '../data/jurisdictions.js'
+
+// Identity verticals with prerendered /safe/<code>/<aud> pages.
+const SAFE_LENSES = [['women', 'Women'], ['lgbtqi', 'LGBTQ+'], ['disabled', 'Disabled'], ['religion', 'Religion']]
 
 const BAR = { success: 'bg-success', warn: 'bg-warn', danger: 'bg-danger', ink3: 'bg-ink3' }
 const TXT = { success: 'text-success', warn: 'text-warn', danger: 'text-danger', ink3: 'text-ink3' }
@@ -175,6 +179,19 @@ function CountryCard({ c }) {
         })}
       </div>
 
+      {JURISDICTION_BY_CODE[c.code] && (
+        <div className="mt-3 border-t border-line pt-2.5">
+          <div className="eyebrow mb-1.5 text-[9px]">Is it safe for</div>
+          <div className="flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[11px]">
+            {SAFE_LENSES.map(([aud, label], i) => (
+              <span key={aud} className="inline-flex items-center gap-1.5">
+                {i > 0 && <span className="text-ink3" aria-hidden="true">·</span>}
+                <Link to={`/safe/${c.code}/${aud}`} className="text-accent hover:underline">{label}</Link>
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
       <div className="mt-3 border-t border-line pt-2 font-mono text-[9.5px] text-ink3">{have} of {INDEX_KEYS.length} indices</div>
     </div>
   )
