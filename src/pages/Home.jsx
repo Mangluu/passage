@@ -6,12 +6,17 @@ import Footer from '../components/Footer.jsx'
 import CountrySelect from '../components/CountrySelect.jsx'
 import AudienceSelect from '../components/AudienceSelect.jsx'
 import { COUNTRY_COUNT } from '../lib/world.js'
+import { JURISDICTION_BY_CODE } from '../data/jurisdictions.js'
 
 const FEATURES = [
   ['01', 'For anyone crossing a border — travellers, students and people relocating.'],
   ['02', 'Every figure links to a public, named source. No black boxes.'],
   ['03', 'Nothing about you is saved. We never ask who you are.'],
 ]
+
+// Popular destinations for the women vertical — a discovery + internal-linking
+// strip that feeds crawlers into the prerendered /safe/<code>/women pages.
+const POPULAR = ['JP', 'TH', 'IN', 'FR', 'AE', 'MX', 'TR', 'IT', 'EG', 'ID', 'MA', 'US']
 
 export default function Home() {
   const navigate = useNavigate()
@@ -86,7 +91,39 @@ export default function Home() {
           </p>
         </div>
       </main>
+      <PopularBriefings />
       <Footer />
     </div>
+  )
+}
+
+function PopularBriefings() {
+  return (
+    <section className="border-t border-line">
+      <div className="mx-auto w-full max-w-6xl px-6 py-12">
+        <div className="eyebrow mb-1.5">Popular — is it safe for women?</div>
+        <p className="mb-5 max-w-[560px] text-[14px] leading-relaxed text-ink2">
+          Sourced safety &amp; rights briefings for women travellers, one per country — abortion access, legal standing,
+          mobility and emergencies. More identities and destinations are rolling out.
+        </p>
+        <div className="flex flex-wrap gap-2.5">
+          {POPULAR.map((code) => {
+            const c = JURISDICTION_BY_CODE[code]
+            if (!c) return null
+            return (
+              <Link
+                key={code}
+                to={`/safe/${code}/women`}
+                className="group inline-flex items-center gap-2 rounded-lg border border-line bg-surface px-3 py-2 text-[13.5px] text-ink2 transition hover:border-accent hover:text-ink"
+              >
+                <span className={`fi fi-${c.flag}`} style={{ width: '1.1rem', height: '0.8rem' }} aria-hidden="true" />
+                {c.name}
+                <ArrowRight className="h-3.5 w-3.5 text-ink3 transition group-hover:translate-x-0.5" />
+              </Link>
+            )
+          })}
+        </div>
+      </div>
+    </section>
   )
 }
