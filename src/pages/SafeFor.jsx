@@ -9,6 +9,7 @@ import { JURISDICTION_BY_CODE } from '../data/jurisdictions.js'
 import { AUDIENCE_BY_ID, AUDIENCES } from '../data/audiences.js'
 import { CLUSTERS, topicsForCluster } from '../data/topics.js'
 import { profileFor, verdictLine } from '../lib/profile.js'
+import { PARTNERS, AFFILIATE_DISCLOSURE } from '../data/partners.js'
 
 // "Is {country} safe for {identity}?" — the standalone, shareable page built for
 // one destination and one identity. Same data and design system as the briefing,
@@ -219,9 +220,13 @@ export default function SafeFor() {
                 moment you land.
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
-                <Partner href="https://safetywing.com/nomad-insurance" label="Travel insurance" />
-                <Partner href="https://www.airalo.com/" label="Get an eSIM" />
+                {PARTNERS.map((p) => (
+                  <Partner key={p.id} partner={p} />
+                ))}
               </div>
+              {AFFILIATE_DISCLOSURE && (
+                <p className="mt-2.5 text-[10.5px] leading-snug text-ink3">{AFFILIATE_DISCLOSURE}</p>
+              )}
             </section>
 
             {/* SEO cross-links */}
@@ -260,15 +265,18 @@ export default function SafeFor() {
   )
 }
 
-function Partner({ href, label }) {
+function Partner({ partner }) {
+  const href = partner.url + (partner.ref || '')
+  // A tracked (affiliate) link is a paid link → mark it rel="sponsored".
+  const rel = partner.ref ? 'noreferrer noopener sponsored' : 'noreferrer noopener'
   return (
     <a
       href={href}
       target="_blank"
-      rel="noreferrer noopener"
+      rel={rel}
       className="inline-flex items-center gap-1.5 rounded-lg border border-accent/40 bg-surface px-3 py-1.5 text-[12.5px] font-medium text-accent transition hover:bg-accent-bg"
     >
-      {label} <ExternalLink className="h-3 w-3" />
+      {partner.label} <ExternalLink className="h-3 w-3" />
     </a>
   )
 }

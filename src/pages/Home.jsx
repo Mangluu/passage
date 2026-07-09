@@ -14,9 +14,14 @@ const FEATURES = [
   ['03', 'Nothing about you is saved. We never ask who you are.'],
 ]
 
-// Popular destinations for the women vertical — a discovery + internal-linking
-// strip that feeds crawlers into the prerendered /safe/<code>/women pages.
-const POPULAR = ['JP', 'TH', 'IN', 'FR', 'AE', 'MX', 'TR', 'IT', 'EG', 'ID', 'MA', 'US']
+// Discovery + internal-linking strips that feed crawlers into the prerendered
+// /safe/<code>/<aud> pages — one row per live identity vertical.
+const DISCOVERY = [
+  { aud: 'women', heading: 'women', codes: ['JP', 'TH', 'IN', 'AE', 'MX', 'MA', 'EG', 'IT'] },
+  { aud: 'lgbtqi', heading: 'LGBTQ+ travellers', codes: ['TH', 'JP', 'US', 'AE', 'RU', 'TR', 'DE', 'BR'] },
+  { aud: 'disabled', heading: 'disabled travellers', codes: ['JP', 'DE', 'US', 'ES', 'TH', 'FR', 'GB', 'IT'] },
+  { aud: 'religion', heading: 'religious minorities', codes: ['SA', 'FR', 'IN', 'CN', 'TR', 'ID', 'US', 'DE'] },
+]
 
 export default function Home() {
   const navigate = useNavigate()
@@ -101,27 +106,33 @@ function PopularBriefings() {
   return (
     <section className="border-t border-line">
       <div className="mx-auto w-full max-w-6xl px-6 py-12">
-        <div className="eyebrow mb-1.5">Popular — is it safe for women?</div>
-        <p className="mb-5 max-w-[560px] text-[14px] leading-relaxed text-ink2">
-          Sourced safety &amp; rights briefings for women travellers, one per country — abortion access, legal standing,
-          mobility and emergencies. More identities and destinations are rolling out.
+        <div className="eyebrow mb-1.5">Popular briefings</div>
+        <p className="mb-6 max-w-[560px] text-[14px] leading-relaxed text-ink2">
+          Sourced, dated safety &amp; rights briefings — one per country, read for who you are. More destinations are added
+          as the data is verified.
         </p>
-        <div className="flex flex-wrap gap-2.5">
-          {POPULAR.map((code) => {
-            const c = JURISDICTION_BY_CODE[code]
-            if (!c) return null
-            return (
-              <Link
-                key={code}
-                to={`/safe/${code}/women`}
-                className="group inline-flex items-center gap-2 rounded-lg border border-line bg-surface px-3 py-2 text-[13.5px] text-ink2 transition hover:border-accent hover:text-ink"
-              >
-                <span className={`fi fi-${c.flag}`} style={{ width: '1.1rem', height: '0.8rem' }} aria-hidden="true" />
-                {c.name}
-                <ArrowRight className="h-3.5 w-3.5 text-ink3 transition group-hover:translate-x-0.5" />
-              </Link>
-            )
-          })}
+        <div className="flex flex-col gap-5">
+          {DISCOVERY.map(({ aud, heading, codes }) => (
+            <div key={aud}>
+              <div className="mb-2 text-[12.5px] font-medium text-ink">Is it safe for {heading}?</div>
+              <div className="flex flex-wrap gap-2">
+                {codes.map((code) => {
+                  const c = JURISDICTION_BY_CODE[code]
+                  if (!c) return null
+                  return (
+                    <Link
+                      key={code}
+                      to={`/safe/${code}/${aud}`}
+                      className="inline-flex items-center gap-2 rounded-lg border border-line bg-surface px-2.5 py-1.5 text-[13px] text-ink2 transition hover:border-accent hover:text-ink"
+                    >
+                      <span className={`fi fi-${c.flag}`} style={{ width: '1rem', height: '0.75rem' }} aria-hidden="true" />
+                      {c.name}
+                    </Link>
+                  )
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
