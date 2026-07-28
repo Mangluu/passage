@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27",
+  "generatedAt": "2026-07-28",
   "advisories": {
     "BE": {
       "level": 2,
@@ -313,7 +313,7 @@
     },
     "BB": {
       "level": 1,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/barbados-travel-advisory.html",
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brb.html",
       "date": "2026-04-09"
     },
     "BM": {
@@ -358,7 +358,7 @@
     },
     "GA": {
       "level": 2,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/gabon-travel-advisory.html",
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gab.html",
       "date": "2026-03-29"
     },
     "IE": {
@@ -443,7 +443,7 @@
     },
     "AF": {
       "level": 4,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/afghanistan-advisory.html",
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.afg.html",
       "date": "2026-02-19"
     },
     "CI": {
@@ -685,6 +685,11 @@
       "level": 1,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/australia-travel-advisory.html",
       "date": "2025-05-29"
+    },
+    "BR": {
+      "level": 2,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/brazil-travel-advisory.html",
+      "date": "2025-05-28"
     },
     "KR": {
       "level": 1,
