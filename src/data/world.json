@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27",
+  "generatedAt": "2026-08-03",
   "domains": [
     {
       "id": "rights",
@@ -193,12 +193,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 18,
-          "asOf": "2023"
+          "value": 16,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 1984,
-          "asOf": "2023"
+          "value": 1964,
+          "asOf": "2024"
         }
       }
     },
@@ -239,12 +239,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 83,
-          "asOf": "2023"
+          "value": 86,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 21641,
-          "asOf": "2024"
+          "value": 22724,
+          "asOf": "2025"
         }
       }
     },
@@ -286,11 +286,11 @@
         },
         "internet": {
           "value": 77,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 15502,
-          "asOf": "2024"
+          "value": 15883,
+          "asOf": "2025"
         }
       }
     },
@@ -345,12 +345,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 95,
-          "asOf": "2023"
+          "value": 94,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 65928,
-          "asOf": "2024"
+          "value": 67993,
+          "asOf": "2025"
         }
       }
     },
@@ -391,12 +391,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 45,
-          "asOf": "2023"
+          "value": 41,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 8902,
-          "asOf": "2024"
+          "value": 8760,
+          "asOf": "2025"
         }
       }
     },
@@ -451,12 +451,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 78,
-          "asOf": "2023"
+          "value": 73,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 29372,
-          "asOf": "2024"
+          "value": 30620,
+          "asOf": "2025"
         }
       }
     },
@@ -501,8 +501,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 26772,
-          "asOf": "2024"
+          "value": 27847,
+          "asOf": "2025"
         }
       }
     },
@@ -543,12 +543,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 80,
-          "asOf": "2023"
+          "value": 81,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 20079,
-          "asOf": "2024"
+          "value": 21153,
+          "asOf": "2025"
         }
       }
     },
@@ -573,7 +573,7 @@
           "asOf": "2017"
         },
         "gdp_pc": {
-          "value": 44559,
+          "value": 45428,
           "asOf": "2024"
         }
       }
@@ -615,12 +615,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 97,
-          "asOf": "2023"
+          "value": 96,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 60304,
-          "asOf": "2024"
+          "value": 60194,
+          "asOf": "2025"
         }
       }
     },
@@ -661,12 +661,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 95,
-          "asOf": "2024"
+          "value": 92,
+          "asOf": "2025"
         },
         "gdp_pc": {
-          "value": 63788,
-          "asOf": "2024"
+          "value": 63970,
+          "asOf": "2025"
         }
       }
     },
@@ -707,12 +707,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 89,
-          "asOf": "2023"
+          "value": 91,
+          "asOf": "2025"
         },
         "gdp_pc": {
-          "value": 22072,
-          "asOf": "2024"
+          "value": 22314,
+          "asOf": "2025"
         }
       }
     },
@@ -753,8 +753,8 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 95,
-          "asOf": "2023"
+          "value": 92,
+          "asOf": "2024"
         },
         "gdp_pc": {
           "value": 36244,
@@ -803,8 +803,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 58892,
-          "asOf": "2024"
+          "value": 60670,
+          "asOf": "2025"
         }
       }
     },
@@ -845,12 +845,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 45,
-          "asOf": "2023"
+          "value": 53,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 8487,
-          "asOf": "2024"
+          "value": 8677,
+          "asOf": "2025"
         }
       }
     },
@@ -891,12 +891,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 80,
-          "asOf": "2023"
+          "value": 70,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 21838,
-          "asOf": "2024"
+          "value": 22127,
+          "asOf": "2025"
         }
       }
     },
@@ -941,8 +941,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 29041,
-          "asOf": "2024"
+          "value": 29666,
+          "asOf": "2025"
         }
       }
     },
@@ -987,8 +987,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 63348,
-          "asOf": "2024"
+          "value": 63488,
+          "asOf": "2025"
         }
       }
     },
@@ -1025,12 +1025,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 72,
-          "asOf": "2023"
+          "value": 80,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 12621,
-          "asOf": "2024"
+          "value": 12789,
+          "asOf": "2025"
         }
       }
     },
@@ -1067,12 +1067,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 32,
-          "asOf": "2023"
+          "value": 34,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 3901,
-          "asOf": "2024"
+          "value": 4116,
+          "asOf": "2025"
         }
       }
     },
@@ -1097,7 +1097,7 @@
           "asOf": "2017"
         },
         "gdp_pc": {
-          "value": 109312,
+          "value": 104300,
           "asOf": "2024"
         }
       }
@@ -1139,12 +1139,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 88,
-          "asOf": "2023"
+          "value": 91,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 14610,
-          "asOf": "2023"
+          "value": 16744,
+          "asOf": "2025"
         }
       }
     },
@@ -1185,12 +1185,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 70,
-          "asOf": "2023"
+          "value": 80,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 11329,
-          "asOf": "2024"
+          "value": 11001,
+          "asOf": "2025"
         }
       }
     },
@@ -1249,8 +1249,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 20528,
-          "asOf": "2024"
+          "value": 21178,
+          "asOf": "2025"
         }
       }
     },
@@ -1291,12 +1291,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 81,
-          "asOf": "2023"
+          "value": 57,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 18069,
-          "asOf": "2024"
+          "value": 17687,
+          "asOf": "2025"
         }
       }
     },
@@ -1341,8 +1341,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 19652,
-          "asOf": "2024"
+          "value": 20025,
+          "asOf": "2025"
         }
       }
     },
@@ -1405,12 +1405,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 99,
-          "asOf": "2023"
+          "value": 96,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 79072,
-          "asOf": "2024"
+          "value": 78985,
+          "asOf": "2025"
         }
       }
     },
@@ -1455,8 +1455,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 34222,
-          "asOf": "2024"
+          "value": 35326,
+          "asOf": "2025"
         }
       }
     },
@@ -1493,12 +1493,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 17,
-          "asOf": "2023"
+          "value": 28,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 2548,
-          "asOf": "2024"
+          "value": 2625,
+          "asOf": "2025"
         }
       }
     },
@@ -1539,12 +1539,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 11,
-          "asOf": "2023"
+          "value": 9,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 1051,
-          "asOf": "2024"
+          "value": 1067,
+          "asOf": "2025"
         }
       }
     },
@@ -1585,12 +1585,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 61,
-          "asOf": "2023"
+          "value": 68,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 7009,
-          "asOf": "2024"
+          "value": 7300,
+          "asOf": "2025"
         }
       }
     },
@@ -1631,12 +1631,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 42,
-          "asOf": "2023"
+          "value": 46,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 4917,
-          "asOf": "2024"
+          "value": 4946,
+          "asOf": "2025"
         }
       }
     },
@@ -1678,11 +1678,11 @@
         },
         "internet": {
           "value": 94,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 56707,
-          "asOf": "2024"
+          "value": 57990,
+          "asOf": "2025"
         }
       }
     },
@@ -1723,12 +1723,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 74,
-          "asOf": "2023"
+          "value": 75,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 9849,
-          "asOf": "2024"
+          "value": 10396,
+          "asOf": "2025"
         }
       }
     },
@@ -1753,8 +1753,8 @@
           "asOf": "2017"
         },
         "gdp_pc": {
-          "value": 79676,
-          "asOf": "2023"
+          "value": 80997,
+          "asOf": "2024"
         }
       }
     },
@@ -1791,12 +1791,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 8,
-          "asOf": "2019"
+          "value": 14,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 1111,
-          "asOf": "2024"
+          "value": 1123,
+          "asOf": "2025"
         }
       }
     },
@@ -1834,11 +1834,11 @@
         },
         "internet": {
           "value": 13,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 2413,
-          "asOf": "2024"
+          "value": 2481,
+          "asOf": "2025"
         }
       }
     },
@@ -1879,12 +1879,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 94,
-          "asOf": "2023"
+          "value": 96,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 30183,
-          "asOf": "2024"
+          "value": 30863,
+          "asOf": "2025"
         }
       }
     },
@@ -1926,11 +1926,11 @@
         },
         "internet": {
           "value": 92,
-          "asOf": "2024"
+          "asOf": "2025"
         },
         "gdp_pc": {
-          "value": 23846,
-          "asOf": "2024"
+          "value": 25067,
+          "asOf": "2025"
         }
       }
     },
@@ -1971,12 +1971,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 77,
-          "asOf": "2023"
+          "value": 79,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 18477,
-          "asOf": "2024"
+          "value": 18779,
+          "asOf": "2025"
         }
       }
     },
@@ -2013,12 +2013,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 36,
-          "asOf": "2023"
+          "value": 33,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 3483,
-          "asOf": "2024"
+          "value": 3622,
+          "asOf": "2025"
         }
       }
     },
@@ -2055,12 +2055,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 38,
-          "asOf": "2023"
+          "value": 47,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 6181,
-          "asOf": "2024"
+          "value": 6194,
+          "asOf": "2025"
         }
       }
     },
@@ -2123,12 +2123,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 85,
-          "asOf": "2023"
+          "value": 87,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 26973,
-          "asOf": "2024"
+          "value": 28443,
+          "asOf": "2025"
         }
       }
     },
@@ -2166,11 +2166,11 @@
         },
         "internet": {
           "value": 41,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 6747,
-          "asOf": "2024"
+          "value": 7015,
+          "asOf": "2025"
         }
       }
     },
@@ -2215,8 +2215,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 42829,
-          "asOf": "2024"
+          "value": 44172,
+          "asOf": "2025"
         }
       }
     },
@@ -2253,8 +2253,8 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 71,
-          "asOf": "2023"
+          "value": 70,
+          "asOf": "2024"
         }
       }
     },
@@ -2321,12 +2321,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 91,
-          "asOf": "2023"
+          "value": 90,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 52636,
-          "asOf": "2024"
+          "value": 54103,
+          "asOf": "2025"
         }
       }
     },
@@ -2371,8 +2371,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 47964,
-          "asOf": "2024"
+          "value": 49292,
+          "asOf": "2025"
         }
       }
     },
@@ -2409,12 +2409,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 31,
-          "asOf": "2023"
+          "value": 20,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 1602,
-          "asOf": "2024"
+          "value": 1641,
+          "asOf": "2025"
         }
       }
     },
@@ -2459,8 +2459,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 71431,
-          "asOf": "2024"
+          "value": 72723,
+          "asOf": "2025"
         }
       }
     },
@@ -2498,11 +2498,11 @@
         },
         "internet": {
           "value": 65,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 6871,
-          "asOf": "2024"
+          "value": 7223,
+          "asOf": "2025"
         }
       }
     },
@@ -2543,12 +2543,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 84,
-          "asOf": "2023"
+          "value": 82,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 18739,
-          "asOf": "2024"
+          "value": 19409,
+          "asOf": "2025"
         }
       }
     },
@@ -2593,8 +2593,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 24230,
-          "asOf": "2024"
+          "value": 24543,
+          "asOf": "2025"
         }
       }
     },
@@ -2635,12 +2635,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 34,
-          "asOf": "2023"
+          "value": 35,
+          "asOf": "2021"
         },
         "gdp_pc": {
-          "value": 3891,
-          "asOf": "2024"
+          "value": 4110,
+          "asOf": "2025"
         }
       }
     },
@@ -2685,8 +2685,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 13936,
-          "asOf": "2024"
+          "value": 14319,
+          "asOf": "2025"
         }
       }
     },
@@ -2727,12 +2727,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 73,
-          "asOf": "2023"
+          "value": 75,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 16798,
-          "asOf": "2024"
+          "value": 17265,
+          "asOf": "2025"
         }
       }
     },
@@ -2773,12 +2773,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 68,
-          "asOf": "2023"
+          "value": 66,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 11669,
-          "asOf": "2024"
+          "value": 12050,
+          "asOf": "2025"
         }
       }
     },
@@ -2815,12 +2815,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 60,
-          "asOf": "2023"
+          "value": 63,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 15454,
-          "asOf": "2024"
+          "value": 13786,
+          "asOf": "2025"
         }
       }
     },
@@ -2861,8 +2861,8 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 20,
-          "asOf": "2023"
+          "value": 14,
+          "asOf": "2020"
         }
       }
     },
@@ -2907,8 +2907,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 41190,
-          "asOf": "2024"
+          "value": 41604,
+          "asOf": "2025"
         }
       }
     },
@@ -2949,12 +2949,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 58,
-          "asOf": "2023"
+          "value": 63,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 10380,
-          "asOf": "2024"
+          "value": 10707,
+          "asOf": "2025"
         }
       }
     },
@@ -2995,12 +2995,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 17,
-          "asOf": "2021"
+          "value": 22,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 2892,
-          "asOf": "2024"
+          "value": 3095,
+          "asOf": "2025"
         }
       }
     },
@@ -3035,7 +3035,7 @@
           "asOf": "2017"
         },
         "gdp_pc": {
-          "value": 72060,
+          "value": 72114,
           "asOf": "2024"
         }
       }
@@ -3077,12 +3077,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 79,
-          "asOf": "2023"
+          "value": 75,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 13592,
-          "asOf": "2024"
+          "value": 13961,
+          "asOf": "2025"
         }
       }
     },
@@ -3124,11 +3124,11 @@
         },
         "internet": {
           "value": 94,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 56123,
-          "asOf": "2024"
+          "value": 55735,
+          "asOf": "2025"
         }
       }
     },
@@ -3173,8 +3173,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 54799,
-          "asOf": "2024"
+          "value": 55125,
+          "asOf": "2025"
         }
       }
     },
@@ -3251,12 +3251,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 72,
-          "asOf": "2023"
+          "value": 69,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 18924,
-          "asOf": "2024"
+          "value": 18986,
+          "asOf": "2025"
         }
       }
     },
@@ -3293,12 +3293,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 46,
-          "asOf": "2023"
+          "value": 49,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 3058,
-          "asOf": "2024"
+          "value": 3167,
+          "asOf": "2025"
         }
       }
     },
@@ -3339,12 +3339,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 82,
-          "asOf": "2023"
+          "value": 84,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 24884,
-          "asOf": "2024"
+          "value": 25136,
+          "asOf": "2025"
         }
       }
     },
@@ -3385,12 +3385,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 94,
+          "value": 93,
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 62555,
-          "asOf": "2024"
+          "value": 62824,
+          "asOf": "2025"
         }
       }
     },
@@ -3431,12 +3431,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 70,
-          "asOf": "2023"
+          "value": 72,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 7056,
-          "asOf": "2024"
+          "value": 7358,
+          "asOf": "2025"
         }
       }
     },
@@ -3503,8 +3503,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 37474,
-          "asOf": "2024"
+          "value": 38219,
+          "asOf": "2025"
         }
       }
     },
@@ -3575,12 +3575,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 74,
-          "asOf": "2023"
+          "value": 70,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 17752,
-          "asOf": "2024"
+          "value": 18241,
+          "asOf": "2025"
         }
       }
     },
@@ -3661,12 +3661,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 56,
-          "asOf": "2023"
+          "value": 60,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 12641,
-          "asOf": "2024"
+          "value": 12987,
+          "asOf": "2025"
         }
       }
     },
@@ -3717,12 +3717,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 27,
-          "asOf": "2023"
+          "value": 33,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 4016,
-          "asOf": "2024"
+          "value": 4217,
+          "asOf": "2025"
         }
       }
     },
@@ -3763,12 +3763,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 32,
-          "asOf": "2023"
+          "value": 30,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 2744,
-          "asOf": "2024"
+          "value": 2814,
+          "asOf": "2025"
         }
       }
     },
@@ -3809,12 +3809,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 82,
-          "asOf": "2023"
+          "value": 83,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 70517,
-          "asOf": "2024"
+          "value": 83659,
+          "asOf": "2025"
         }
       }
     },
@@ -3855,12 +3855,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 39,
-          "asOf": "2019"
+          "value": 48,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 2810,
-          "asOf": "2024"
+          "value": 2678,
+          "asOf": "2025"
         }
       }
     },
@@ -3901,12 +3901,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 58,
-          "asOf": "2023"
+          "value": 59,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 6586,
-          "asOf": "2024"
+          "value": 6726,
+          "asOf": "2025"
         }
       }
     },
@@ -3940,11 +3940,11 @@
         },
         "internet": {
           "value": 96,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 66154,
-          "asOf": "2024"
+          "value": 68725,
+          "asOf": "2025"
         }
       }
     },
@@ -3989,8 +3989,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 40687,
-          "asOf": "2024"
+          "value": 41161,
+          "asOf": "2025"
         }
       }
     },
@@ -4031,12 +4031,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 100,
-          "asOf": "2023"
+          "value": 98,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 67310,
-          "asOf": "2024"
+          "value": 68065,
+          "asOf": "2025"
         }
       }
     },
@@ -4081,8 +4081,8 @@
           "asOf": "2025"
         },
         "gdp_pc": {
-          "value": 9818,
-          "asOf": "2024"
+          "value": 10039,
+          "asOf": "2025"
         }
       }
     },
@@ -4127,8 +4127,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 14470,
-          "asOf": "2024"
+          "value": 15091,
+          "asOf": "2025"
         }
       }
     },
@@ -4169,12 +4169,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 80,
-          "asOf": "2023"
+          "value": 85,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 17484,
-          "asOf": "2024"
+          "value": 16834,
+          "asOf": "2025"
         }
       }
     },
@@ -4215,12 +4215,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 82,
-          "asOf": "2023"
+          "value": 81,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 12725,
-          "asOf": "2024"
+          "value": 12192,
+          "asOf": "2025"
         }
       }
     },
@@ -4261,12 +4261,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 96,
-          "asOf": "2023"
+          "value": 97,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 119038,
-          "asOf": "2024"
+          "value": 131338,
+          "asOf": "2025"
         }
       }
     },
@@ -4329,8 +4329,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 47339,
-          "asOf": "2024"
+          "value": 48197,
+          "asOf": "2025"
         }
       }
     },
@@ -4375,8 +4375,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 53265,
-          "asOf": "2024"
+          "value": 53606,
+          "asOf": "2025"
         }
       }
     },
@@ -4417,12 +4417,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 89,
-          "asOf": "2023"
+          "value": 90,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 11340,
-          "asOf": "2024"
+          "value": 11358,
+          "asOf": "2025"
         }
       }
     },
@@ -4463,12 +4463,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 87,
-          "asOf": "2023"
+          "value": 86,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 46107,
-          "asOf": "2024"
+          "value": 48283,
+          "asOf": "2025"
         }
       }
     },
@@ -4523,12 +4523,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 93,
-          "asOf": "2023"
+          "value": 96,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 9520,
-          "asOf": "2024"
+          "value": 10794,
+          "asOf": "2025"
         }
       }
     },
@@ -4573,8 +4573,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 35974,
-          "asOf": "2024"
+          "value": 37851,
+          "asOf": "2025"
         }
       }
     },
@@ -4619,8 +4619,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 5845,
-          "asOf": "2024"
+          "value": 5995,
+          "asOf": "2025"
         }
       }
     },
@@ -4657,12 +4657,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 88,
-          "asOf": "2023"
+          "value": 89,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 3257,
-          "asOf": "2024"
+          "value": 3364,
+          "asOf": "2025"
         }
       }
     },
@@ -4704,11 +4704,11 @@
         },
         "internet": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "gdp_pc": {
-          "value": 46137,
-          "asOf": "2024"
+          "value": 48254,
+          "asOf": "2025"
         }
       }
     },
@@ -4745,12 +4745,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 88,
-          "asOf": "2023"
+          "value": 92,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 7049,
-          "asOf": "2024"
+          "value": 7878,
+          "asOf": "2025"
         }
       }
     },
@@ -4787,12 +4787,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 64,
-          "asOf": "2023"
+          "value": 66,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 8600,
-          "asOf": "2024"
+          "value": 8873,
+          "asOf": "2025"
         }
       }
     },
@@ -4837,8 +4837,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 37612,
-          "asOf": "2024"
+          "value": 38801,
+          "asOf": "2025"
         }
       }
     },
@@ -4879,12 +4879,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 83,
-          "asOf": "2023"
+          "value": 81,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 11330,
-          "asOf": "2023"
+          "value": 10469,
+          "asOf": "2024"
         }
       }
     },
@@ -4925,12 +4925,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 48,
-          "asOf": "2023"
+          "value": 52,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 2640,
-          "asOf": "2024"
+          "value": 2721,
+          "asOf": "2025"
         }
       }
     },
@@ -4971,12 +4971,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 23,
-          "asOf": "2023"
+          "value": 32,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 1646,
-          "asOf": "2024"
+          "value": 1693,
+          "asOf": "2025"
         }
       }
     },
@@ -5013,12 +5013,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 88,
-          "asOf": "2023"
+          "value": 82,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 12584,
-          "asOf": "2024"
+          "value": 14118,
+          "asOf": "2025"
         }
       }
     },
@@ -5047,8 +5047,8 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 97,
-          "asOf": "2023"
+          "value": 98,
+          "asOf": "2024"
         }
       }
     },
@@ -5090,11 +5090,11 @@
         },
         "internet": {
           "value": 89,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 47165,
-          "asOf": "2024"
+          "value": 48840,
+          "asOf": "2025"
         }
       }
     },
@@ -5136,11 +5136,11 @@
         },
         "internet": {
           "value": 99,
-          "asOf": "2024"
+          "asOf": "2025"
         },
         "gdp_pc": {
-          "value": 128475,
-          "asOf": "2024"
+          "value": 127421,
+          "asOf": "2025"
         }
       }
     },
@@ -5161,12 +5161,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 89,
-          "asOf": "2023"
+          "value": 90,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 111694,
-          "asOf": "2024"
+          "value": 117098,
+          "asOf": "2025"
         }
       }
     },
@@ -5203,12 +5203,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 20,
-          "asOf": "2023"
+          "value": 19,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 1657,
-          "asOf": "2024"
+          "value": 1668,
+          "asOf": "2025"
         }
       }
     },
@@ -5249,12 +5249,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 18,
-          "asOf": "2023"
+          "value": 19,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 1634,
-          "asOf": "2024"
+          "value": 1623,
+          "asOf": "2025"
         }
       }
     },
@@ -5299,8 +5299,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 34116,
-          "asOf": "2024"
+          "value": 35461,
+          "asOf": "2025"
         }
       }
     },
@@ -5342,11 +5342,11 @@
         },
         "internet": {
           "value": 85,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 23034,
-          "asOf": "2024"
+          "value": 24401,
+          "asOf": "2025"
         }
       }
     },
@@ -5383,12 +5383,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 35,
-          "asOf": "2023"
+          "value": 37,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 2916,
-          "asOf": "2024"
+          "value": 2993,
+          "asOf": "2025"
         }
       }
     },
@@ -5429,12 +5429,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 92,
-          "asOf": "2023"
+          "value": 94,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 62700,
-          "asOf": "2024"
+          "value": 63656,
+          "asOf": "2025"
         }
       }
     },
@@ -5472,11 +5472,11 @@
         },
         "internet": {
           "value": 66,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 7209,
-          "asOf": "2024"
+          "value": 7660,
+          "asOf": "2025"
         }
       }
     },
@@ -5535,12 +5535,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 37,
-          "asOf": "2023"
+          "value": 46,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 6483,
-          "asOf": "2024"
+          "value": 6559,
+          "asOf": "2025"
         }
       }
     },
@@ -5581,12 +5581,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 80,
-          "asOf": "2023"
+          "value": 73,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 28011,
-          "asOf": "2024"
+          "value": 28770,
+          "asOf": "2025"
         }
       }
     },
@@ -5645,12 +5645,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 81,
-          "asOf": "2023"
+          "value": 83,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 22040,
-          "asOf": "2024"
+          "value": 21912,
+          "asOf": "2025"
         }
       }
     },
@@ -5687,12 +5687,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 39,
-          "asOf": "2020"
+          "value": 40,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 3824,
-          "asOf": "2024"
+          "value": 3935,
+          "asOf": "2025"
         }
       }
     },
@@ -5733,12 +5733,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 80,
-          "asOf": "2023"
+          "value": 77,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 16377,
-          "asOf": "2024"
+          "value": 17087,
+          "asOf": "2025"
         }
       }
     },
@@ -5772,7 +5772,7 @@
         },
         "internet": {
           "value": 99,
-          "asOf": "2023"
+          "asOf": "2024"
         }
       }
     },
@@ -5813,12 +5813,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 83,
-          "asOf": "2023"
+          "value": 85,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 16843,
-          "asOf": "2024"
+          "value": 17773,
+          "asOf": "2025"
         }
       }
     },
@@ -5863,8 +5863,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 28106,
-          "asOf": "2024"
+          "value": 28895,
+          "asOf": "2025"
         }
       }
     },
@@ -5924,11 +5924,11 @@
         },
         "internet": {
           "value": 91,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 9163,
-          "asOf": "2024"
+          "value": 9495,
+          "asOf": "2025"
         }
       }
     },
@@ -5969,12 +5969,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 20,
-          "asOf": "2023"
+          "value": 21,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 1500,
-          "asOf": "2024"
+          "value": 1451,
+          "asOf": "2025"
         }
       }
     },
@@ -6015,12 +6015,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 59,
-          "asOf": "2023"
+          "value": 45,
+          "asOf": "2020"
         },
         "gdp_pc": {
-          "value": 5276,
-          "asOf": "2024"
+          "value": 5137,
+          "asOf": "2025"
         }
       }
     },
@@ -6061,12 +6061,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 64,
-          "asOf": "2023"
+          "value": 65,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 10281,
-          "asOf": "2024"
+          "value": 10242,
+          "asOf": "2025"
         }
       }
     },
@@ -6095,12 +6095,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 82,
-          "asOf": "2020"
+          "value": 83,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 12469,
-          "asOf": "2024"
+          "value": 12135,
+          "asOf": "2025"
         }
       }
     },
@@ -6141,12 +6141,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 56,
-          "asOf": "2023"
+          "value": 46,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 5047,
-          "asOf": "2024"
+          "value": 5277,
+          "asOf": "2025"
         }
       }
     },
@@ -6188,11 +6188,11 @@
         },
         "internet": {
           "value": 97,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 70499,
-          "asOf": "2024"
+          "value": 71378,
+          "asOf": "2025"
         }
       }
     },
@@ -6255,12 +6255,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 96,
-          "asOf": "2023"
+          "value": 94,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 49316,
-          "asOf": "2024"
+          "value": 48233,
+          "asOf": "2025"
         }
       }
     },
@@ -6301,12 +6301,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 58,
-          "asOf": "2023"
+          "value": 61,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 7662,
-          "asOf": "2024"
+          "value": 7933,
+          "asOf": "2025"
         }
       }
     },
@@ -6347,12 +6347,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 23,
-          "asOf": "2023"
+          "value": 16,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 1803,
-          "asOf": "2024"
+          "value": 1861,
+          "asOf": "2025"
         }
       }
     },
@@ -6393,12 +6393,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 39,
-          "asOf": "2023"
+          "value": 41,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 7994,
-          "asOf": "2024"
+          "value": 8145,
+          "asOf": "2025"
         }
       }
     },
@@ -6450,7 +6450,7 @@
         },
         "internet": {
           "value": 0,
-          "asOf": "2012"
+          "asOf": "2004"
         }
       }
     },
@@ -6491,12 +6491,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 87,
-          "asOf": "2023"
+          "value": 93,
+          "asOf": "2025"
         },
         "gdp_pc": {
-          "value": 24203,
-          "asOf": "2024"
+          "value": 25095,
+          "asOf": "2025"
         }
       }
     },
@@ -6556,11 +6556,11 @@
         },
         "internet": {
           "value": 99,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 91105,
-          "asOf": "2024"
+          "value": 95173,
+          "asOf": "2025"
         }
       }
     },
@@ -6605,8 +6605,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 36721,
-          "asOf": "2024"
+          "value": 36143,
+          "asOf": "2025"
         }
       }
     },
@@ -6647,12 +6647,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 27,
-          "asOf": "2023"
+          "value": 57,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 5500,
-          "asOf": "2024"
+          "value": 5617,
+          "asOf": "2025"
         }
       }
     },
@@ -6689,12 +6689,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 27,
-          "asOf": "2004"
+          "value": 84,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 16426,
-          "asOf": "2023"
+          "value": 19699,
+          "asOf": "2025"
         }
       }
     },
@@ -6727,8 +6727,8 @@
           "asOf": "2023"
         },
         "gdp_pc": {
-          "value": 3846,
-          "asOf": "2024"
+          "value": 4272,
+          "asOf": "2025"
         }
       }
     },
@@ -6769,12 +6769,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 69,
-          "asOf": "2023"
+          "value": 73,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 36395,
-          "asOf": "2024"
+          "value": 37516,
+          "asOf": "2025"
         }
       }
     },
@@ -6815,12 +6815,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 24,
-          "asOf": "2023"
+          "value": 19,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 4289,
-          "asOf": "2024"
+          "value": 4456,
+          "asOf": "2025"
         }
       }
     },
@@ -6865,8 +6865,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 16296,
-          "asOf": "2024"
+          "value": 17246,
+          "asOf": "2025"
         }
       }
     },
@@ -6911,8 +6911,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 15662,
-          "asOf": "2024"
+          "value": 16079,
+          "asOf": "2025"
         }
       }
     },
@@ -6953,12 +6953,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 84,
-          "asOf": "2023"
+          "value": 67,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 10376,
-          "asOf": "2024"
+          "value": 10748,
+          "asOf": "2025"
         }
       }
     },
@@ -7003,8 +7003,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 45153,
-          "asOf": "2024"
+          "value": 46925,
+          "asOf": "2025"
         }
       }
     },
@@ -7049,8 +7049,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 42197,
-          "asOf": "2024"
+          "value": 42577,
+          "asOf": "2025"
         }
       }
     },
@@ -7087,8 +7087,8 @@
           "asOf": "2022"
         },
         "gdp_pc": {
-          "value": 44206,
-          "asOf": "2024"
+          "value": 44603,
+          "asOf": "2025"
         }
       }
     },
@@ -7129,12 +7129,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 100,
-          "asOf": "2023"
+          "value": 98,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 110890,
-          "asOf": "2024"
+          "value": 110136,
+          "asOf": "2025"
         }
       }
     },
@@ -7197,8 +7197,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 40504,
-          "asOf": "2024"
+          "value": 40846,
+          "asOf": "2025"
         }
       }
     },
@@ -7243,8 +7243,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 41705,
-          "asOf": "2024"
+          "value": 42358,
+          "asOf": "2025"
         }
       }
     },
@@ -7285,12 +7285,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 34,
-          "asOf": "2023"
+          "value": 32,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 3265,
-          "asOf": "2024"
+          "value": 3559,
+          "asOf": "2025"
         }
       }
     },
@@ -7359,12 +7359,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 76,
-          "asOf": "2023"
+          "value": 77,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 30656,
-          "asOf": "2024"
+          "value": 31428,
+          "asOf": "2025"
         }
       }
     },
@@ -7405,12 +7405,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 70,
-          "asOf": "2023"
+          "value": 68,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 24252,
-          "asOf": "2024"
+          "value": 24503,
+          "asOf": "2025"
         }
       }
     },
@@ -7488,11 +7488,11 @@
         },
         "internet": {
           "value": 76,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 18714,
-          "asOf": "2024"
+          "value": 19483,
+          "asOf": "2025"
         }
       }
     },
@@ -7529,12 +7529,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 58,
-          "asOf": "2023"
+          "value": 21,
+          "asOf": "2014"
         },
         "gdp_pc": {
-          "value": 7686,
-          "asOf": "2024"
+          "value": 7963,
+          "asOf": "2025"
         }
       }
     },
@@ -7571,8 +7571,8 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 87,
-          "asOf": "2023"
+          "value": 97,
+          "asOf": "2024"
         },
         "gdp_pc": {
           "value": 70952,
@@ -7617,12 +7617,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 61,
-          "asOf": "2023"
+          "value": 59,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 5491,
-          "asOf": "2024"
+          "value": 5459,
+          "asOf": "2025"
         }
       }
     },
@@ -7667,8 +7667,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 62793,
-          "asOf": "2024"
+          "value": 63051,
+          "asOf": "2025"
         }
       }
     },
@@ -7705,12 +7705,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 61,
-          "asOf": "2023"
+          "value": 60,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 4461,
-          "asOf": "2024"
+          "value": 4669,
+          "asOf": "2025"
         }
       }
     },
@@ -7755,8 +7755,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 26901,
-          "asOf": "2024"
+          "value": 27603,
+          "asOf": "2025"
         }
       }
     },
@@ -7797,12 +7797,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 87,
-          "asOf": "2023"
+          "value": 88,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 29242,
-          "asOf": "2024"
+          "value": 30639,
+          "asOf": "2025"
         }
       }
     },
@@ -7843,12 +7843,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 21,
-          "asOf": "2023"
+          "value": 25,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 3099,
-          "asOf": "2024"
+          "value": 3176,
+          "asOf": "2025"
         }
       }
     },
@@ -7893,8 +7893,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 132570,
-          "asOf": "2024"
+          "value": 139593,
+          "asOf": "2025"
         }
       }
     },
@@ -7911,8 +7911,8 @@
           "asOf": "2023"
         },
         "gdp_pc": {
-          "value": 47303,
-          "asOf": "2024"
+          "value": 48273,
+          "asOf": "2025"
         }
       }
     },
@@ -7957,8 +7957,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 40319,
-          "asOf": "2024"
+          "value": 40690,
+          "asOf": "2025"
         }
       }
     },
@@ -8003,8 +8003,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 48649,
-          "asOf": "2024"
+          "value": 49091,
+          "asOf": "2025"
         }
       }
     },
@@ -8045,12 +8045,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 42,
-          "asOf": "2023"
+          "value": 29,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 2353,
-          "asOf": "2024"
+          "value": 2382,
+          "asOf": "2025"
         }
       }
     },
@@ -8088,11 +8088,11 @@
         },
         "internet": {
           "value": 28,
-          "asOf": "2022"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 1409,
-          "asOf": "2024"
+          "value": 1404,
+          "asOf": "2025"
         }
       }
     },
@@ -8133,12 +8133,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 76,
-          "asOf": "2023"
+          "value": 78,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 13598,
-          "asOf": "2024"
+          "value": 13592,
+          "asOf": "2025"
         }
       }
     },
@@ -8183,8 +8183,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 55071,
-          "asOf": "2024"
+          "value": 55697,
+          "asOf": "2025"
         }
       }
     },
@@ -8225,8 +8225,8 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 9,
-          "asOf": "2020"
+          "value": 7,
+          "asOf": "2019"
         }
       }
     },
@@ -8271,8 +8271,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 48460,
-          "asOf": "2024"
+          "value": 49318,
+          "asOf": "2025"
         }
       }
     },
@@ -8313,12 +8313,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 51,
-          "asOf": "2023"
+          "value": 55,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 13753,
-          "asOf": "2024"
+          "value": 14583,
+          "asOf": "2025"
         }
       }
     },
@@ -8355,12 +8355,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 26,
-          "asOf": "2020"
+          "value": 19,
+          "asOf": "2017"
         },
         "gdp_pc": {
-          "value": 1861,
-          "asOf": "2024"
+          "value": 1873,
+          "asOf": "2025"
         }
       }
     },
@@ -8401,12 +8401,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 78,
+          "value": 87,
           "asOf": "2023"
         },
         "gdp_pc": {
-          "value": 19179,
-          "asOf": "2024"
+          "value": 19357,
+          "asOf": "2025"
         }
       }
     },
@@ -8448,11 +8448,11 @@
         },
         "internet": {
           "value": 96,
-          "asOf": "2024"
+          "asOf": "2025"
         },
         "gdp_pc": {
-          "value": 62979,
-          "asOf": "2024"
+          "value": 63362,
+          "asOf": "2025"
         }
       }
     },
@@ -8494,11 +8494,11 @@
         },
         "internet": {
           "value": 97,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "gdp_pc": {
-          "value": 82286,
-          "asOf": "2024"
+          "value": 85732,
+          "asOf": "2025"
         }
       }
     },
@@ -8539,11 +8539,11 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 35,
-          "asOf": "2019"
+          "value": 34,
+          "asOf": "2018"
         },
         "gdp_pc": {
-          "value": 4455,
+          "value": 4579,
           "asOf": "2022"
         }
       }
@@ -8611,12 +8611,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 57,
-          "asOf": "2023"
+          "value": 56,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 4756,
-          "asOf": "2024"
+          "value": 5062,
+          "asOf": "2025"
         }
       }
     },
@@ -8657,12 +8657,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 29,
-          "asOf": "2023"
+          "value": 31,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 3713,
-          "asOf": "2024"
+          "value": 3821,
+          "asOf": "2025"
         }
       }
     },
@@ -8707,8 +8707,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 21741,
-          "asOf": "2024"
+          "value": 22432,
+          "asOf": "2025"
         }
       }
     },
@@ -8745,12 +8745,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 37,
-          "asOf": "2023"
+          "value": 39,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 2961,
-          "asOf": "2024"
+          "value": 3486,
+          "asOf": "2025"
         }
       }
     },
@@ -8801,12 +8801,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 59,
-          "asOf": "2023"
+          "value": 67,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 7030,
-          "asOf": "2023"
+          "value": 7413,
+          "asOf": "2025"
         }
       }
     },
@@ -8847,12 +8847,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 85,
-          "asOf": "2023"
+          "value": 82,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 31960,
-          "asOf": "2024"
+          "value": 31722,
+          "asOf": "2025"
         }
       }
     },
@@ -8893,12 +8893,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 72,
-          "asOf": "2023"
+          "value": 77,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 12775,
-          "asOf": "2024"
+          "value": 13018,
+          "asOf": "2025"
         }
       }
     },
@@ -8939,12 +8939,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 87,
-          "asOf": "2024"
+          "value": 90,
+          "asOf": "2025"
         },
         "gdp_pc": {
-          "value": 36154,
-          "asOf": "2024"
+          "value": 37301,
+          "asOf": "2025"
         }
       }
     },
@@ -8981,12 +8981,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 21,
-          "asOf": "2017"
+          "value": 18,
+          "asOf": "2016"
         },
         "gdp_pc": {
-          "value": 18662,
-          "asOf": "2024"
+          "value": 19314,
+          "asOf": "2025"
         }
       }
     },
@@ -9045,12 +9045,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 74,
-          "asOf": "2023"
+          "value": 35,
+          "asOf": "2017"
         },
         "gdp_pc": {
-          "value": 5812,
-          "asOf": "2023"
+          "value": 5776,
+          "asOf": "2025"
         }
       }
     },
@@ -9095,8 +9095,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 2880,
-          "asOf": "2024"
+          "value": 2980,
+          "asOf": "2025"
         }
       }
     },
@@ -9138,11 +9138,11 @@
         },
         "internet": {
           "value": 82,
-          "asOf": "2023"
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 16320,
-          "asOf": "2024"
+          "value": 16155,
+          "asOf": "2025"
         }
       }
     },
@@ -9229,12 +9229,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 96,
-          "asOf": "2023"
+          "value": 95,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 52621,
-          "asOf": "2024"
+          "value": 53993,
+          "asOf": "2025"
         }
       }
     },
@@ -9275,12 +9275,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 93,
-          "asOf": "2023"
+          "value": 95,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 75489,
-          "asOf": "2024"
+          "value": 76931,
+          "asOf": "2025"
         }
       }
     },
@@ -9351,8 +9351,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 32039,
-          "asOf": "2024"
+          "value": 32742,
+          "asOf": "2025"
         }
       }
     },
@@ -9393,12 +9393,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 89,
-          "asOf": "2023"
+          "value": 90,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 10450,
-          "asOf": "2024"
+          "value": 11623,
+          "asOf": "2025"
         }
       }
     },
@@ -9439,12 +9439,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 46,
-          "asOf": "2023"
+          "value": 22,
+          "asOf": "2015"
         },
         "gdp_pc": {
-          "value": 3172,
-          "asOf": "2024"
+          "value": 3867,
+          "asOf": "2025"
         }
       }
     },
@@ -9503,8 +9503,8 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 62,
-          "asOf": "2017"
+          "value": 77,
+          "asOf": "2024"
         }
       }
     },
@@ -9549,8 +9549,8 @@
           "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 14415,
-          "asOf": "2024"
+          "value": 15457,
+          "asOf": "2025"
         }
       }
     },
@@ -9623,8 +9623,8 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 14,
-          "asOf": "2020"
+          "value": 17,
+          "asOf": "2019"
         }
       }
     },
@@ -9665,12 +9665,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 33,
-          "asOf": "2023"
+          "value": 17,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 3708,
-          "asOf": "2024"
+          "value": 3742,
+          "asOf": "2025"
         }
       }
     },
@@ -9711,12 +9711,12 @@
           "asOf": "2023"
         },
         "internet": {
-          "value": 38,
-          "asOf": "2023"
+          "value": 42,
+          "asOf": "2024"
         },
         "gdp_pc": {
-          "value": 5215,
-          "asOf": "2024"
+          "value": 5529,
+          "asOf": "2025"
         }
       }
     }
