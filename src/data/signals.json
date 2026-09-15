@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14",
+  "generatedAt": "2026-09-15",
   "advisories": {
     "SR": {
       "level": 1,
@@ -261,14 +261,19 @@
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/turkey-travel-advisory.html",
       "date": "2026-06-08"
     },
+    "ML": {
+      "level": 4,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mali-travel-advisory.html",
+      "date": "2026-06-07"
+    },
     "CY": {
       "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cyp.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/cyprus-travel-advisory.html",
       "date": "2026-05-31"
     },
     "VG": {
       "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.vgb.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/british-virgin-islands-travel-advisory.html",
       "date": "2026-05-21"
     },
     "AI": {
