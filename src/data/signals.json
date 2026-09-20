@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19",
+  "generatedAt": "2026-09-20",
   "advisories": {
     "SR": {
       "level": 1,
@@ -260,11 +260,6 @@
       "level": 2,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/turkey-travel-advisory.html",
       "date": "2026-06-08"
-    },
-    "ML": {
-      "level": 4,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mali-travel-advisory.html",
-      "date": "2026-06-07"
     },
     "CY": {
       "level": 1,
@@ -588,7 +583,7 @@
     },
     "GD": {
       "level": 2,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/grenada-travel-advisory.html",
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.grd.html",
       "date": "2026-01-04"
     },
     "RU": {
