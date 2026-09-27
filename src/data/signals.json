@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26",
+  "generatedAt": "2026-09-27",
   "advisories": {
     "SR": {
       "level": 1,
@@ -286,11 +286,6 @@
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mali-travel-advisory.html",
       "date": "2026-06-07"
     },
-    "CA": {
-      "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.can.html",
-      "date": "2026-06-04"
-    },
     "CY": {
       "level": 1,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cyp.html",
@@ -351,14 +346,14 @@
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/chile-travel-advisory.html",
       "date": "2026-05-19"
     },
-    "HR": {
-      "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.hrv.html",
-      "date": "2026-05-17"
-    },
     "SE": {
       "level": 2,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/sweden-travel-advisory.html",
+      "date": "2026-05-17"
+    },
+    "HR": {
+      "level": 1,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/croatia-travel-advisory.html",
       "date": "2026-05-17"
     },
     "SS": {
@@ -483,7 +478,7 @@
     },
     "CR": {
       "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cri.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/costa-rica-travel-advisory.html",
       "date": "2026-04-01"
     },
     "LV": {
@@ -496,11 +491,6 @@
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.est.html",
       "date": "2026-03-30"
     },
-    "CO": {
-      "level": 3,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.col.html",
-      "date": "2026-03-30"
-    },
     "NP": {
       "level": 2,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/nepal-travel-advisory.html",
@@ -508,12 +498,12 @@
     },
     "GA": {
       "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gab.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/gabon-travel-advisory.html",
       "date": "2026-03-29"
     },
     "IE": {
       "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.irl.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/ireland-travel-advisory.html",
       "date": "2026-03-19"
     },
     "VE": {
@@ -573,12 +563,12 @@
     },
     "MY": {
       "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mys.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/malaysia-travel-advisory.html",
       "date": "2026-02-21"
     },
     "AF": {
       "level": 4,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.afg.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/afghanistan-advisory.html",
       "date": "2026-02-19"
     },
     "CI": {
@@ -588,8 +578,8 @@
     },
     "SK": {
       "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.svk.html",
-      "date": "2026-02-11"
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/slovakia-travel-advisory.html",
+      "date": "2026-02-09"
     },
     "KG": {
       "level": 1,
@@ -608,23 +598,13 @@
     },
     "GM": {
       "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gmb.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/the-gambia-travel-advisory.html",
       "date": "2026-01-15"
-    },
-    "CF": {
-      "level": 4,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.caf.html",
-      "date": "2026-01-14"
     },
     "KM": {
       "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.com.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/comoros-travel-advisory.html",
       "date": "2026-01-11"
-    },
-    "CZ": {
-      "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cze.html",
-      "date": "2026-01-07"
     },
     "BJ": {
       "level": 2,
@@ -638,13 +618,13 @@
     },
     "RU": {
       "level": 4,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.rus.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/russia-travel-advisory.html",
       "date": "2025-12-28"
     },
     "BY": {
       "level": 4,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.blr.html",
-      "date": "2025-12-28"
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/belarus-travel-advisory.html",
+      "date": "2025-12-21"
     },
     "YE": {
       "level": 4,
@@ -653,17 +633,17 @@
     },
     "CV": {
       "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cpv.html",
-      "date": "2025-12-17"
-    },
-    "GW": {
-      "level": 3,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gnb.html",
-      "date": "2025-12-10"
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/cabo-verde-travel-advisory.html",
+      "date": "2025-12-14"
     },
     "SY": {
       "level": 4,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/syria-travel-advisory.html",
+      "date": "2025-12-10"
+    },
+    "GW": {
+      "level": 3,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/guinea-bissau-travel-advisory.html",
       "date": "2025-12-10"
     },
     "LR": {
@@ -706,6 +686,11 @@
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.twn.html",
       "date": "2025-11-24"
     },
+    "CF": {
+      "level": 4,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/central-african-republic-travel-advisory.html",
+      "date": "2025-11-09"
+    },
     "TZ": {
       "level": 3,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tza.html",
@@ -736,14 +721,14 @@
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/romania-travel-advisory.html",
       "date": "2025-10-13"
     },
-    "BG": {
-      "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bgr.html",
-      "date": "2025-10-08"
-    },
     "LK": {
       "level": 2,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/sri-lanka-travel-advisory.html",
+      "date": "2025-10-08"
+    },
+    "BG": {
+      "level": 1,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/bulgaria-travel-advisory.html",
       "date": "2025-10-08"
     },
     "ST": {
@@ -751,14 +736,14 @@
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/sao-tome-and-principe-travel-advisory.html",
       "date": "2025-10-07"
     },
-    "GQ": {
-      "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.gnq.html",
-      "date": "2025-10-06"
-    },
     "MV": {
       "level": 2,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/maldives-travel-advisory.html",
+      "date": "2025-10-06"
+    },
+    "GQ": {
+      "level": 2,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/equatorial-guinea-travel-advisory.html",
       "date": "2025-10-06"
     },
     "SL": {
@@ -788,23 +773,28 @@
     },
     "EG": {
       "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.egy.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/egypt-travel-advisory.html",
       "date": "2025-07-14"
-    },
-    "IN": {
-      "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ind.html",
-      "date": "2025-06-15"
     },
     "MZ": {
       "level": 2,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/mozambique-travel-advisory.html",
       "date": "2025-06-15"
     },
+    "IN": {
+      "level": 2,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/india-travel-advisory.html",
+      "date": "2025-06-15"
+    },
     "DO": {
       "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dom.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/dominican-republic-travel-advisory.html",
       "date": "2025-06-11"
+    },
+    "CA": {
+      "level": 1,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/canada-travel-advisory.html",
+      "date": "2025-06-10"
     },
     "PL": {
       "level": 1,
@@ -821,14 +811,14 @@
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/brazil-travel-advisory.html",
       "date": "2025-05-28"
     },
-    "FR": {
-      "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fra.html",
-      "date": "2025-05-27"
-    },
     "KR": {
       "level": 1,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/south-korea-travel-advisory.html",
+      "date": "2025-05-27"
+    },
+    "FR": {
+      "level": 2,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/france-travel-advisory.html",
       "date": "2025-05-27"
     },
     "ZA": {
@@ -868,7 +858,7 @@
     },
     "DE": {
       "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.deu.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/germany-travel-advisory.html",
       "date": "2025-05-12"
     },
     "ES": {
@@ -911,10 +901,20 @@
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/solomon-island-travel-advisory.html",
       "date": "2025-04-28"
     },
+    "CZ": {
+      "level": 1,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/czechia-travel-advisory.html",
+      "date": "2025-04-27"
+    },
     "MA": {
       "level": 2,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/morocco-travel-advisory.html",
       "date": "2025-04-20"
+    },
+    "CO": {
+      "level": 3,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/colombia-travel-advisory.html",
+      "date": "2025-04-16"
     },
     "GE": {
       "level": 1,
