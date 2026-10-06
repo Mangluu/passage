@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05",
+  "generatedAt": "2026-10-06",
   "advisories": {
     "SA": {
       "level": 3,
@@ -578,7 +578,7 @@
     },
     "BN": {
       "level": 1,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/brunei-travel-advisory.html",
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.brn.html",
       "date": "2026-05-13"
     },
     "MW": {
@@ -943,7 +943,7 @@
     },
     "BI": {
       "level": 3,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/burundi-travel-advisory.html",
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bdi.html",
       "date": "2025-04-28"
     },
     "KP": {
@@ -1000,11 +1000,6 @@
       "level": 2,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/greenland-travel-advisory.html",
       "date": "2024-10-28"
-    },
-    "CG": {
-      "level": 2,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/republic-of-the-congo-travel-advisory.html",
-      "date": "2024-10-01"
     },
     "DK": {
       "level": 2,
