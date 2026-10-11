@@ -1,10 +1,15 @@
 {
-  "generatedAt": "2026-10-10",
+  "generatedAt": "2026-10-11",
   "advisories": {
+    "YE": {
+      "level": 4,
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.yem.html",
+      "date": "2026-10-09"
+    },
     "SA": {
       "level": 3,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.sau.html",
-      "date": "2026-09-14"
+      "date": "2026-10-09"
     },
     "KH": {
       "level": 2,
@@ -790,11 +795,6 @@
       "level": 1,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.prt.html",
       "date": "2025-12-22"
-    },
-    "YE": {
-      "level": 4,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.yem.html",
-      "date": "2025-12-18"
     },
     "CV": {
       "level": 1,
