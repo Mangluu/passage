@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15",
+  "generatedAt": "2026-10-16",
   "advisories": {
     "SA": {
       "level": 3,
@@ -938,17 +938,12 @@
     },
     "CU": {
       "level": 2,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/cuba-travel-advisory.html",
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.cub.html",
       "date": "2025-05-06"
     },
     "BI": {
       "level": 3,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.bdi.html",
-      "date": "2025-04-28"
-    },
-    "KP": {
-      "level": 4,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.prk.html",
       "date": "2025-04-28"
     },
     "PG": {
@@ -961,6 +956,11 @@
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/solomon-island-travel-advisory.html",
       "date": "2025-04-28"
     },
+    "KP": {
+      "level": 4,
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.prk.html",
+      "date": "2025-04-28"
+    },
     "GE": {
       "level": 1,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.geo.html",
@@ -970,6 +970,11 @@
       "level": 2,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dji.html",
       "date": "2025-03-05"
+    },
+    "TO": {
+      "level": 1,
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ton.html",
+      "date": "2024-12-01"
     },
     "TV": {
       "level": 1,
