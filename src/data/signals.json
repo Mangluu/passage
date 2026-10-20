@@ -1,6 +1,16 @@
 {
-  "generatedAt": "2026-10-19",
+  "generatedAt": "2026-10-20",
   "advisories": {
+    "KE": {
+      "level": 3,
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ken.html",
+      "date": "2026-10-18"
+    },
+    "CN": {
+      "level": 2,
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.chn.html",
+      "date": "2026-10-18"
+    },
     "TZ": {
       "level": 2,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.tza.html",
@@ -44,11 +54,6 @@
     "HK": {
       "level": 2,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.hkg.html",
-      "date": "2026-09-03"
-    },
-    "CN": {
-      "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.chn.html",
       "date": "2026-09-03"
     },
     "NP": {
@@ -305,11 +310,6 @@
       "level": 1,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mng.html",
       "date": "2026-07-28"
-    },
-    "KE": {
-      "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ken.html",
-      "date": "2026-07-27"
     },
     "UY": {
       "level": 2,
