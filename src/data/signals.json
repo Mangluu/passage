@@ -1,14 +1,19 @@
 {
-  "generatedAt": "2026-10-21",
+  "generatedAt": "2026-10-22",
   "advisories": {
-    "KE": {
-      "level": 3,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ken.html",
-      "date": "2026-10-18"
+    "FR": {
+      "level": 2,
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fra.html",
+      "date": "2026-10-20"
     },
     "CN": {
       "level": 2,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.chn.html",
+      "date": "2026-10-18"
+    },
+    "KE": {
+      "level": 3,
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ken.html",
       "date": "2026-10-18"
     },
     "TZ": {
@@ -376,11 +381,6 @@
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fsm.html",
       "date": "2026-07-06"
     },
-    "KN": {
-      "level": 1,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/saint-kitts-and-nevis-travel-advisory.html",
-      "date": "2026-07-06"
-    },
     "VC": {
       "level": 1,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.vct.html",
@@ -414,6 +414,11 @@
     "MS": {
       "level": 1,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.msr.html",
+      "date": "2026-07-06"
+    },
+    "KN": {
+      "level": 1,
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.kna.html",
       "date": "2026-07-06"
     },
     "TH": {
@@ -905,11 +910,6 @@
       "level": 1,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.pol.html",
       "date": "2025-06-04"
-    },
-    "FR": {
-      "level": 2,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fra.html",
-      "date": "2025-05-27"
     },
     "KR": {
       "level": 1,
