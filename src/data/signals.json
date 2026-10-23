@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-10-22",
+  "generatedAt": "2026-10-23",
   "advisories": {
+    "PF": {
+      "level": 1,
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/french-polynesia-travel-advisory.html",
+      "date": "2024-12-01"
+    },
     "FR": {
       "level": 2,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fra.html",
@@ -166,6 +171,11 @@
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.mne.html",
       "date": "2026-08-26"
     },
+    "IL": {
+      "level": 3,
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.isr.html",
+      "date": "2026-08-25"
+    },
     "GY": {
       "level": 3,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.guy.html",
@@ -174,11 +184,6 @@
     "AL": {
       "level": 2,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.alb.html",
-      "date": "2026-08-25"
-    },
-    "IL": {
-      "level": 3,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/israel-west-bank-and-gaza-travel-advisory.html",
       "date": "2026-08-25"
     },
     "DZ": {
@@ -543,17 +548,17 @@
     },
     "NC": {
       "level": 2,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/new-caledonia-travel-advisory.html",
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ncl.html",
       "date": "2026-05-20"
-    },
-    "AG": {
-      "level": 1,
-      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.atg.html",
-      "date": "2026-05-19"
     },
     "DM": {
       "level": 1,
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.dma.html",
+      "date": "2026-05-19"
+    },
+    "AG": {
+      "level": 1,
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.atg.html",
       "date": "2026-05-19"
     },
     "HR": {
@@ -976,29 +981,19 @@
       "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.ton.html",
       "date": "2024-12-01"
     },
-    "TV": {
-      "level": 1,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/tuvalu-travel-advisory.html",
-      "date": "2024-12-01"
-    },
     "KI": {
       "level": 1,
       "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/kiribati-travel-advisory.html",
       "date": "2024-12-01"
     },
-    "PF": {
+    "TV": {
       "level": 1,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/french-polynesia-travel-advisory.html",
-      "date": "2024-12-01"
-    },
-    "NR": {
-      "level": 1,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/nauru-travel-advisory.html",
+      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/tuvalu-travel-advisory.html",
       "date": "2024-12-01"
     },
     "FJ": {
       "level": 1,
-      "link": "https://travel.state.gov/content/travel/en/traveladvisories/traveladvisories/fiji-travel-advisory.html",
+      "link": "https://travel.state.gov/content/tsg_aem/us/en/home/international-travel/travel-advisories/destination.fji.html",
       "date": "2024-12-01"
     },
     "GL": {
