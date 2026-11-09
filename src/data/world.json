@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02",
+  "generatedAt": "2026-11-09",
   "domains": [
     {
       "id": "rights",
@@ -8563,6 +8563,10 @@
         "eq_lgbt": {
           "value": 68,
           "asOf": "2026"
+        },
+        "wbl_women": {
+          "value": 91,
+          "asOf": "2023"
         },
         "corruption": {
           "value": 67,
