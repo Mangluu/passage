@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09",
+  "generatedAt": "2026-11-16",
   "domains": [
     {
       "id": "rights",
@@ -173,8 +173,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 32,
-          "asOf": "2023"
+          "value": 3,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4,
@@ -220,7 +220,7 @@
         },
         "wbl_women": {
           "value": 91,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.8,
@@ -265,8 +265,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 58,
-          "asOf": "2023"
+          "value": 61,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.2,
@@ -371,8 +371,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 79,
-          "asOf": "2023"
+          "value": 76,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.1,
@@ -435,8 +435,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 69,
-          "asOf": "2023"
+          "value": 71,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 10.7,
@@ -477,8 +477,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 79,
-          "asOf": "2023"
+          "value": 83,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.5,
@@ -524,7 +524,7 @@
         },
         "wbl_women": {
           "value": 91,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.2,
@@ -596,7 +596,7 @@
         },
         "wbl_women": {
           "value": 97,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.9,
@@ -642,7 +642,7 @@
         },
         "wbl_women": {
           "value": 97,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.9,
@@ -688,7 +688,7 @@
         },
         "wbl_women": {
           "value": 85,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2,
@@ -734,7 +734,7 @@
         },
         "wbl_women": {
           "value": 81,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 32.2,
@@ -779,8 +779,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 68,
-          "asOf": "2023"
+          "value": 65,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.2,
@@ -826,7 +826,7 @@
         },
         "wbl_women": {
           "value": 49,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.3,
@@ -872,7 +872,7 @@
         },
         "wbl_women": {
           "value": 80,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 7.4,
@@ -918,7 +918,7 @@
         },
         "wbl_women": {
           "value": 76,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.4,
@@ -964,7 +964,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.1,
@@ -1009,8 +1009,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 83,
-          "asOf": "2023"
+          "value": 80,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 28.1,
@@ -1052,7 +1052,7 @@
         },
         "wbl_women": {
           "value": 84,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 45,
@@ -1120,7 +1120,7 @@
         },
         "wbl_women": {
           "value": 75,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.5,
@@ -1166,7 +1166,7 @@
         },
         "wbl_women": {
           "value": 89,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.4,
@@ -1225,8 +1225,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 85,
-          "asOf": "2023"
+          "value": 82,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.2,
@@ -1271,8 +1271,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 64,
-          "asOf": "2023"
+          "value": 67,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 11.4,
@@ -1317,8 +1317,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 85,
-          "asOf": "2023"
+          "value": 82,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 19.3,
@@ -1386,7 +1386,7 @@
         },
         "wbl_women": {
           "value": 53,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.5,
@@ -1432,7 +1432,7 @@
         },
         "wbl_women": {
           "value": 91,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.1,
@@ -1477,8 +1477,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 83,
-          "asOf": "2023"
+          "value": 86,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 41,
@@ -1520,7 +1520,7 @@
         },
         "wbl_women": {
           "value": 76,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 5.6,
@@ -1565,8 +1565,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 81,
-          "asOf": "2023"
+          "value": 84,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.8,
@@ -1612,7 +1612,7 @@
         },
         "wbl_women": {
           "value": 60,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 6.8,
@@ -1658,7 +1658,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2,
@@ -1704,7 +1704,7 @@
         },
         "wbl_women": {
           "value": 86,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 7,
@@ -1776,7 +1776,7 @@
         },
         "wbl_women": {
           "value": 78,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 24,
@@ -1818,7 +1818,7 @@
         },
         "wbl_women": {
           "value": 66,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 21,
@@ -1860,7 +1860,7 @@
         },
         "wbl_women": {
           "value": 80,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 6.3,
@@ -1906,7 +1906,7 @@
         },
         "wbl_women": {
           "value": 78,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.5,
@@ -1952,7 +1952,7 @@
         },
         "wbl_women": {
           "value": 84,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 24.9,
@@ -1998,7 +1998,7 @@
         },
         "wbl_women": {
           "value": 65,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 21,
@@ -2039,8 +2039,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 58,
-          "asOf": "2023"
+          "value": 61,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 23,
@@ -2104,7 +2104,7 @@
         },
         "wbl_women": {
           "value": 92,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 17.7,
@@ -2150,7 +2150,7 @@
         },
         "wbl_women": {
           "value": 95,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 45,
@@ -2192,7 +2192,7 @@
         },
         "wbl_women": {
           "value": 94,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.7,
@@ -2302,7 +2302,7 @@
         },
         "wbl_women": {
           "value": 97,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1,
@@ -2348,7 +2348,7 @@
         },
         "wbl_women": {
           "value": 94,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.8,
@@ -2394,7 +2394,7 @@
         },
         "wbl_women": {
           "value": 79,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 20,
@@ -2436,7 +2436,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.8,
@@ -2482,7 +2482,7 @@
         },
         "wbl_women": {
           "value": 71,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 31,
@@ -2524,7 +2524,7 @@
         },
         "wbl_women": {
           "value": 63,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 27.1,
@@ -2570,7 +2570,7 @@
         },
         "wbl_women": {
           "value": 86,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 10.9,
@@ -2616,7 +2616,7 @@
         },
         "wbl_women": {
           "value": 86,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.1,
@@ -2661,8 +2661,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 89,
-          "asOf": "2023"
+          "value": 93,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 45.7,
@@ -2707,8 +2707,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 51,
-          "asOf": "2023"
+          "value": 62,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.3,
@@ -2754,7 +2754,7 @@
         },
         "wbl_women": {
           "value": 89,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 7.9,
@@ -2800,7 +2800,7 @@
         },
         "wbl_women": {
           "value": 58,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 13,
@@ -2842,7 +2842,7 @@
         },
         "wbl_women": {
           "value": 69,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 15.6,
@@ -2884,7 +2884,7 @@
         },
         "wbl_women": {
           "value": 98,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.5,
@@ -2930,7 +2930,7 @@
         },
         "wbl_women": {
           "value": 46,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 12.5,
@@ -2976,7 +2976,7 @@
         },
         "wbl_women": {
           "value": 80,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 8.5,
@@ -3058,7 +3058,7 @@
         },
         "wbl_women": {
           "value": 83,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.1,
@@ -3104,7 +3104,7 @@
         },
         "wbl_women": {
           "value": 98,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1,
@@ -3150,7 +3150,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.3,
@@ -3235,8 +3235,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 95,
-          "asOf": "2023"
+          "value": 92,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 27,
@@ -3277,8 +3277,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 69,
-          "asOf": "2023"
+          "value": 73,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 38,
@@ -3320,7 +3320,7 @@
         },
         "wbl_women": {
           "value": 88,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2,
@@ -3366,7 +3366,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.9,
@@ -3411,8 +3411,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 75,
-          "asOf": "2023"
+          "value": 81,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.8,
@@ -3480,7 +3480,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.8,
@@ -3556,7 +3556,7 @@
         },
         "wbl_women": {
           "value": 81,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 13.7,
@@ -3642,7 +3642,7 @@
         },
         "wbl_women": {
           "value": 74,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 23.4,
@@ -3701,8 +3701,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 74,
-          "asOf": "2023"
+          "value": 76,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 28,
@@ -3744,7 +3744,7 @@
         },
         "wbl_women": {
           "value": 52,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.1,
@@ -3789,8 +3789,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 87,
-          "asOf": "2023"
+          "value": 89,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 19.1,
@@ -3836,7 +3836,7 @@
         },
         "wbl_women": {
           "value": 61,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 41.2,
@@ -3882,7 +3882,7 @@
         },
         "wbl_women": {
           "value": 75,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 31.4,
@@ -3924,7 +3924,7 @@
         },
         "wbl_women": {
           "value": 92,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.4,
@@ -3966,7 +3966,7 @@
         },
         "wbl_women": {
           "value": 94,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.7,
@@ -4011,8 +4011,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 100,
-          "asOf": "2023"
+          "value": 98,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.3,
@@ -4057,8 +4057,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 74,
-          "asOf": "2023"
+          "value": 71,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.8,
@@ -4104,7 +4104,7 @@
         },
         "wbl_women": {
           "value": 71,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.3,
@@ -4150,7 +4150,7 @@
         },
         "wbl_women": {
           "value": 31,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.4,
@@ -4195,8 +4195,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 48,
-          "asOf": "2023"
+          "value": 51,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 9.5,
@@ -4242,7 +4242,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.7,
@@ -4306,7 +4306,7 @@
         },
         "wbl_women": {
           "value": 81,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.6,
@@ -4352,7 +4352,7 @@
         },
         "wbl_women": {
           "value": 98,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.6,
@@ -4398,7 +4398,7 @@
         },
         "wbl_women": {
           "value": 74,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 49.4,
@@ -4443,8 +4443,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 79,
-          "asOf": "2023"
+          "value": 81,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.2,
@@ -4503,8 +4503,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 59,
-          "asOf": "2023"
+          "value": 62,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1,
@@ -4550,7 +4550,7 @@
         },
         "wbl_women": {
           "value": 76,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.6,
@@ -4596,7 +4596,7 @@
         },
         "wbl_women": {
           "value": 84,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.9,
@@ -4642,7 +4642,7 @@
         },
         "wbl_women": {
           "value": 76,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 7.1,
@@ -4683,8 +4683,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 38,
-          "asOf": "2023"
+          "value": 41,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.2,
@@ -4729,8 +4729,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 77,
-          "asOf": "2023"
+          "value": 86,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 25,
@@ -4771,8 +4771,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 86,
-          "asOf": "2023"
+          "value": 83,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 33,
@@ -4814,7 +4814,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.5,
@@ -4860,7 +4860,7 @@
         },
         "wbl_women": {
           "value": 59,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.2,
@@ -4905,8 +4905,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 81,
-          "asOf": "2023"
+          "value": 90,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 38.2,
@@ -4952,7 +4952,7 @@
         },
         "wbl_women": {
           "value": 81,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 3.1,
@@ -4998,7 +4998,7 @@
         },
         "wbl_women": {
           "value": 50,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 13,
@@ -5070,7 +5070,7 @@
         },
         "wbl_women": {
           "value": 94,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.6,
@@ -5116,7 +5116,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.5,
@@ -5187,8 +5187,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 69,
-          "asOf": "2023"
+          "value": 81,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 26,
@@ -5230,7 +5230,7 @@
         },
         "wbl_women": {
           "value": 80,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.8,
@@ -5276,7 +5276,7 @@
         },
         "wbl_women": {
           "value": 61,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.7,
@@ -5322,7 +5322,7 @@
         },
         "wbl_women": {
           "value": 74,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.6,
@@ -5367,8 +5367,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 64,
-          "asOf": "2023"
+          "value": 73,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 27,
@@ -5410,7 +5410,7 @@
         },
         "wbl_women": {
           "value": 91,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.6,
@@ -5456,7 +5456,7 @@
         },
         "wbl_women": {
           "value": 66,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.2,
@@ -5515,8 +5515,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 48,
-          "asOf": "2023"
+          "value": 51,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1,
@@ -5562,7 +5562,7 @@
         },
         "wbl_women": {
           "value": 89,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.3,
@@ -5626,7 +5626,7 @@
         },
         "wbl_women": {
           "value": 89,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 24.9,
@@ -5672,7 +5672,7 @@
         },
         "wbl_women": {
           "value": 61,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.9,
@@ -5714,7 +5714,7 @@
         },
         "wbl_women": {
           "value": 91,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.5,
@@ -5794,7 +5794,7 @@
         },
         "wbl_women": {
           "value": 91,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 5.6,
@@ -5840,7 +5840,7 @@
         },
         "wbl_women": {
           "value": 85,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.8,
@@ -5904,7 +5904,7 @@
         },
         "wbl_women": {
           "value": 76,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.7,
@@ -5949,8 +5949,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 83,
-          "asOf": "2023"
+          "value": 79,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 3.6,
@@ -5995,8 +5995,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 59,
-          "asOf": "2023"
+          "value": 62,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.6,
@@ -6041,8 +6041,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 80,
-          "asOf": "2023"
+          "value": 83,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 11.2,
@@ -6121,8 +6121,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 81,
-          "asOf": "2023"
+          "value": 76,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.1,
@@ -6168,7 +6168,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.7,
@@ -6236,7 +6236,7 @@
         },
         "wbl_women": {
           "value": 98,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.5,
@@ -6282,7 +6282,7 @@
         },
         "wbl_women": {
           "value": 86,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 11.3,
@@ -6328,7 +6328,7 @@
         },
         "wbl_women": {
           "value": 54,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.4,
@@ -6373,8 +6373,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 66,
-          "asOf": "2023"
+          "value": 69,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 15.7,
@@ -6472,7 +6472,7 @@
         },
         "wbl_women": {
           "value": 85,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.5,
@@ -6536,7 +6536,7 @@
         },
         "wbl_women": {
           "value": 97,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.7,
@@ -6581,8 +6581,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 46,
-          "asOf": "2023"
+          "value": 49,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.1,
@@ -6628,7 +6628,7 @@
         },
         "wbl_women": {
           "value": 59,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.3,
@@ -6674,7 +6674,7 @@
         },
         "wbl_women": {
           "value": 56,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 11.2,
@@ -6708,7 +6708,7 @@
       "values": {
         "wbl_women": {
           "value": 26,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.6,
@@ -6750,7 +6750,7 @@
         },
         "wbl_women": {
           "value": 79,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 11.7,
@@ -6796,7 +6796,7 @@
         },
         "wbl_women": {
           "value": 60,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 9.3,
@@ -6842,7 +6842,7 @@
         },
         "wbl_women": {
           "value": 94,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 6.8,
@@ -6888,7 +6888,7 @@
         },
         "wbl_women": {
           "value": 95,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 8.6,
@@ -6933,8 +6933,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 79,
-          "asOf": "2023"
+          "value": 82,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.3,
@@ -6980,7 +6980,7 @@
         },
         "wbl_women": {
           "value": 94,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.8,
@@ -7026,7 +7026,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.7,
@@ -7068,7 +7068,7 @@
         },
         "wbl_women": {
           "value": 84,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 15.1,
@@ -7110,7 +7110,7 @@
         },
         "wbl_women": {
           "value": 36,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.1,
@@ -7174,7 +7174,7 @@
         },
         "wbl_women": {
           "value": 91,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.1,
@@ -7220,7 +7220,7 @@
         },
         "wbl_women": {
           "value": 73,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 7.8,
@@ -7266,7 +7266,7 @@
         },
         "wbl_women": {
           "value": 92,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 3.6,
@@ -7344,7 +7344,7 @@
         },
         "wbl_women": {
           "value": 71,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 64.2,
@@ -7386,7 +7386,7 @@
         },
         "wbl_women": {
           "value": 84,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 39,
@@ -7468,7 +7468,7 @@
         },
         "wbl_women": {
           "value": 68,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 51.3,
@@ -7514,7 +7514,7 @@
         },
         "wbl_women": {
           "value": 75,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 6.3,
@@ -7555,8 +7555,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 85,
-          "asOf": "2023"
+          "value": 91,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0,
@@ -7597,8 +7597,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 83,
-          "asOf": "2023"
+          "value": 81,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 3.2,
@@ -7643,8 +7643,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 71,
-          "asOf": "2023"
+          "value": 74,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.9,
@@ -7689,8 +7689,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 73,
-          "asOf": "2023"
+          "value": 69,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 45,
@@ -7732,7 +7732,7 @@
         },
         "wbl_women": {
           "value": 94,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.3,
@@ -7777,8 +7777,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 76,
-          "asOf": "2023"
+          "value": 79,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 8,
@@ -7824,7 +7824,7 @@
         },
         "wbl_women": {
           "value": 93,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.2,
@@ -7870,7 +7870,7 @@
         },
         "wbl_women": {
           "value": 83,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.1,
@@ -7934,7 +7934,7 @@
         },
         "wbl_women": {
           "value": 88,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.1,
@@ -7979,8 +7979,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 97,
-          "asOf": "2023"
+          "value": 100,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.6,
@@ -8026,7 +8026,7 @@
         },
         "wbl_women": {
           "value": 57,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 3.7,
@@ -8071,8 +8071,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 47,
-          "asOf": "2023"
+          "value": 56,
+          "asOf": "2025"
         },
         "corruption": {
           "value": 9,
@@ -8114,7 +8114,7 @@
         },
         "wbl_women": {
           "value": 88,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 43.7,
@@ -8160,7 +8160,7 @@
         },
         "wbl_women": {
           "value": 88,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.5,
@@ -8205,8 +8205,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 68,
-          "asOf": "2023"
+          "value": 74,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 14,
@@ -8248,7 +8248,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.7,
@@ -8294,7 +8294,7 @@
         },
         "wbl_women": {
           "value": 66,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 3.3,
@@ -8340,7 +8340,7 @@
         },
         "wbl_women": {
           "value": 33,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 15,
@@ -8381,8 +8381,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 77,
-          "asOf": "2023"
+          "value": 85,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 6.5,
@@ -8428,7 +8428,7 @@
         },
         "wbl_women": {
           "value": 100,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.1,
@@ -8473,8 +8473,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 88,
-          "asOf": "2023"
+          "value": 94,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.6,
@@ -8520,7 +8520,7 @@
         },
         "wbl_women": {
           "value": 40,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 2.1,
@@ -8566,7 +8566,7 @@
         },
         "wbl_women": {
           "value": 91,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 67,
@@ -8596,7 +8596,7 @@
         },
         "wbl_women": {
           "value": 79,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.9,
@@ -8642,7 +8642,7 @@
         },
         "wbl_women": {
           "value": 81,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 3.7,
@@ -8688,7 +8688,7 @@
         },
         "wbl_women": {
           "value": 78,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.8,
@@ -8734,7 +8734,7 @@
         },
         "wbl_women": {
           "value": 98,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "corruption": {
           "value": 32,
@@ -8789,8 +8789,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 59,
-          "asOf": "2023"
+          "value": 61,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.9,
@@ -8832,7 +8832,7 @@
         },
         "wbl_women": {
           "value": 75,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 40.4,
@@ -8878,7 +8878,7 @@
         },
         "wbl_women": {
           "value": 64,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 4.7,
@@ -8924,7 +8924,7 @@
         },
         "wbl_women": {
           "value": 83,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 3.2,
@@ -9075,8 +9075,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 84,
-          "asOf": "2023"
+          "value": 81,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 9,
@@ -9122,7 +9122,7 @@
         },
         "wbl_women": {
           "value": 85,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 3.8,
@@ -9167,8 +9167,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 83,
-          "asOf": "2023"
+          "value": 74,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.7,
@@ -9214,7 +9214,7 @@
         },
         "wbl_women": {
           "value": 98,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.1,
@@ -9260,7 +9260,7 @@
         },
         "wbl_women": {
           "value": 91,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 5.8,
@@ -9332,7 +9332,7 @@
         },
         "wbl_women": {
           "value": 89,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 11.2,
@@ -9378,7 +9378,7 @@
         },
         "wbl_women": {
           "value": 83,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.4,
@@ -9424,7 +9424,7 @@
         },
         "wbl_women": {
           "value": 56,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 0.3,
@@ -9488,7 +9488,7 @@
         },
         "wbl_women": {
           "value": 85,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 12.6,
@@ -9530,7 +9530,7 @@
         },
         "wbl_women": {
           "value": 88,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 1.5,
@@ -9608,7 +9608,7 @@
         },
         "wbl_women": {
           "value": 27,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 5.8,
@@ -9649,8 +9649,8 @@
           "asOf": "2026"
         },
         "wbl_women": {
-          "value": 81,
-          "asOf": "2023"
+          "value": 84,
+          "asOf": "2025"
         },
         "homicide": {
           "value": 5.2,
@@ -9696,7 +9696,7 @@
         },
         "wbl_women": {
           "value": 87,
-          "asOf": "2023"
+          "asOf": "2025"
         },
         "homicide": {
           "value": 6.8,
